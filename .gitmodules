@@ -1,0 +1,3 @@
+[submodule "GenericWinFormProject"]
+	path = GenericWinFormProject
+	url = https://github.com/GenericWinApp/GenericWinFormProject.git
