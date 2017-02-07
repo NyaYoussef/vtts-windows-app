@@ -1,0 +1,9 @@
+
+*.suo 
+
+# Build results
+*/bin/
+*/obj/
+# SQL Server files
+#*.mdf
+#*.ldf
