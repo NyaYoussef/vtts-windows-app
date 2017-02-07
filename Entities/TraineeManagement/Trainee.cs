@@ -44,7 +44,7 @@ namespace App.GestionStagiaires
      
         public override string ToString()
         {
-            return this.Nom + "," + this.Prenom;
+            return this.Nom + "," + this.Prenom ;
         }
     }
 }
