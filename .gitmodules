@@ -3,3 +3,6 @@
 path = GenericWinFormProject
 	
 url = https://github.com/GenericWinApp/GenericWinFormProject.git
+[submodule "GenericWinFormTest"]
+	path = GenericWinFormTest
+	url = https://github.com/GenericWinApp/GenericWinFormTest.git

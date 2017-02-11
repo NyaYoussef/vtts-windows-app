@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.TraineeManagement.Resources.Trainee {
+namespace Entities.TrainingManagement.Resources.Specialty {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.TraineeManagement.Resources.Trainee {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Trainee {
+    internal class Specialty {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Trainee() {
+        internal Specialty() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.TraineeManagement.Resources.Trainee {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.TraineeManagement.Resources.Trainee.Trainee", typeof(Trainee).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.TrainingManagement.Resources.Specialty.Specialty", typeof(Specialty).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Trainees.
+        ///   Recherche une chaîne localisée semblable à Specialties.
         /// </summary>
         internal static string PluralName {
             get {
@@ -70,7 +70,7 @@ namespace Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Trainee.
+        ///   Recherche une chaîne localisée semblable à Specialty.
         /// </summary>
         internal static string SingularName {
             get {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.TraineeManagement.Resources.Trainee {
+namespace Entities.SessionManagement.Resources.TrainingYear {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.TraineeManagement.Resources.Trainee {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Trainee {
+    internal class TrainingYear {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Trainee() {
+        internal TrainingYear() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.TraineeManagement.Resources.Trainee {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.TraineeManagement.Resources.Trainee.Trainee", typeof(Trainee).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.SessionManagement.Resources.TrainingYear.TrainingYear", typeof(TrainingYear).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,16 @@ namespace Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Trainees.
+        ///   Recherche une chaîne localisée semblable à End date.
+        /// </summary>
+        internal static string EndDate {
+            get {
+                return ResourceManager.GetString("EndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Years of training.
         /// </summary>
         internal static string PluralName {
             get {
@@ -70,11 +79,20 @@ namespace Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Trainee.
+        ///   Recherche une chaîne localisée semblable à Training Year.
         /// </summary>
         internal static string SingularName {
             get {
                 return ResourceManager.GetString("SingularName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Start date.
+        /// </summary>
+        internal static string StartDate {
+            get {
+                return ResourceManager.GetString("StartDate", resourceCulture);
             }
         }
     }

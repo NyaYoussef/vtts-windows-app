@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using App.WinForm.Fields.TestFields;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,8 @@ namespace vtts
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormMenu());
+           // Application.Run(new  FormTestDateTimeField());
         }
     }
 }
