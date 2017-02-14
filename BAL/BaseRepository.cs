@@ -36,7 +36,7 @@ namespace App
 
         #region Context
 
-        public new ModelContext context { get; set; }
+       // public override ModelContext context { get; set; }
 
         DbContext IBaseRepository.Context()
         {

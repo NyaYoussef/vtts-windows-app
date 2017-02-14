@@ -30,6 +30,7 @@ namespace Entities.TrainingManagement
         public String Description { set; get; }
 
          
+        public List<TraineeManagement.Group> Groups { set; get; }
         // public  List<Module> Modules { set; get; }
     }
 }
