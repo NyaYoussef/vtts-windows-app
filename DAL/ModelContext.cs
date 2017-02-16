@@ -12,6 +12,7 @@
     using WinForm.Entities.Application;
     using WinForm.Entities.Authentication;
     using WinForm.Entities.ContactInformations;
+    using WinForm.Entities.Security;
 
     public class ModelContext : DbContext
     {
@@ -76,6 +77,7 @@
         /// <returns></returns>
         public List<Type> GetTypesSets()
         {
+           
             var sets = from p in typeof(ModelContext).GetProperties() where p.PropertyType.IsGenericType && p.PropertyType.GetGenericTypeDefinition() == typeof(DbSet<>) let entityType = p.PropertyType.GetGenericArguments().First() select p.PropertyType.GetGenericArguments()[0];
             return sets.ToList<Type>();
         }

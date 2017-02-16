@@ -145,12 +145,6 @@
   <data name="languageToolStripMenuItem1.Text" xml:space="preserve">
     <value>Language</value>
   </data>
-  <data name="configurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 20</value>
-  </data>
-  <data name="configurationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -911,12 +905,6 @@
     <value>arabToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;arabToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;configurationToolStripMenuItem.Name" xml:space="preserve">
-    <value>configurationToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;configurationToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

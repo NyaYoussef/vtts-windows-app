@@ -19,6 +19,9 @@ using App.WinForm.Forms;
 using App.WinForm.Entities.Authentication;
 using App.WinForm.Forms.FormMenu;
 using App;
+using App.WinForm.Application.BAL;
+using BAL.SessionPackage;
+using App.WinForm.Entities.Application;
 
 namespace vtts
 {
@@ -29,7 +32,11 @@ namespace vtts
             User user = new User();
             user.Name = "ES-SARRAJ";
             user.FirstName = "Fouad";
-            ApplicationInstance.Session = new Session(this, user, CultureInfo.CreateSpecificCulture("fr"));
+
+            ApplicationSession session = new ApplicationSession(this, user, CultureInfo.CreateSpecificCulture("fr"));
+          
+
+
             Reload();
         }
         public override void Reload()
@@ -37,7 +44,7 @@ namespace vtts
             this.Controls.Clear();
             InitializeComponent();
             AfficherFormulaire = new ShowEntityManagementForm(new BaseRepository<BaseEntity>(), this);
-            new ConfigMenuApplication(new BaseRepository<BaseEntity>(), this);
+            new ConfigMenuApplication(new BaseRepository<MenuItemApplication>(), this);
         }
 
         #region IBaseForm

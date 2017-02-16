@@ -58,6 +58,18 @@
     <Compile Include="Migrations\201702071348092_UpdateTraineeTable.Designer.cs">
       <DependentUpon>201702071348092_UpdateTraineeTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702161000027_SecrutityTables.cs" />
+    <Compile Include="Migrations\201702161000027_SecrutityTables.Designer.cs">
+      <DependentUpon>201702161000027_SecrutityTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702161222477_Relation_Many_To_Many_MenuItemApplication_Role.cs" />
+    <Compile Include="Migrations\201702161222477_Relation_Many_To_Many_MenuItemApplication_Role.Designer.cs">
+      <DependentUpon>201702161222477_Relation_Many_To_Many_MenuItemApplication_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702161234519_Multi-language_ManuItemApplication.cs" />
+    <Compile Include="Migrations\201702161234519_Multi-language_ManuItemApplication.Designer.cs">
+      <DependentUpon>201702161234519_Multi-language_ManuItemApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,6 +93,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702071348092_UpdateTraineeTable.resx">
       <DependentUpon>201702071348092_UpdateTraineeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702161000027_SecrutityTables.resx">
+      <DependentUpon>201702161000027_SecrutityTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702161222477_Relation_Many_To_Many_MenuItemApplication_Role.resx">
+      <DependentUpon>201702161222477_Relation_Many_To_Many_MenuItemApplication_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702161234519_Multi-language_ManuItemApplication.resx">
+      <DependentUpon>201702161234519_Multi-language_ManuItemApplication.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

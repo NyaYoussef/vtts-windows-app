@@ -7,7 +7,7 @@ using System.Text;
 namespace Entities.TraineeManagement
 {
     [DisplayEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu]
+    [Menu(Group = "Stagiaire")]
     public class Trainee : Person
     {
          

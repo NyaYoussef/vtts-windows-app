@@ -34,15 +34,13 @@
             this.frenchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.languageToolStripMenuItem1,
-            this.configurationToolStripMenuItem});
+            this.languageToolStripMenuItem1});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -73,11 +71,6 @@
             resources.ApplyResources(this.arabToolStripMenuItem, "arabToolStripMenuItem");
             this.arabToolStripMenuItem.Click += new System.EventHandler(this.arabeToolStripMenuItem_Click);
             // 
-            // configurationToolStripMenuItem
-            // 
-            this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            resources.ApplyResources(this.configurationToolStripMenuItem, "configurationToolStripMenuItem");
-            // 
             // FormMenu
             // 
             resources.ApplyResources(this, "$this");
@@ -103,6 +96,5 @@
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arabToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configurationToolStripMenuItem;
     }
 }

@@ -11,7 +11,7 @@ namespace Entities.TraineeManagement
 
     [DisplayEntity(Localizable =true,DisplayMember = "Name")]
     [SelectionCriteria(typeof(Specialty))]
-    [Menu]
+    [Menu(Group="Stagiaire")]
     public class Group : BaseEntity
     {
         

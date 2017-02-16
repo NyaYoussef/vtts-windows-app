@@ -4,7 +4,9 @@ namespace App.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using WinForm.Application.BAL;
     using WinForm.Entities.Authentication;
+    using WinForm.Entities.Security;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ModelContext>
     {
@@ -37,6 +39,9 @@ namespace App.Migrations
               new Role { Id = 3, Name = "User" },
               new Role { Id = 4, Name = "Project Management system" }
             );
+
+            InstallApplication InstallApplication = new InstallApplication(typeof(ModelContext));
+            InstallApplication.Update();
 
         }
     }
