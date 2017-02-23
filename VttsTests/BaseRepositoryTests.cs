@@ -1,12 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using App;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Entities.TraineeManagement;
-using App.WinForm.Application.BAL;
+using App;
 
 namespace App.Tests
 {

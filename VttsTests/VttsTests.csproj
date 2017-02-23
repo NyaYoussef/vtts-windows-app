@@ -73,6 +73,10 @@
       <Project>{ABCFB1E3-41AF-459E-A49F-56A4A1F889B6}</Project>
       <Name>Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GenericWinSolution\GenericWinForm\GenericWinForm.csproj">
+      <Project>{7B89BD41-7117-4C2D-845F-45EEB252CC35}</Project>
+      <Name>GenericWinForm</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
