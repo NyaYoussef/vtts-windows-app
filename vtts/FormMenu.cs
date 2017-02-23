@@ -43,8 +43,8 @@ namespace vtts
         {
             this.Controls.Clear();
             InitializeComponent();
-            AfficherFormulaire = new ShowEntityManagementForm(new BaseRepository<BaseEntity>(), this);
-            new ConfigMenuApplication(new BaseRepository<MenuItemApplication>(), this);
+            AfficherFormulaire = new ShowEntityManagementForm(new BaseBAO<BaseEntity>(), this);
+            new ConfigMenuApplication(new BaseBAO<MenuItemApplication>(), this);
         }
 
         #region IBaseForm

@@ -19,45 +19,36 @@ using App.WinForm.Application.BAL;
 
 namespace App
 {
-    public class BaseRepository<T> : GenericWinAppBaseRepository<T> ,IBaseRepository where T : BaseEntity
+    public class BaseBAO<T> : BaseEntityBAO<T> ,IBaseBAO where T : BaseEntity
     {
      
         #region construcreur
-        public BaseRepository(DbContext context)
+        public BaseBAO(DbContext context)
         {
-            this.context = (ModelContext) context;
-            if (this.context == null) this.context = new ModelContext();
+            this.Context = (ModelContext) context;
+            if (this.Context == null) this.Context = new ModelContext();
 
-            this.DbSet = this.context.Set<T>();
+            this.DbSet = this.Context.Set<T>();
             this.TypeEntity = typeof(T);
         }
-        public BaseRepository() : this(null) { }
+        public BaseBAO() : this(null) { }
         #endregion
 
         #region Context
-
-       // public override ModelContext context { get; set; }
-
-        DbContext IBaseRepository.Context()
-        {
-            return this.context;
-        }
-
+ 
         public override void Dispose()
         {
-            if (this.context != null)
+            if (this.Context != null)
             {
-                this.context.Dispose();
+                this.Context.Dispose();
             }
         }
         #endregion
 
-
-
         #region CreateInstance
-        public override object CreateInstanceObjet()
+        public override object CreateEntityInstance()
         {
-            return this.context.Set<T>().Create();
+            return this.Context.Set<T>().Create();
         }
 
         /// <summary>
@@ -65,11 +56,11 @@ namespace App
         /// </summary>
         /// <param name="TypeEntity">the entity type</param>
         /// <returns></returns>
-        public override IBaseRepository CreateInstance_Of_Service_From_TypeEntity(Type TypeEntity)
+        public override IBaseBAO CreateEntityInstanceByType(Type TypeEntity)
         {
 
-            Type TypeEntityService = typeof(BaseRepository<>).MakeGenericType(TypeEntity);
-            IBaseRepository EntityService = (IBaseRepository)Activator.CreateInstance(TypeEntityService, this.context);
+            Type TypeEntityService = typeof(BaseBAO<>).MakeGenericType(TypeEntity);
+            IBaseBAO EntityService = (IBaseBAO)Activator.CreateInstance(TypeEntityService, this.Context);
             return EntityService;
         }
         /// <summary>
@@ -78,15 +69,14 @@ namespace App
         /// <param name="TypeEntity">the entity type</param>
         /// <param name="context">the context</param>
         /// <returns></returns>
-        public virtual IBaseRepository CreateInstance_Of_Service_From_TypeEntity(Type TypeEntity, DbContext context)
+        public virtual IBaseBAO CreateEntityInstanceByTypeAndContext(Type TypeEntity, DbContext context)
         {
 
-            Type TypeEntityService = typeof(BaseRepository<>).MakeGenericType(TypeEntity);
-            IBaseRepository EntityService = (IBaseRepository)Activator.CreateInstance(TypeEntityService, context);
+            Type TypeEntityService = typeof(BaseBAO<>).MakeGenericType(TypeEntity);
+            IBaseBAO EntityService = (IBaseBAO)Activator.CreateInstance(TypeEntityService, context);
             return EntityService;
         }
         #endregion
-
 
     }
 }
