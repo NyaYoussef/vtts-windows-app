@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GenericWinForm">
+      <HintPath>..\packages\Gwin-Library\GenericWinForm.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -38,6 +41,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormField">
+      <HintPath>..\packages\Gwin-Library\WinFormField.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
@@ -186,12 +192,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Specialty.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GenericWinSolution\GenericWinForm\GenericWinForm.csproj">
-      <Project>{7b89bd41-7117-4c2d-845f-45eeb252cc35}</Project>
-      <Name>GenericWinForm</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

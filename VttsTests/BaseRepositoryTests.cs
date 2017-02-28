@@ -15,7 +15,7 @@ namespace App.Tests
             int Expected = 1;
             Group  groupe = new Group();
             groupe.Name = "groupe 1";
-            IBaseBAO service = new BaseBAO<Group>();
+            IBaseBLO service = new IBaseBLO<Group>();
             int Actuel = service.Save(groupe);
             Assert.AreEqual(Expected, Actuel);
 
