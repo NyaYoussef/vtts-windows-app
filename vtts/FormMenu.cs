@@ -1,7 +1,4 @@
 ﻿using App;
-using App.WinForm.Application.BAL.GwinApplication;
-using App.WinForm.Application.Presentation.MainForm;
-using App.WinForm.Entities.Authentication;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using App.Gwin.Application.Presentation.MainForm;
 
 namespace vtts
 {
@@ -18,18 +16,12 @@ namespace vtts
     {
         public FormMenu()
         {
-            User user = new User();
-            user.Language = Gwin.Languages.ar;
+            //User user = new User();
+            //user.Language = Gwin.Languages.ar;
 
-            Gwin.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
-            InitializeComponent();
+            //Gwin.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
+            //InitializeComponent();
         }
 
-        public override void Reload()
-        {
-            this.Controls.Clear();
-            base.InitializeForm();
-            this.InitializeComponent();
-        }
     }
 }

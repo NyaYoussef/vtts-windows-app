@@ -1,12 +1,12 @@
-﻿using App.WinForm.Attributes;
-using App.WinForm.Entities.Persons;
+﻿using App.Gwin.Attributes;
+using App.Gwin.Entities.Persons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 namespace Entities.TraineeManagement
 {
-    [DisplayEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "Stagiaire")]
     public class Trainee : Person
     {

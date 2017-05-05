@@ -2,6 +2,10 @@
 {
     using Entities.TraineeManagement;
     using Entities.TrainingManagement;
+    using Gwin.Entities.Application;
+    using Gwin.Entities.ContactInformations;
+    using Gwin.Entities.Secrurity.Authentication;
+    using Gwin.Entities.Secrurity.Autorizations;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -9,10 +13,6 @@
     using System.Data.Entity.Validation;
     using System.Linq;
     using System.Text;
-    using WinForm.Entities.Application;
-    using WinForm.Entities.Authentication;
-    using WinForm.Entities.ContactInformations;
-    using WinForm.Entities.Security;
 
     public class ModelContext : DbContext
     {

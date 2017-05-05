@@ -1,11 +1,11 @@
-using App.WinForm.Attributes;
-using App.WinForm.Entities;
+using App.Gwin.Attributes;
+using App.Gwin.Entities;
 using System;
 
 namespace Entities.SessionManagement
 {
 
-    [DisplayEntity(Localizable =true,DisplayMember ="Title")]
+    [GwinEntity(Localizable =true,DisplayMember ="Title")]
     [Menu]
     public class TrainingYear : BaseEntity
    {
