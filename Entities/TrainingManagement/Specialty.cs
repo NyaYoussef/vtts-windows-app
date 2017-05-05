@@ -1,5 +1,5 @@
-using App.WinForm.Attributes;
-using App.WinForm.Entities;
+using App.Gwin.Attributes;
+using App.Gwin.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 namespace Entities.TrainingManagement
 {
 
-   [DisplayEntity(Localizable =true,DisplayMember ="Code")]
+   [GwinEntity(Localizable =true,DisplayMember ="Code")]
    [Menu]
     public class Specialty : BaseEntity 
    {

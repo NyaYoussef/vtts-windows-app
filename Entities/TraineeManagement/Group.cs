@@ -1,5 +1,5 @@
-﻿using App.WinForm.Attributes;
-using App.WinForm.Entities;
+﻿using App.Gwin.Attributes;
+using App.Gwin.Entities;
 using Entities.SessionManagement;
 using Entities.TrainingManagement;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 namespace Entities.TraineeManagement
 {
 
-    [DisplayEntity(Localizable =true,DisplayMember = "Name")]
+    [GwinEntity(Localizable =true,DisplayMember = "Name")]
     [SelectionCriteria(typeof(Specialty))]
     [Menu(Group="Stagiaire")]
     public class Group : BaseEntity

@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GenericWinForm">
-      <HintPath>..\packages\Gwin-Library\GenericWinForm.dll</HintPath>
+    <Reference Include="GwinApp">
+      <HintPath>..\packages\Gwin-Library\GwinApp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

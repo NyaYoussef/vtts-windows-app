@@ -36,14 +36,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\..\prototype_gestion_stagiaires\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Gwin-Library\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\..\prototype_gestion_stagiaires\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Gwin-Library\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="GenericWinForm">
-      <HintPath>..\packages\Gwin-Library\GenericWinForm.dll</HintPath>
+    <Reference Include="GwinApp">
+      <HintPath>..\packages\Gwin-Library\GwinApp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="WinFormField">
@@ -70,6 +72,10 @@
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{ABCFB1E3-41AF-459E-A49F-56A4A1F889B6}</Project>
       <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vtts\vtts.csproj">
+      <Project>{43117F05-4E9C-49A2-99B6-761BB38D4193}</Project>
+      <Name>vtts</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -6,36 +6,56 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
-using App.WinForm.Attributes;
+using App.Gwin.Attributes;
 using LinqExtension;
 using System.Reflection;
 using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
-using App.WinForm;
+using App.Gwin;
 using System.Data.Entity.Validation;
-using App.WinForm.Entities;
-using App.WinForm.Application.Presentation.Messages;
-using App.WinForm.Application.BAL;
+using App.Gwin.Entities;
+using App.Gwin.Application.Presentation.Messages;
+using App.Gwin.Application.BAL;
+using App;
+ 
 
-namespace App
+namespace vtts.BAL
 {
-    public class BaseBLO<T> : BaseEntityBLO<T> ,IBaseBLO where T : BaseEntity
+    /// <summary>
+    /// Version 0.09
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class BaseBLO<T> : GwinBaseBLO<T> ,IGwinBaseBLO where T : BaseEntity
     {
-     
-        #region construcreur
-        public BaseBLO(DbContext context):base(context)
-        {
-            this.Context = (ModelContext) context;
-            if (this.Context == null) this.Context = new ModelContext();
+        private Type typeDbContext;
 
-            this.DbSet = this.Context.Set<T>();
-            this.TypeEntity = typeof(T);
+        #region construcreur
+        public BaseBLO(DbContext context, Type typeDbContext) : base(context, typeDbContext)
+        {
+            // Convertion DBContext to ModelContext
+            this.Context = (ModelContext)context;
+            if (this.Context == null  && typeDbContext == null)
+            {
+                this.Context = new ModelContext();
+                this.DbSet = this.Context.Set<T>();
+            }
         }
-        public BaseBLO() : this(null) { }
+
+
+        public BaseBLO(DbContext context):this(context,null)
+        {
+            
+        }
+        public BaseBLO() : this(null,null) { }
+
+        public BaseBLO(Type typeDbContext):this(null,typeDbContext)
+        {
+           
+        }
         #endregion
 
         #region Context
- 
+
         public override void Dispose()
         {
             if (this.Context != null)
@@ -56,10 +76,10 @@ namespace App
         /// </summary>
         /// <param name="TypeEntity">the entity type</param>
         /// <returns></returns>
-        public override IBaseBLO CreateServiceBLOInstanceByTypeEntity(Type TypeEntity)
+        public override IGwinBaseBLO CreateServiceBLOInstanceByTypeEntity(Type TypeEntity)
         {
             Type TypeEntityService = typeof(BaseBLO<>).MakeGenericType(TypeEntity);
-            IBaseBLO EntityService = (IBaseBLO)Activator.CreateInstance(TypeEntityService, this.Context);
+            IGwinBaseBLO EntityService = (IGwinBaseBLO)Activator.CreateInstance(TypeEntityService, this.Context);
             return EntityService;
         }
         /// <summary>
@@ -68,11 +88,11 @@ namespace App
         /// <param name="TypeEntity">the entity type</param>
         /// <param name="context">the context</param>
         /// <returns></returns>
-        public virtual IBaseBLO CreateEntityInstanceByTypeAndContext(Type TypeEntity, DbContext context)
+        public virtual IGwinBaseBLO CreateServiceBLOInstanceByTypeEntityAndContext(Type TypeEntity, DbContext context)
         {
 
             Type TypeEntityService = typeof(BaseBLO<>).MakeGenericType(TypeEntity);
-            IBaseBLO EntityService = (IBaseBLO)Activator.CreateInstance(TypeEntityService, context);
+            IGwinBaseBLO EntityService = (IGwinBaseBLO)Activator.CreateInstance(TypeEntityService, context);
             return EntityService;
         }
         #endregion
