@@ -7,7 +7,7 @@ using System.Text;
 namespace Entities.TraineeManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "TraineeManagement")]
+    [Menu(Group = "Trainee")]
     public class Trainee : Person
     {
          
