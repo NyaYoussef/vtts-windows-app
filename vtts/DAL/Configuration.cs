@@ -1,8 +1,11 @@
-﻿namespace App.Migrations
+﻿  namespace App.Migrations
 {
+    using Entities.SessionManagement;
     using Entities.TraineeManagement;
+    using Entities.TrainingManagement;
     using Gwin.Application.BAL;
     using Gwin.Entities.Application;
+    using Gwin.Entities.ContactInformations;
     using Gwin.Entities.MultiLanguage;
     using Gwin.Entities.Secrurity.Authentication;
     using Gwin.Entities.Secrurity.Autorizations;
@@ -77,13 +80,37 @@
 
             context.SaveChanges();
             //Admin Autorization
-            
+            //add Trainee autorization to admin
             TrianeeAuthorisation.BusinessEntity = typeof(Trainee).FullName;
             RoleAdmin.Authorizations.Add(TrianeeAuthorisation);
 
+            //add group autorization to admin
             Authorization GroupAuthorisation = new Authorization();
             GroupAuthorisation.BusinessEntity = typeof(Group).FullName;
             RoleAdmin.Authorizations.Add(GroupAuthorisation);
+
+            //add city autorization to admin
+            Authorization CityAutorization = new Authorization();
+            CityAutorization.BusinessEntity = typeof(City).FullName;
+            RoleAdmin.Authorizations.Add(CityAutorization);
+
+            //add Country autorization to admin
+            Authorization CountryAutorization = new Authorization();
+            CountryAutorization.BusinessEntity = typeof(Country).FullName;
+            RoleAdmin.Authorizations.Add(CountryAutorization);
+
+            //add Specialty autorization to admin
+            Authorization SpecialtyAutorization = new Authorization();
+            SpecialtyAutorization.BusinessEntity = typeof(Specialty).FullName;
+            RoleAdmin.Authorizations.Add(SpecialtyAutorization);
+
+            //add Training year autorization to admin
+            Authorization YearsOfTrainingAutorization = new Authorization();
+            YearsOfTrainingAutorization.BusinessEntity = typeof(TrainingYear).FullName;
+            RoleAdmin.Authorizations.Add(YearsOfTrainingAutorization);
+
+
+
 
             context.SaveChanges();
 
@@ -92,8 +119,12 @@
             RoleTrainee.Authorizations = new List<Authorization>();
             RoleTrainee.Authorizations.Add(GroupAuthorisation);
             RoleTrainee.Authorizations.Add(TrianeeAuthorisation);
+            context.SaveChanges();
 
 
+
+
+            //
             //-- Giwn Users
             context.Users.AddOrUpdate(
                 u => u.Reference,
@@ -111,6 +142,46 @@
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
                          new MenuItemApplication { Id = 1, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee", French = "Stagiaire" } }
                          );
+            //specialy 
+            context.Specialties.AddOrUpdate(
+                         r => r.Reference
+                      ,
+            new Specialty()
+            {
+                Reference = "TDI",
+                Title = new LocalizedString { Arab = "التنمية المعلوماتية", English = "development informatique", French = "Développement informatique" },
+                Code = "TDI",
+            }
+            ,
+             new Specialty()
+             {
+                 Reference = "TDM",
+                 Title = new LocalizedString { Arab = "تطوير الوسائط المتعددة", English = "development multimedia", French = "Développement multimédia" },
+                 Code = "TDM",
+             }
+            ,
+               new Specialty()
+               {
+                   Reference = "TRI",
+                   Title = new LocalizedString { Arab = "شبكة الكمبيوتر", English = "Computer network", French = "Réseau informatique" },
+                   Code = "TRI",
+               }
+               ,
+                new Specialty()
+                {
+                    Reference = "INFO",
+                    Title = new LocalizedString { Arab = "مخطط المعلومات الرسومي", English = "infographic", French = "Infographique" },
+                    Code = "INFO",
+                }
+                ,
+                 new Specialty()
+                 {
+                     Reference = "TMSIR",
+                     Title = new LocalizedString { Arab = "صيانة ودعم تكنولوجيا المعلومات والشبكات", English = "Maintenance and Support for Computers and Networks", French = "Maintenance et Support Informatique et Réseaux" },
+                     Code = "TMSIR",
+                 }
+            );
+
 
         }
     }

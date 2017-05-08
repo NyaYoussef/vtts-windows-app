@@ -1,5 +1,6 @@
 using App.Gwin.Attributes;
 using App.Gwin.Entities;
+using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,16 @@ namespace Entities.TrainingManagement
     public class Specialty : BaseEntity 
    {
 
- 
+        public Specialty()
+        {
+            this.Title = new LocalizedString();
+        }
+
         [DisplayProperty(isInGlossary = true)]
         [EntryForm(Ordre = 1)]
         [Filter]
         [DataGrid(WidthColonne = 150)]
-        public String Title { set; get; }
+        public LocalizedString Title { set; get; }
 
         [DisplayProperty(isInGlossary = true)]
         [EntryForm(Ordre = 2,WidthControl =50)]
