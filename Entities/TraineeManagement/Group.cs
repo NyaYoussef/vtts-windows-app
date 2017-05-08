@@ -11,7 +11,7 @@ namespace Entities.TraineeManagement
 
     [GwinEntity(Localizable =true,DisplayMember = "Name")]
     [SelectionCriteria(typeof(Specialty))]
-    [Menu(Group="Stagiaire")]
+    [Menu(Group= "TraineeManagement")]
     public class Group : BaseEntity
     {
         

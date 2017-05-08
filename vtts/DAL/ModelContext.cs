@@ -4,6 +4,7 @@
     using Entities.TrainingManagement;
     using Gwin.Entities.Application;
     using Gwin.Entities.ContactInformations;
+    using Gwin.Entities.Logging;
     using Gwin.Entities.Secrurity.Authentication;
     using Gwin.Entities.Secrurity.Autorizations;
     using System;
@@ -17,25 +18,32 @@
     public class ModelContext : DbContext
     {
 
-        public ModelContext() : base(@"data source =.\SQLEXPRESS; initial catalog = vocational-training-tracking-system; user = sa; password = admintp4; MultipleActiveResultSets = True; App = EntityFramework")
+        public ModelContext() : base(@"data source =(LocalDb)\MSSQLLocalDB; initial catalog = vocational-training-tracking-system; integrated security=True; MultipleActiveResultSets = True; App = EntityFramework")
         {
           
         }
-
-        public ModelContext(string connectionString):base(connectionString)
+        public ModelContext(string connectionString) : base(connectionString)
         {
 
         }
+
+        //public ModelContext(string connectionString):base(connectionString)
+        //{
+
+        //}
 
         //
         // WinForm : Authentication
         //
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Authorization> Authorizations { get; set; }
+        public virtual DbSet<GwinActivity> GwinActivities { get; set; }
 
         //
         // WinFrom : Application
         //
+        public virtual DbSet<ApplicationName> ApplicationNames { get; set; }
         public virtual DbSet<MenuItemApplication> MenuItemApplications { get; set; }
 
         //

@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using App.Gwin.Application.Presentation.MainForm;
+using App.Gwin.Entities.Secrurity.Authentication;
+using App.Gwin;
+using vtts.BAL;
 
 namespace vtts
 {
@@ -16,12 +19,19 @@ namespace vtts
     {
         public FormMenu()
         {
-            //User user = new User();
-            //user.Language = Gwin.Languages.ar;
-
-            //Gwin.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
-            //InitializeComponent();
+            InitializeComponent();   
         }
 
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            User user = null;
+            //user.Language = Gwin.Languages.ar;
+             user = User.CreateAdminUser(new ModelContext());
+            // user = User.CreateRootUser(new ModelContext());
+           // user = User.CreateGuestUser(new ModelContext());
+            user.Language = GwinApp.Languages.ar;
+            GwinApp.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
+            //InitializeComponent();
+        }
     }
 }
