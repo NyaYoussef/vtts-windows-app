@@ -16,6 +16,12 @@
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>MissionManagement\Training.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Former" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Modules" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Entities.TrainingManagement.Module" Collapsed="true">
     <Position X="6" Y="0.75" Width="1.5" />
@@ -30,12 +36,25 @@
       <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAAAACAAAAAAAAgAAAAAA=</HashCode>
       <FileName>InstitutionManagement\Former.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Affectations" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Entities.InstitutionManagement.Institution">
     <Position X="0.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAEA=</HashCode>
       <FileName>InstitutionManagement\Institution.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Affectations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.InstitutionManagement.Affectation" Collapsed="true">
+    <Position X="3.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InstitutionManagement\Affectation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

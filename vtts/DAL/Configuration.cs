@@ -47,6 +47,7 @@
             Role RoleRoot = null;
             Role RoleAdmin = null;
             Role RoleTrainee = null;
+            Role RoleDirector = null;
             context.Roles.AddOrUpdate(
                  r => r.Reference
                         ,
@@ -54,8 +55,8 @@
               new Role { Reference = nameof(Role.Roles.User), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.User) } },
               new Role { Reference = nameof(Role.Roles.Admin), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Admin) } },
               new Role { Reference = nameof(Role.Roles.Root), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Root) }, Hidden = true },
-              new Role { Reference = "Trainee", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Trainee" }, Hidden = true }
-
+              new Role { Reference = "Trainee", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Trainee" }, Hidden = true },
+              new Role { Reference = "Director", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Director" }, Hidden = true }
             );
             // Save Change to Select RoleRoot and RoleGuest
             context.SaveChanges();
@@ -63,6 +64,7 @@
             RoleGuest = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Guest)).SingleOrDefault();
             RoleAdmin = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Admin)).SingleOrDefault();
             RoleTrainee = context.Roles.Where(r => r.Reference == "Trainee").SingleOrDefault();
+            RoleDirector = context.Roles.Where(r => r.Reference == "Director").SingleOrDefault();
 
             // 
             // Giwn Autorizations
@@ -152,6 +154,20 @@
             ModuleAutorization.BusinessEntity = typeof(Module).FullName;
             RoleAdmin.Authorizations.Add(ModuleAutorization);
 
+
+            //Add Dirrector Autorization
+            RoleDirector.Authorizations.Add(CityAutorization);
+            RoleDirector.Authorizations.Add(CountryAutorization);
+            RoleDirector.Authorizations.Add(CityAutorization);
+            RoleDirector.Authorizations.Add(MissionAutorization);
+            RoleDirector.Authorizations.Add(AffectationAutorization);
+            RoleDirector.Authorizations.Add(TrainingAutorization);
+            RoleDirector.Authorizations.Add(ScaleAutorization);
+            RoleDirector.Authorizations.Add(GradeAutorization);
+            RoleDirector.Authorizations.Add(EchelonAutorization);
+            RoleDirector.Authorizations.Add(AdvancementScaleAutorization);
+            RoleDirector.Authorizations.Add(SpecialtyAutorization);
+         
 
             context.SaveChanges();
 
