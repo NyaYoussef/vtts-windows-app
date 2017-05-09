@@ -1,5 +1,6 @@
 ﻿using App.Gwin.Attributes;
 using Entities.InstitutionManagement;
+using Entities.StaffManagement;
 using Entities.TrainingManagement;
 using System;
 using System.Collections.Generic;

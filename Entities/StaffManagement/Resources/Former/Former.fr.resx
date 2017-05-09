@@ -118,12 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DateRecruitment" xml:space="preserve">
-    <value>Recruitment Date</value>
+    <value>Date Recrutement</value>
+  </data>
+  <data name="Pedagogy" xml:space="preserve">
+    <value>Pédagogie</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Formers</value>
+    <value>Formateurs</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Former</value>
+    <value>Formateur</value>
   </data>
 </root>

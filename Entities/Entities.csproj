@@ -41,6 +41,7 @@
       <HintPath>..\packages\Gwin-Library\GwinApp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancementManagement\AdvancementEchelon.cs" />
     <Compile Include="AdvancementManagement\AdvancementScale.cs" />
     <Compile Include="AdvancementManagement\Echelon.cs" />
     <Compile Include="AdvancementManagement\Grade.cs" />
@@ -95,26 +97,52 @@
     </Compile>
     <Compile Include="AdvancementManagement\Scale.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="InstitutionManagement\Affectation.cs" />
-    <Compile Include="InstitutionManagement\Former.cs" />
+    <Compile Include="InstitutionManagement\Region.cs" />
+    <Compile Include="InstitutionManagement\Resources\Region\Region.Designer.cs">
+      <DependentUpon>Region.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Region\Region.fr.Designer.cs">
+      <DependentUpon>Region.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Convocation.cs" />
+    <Compile Include="MissionManagement\MissionOrder.cs" />
+    <Compile Include="MissionManagement\MissionCategory.cs" />
+    <Compile Include="MissionManagement\MissionSubject.cs" />
+    <Compile Include="StaffManagement\Affectation.cs" />
+    <Compile Include="StaffManagement\Former.cs" />
+    <Compile Include="StaffManagement\Function.cs" />
     <Compile Include="InstitutionManagement\Institution.cs" />
-    <Compile Include="InstitutionManagement\Resources\Affectation\Affectation.fr.Designer.cs">
+    <Compile Include="StaffManagement\Resources\Affectation\Affectation.fr.Designer.cs">
       <DependentUpon>Affectation.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="InstitutionManagement\Resources\Affectation\Affectation.Designer.cs">
+    <Compile Include="StaffManagement\Resources\Affectation\Affectation.Designer.cs">
       <DependentUpon>Affectation.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="InstitutionManagement\Resources\Former\Former.fr.Designer.cs">
+    <Compile Include="StaffManagement\Resources\Former\Former.fr.Designer.cs">
       <DependentUpon>Former.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="InstitutionManagement\Resources\Former\Former.Designer.cs">
+    <Compile Include="StaffManagement\Resources\Former\Former.Designer.cs">
       <DependentUpon>Former.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="StaffManagement\Resources\Function\Function.Designer.cs">
+      <DependentUpon>Function.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="StaffManagement\Resources\Function\Function.fr.Designer.cs">
+      <DependentUpon>Function.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -128,6 +156,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="StaffManagement\Resources\Staff\Staff.Designer.cs">
+      <DependentUpon>Staff.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="StaffManagement\Resources\Staff\Staff.fr.Designer.cs">
+      <DependentUpon>Staff.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="StaffManagement\Staff.cs" />
     <Compile Include="MissionManagement\Mission.cs" />
     <Compile Include="MissionManagement\Resources\Mission\Mission.fr.Designer.cs">
       <DependentUpon>Mission.fr.resx</DependentUpon>
@@ -234,7 +273,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AdvancementManagement\AdvancementClassDiagrame.cd" />
-    <None Include="InstitutionManagement\InstitutionClassDiagram.cd" />
+    <None Include="InstitutionManagement\ClassDiagramInstitutions.cd" />
+    <None Include="StaffManagement\InstitutionClassDiagram.cd" />
     <None Include="MissionManagement\MissionClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
@@ -270,21 +310,37 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Scale.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstitutionManagement\Resources\Affectation\Affectation.fr.resx">
+    <EmbeddedResource Include="InstitutionManagement\Resources\Region\Region.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Region.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Region\Region.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Region.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Affectation\Affectation.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Affectation.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstitutionManagement\Resources\Affectation\Affectation.resx">
+    <EmbeddedResource Include="StaffManagement\Resources\Affectation\Affectation.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Affectation.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstitutionManagement\Resources\Former\Former.fr.resx">
+    <EmbeddedResource Include="StaffManagement\Resources\Former\Former.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Former.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstitutionManagement\Resources\Former\Former.resx">
+    <EmbeddedResource Include="StaffManagement\Resources\Former\Former.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Former.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Function\Function.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Function.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Function\Function.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Function.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="InstitutionManagement\Resources\Institution\Institution.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -293,6 +349,14 @@
     <EmbeddedResource Include="InstitutionManagement\Resources\Institution\Institution.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Institution.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Staff\Staff.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Staff.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Staff\Staff.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Staff.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>

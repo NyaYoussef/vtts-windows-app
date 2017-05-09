@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.AdvancementManagement.Resources.Scale {
+namespace Entities.StaffManagement.Resources.Staff {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.AdvancementManagement.Resources.Scale {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Scale {
+    internal class Staff {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Scale() {
+        internal Staff() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.AdvancementManagement.Resources.Scale.Scale", typeof(Scale).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.StaffManagement.Resources.Staff.Staff", typeof(Staff).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,16 +61,25 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Number.
+        ///   Recherche une chaîne localisée semblable à Recruitment Date.
         /// </summary>
-        internal static string Number {
+        internal static string DateRecruitment {
             get {
-                return ResourceManager.GetString("Number", resourceCulture);
+                return ResourceManager.GetString("DateRecruitment", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Scales.
+        ///   Recherche une chaîne localisée semblable à Function.
+        /// </summary>
+        internal static string function {
+            get {
+                return ResourceManager.GetString("function", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Staffs.
         /// </summary>
         internal static string PluralName {
             get {
@@ -79,7 +88,16 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Scale.
+        ///   Recherche une chaîne localisée semblable à Matricule.
+        /// </summary>
+        internal static string RegistrationNumber {
+            get {
+                return ResourceManager.GetString("RegistrationNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Staff.
         /// </summary>
         internal static string SingularName {
             get {

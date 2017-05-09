@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.AdvancementManagement.Resources.Scale {
+namespace Entities.InstitutionManagement.Resources.Region {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.AdvancementManagement.Resources.Scale {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Scale {
+    internal class Region {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Scale() {
+        internal Region() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.AdvancementManagement.Resources.Scale.Scale", typeof(Scale).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.InstitutionManagement.Resources.Region.Region", typeof(Region).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,16 +61,7 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Number.
-        /// </summary>
-        internal static string Number {
-            get {
-                return ResourceManager.GetString("Number", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Scales.
+        ///   Recherche une chaîne localisée semblable à Region.
         /// </summary>
         internal static string PluralName {
             get {
@@ -79,7 +70,7 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Scale.
+        ///   Recherche une chaîne localisée semblable à Region.
         /// </summary>
         internal static string SingularName {
             get {

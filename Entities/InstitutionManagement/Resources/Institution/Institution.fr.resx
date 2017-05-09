@@ -120,6 +120,9 @@
   <data name="Address" xml:space="preserve">
     <value>Adresse</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Gestion des établissements</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
   </data>
@@ -131,5 +134,8 @@
   </data>
   <data name="Specialization" xml:space="preserve">
     <value>Spécialisation</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
   </data>
 </root>

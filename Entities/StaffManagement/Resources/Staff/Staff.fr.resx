@@ -117,13 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Number" xml:space="preserve">
-    <value>Number</value>
+  <data name="DateRecruitment" xml:space="preserve">
+    <value>Date de Recrutement</value>
+  </data>
+  <data name="function" xml:space="preserve">
+    <value>Fonction</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Scales</value>
+    <value>Personnels</value>
+  </data>
+  <data name="RegistrationNumber" xml:space="preserve">
+    <value>Matricul</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Scale</value>
+    <value>Personnel</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="Affectations" xml:space="preserve">
+    <value>Affectations</value>
+  </data>
+  <data name="Assignments" xml:space="preserve">
+    <value>Affectation</value>
+  </data>
+  <data name="Cellphone" xml:space="preserve">
+    <value>Téléphone portable</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="FaceBook" xml:space="preserve">
+    <value>FaceBook</value>
+  </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Gestion de personnels</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Téléphone fixe</value>
+  </data>
+  <data name="Recruitment" xml:space="preserve">
+    <value>Recrutement</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="WebSite" xml:space="preserve">
+    <value>Site Web</value>
   </data>
 </root>

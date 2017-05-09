@@ -3,6 +3,7 @@
     using Entities.AdvancementManagement;
     using Entities.InstitutionManagement;
     using Entities.MissionManagement;
+    using Entities.StaffManagement;
     using Entities.TraineeManagement;
     using Entities.TrainingManagement;
     using Gwin.Entities.Application;
@@ -85,9 +86,9 @@
         public virtual DbSet<Affectation> Affectations { get; set; }
         public virtual DbSet<Mission> Missions { get; set; }
         public virtual DbSet<Training>  Trainings{ get; set; }
+        public virtual DbSet<Staff> Staffs { get; set; }
 
-
-
+        
 
 
 

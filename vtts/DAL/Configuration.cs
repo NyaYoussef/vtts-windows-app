@@ -4,6 +4,7 @@
     using Entities.InstitutionManagement;
     using Entities.MissionManagement;
     using Entities.SessionManagement;
+    using Entities.StaffManagement;
     using Entities.TraineeManagement;
     using Entities.TrainingManagement;
     using Gwin.Application.BAL;
@@ -154,9 +155,26 @@
             ModuleAutorization.BusinessEntity = typeof(Module).FullName;
             RoleAdmin.Authorizations.Add(ModuleAutorization);
 
-            ////
+            // Add Function Autorization
+            Authorization FunctionAutorization = new Authorization();
+            FunctionAutorization.BusinessEntity = typeof(Function).FullName;
+            RoleAdmin.Authorizations.Add(FunctionAutorization);
+
+            // Add Staff Autorization
+            Authorization StaffAutorization = new Authorization();
+            StaffAutorization.BusinessEntity = typeof(Staff).FullName;
+            RoleAdmin.Authorizations.Add(StaffAutorization);
+
+            // Add Staff Autorization
+            Authorization InstitutionAutorization = new Authorization();
+            InstitutionAutorization.BusinessEntity = typeof(Institution).FullName;
+            RoleAdmin.Authorizations.Add(InstitutionAutorization);
+
+
+            //
             //Add Dirrector Autorization
             //
+            RoleDirector.Authorizations = new List<Authorization>();
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(CountryAutorization);
             RoleDirector.Authorizations.Add(CityAutorization);
@@ -168,7 +186,10 @@
             RoleDirector.Authorizations.Add(EchelonAutorization);
             RoleDirector.Authorizations.Add(AdvancementScaleAutorization);
             RoleDirector.Authorizations.Add(SpecialtyAutorization);
-         
+            RoleDirector.Authorizations.Add(FunctionAutorization);
+            RoleDirector.Authorizations.Add(StaffAutorization);
+            RoleDirector.Authorizations.Add(InstitutionAutorization);
+
 
             context.SaveChanges();
 
@@ -189,18 +210,33 @@
                 new User() { Reference = nameof(User.Users.Root), Login = nameof(User.Users.Root), Password = nameof(User.Users.Root), LastName = new LocalizedString() { Current = nameof(User.Users.Root) }, Roles = new List<Role>() { RoleRoot } },
                 new User() { Reference = nameof(User.Users.Admin), Login = nameof(User.Users.Admin), Password = nameof(User.Users.Admin), LastName = new LocalizedString() { Current = nameof(User.Users.Admin) }, Roles = new List<Role>() { RoleAdmin } },
                 new User() { Reference = nameof(User.Users.Guest), Login = nameof(User.Users.Guest), Password = nameof(User.Users.Guest), LastName = new LocalizedString() { Current = nameof(User.Users.Guest) }, Roles = new List<Role>() { RoleGuest } },
-                 new User() { Reference = "user-demo", Login = "madani", Password = "madani", LastName = new LocalizedString() { Current = "madani" }, Roles = new List<Role>() { RoleTrainee } }
+                new User() { Reference = "user-demo", Login = "madani", Password = "madani", LastName = new LocalizedString() { Current = "madani" }, Roles = new List<Role>() { RoleTrainee } },
+                new User() { Reference = "Director", Language = Gwin.GwinApp.Languages.fr, Login = "Director", Password = "Director", LastName = new LocalizedString() { Current = "Director" }, Roles = new List<Role>() { RoleDirector } }
                 );
-            //-- Gwin  Menu
+            //
+            // Menu
+            //
             context.MenuItemApplications.AddOrUpdate(
                             r => r.Code
                          ,
                          new MenuItemApplication { Id = 1, Code = "Configuration", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "إعدادات", English = "Configuration", French = "Configuration" } },
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
-                         new MenuItemApplication { Id = 1, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee", French = "Stagiaire" } }
+                         new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee", French = "Stagiaire" } },
+                         new MenuItemApplication { Id = 5, Code = "InstitutionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المؤسسة", English = "Institution Management", French = "Gestion de l'établissement" } },
+                         new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH Management", French = "Gestion RH" } }
+
                          );
-            //specialy 
+
+
+            //
+            // Default Data
+            //
+            // Add Counties
+             
+            // Add Cities
+
+            //Add Specialy 
             context.Specialties.AddOrUpdate(
                          r => r.Reference
                       ,
@@ -240,7 +276,7 @@
                  }
             );
 
-
+            
         }
     }
 }

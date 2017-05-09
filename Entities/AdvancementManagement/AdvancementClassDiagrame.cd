@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Entities.AdvancementManagement.AdvancementScale">
-    <Position X="4.75" Y="3.75" Width="1.5" />
+    <Position X="7" Y="3.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAEAAAABAAAAAAAAAAI=</HashCode>
       <FileName>AdvancementManagement\AdvancementScale.cs</FileName>
@@ -11,23 +11,23 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Entities.AdvancementManagement.Echelon">
-    <Position X="7.25" Y="3.25" Width="1.5" />
+    <Position X="9.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AdvancementManagement\Echelon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entities.AdvancementManagement.Grade">
-    <Position X="2.25" Y="0.75" Width="1.5" />
+    <Position X="2.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AdvancementManagement\Grade.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entities.AdvancementManagement.Scale">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Position X="5.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEgAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>AdvancementManagement\Scale.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -38,7 +38,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Entities.InstitutionManagement.Former">
-    <Position X="2" Y="3.25" Width="1.5" />
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAAAACAAAAAAAAgAAAAAA=</HashCode>
       <FileName>InstitutionManagement\Former.cs</FileName>

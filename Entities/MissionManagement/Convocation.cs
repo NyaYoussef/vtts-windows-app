@@ -1,6 +1,6 @@
 ﻿using App.Gwin.Attributes;
-using App.Gwin.Entities;
 using App.Gwin.Entities.MultiLanguage;
+using Entities.InstitutionManagement;
 using Entities.StaffManagement;
 using System;
 using System.Collections.Generic;
@@ -8,12 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.InstitutionManagement
+namespace Entities.MissionManagement
 {
-
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "Configuration",Title ="menu_title")]
-    public  class Institution:BaseEntity
+    public class Convocation
     {
         [EntryForm(Ordre = 1)]
         [DataGrid(WidthColonne = 100)]
@@ -25,16 +22,14 @@ namespace Entities.InstitutionManagement
         [Filter]
         public LocalizedString Description { get; set; }
 
-        [EntryForm(Ordre = 3)]
-        [DataGrid(WidthColonne = 100)]
-        [Filter]
-        public string Address { set; get; }
+        public List<Staff> Staffs { get; set; }
 
+        public Institution Institution { get; set; }
+        //Sujet
+        public MissionSubject MissionSubject { get; set; }
 
-        public Region Region { set; get; }
-
-
-
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
     }
 }

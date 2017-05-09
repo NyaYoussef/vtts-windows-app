@@ -29,8 +29,13 @@ namespace Entities.MissionManagement
         [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        public Institution Institution { get; set; }
-      
+       
+
+        public Convocation Convocation { get; set; }
+
+        public MissionCategory MissionCategory { get; set; }
+
+
 
 
     }

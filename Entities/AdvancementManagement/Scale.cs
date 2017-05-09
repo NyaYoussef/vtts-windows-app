@@ -15,7 +15,7 @@ namespace Entities.AdvancementManagement
         [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
         [DataGrid(WidthColonne = 100)]
         [Filter]
-        public int Numbre { get; set; }
+        public int Number { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
         [DataGrid(WidthColonne = 100)]

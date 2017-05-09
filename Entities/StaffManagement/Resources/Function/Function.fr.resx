@@ -117,13 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Number" xml:space="preserve">
-    <value>Number</value>
-  </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Scales</value>
+    <value>Fonctions</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Scale</value>
+    <value>Fonction</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Gestion des fonctions</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
   </data>
 </root>
