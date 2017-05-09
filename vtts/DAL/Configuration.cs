@@ -154,7 +154,7 @@
             ModuleAutorization.BusinessEntity = typeof(Module).FullName;
             RoleAdmin.Authorizations.Add(ModuleAutorization);
 
-            //
+            ////
             //Add Dirrector Autorization
             //
             RoleDirector.Authorizations.Add(CityAutorization);
