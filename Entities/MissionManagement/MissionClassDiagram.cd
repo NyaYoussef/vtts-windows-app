@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entities.MissionManagement.Mission">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAIAAAQAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>MissionManagement\Mission.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Institution" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Entities.MissionManagement.Training">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>MissionManagement\Training.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.TrainingManagement.Module" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAmAAAEAAAgAAQAAACACAAAIAAAAAgAAAA=</HashCode>
+      <FileName>TrainingManagement\Module.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.InstitutionManagement.Former">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAAAACAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>InstitutionManagement\Former.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.InstitutionManagement.Institution">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>InstitutionManagement\Institution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

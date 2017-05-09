@@ -50,7 +50,106 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancementManagement\AdvancementScale.cs" />
+    <Compile Include="AdvancementManagement\Echelon.cs" />
+    <Compile Include="AdvancementManagement\Grade.cs" />
+    <Compile Include="AdvancementManagement\Resources\AdvancementScale\AdvancementScale.Designer.cs">
+      <DependentUpon>AdvancementScale.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\AdvancementScale\AdvancementScale.fr.Designer.cs">
+      <DependentUpon>AdvancementScale.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\Echelon\Echelon.fr.Designer.cs">
+      <DependentUpon>Echelon.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\Echelon\Echelon.Designer.cs">
+      <DependentUpon>Echelon.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\Grade\Grade.fr.Designer.cs">
+      <DependentUpon>Grade.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\Grade\Grade.Designer.cs">
+      <DependentUpon>Grade.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\Scale\Scale.fr.Designer.cs">
+      <DependentUpon>Scale.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Resources\Scale\Scale.Designer.cs">
+      <DependentUpon>Scale.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AdvancementManagement\Scale.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="InstitutionManagement\Affectation.cs" />
+    <Compile Include="InstitutionManagement\Former.cs" />
+    <Compile Include="InstitutionManagement\Institution.cs" />
+    <Compile Include="InstitutionManagement\Resources\Affectation\Affectation.fr.Designer.cs">
+      <DependentUpon>Affectation.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Affectation\Affectation.Designer.cs">
+      <DependentUpon>Affectation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Former\Former.fr.Designer.cs">
+      <DependentUpon>Former.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Former\Former.Designer.cs">
+      <DependentUpon>Former.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Institution\Institution.fr.Designer.cs">
+      <DependentUpon>Institution.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Institution\Institution.Designer.cs">
+      <DependentUpon>Institution.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Mission.cs" />
+    <Compile Include="MissionManagement\Resources\Mission\Mission.fr.Designer.cs">
+      <DependentUpon>Mission.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\Mission\Mission.Designer.cs">
+      <DependentUpon>Mission.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\Training\Training.fr.Designer.cs">
+      <DependentUpon>Training.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\Training\Training.Designer.cs">
+      <DependentUpon>Training.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Training.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.ar.Designer.cs">
       <DependentUpon>Resource.ar.resx</DependentUpon>
@@ -115,6 +214,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="TraineeManagement\Trainee.cs" />
+    <Compile Include="TrainingManagement\Module.cs" />
     <Compile Include="TrainingManagement\Resources\Specialty\Specialty.ar.Designer.cs">
       <DependentUpon>Specialty.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -133,9 +233,83 @@
     <Compile Include="TrainingManagement\Specialty.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TrainingEstablishment\" />
+    <None Include="AdvancementManagement\AdvancementClassDiagrame.cd" />
+    <None Include="InstitutionManagement\InstitutionClassDiagram.cd" />
+    <None Include="MissionManagement\MissionClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdvancementManagement\Resources\AdvancementScale\AdvancementScale.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementScale.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\AdvancementScale\AdvancementScale.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementScale.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Echelon\Echelon.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Echelon.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Echelon\Echelon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Echelon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Grade\Grade.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Grade.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Grade\Grade.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Grade.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scale.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scale.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Affectation\Affectation.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Affectation.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Affectation\Affectation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Affectation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Former\Former.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Former.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Former\Former.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Former.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Institution\Institution.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Institution.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Institution\Institution.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Institution.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Training\Training.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Training\Training.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.ar.Designer.cs</LastGenOutput>
@@ -197,6 +371,7 @@
       <LastGenOutput>Specialty.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

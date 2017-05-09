@@ -1,5 +1,8 @@
 ﻿namespace App
 {
+    using Entities.AdvancementManagement;
+    using Entities.InstitutionManagement;
+    using Entities.MissionManagement;
     using Entities.TraineeManagement;
     using Entities.TrainingManagement;
     using Gwin.Entities.Application;
@@ -68,10 +71,27 @@
         //
         public virtual DbSet<Group> Groups { get; set; }
         public virtual DbSet<Trainee> Trainees { get; set; }
+        public virtual DbSet<Former> Formers { get; set; }
+        public virtual DbSet<Institution> Institutions { get; set; }
         //
         // Vacationel Tranning Tracking System : TrainingManagement
         //
         public virtual DbSet<Specialty> Specialties { get; set; }
+        public virtual DbSet<Module> Modules { get; set; }
+        public virtual DbSet<AdvancementScale> AdvancementScaleS { get; set; }
+        public virtual DbSet<Echelon> Echelons { get; set; }
+        public virtual DbSet<Grade> Grades { get; set; }
+        public virtual DbSet<Scale> Scales { get; set; }
+        public virtual DbSet<Affectation> Affectations { get; set; }
+        public virtual DbSet<Mission> Missions { get; set; }
+        public virtual DbSet<Training>  Trainings{ get; set; }
+
+
+
+
+
+
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

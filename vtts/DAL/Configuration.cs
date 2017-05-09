@@ -1,5 +1,8 @@
 ﻿  namespace App.Migrations
 {
+    using Entities.AdvancementManagement;
+    using Entities.InstitutionManagement;
+    using Entities.MissionManagement;
     using Entities.SessionManagement;
     using Entities.TraineeManagement;
     using Entities.TrainingManagement;
@@ -109,7 +112,45 @@
             YearsOfTrainingAutorization.BusinessEntity = typeof(TrainingYear).FullName;
             RoleAdmin.Authorizations.Add(YearsOfTrainingAutorization);
 
+            //add Advancement Scale Autorization
+            Authorization AdvancementScaleAutorization = new Authorization();
+            AdvancementScaleAutorization.BusinessEntity = typeof(AdvancementScale).FullName;
+            RoleAdmin.Authorizations.Add(AdvancementScaleAutorization);
 
+            //add Echelon Autorization
+            Authorization EchelonAutorization = new Authorization();
+            EchelonAutorization.BusinessEntity = typeof(Echelon).FullName;
+            RoleAdmin.Authorizations.Add(EchelonAutorization);
+
+            //add Grade Autorization
+            Authorization GradeAutorization = new Authorization();
+            GradeAutorization.BusinessEntity = typeof(Grade).FullName;
+            RoleAdmin.Authorizations.Add(GradeAutorization);
+
+            //add Scale Autorization
+            Authorization ScaleAutorization = new Authorization();
+            ScaleAutorization.BusinessEntity = typeof(Scale).FullName;
+            RoleAdmin.Authorizations.Add(ScaleAutorization);
+
+            //add Affectation Autorization
+            Authorization AffectationAutorization = new Authorization();
+            AffectationAutorization.BusinessEntity = typeof(Affectation).FullName;
+            RoleAdmin.Authorizations.Add(AffectationAutorization);
+
+            //add Mission Autorization
+            Authorization MissionAutorization = new Authorization();
+            MissionAutorization.BusinessEntity = typeof(Mission).FullName;
+            RoleAdmin.Authorizations.Add(MissionAutorization);
+
+            //add Training Autorization
+            Authorization TrainingAutorization = new Authorization();
+            TrainingAutorization.BusinessEntity = typeof(Training).FullName;
+            RoleAdmin.Authorizations.Add(TrainingAutorization);
+
+            //add Module Autorization
+            Authorization ModuleAutorization = new Authorization();
+            ModuleAutorization.BusinessEntity = typeof(Module).FullName;
+            RoleAdmin.Authorizations.Add(ModuleAutorization);
 
 
             context.SaveChanges();
