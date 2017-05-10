@@ -70,6 +70,15 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Advancements Scales Management.
+        /// </summary>
+        internal static string menu_title {
+            get {
+                return ResourceManager.GetString("menu_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Advancements Scales.
         /// </summary>
         internal static string PluralName {

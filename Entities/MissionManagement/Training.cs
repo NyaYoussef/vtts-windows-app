@@ -1,4 +1,5 @@
 ﻿using App.Gwin.Attributes;
+using App.Gwin.Entities.MultiLanguage;
 using Entities.InstitutionManagement;
 using Entities.StaffManagement;
 using Entities.TrainingManagement;
@@ -15,9 +16,14 @@ namespace Entities.MissionManagement
     [Menu(Group = "MissionManagement")]
     public  class Training:MissionConvocation
     {
+        public Training()
+        {
+            this.Subject = new LocalizedString();
+        }
+
         [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
         [DataGrid(WidthColonne = 100)]
-        public string Subject { get; set; }
+        public LocalizedString Subject { get; set; }
         [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]

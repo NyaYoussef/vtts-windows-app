@@ -120,6 +120,9 @@
   <data name="DateRecruitment" xml:space="preserve">
     <value>Date Recrutement</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Gestion Des Formateurs</value>
+  </data>
   <data name="Pedagogy" xml:space="preserve">
     <value>Pédagogie</value>
   </data>

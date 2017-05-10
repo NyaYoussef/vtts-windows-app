@@ -126,6 +126,9 @@
   <data name="EndDate" xml:space="preserve">
     <value>End Date</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value />
+  </data>
   <data name="PluralName" xml:space="preserve">
     <value>Missions</value>
   </data>

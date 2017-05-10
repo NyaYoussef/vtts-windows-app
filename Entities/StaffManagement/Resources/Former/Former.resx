@@ -120,6 +120,9 @@
   <data name="DateRecruitment" xml:space="preserve">
     <value>Recruitment Date</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Formers Maangement</value>
+  </data>
   <data name="Pedagogy" xml:space="preserve">
     <value>Pedagogy</value>
   </data>

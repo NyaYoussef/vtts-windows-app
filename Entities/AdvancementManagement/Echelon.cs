@@ -1,5 +1,6 @@
 ﻿using App.Gwin.Attributes;
 using App.Gwin.Entities;
+using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,13 @@ namespace Entities.AdvancementManagement
     [Menu(Group = "AdvanceManagement")]
     public class Echelon:BaseEntity
     {
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        public Echelon()
+        {
+            this.Description = new LocalizedString();
+        }
+        [EntryForm(Ordre = 3, GroupeBox = "Echlon",MultiLine =true,WidthControl =300)]
         [DataGrid(WidthColonne = 100)]
-        public string Description { get; set; }
+        public LocalizedString Description { get; set; }
 
     }
 }

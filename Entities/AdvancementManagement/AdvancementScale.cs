@@ -16,23 +16,23 @@ namespace Entities.AdvancementManagement
     public class AdvancementScale:BaseEntity
     {
 
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancemant Scale")]
        
         [DataGrid(WidthColonne = 100)]
         public DateTime Date { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancemant Scale")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Former Former { get; set; }
 
 
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancemant Scale")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Scale Scale { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancemant Scale")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public List< Echelon> Echelons { get; set; }

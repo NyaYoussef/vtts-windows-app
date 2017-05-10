@@ -1,4 +1,5 @@
 ﻿using App.Gwin.Attributes;
+using App.Gwin.Entities;
 using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,13 @@ namespace Entities.InstitutionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "Configuration", Title = "menu_title")]
-    public class Region
+    public class Region:BaseEntity
     {
+        public Region()
+        {
+            this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
+        }
         [EntryForm(Ordre = 1)]
         [DataGrid(WidthColonne = 100)]
         [Filter]

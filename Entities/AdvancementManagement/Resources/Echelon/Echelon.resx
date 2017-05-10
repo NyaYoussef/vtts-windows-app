@@ -120,6 +120,9 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Echelons Management</value>
+  </data>
   <data name="PluralName" xml:space="preserve">
     <value>Echelons</value>
   </data>
