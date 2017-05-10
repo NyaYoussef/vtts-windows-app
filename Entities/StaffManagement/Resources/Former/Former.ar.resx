@@ -117,19 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PluralName" xml:space="preserve">
-    <value>سنوات التدريب</value>
-  </data>
-  <data name="SingularName" xml:space="preserve">
-    <value>سنة تدريبية</value>
-  </data>
-  <data name="EndDate" xml:space="preserve">
-    <value>تاريخ الانتهاء</value>
-  </data>
-  <data name="StartDate" xml:space="preserve">
-    <value>تاريخ البدء</value>
+  <data name="DateRecruitment" xml:space="preserve">
+    <value>تاريخ التوظيف</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>تدبير سنوات التدريب</value>
+    <value>تدبير المكونين</value>
+  </data>
+  <data name="Pedagogy" xml:space="preserve">
+    <value>بيداغوجيا</value>
+  </data>
+  <data name="PluralName" xml:space="preserve">
+    <value>المكونين</value>
+  </data>
+  <data name="SingularName" xml:space="preserve">
+    <value>المكون</value>
   </data>
 </root>
