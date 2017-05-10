@@ -54,6 +54,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Gwin-Library\LinqKit.dll</HintPath>
     </Reference>
+    <Reference Include="Spire.License">
+      <HintPath>..\packages\Spire-Pdf\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\packages\Spire-Pdf\Spire.Pdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -77,10 +83,19 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\PrintOrderMission\FormPrintOrderMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PrintOrderMission\FormPrintOrderMission.Designer.cs">
+      <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PrintOrderMission\FormPrintOrderMission.resx">
+      <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
