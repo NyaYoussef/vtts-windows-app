@@ -50,5 +50,10 @@ namespace Entities.StaffManagement
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Function Function { get; set; }
 
+        [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
+        public List<Car> Cars { get; set; }
+
+      
+
     }
 }

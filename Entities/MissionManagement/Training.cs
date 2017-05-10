@@ -13,7 +13,7 @@ namespace Entities.MissionManagement
 
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "MissionManagement")]
-    public  class Training:Mission
+    public  class Training:MissionConvocation
     {
         [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
         [DataGrid(WidthColonne = 100)]

@@ -10,8 +10,11 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    public class Convocation
+    public class MissionConvocation
     {
+
+
+
         [EntryForm(Ordre = 1)]
         [DataGrid(WidthColonne = 100)]
         [Filter]
@@ -22,7 +25,10 @@ namespace Entities.MissionManagement
         [Filter]
         public LocalizedString Description { get; set; }
 
+
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<Staff> Staffs { get; set; }
+
 
         public Institution Institution { get; set; }
         //Sujet
@@ -31,5 +37,10 @@ namespace Entities.MissionManagement
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-    }
+
+        public MissionCategory MissionCategory { get; set; }
+
+
+        public List<MissionOrder> MissionOrders { get; set; }
+    } 
 }

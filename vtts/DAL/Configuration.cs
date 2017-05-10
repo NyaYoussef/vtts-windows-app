@@ -142,7 +142,7 @@
 
             //add Mission Autorization
             Authorization MissionAutorization = new Authorization();
-            MissionAutorization.BusinessEntity = typeof(Mission).FullName;
+            MissionAutorization.BusinessEntity = typeof(MissionConvocation).FullName;
             RoleAdmin.Authorizations.Add(MissionAutorization);
 
             //add Training Autorization

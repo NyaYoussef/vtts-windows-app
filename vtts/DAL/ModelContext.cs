@@ -84,7 +84,7 @@
         public virtual DbSet<Grade> Grades { get; set; }
         public virtual DbSet<Scale> Scales { get; set; }
         public virtual DbSet<Affectation> Affectations { get; set; }
-        public virtual DbSet<Mission> Missions { get; set; }
+        public virtual DbSet<MissionConvocation> Missions { get; set; }
         public virtual DbSet<Training>  Trainings{ get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entities.MissionManagement.Enumeration;
+using Entities.StaffManagement;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,7 @@ namespace Entities.MissionManagement
     {
         public DateTime Date { set; get; }
 
-        public Mission Mission { set; get; }
+        public MissionConvocation Mission { set; get; }
         
         public string OrderNumber { set; get; }
 
@@ -19,6 +21,9 @@ namespace Entities.MissionManagement
 
 
         // Means of transport
+        public MeansTransportCategories MeansTransportCategory { set; get; }
+
+        public Staff Staff { set; get; }
 
     }
 }
