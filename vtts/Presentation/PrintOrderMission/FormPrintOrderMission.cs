@@ -17,7 +17,7 @@ using System.Windows.Forms;
 
 namespace vtts.Presentation.PrintOrderMission
 {
-    [App.Gwin.Attributes.Menu( EntityType = typeof(MissionConvocation))]
+    [App.Gwin.Attributes.Menu( EntityType = typeof(MissionConvocation),Order = 10, Title = "PrintMissionOrder")]
     public partial class FormPrintOrderMission : Form
     {
         public FormPrintOrderMission()
