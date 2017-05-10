@@ -1,4 +1,6 @@
-﻿using Entities.MissionManagement.Enumeration;
+﻿using App.Gwin.Attributes;
+using App.Gwin.Entities;
+using Entities.MissionManagement.Enumeration;
 using Entities.StaffManagement;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,9 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    public class MissionOrder
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [Menu(Group = "MissionManagement")]
+    public class MissionOrder: BaseEntity
     {
         public DateTime Date { set; get; }
 

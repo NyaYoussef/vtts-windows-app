@@ -120,6 +120,9 @@
   <data name="EndDate" xml:space="preserve">
     <value>End date</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Years Of Training Management</value>
+  </data>
   <data name="PluralName" xml:space="preserve">
     <value>Years of training</value>
   </data>

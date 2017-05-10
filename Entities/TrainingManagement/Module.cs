@@ -1,4 +1,5 @@
 using App.Gwin.Entities;
+using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,16 +8,26 @@ namespace Entities.TrainingManagement
 {
     public class Module : BaseEntity
     {
-        public override string ToString() => this.Name;
+        public Module()
+        {
+            this.Name = new LocalizedString();
+            this.Presentation = new LocalizedString();
+            this.Competence = new LocalizedString();
+            this.TeachingStrategy = new LocalizedString();
+            this.Learning = new LocalizedString();
+            this.Evaluation = new LocalizedString();
+            this.Description = new LocalizedString();
+        }
+       
 
         // 
         // Informations générale
         //
        
-        public String Name { set; get; }
+        public LocalizedString Name { set; get; }
 
 
-        public string Competence { set; get; }
+        public LocalizedString Competence { set; get; }
 
 
 
@@ -25,17 +36,17 @@ namespace Entities.TrainingManagement
 
 
       
-        public string Presentation { set; get; }
+        public LocalizedString Presentation { set; get; }
 
         // 
         // Description pédagogique
         //
 
-        public string TeachingStrategy { set; get; }
+        public LocalizedString TeachingStrategy { set; get; }
 
-        public string Learning { set; get; }
+        public LocalizedString Learning { set; get; }
 
-        public string Evaluation { set; get; }
+        public LocalizedString Evaluation { set; get; }
 
         // 
         // Planning
@@ -53,13 +64,12 @@ namespace Entities.TrainingManagement
         // 
         // Description Technique
         //  
-        public string Equipement { set; get; }
        
         //public virtual List<Precision> Precisions { set; get; }
 
         //public virtual List<PrevisionSeance> PrevisionSeances { set; get; }
         //public virtual List<Formation> Formations { set; get; }
 
-        public string Description { set; get; }
+        public LocalizedString Description { set; get; }
     }
 }

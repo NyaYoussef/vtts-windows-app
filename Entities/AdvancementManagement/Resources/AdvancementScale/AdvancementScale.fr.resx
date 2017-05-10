@@ -120,6 +120,9 @@
   <data name="Date" xml:space="preserve">
     <value>Date</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Gestion D'Avancement Des Echelles</value>
+  </data>
   <data name="PluralName" xml:space="preserve">
     <value>Avancements Echelles</value>
   </data>

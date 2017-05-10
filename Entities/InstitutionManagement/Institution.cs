@@ -15,6 +15,12 @@ namespace Entities.InstitutionManagement
     [Menu(Group = "Configuration",Title ="menu_title")]
     public  class Institution:BaseEntity
     {
+        public Institution()
+        {
+            this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
+            this.Address = new LocalizedString();
+        }
         [EntryForm(Ordre = 1)]
         [DataGrid(WidthColonne = 100)]
         [Filter]
@@ -28,9 +34,11 @@ namespace Entities.InstitutionManagement
         [EntryForm(Ordre = 3)]
         [DataGrid(WidthColonne = 100)]
         [Filter]
-        public string Address { set; get; }
+        public LocalizedString Address { set; get; }
 
-
+        [EntryForm(Ordre = 3)]
+        [DataGrid(WidthColonne = 100)]
+        [Filter]
         public Region Region { set; get; }
 
 

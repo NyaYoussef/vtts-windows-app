@@ -120,6 +120,9 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Gestion Des Grades</value>
+  </data>
   <data name="PluralName" xml:space="preserve">
     <value>Grades</value>
   </data>

@@ -1,4 +1,5 @@
 ﻿using App.Gwin.Attributes;
+using App.Gwin.Entities;
 using App.Gwin.Entities.MultiLanguage;
 using Entities.InstitutionManagement;
 using Entities.StaffManagement;
@@ -10,9 +11,16 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    public class MissionConvocation
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [Menu(Group = "MissionManagement")]
+    public class MissionConvocation: BaseEntity
     {
+        public MissionConvocation()
+        {
+            this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
 
+        }
 
 
         [EntryForm(Ordre = 1)]

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.MissionManagement.Resources.Mission {
+namespace Entities.MissionManagement.Resources.MissionSubject {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.MissionManagement.Resources.Mission {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Mission {
+    internal class MissionSubject {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Mission() {
+        internal MissionSubject() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.MissionManagement.Resources.Mission {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.MissionManagement.Resources.Mission.Mission", typeof(Mission).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.MissionManagement.Resources.MissionSubject.MissionSubject", typeof(MissionSubject).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,34 +61,16 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Date Return.
+        ///   Looks up a localized string similar to Missions Subjects Management.
         /// </summary>
-        internal static string DateReturn {
+        internal static string menu_title {
             get {
-                return ResourceManager.GetString("DateReturn", resourceCulture);
+                return ResourceManager.GetString("menu_title", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Departure Date.
-        /// </summary>
-        internal static string DepartureDate {
-            get {
-                return ResourceManager.GetString("DepartureDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to End Date.
-        /// </summary>
-        internal static string EndDate {
-            get {
-                return ResourceManager.GetString("EndDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Missions.
+        ///   Looks up a localized string similar to Missions Subjects.
         /// </summary>
         internal static string PluralName {
             get {
@@ -97,7 +79,7 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission.
+        ///   Looks up a localized string similar to Mission Subject.
         /// </summary>
         internal static string SingularName {
             get {
@@ -106,11 +88,11 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start Date.
+        ///   Looks up a localized string similar to Subject Name.
         /// </summary>
-        internal static string StartDate {
+        internal static string SubjectName {
             get {
-                return ResourceManager.GetString("StartDate", resourceCulture);
+                return ResourceManager.GetString("SubjectName", resourceCulture);
             }
         }
     }

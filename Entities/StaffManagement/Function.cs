@@ -13,6 +13,11 @@ namespace Entities.StaffManagement
     [Menu(Group = "InstitutionManagement",Title ="menu_title")]
     public class Function : BaseEntity
     {
+        public Function()
+        {
+            this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
+        }
 
         [EntryForm(Ordre = 1,WidthControl =200)]
         [DataGrid(WidthColonne = 200)]

@@ -120,6 +120,9 @@
   <data name="DataAffectation" xml:space="preserve">
     <value>Affectation Date</value>
   </data>
+  <data name="menu_title" xml:space="preserve">
+    <value>Affectations Management</value>
+  </data>
   <data name="PluralName" xml:space="preserve">
     <value>Affectations</value>
   </data>

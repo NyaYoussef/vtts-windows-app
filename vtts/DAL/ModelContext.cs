@@ -84,11 +84,20 @@
         public virtual DbSet<Grade> Grades { get; set; }
         public virtual DbSet<Scale> Scales { get; set; }
         public virtual DbSet<Affectation> Affectations { get; set; }
-        public virtual DbSet<MissionConvocation> Missions { get; set; }
+        public virtual DbSet<MissionConvocation> MissionConvocations { get; set; }
         public virtual DbSet<Training>  Trainings{ get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
+        public virtual DbSet<Region> Regions { get; set; }
+        public virtual DbSet<MissionCategory> MissionCategorys { get; set; }
+        public virtual DbSet<MissionOrder> MissionOrders { get; set; }
+        public virtual DbSet<MissionSubject> MissionSubjects { get; set; }
+        public virtual DbSet<Function> Functions { get; set; }
+        public virtual DbSet<Car> Cars { get; set; }
+       
 
-        
+
+
+
 
 
 

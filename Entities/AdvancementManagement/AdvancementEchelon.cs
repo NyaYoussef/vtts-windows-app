@@ -14,16 +14,16 @@ namespace Entities.AdvancementManagement
     [Menu(Group = "AdvanceManagement")]
     public class AdvancementEchelon : BaseEntity
     {
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
         [DataGrid(WidthColonne = 100)]
         public DateTime Date { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Former Former { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Echelon Echelon { get; set; }

@@ -9,7 +9,7 @@ namespace Entities.TrainingManagement
 {
 
    [GwinEntity(Localizable =true,DisplayMember ="Code")]
-   [Menu]
+  [Menu(Group ="Trainee")]
     public class Specialty : BaseEntity 
    {
 

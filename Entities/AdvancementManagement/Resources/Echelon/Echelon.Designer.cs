@@ -70,6 +70,15 @@ namespace Entities.AdvancementManagement.Resources.Echelon {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Echelons Management.
+        /// </summary>
+        internal static string menu_title {
+            get {
+                return ResourceManager.GetString("menu_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Echelons.
         /// </summary>
         internal static string PluralName {

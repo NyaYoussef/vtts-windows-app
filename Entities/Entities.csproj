@@ -108,11 +108,53 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="MissionManagement\Convocation.cs" />
+    <Compile Include="MissionManagement\Enumeration\Class1.cs" />
+    <Compile Include="MissionManagement\MissionConvocation.cs" />
     <Compile Include="MissionManagement\MissionOrder.cs" />
     <Compile Include="MissionManagement\MissionCategory.cs" />
     <Compile Include="MissionManagement\MissionSubject.cs" />
+    <Compile Include="MissionManagement\Resources\MissionCategory\MissionCategory.fr.Designer.cs">
+      <DependentUpon>MissionCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionCategory\MissionCategory.Designer.cs">
+      <DependentUpon>MissionCategory.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionConvocation\MissionConvocation.fr.Designer.cs">
+      <DependentUpon>MissionConvocation.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionConvocation\MissionConvocation.Designer.cs">
+      <DependentUpon>MissionConvocation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionOrder\MissionOrder.fr.Designer.cs">
+      <DependentUpon>MissionOrder.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionOrder\MissionOrder.Designer.cs">
+      <DependentUpon>MissionOrder.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionSubject\MissionSubject.fr.Designer.cs">
+      <DependentUpon>MissionSubject.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\MissionSubject\MissionSubject.Designer.cs">
+      <DependentUpon>MissionSubject.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="StaffManagement\Affectation.cs" />
+    <Compile Include="StaffManagement\Car.cs" />
     <Compile Include="StaffManagement\Former.cs" />
     <Compile Include="StaffManagement\Function.cs" />
     <Compile Include="InstitutionManagement\Institution.cs" />
@@ -123,6 +165,16 @@
     </Compile>
     <Compile Include="StaffManagement\Resources\Affectation\Affectation.Designer.cs">
       <DependentUpon>Affectation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="StaffManagement\Resources\Car\Car.fr.Designer.cs">
+      <DependentUpon>Car.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="StaffManagement\Resources\Car\Car.Designer.cs">
+      <DependentUpon>Car.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -167,17 +219,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="StaffManagement\Staff.cs" />
-    <Compile Include="MissionManagement\Mission.cs" />
-    <Compile Include="MissionManagement\Resources\Mission\Mission.fr.Designer.cs">
-      <DependentUpon>Mission.fr.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="MissionManagement\Resources\Mission\Mission.Designer.cs">
-      <DependentUpon>Mission.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="MissionManagement\Resources\Training\Training.fr.Designer.cs">
       <DependentUpon>Training.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -318,6 +359,38 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Region.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionCategory\MissionCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionCategory\MissionCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionConvocation\MissionConvocation.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionConvocation.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionConvocation\MissionConvocation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionConvocation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionOrder\MissionOrder.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionOrder.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionOrder\MissionOrder.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionOrder.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionSubject\MissionSubject.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionSubject.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\MissionSubject\MissionSubject.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionSubject.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement\Resources\Affectation\Affectation.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Affectation.fr.Designer.cs</LastGenOutput>
@@ -325,6 +398,14 @@
     <EmbeddedResource Include="StaffManagement\Resources\Affectation\Affectation.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Affectation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Car\Car.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Car.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManagement\Resources\Car\Car.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Car.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement\Resources\Former\Former.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -357,14 +438,6 @@
     <EmbeddedResource Include="StaffManagement\Resources\Staff\Staff.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Staff.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.fr.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Mission.fr.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Mission.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MissionManagement\Resources\Training\Training.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>

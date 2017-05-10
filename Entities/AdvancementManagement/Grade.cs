@@ -1,5 +1,6 @@
 ﻿using App.Gwin.Attributes;
 using App.Gwin.Entities;
+using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,18 @@ namespace Entities.AdvancementManagement
     [Menu(Group = "AdvanceManagement")]
     public class Grade:BaseEntity
     {
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        public Grade()
+        {
+            this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
+        }
+        [EntryForm(Ordre = 3, GroupeBox = "Grade")]
         [DataGrid(WidthColonne = 100)]
         [Filter]
-        public string Name { get; set; }
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        public LocalizedString Name { get; set; }
+        [EntryForm(Ordre = 3, GroupeBox = "Grade",MultiLine =true,WidthControl =300)]
         [DataGrid(WidthColonne = 100)]
-        public string Description { get; set; }
+        public LocalizedString Description { get; set; }
 
         
     }

@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(816, 325);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "FormMenu";
-            this.Text = "FormMenu";
+            this.Text = "GwinApp";
             this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
