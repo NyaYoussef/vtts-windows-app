@@ -61,7 +61,7 @@ namespace Entities.InstitutionManagement.Resources.Region {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gestion Des Region.
+        ///   Looks up a localized string similar to Region Management.
         /// </summary>
         internal static string menu_title {
             get {

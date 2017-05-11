@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 namespace Entities.MissionManagement
 {
 
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "MissionManagement")]
+  /*  [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [Menu(Group = "MissionManagement")]*/
     public  class Training:MissionConvocation
     {
         public Training()

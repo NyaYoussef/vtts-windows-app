@@ -12,17 +12,17 @@ namespace Entities.StaffManagement
     [Menu(Group = "HRManagement")]
     public class Car: BaseEntity
     {
-        [EntryForm(Ordre=1)]
+        [EntryForm(Ordre=1,WidthControl =350)]
         [DataGrid(WidthColonne =300)]
         [Filter]
         public string Mark { set; get; }
 
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,WidthControl =350)]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public string PlateNumber { set; get; }
 
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,WidthControl =350)]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Staff Staff { get; set; }
@@ -34,7 +34,7 @@ namespace Entities.StaffManagement
         [DataGrid(WidthColonne = 50)]
         public bool PersonelCar { get; set; }
 
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,WidthControl =100)]
         [DataGrid(WidthColonne = 50)]
         public float TaxPower { get; set; }
 }

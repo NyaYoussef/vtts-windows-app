@@ -28,7 +28,7 @@ namespace Entities.MissionManagement
         [Filter]
         public LocalizedString Name { get; set; }
 
-        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300)]
+        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300,NumberLine =12)]
         [DataGrid(WidthColonne = 200)]
         [Filter]
         public LocalizedString Description { get; set; }

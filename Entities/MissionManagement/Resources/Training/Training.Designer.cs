@@ -97,7 +97,7 @@ namespace Entities.MissionManagement.Resources.Training {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions.
+        ///   Looks up a localized string similar to Missionsjk.
         /// </summary>
         internal static string PluralName {
             get {

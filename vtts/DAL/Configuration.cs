@@ -148,9 +148,9 @@
             RoleAdmin.Authorizations.Add(MissionConvocationAutorization);
 
             //add Training Autorization
-            Authorization TrainingAutorization = new Authorization();
+           /* Authorization TrainingAutorization = new Authorization();
             TrainingAutorization.BusinessEntity = typeof(Training).FullName;
-            RoleAdmin.Authorizations.Add(TrainingAutorization);
+            RoleAdmin.Authorizations.Add(TrainingAutorization);*/
 
             //add Module Autorization
             Authorization ModuleAutorization = new Authorization();
@@ -183,7 +183,7 @@
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(MissionConvocationAutorization);
             RoleDirector.Authorizations.Add(AffectationAutorization);
-            RoleDirector.Authorizations.Add(TrainingAutorization);
+           // RoleDirector.Authorizations.Add(TrainingAutorization);
             RoleDirector.Authorizations.Add(ScaleAutorization);
             RoleDirector.Authorizations.Add(GradeAutorization);
             RoleDirector.Authorizations.Add(EchelonAutorization);
@@ -266,6 +266,7 @@
                 Reference = "TDI",
                 Title = new LocalizedString { Arab = "التنمية المعلوماتية", English = "development informatique", French = "Développement informatique" },
                 Code = "TDI",
+                Description=new LocalizedString { Arab="",English="",French=""}
             }
             ,
              new Specialty()
@@ -273,6 +274,7 @@
                  Reference = "TDM",
                  Title = new LocalizedString { Arab = "تطوير الوسائط المتعددة", English = "development multimedia", French = "Développement multimédia" },
                  Code = "TDM",
+                 Description = new LocalizedString { Arab = "", English = "", French = "" }
              }
             ,
                new Specialty()
@@ -280,6 +282,8 @@
                    Reference = "TRI",
                    Title = new LocalizedString { Arab = "شبكة الكمبيوتر", English = "Computer network", French = "Réseau informatique" },
                    Code = "TRI",
+                   Description = new LocalizedString { Arab = "", English = "", French = "" }
+
                }
                ,
                 new Specialty()
@@ -287,6 +291,7 @@
                     Reference = "INFO",
                     Title = new LocalizedString { Arab = "مخطط المعلومات الرسومي", English = "infographic", French = "Infographique" },
                     Code = "INFO",
+                    Description = new LocalizedString { Arab = "", English = "", French = "" }
                 }
                 ,
                  new Specialty()
@@ -294,6 +299,7 @@
                      Reference = "TMSIR",
                      Title = new LocalizedString { Arab = "صيانة ودعم تكنولوجيا المعلومات والشبكات", English = "Maintenance and Support for Computers and Networks", French = "Maintenance et Support Informatique et Réseaux" },
                      Code = "TMSIR",
+                     Description = new LocalizedString { Arab = "", English = "", French = "" }
                  }
             );
             //add Mission subject
