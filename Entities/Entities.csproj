@@ -208,6 +208,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="SessionManagement\Absence.cs" />
     <Compile Include="StaffManagement\Affectation.cs" />
     <Compile Include="StaffManagement\Car.cs" />
     <Compile Include="StaffManagement\Former.cs" />
