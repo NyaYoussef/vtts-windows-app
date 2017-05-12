@@ -171,13 +171,12 @@
             Authorization InstitutionAutorization = new Authorization();
             InstitutionAutorization.BusinessEntity = typeof(Institution).FullName;
             RoleAdmin.Authorizations.Add(InstitutionAutorization);
-
+           
 
             //
             //Add Dirrector Autorization
             //
             RoleDirector.Authorizations = new List<Authorization>();
-            RoleDirector.Authorizations.Add(FindUserAutorization);
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(CountryAutorization);
             RoleDirector.Authorizations.Add(CityAutorization);
@@ -192,6 +191,7 @@
             RoleDirector.Authorizations.Add(FunctionAutorization);
             RoleDirector.Authorizations.Add(StaffAutorization);
             RoleDirector.Authorizations.Add(InstitutionAutorization);
+            
 
             Authorization MissionCategoryAutorization = new Authorization();
             MissionCategoryAutorization.BusinessEntity = typeof(MissionCategory).FullName;
@@ -213,6 +213,15 @@
             CarAutorization.BusinessEntity = typeof(Car).FullName;
             RoleDirector.Authorizations.Add(CarAutorization);
             context.SaveChanges();
+
+            RoleAdmin.Authorizations.Add(CarAutorization);
+            RoleAdmin.Authorizations.Add(MissionCategoryAutorization);
+            RoleAdmin.Authorizations.Add(MissionOrderAutorization);
+            RoleAdmin.Authorizations.Add(MissionSubjectAutorization);
+            RoleAdmin.Authorizations.Add(RegionAutorization);
+
+
+
 
 
             // Trainee Autorization
