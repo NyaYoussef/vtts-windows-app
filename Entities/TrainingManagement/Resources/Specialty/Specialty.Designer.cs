@@ -61,6 +61,24 @@ namespace Entities.TrainingManagement.Resources.Specialty {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Code.
+        /// </summary>
+        internal static string Code {
+            get {
+                return ResourceManager.GetString("Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Specialties Management.
         /// </summary>
         internal static string menu_title {
@@ -84,6 +102,15 @@ namespace Entities.TrainingManagement.Resources.Specialty {
         internal static string SingularName {
             get {
                 return ResourceManager.GetString("SingularName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

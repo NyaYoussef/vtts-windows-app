@@ -129,4 +129,7 @@
   <data name="SingularName" xml:space="preserve">
     <value>Grade</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
 </root>

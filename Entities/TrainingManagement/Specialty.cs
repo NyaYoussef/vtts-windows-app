@@ -9,7 +9,7 @@ namespace Entities.TrainingManagement
 {
 
    [GwinEntity(Localizable =true,DisplayMember ="Code")]
-  [Menu(Group ="Trainee")]
+  [Menu(Group = "InstitutionManagement")]
     public class Specialty : BaseEntity 
    {
 
@@ -19,20 +19,19 @@ namespace Entities.TrainingManagement
             Description = new LocalizedString();
         }
 
-        [DisplayProperty(isInGlossary = true)]
         [EntryForm(Ordre = 1,WidthControl =300)]
         [Filter]
         [DataGrid(WidthColonne = 150)]
         public LocalizedString Title { set; get; }
 
-        [DisplayProperty(isInGlossary = true)]
+       
         [EntryForm(Ordre = 2,WidthControl =100)]
         [Filter]
         [DataGrid]
         public  String Code { set; get; }
 
-        [DisplayProperty(isInGlossary = true)]
         [EntryForm(Ordre = 3,MultiLine =true,NumberLine =10,WidthControl =300)]
+        [DataGrid(WidthColonne =200)]
         public LocalizedString Description { set; get; }
 
          

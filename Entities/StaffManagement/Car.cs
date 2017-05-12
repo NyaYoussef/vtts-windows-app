@@ -35,7 +35,7 @@ namespace Entities.StaffManagement
         public bool PersonelCar { get; set; }
 
         [EntryForm(Ordre = 1,WidthControl =100)]
-        [DataGrid(WidthColonne = 50)]
+        [DataGrid(WidthColonne = 150)]
         public float TaxPower { get; set; }
 }
 }

@@ -70,6 +70,15 @@ namespace Entities.InstitutionManagement.Resources.Institution {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Institutions Management.
         /// </summary>
         internal static string menu_title {

@@ -375,8 +375,74 @@
 
 
                 );
+            //Add Default Function 
+            context.Functions.AddOrUpdate(
+                r=>r.Reference,
+                new Function()
+                {
+                    Reference="Director",
+                    Name=new LocalizedString { Arab = "مدير", French= "directeur", English= "Director" },
+                    Description=new LocalizedString { Arab="",French="",English=""}
+                },
+                 new Function()
+                 {
+                     Reference = "DirectorOfPedagogy",
+                     Name = new LocalizedString { Arab = "مدير بيداغوجي", French = "Directeur Pédagogie", English = "Director Of Pedagogy" },
+                     Description = new LocalizedString { Arab = "", French = "", English = "" }
+                 }
+                 ,
+                  new Function()
+                  {
+                      Reference = "Former",
+                      Name = new LocalizedString { Arab = "مكون", French = "Formateur", English = "Former" },
+                      Description = new LocalizedString { Arab = "", French = "", English = "" }
+                  },
+                   new Function()
+                   {
+                       Reference = "GeneralGuard",
+                       Name = new LocalizedString { Arab = "حارس عام", French = "garde en", English = "General Guard" },
+                       Description = new LocalizedString { Arab = "", French = "", English = "" }
+                   },
+                     new Function()
+                     {
+                         Reference = "Cleaner",
+                         Name = new LocalizedString { Arab = "عامل النظافة", French = "Femme De Ménage", English = "Cleaner" },
+                         Description = new LocalizedString { Arab = "", French = "", English = "" }
+                     }
+                     ,
+                      new Function()
+                      {
+                          Reference = "BodyGuard",
+                          Name = new LocalizedString { Arab = "حارس", French = "Homme De Guet", English = "Bodyguard" },
+                          Description = new LocalizedString { Arab = "", French = "", English = "" }
+                      }
+                );
+            //add Data For test
+            /*context.Staffs.AddOrUpdate(
+                r=>r.Reference,
+                new Staff()
+                {
+                    Reference="Madani",
+                    FirstName=new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                    LastName=new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                    DateOfBirth=Convert.ToDateTime("02/02/1982"),
+                    CIN="k45878",
+                    Email="madani@outloo.fr"
+                }    
+                
+                );*/
+            context.Institutions.AddOrUpdate(
+               r => r.Reference,
+               new Institution()
+               {
+                   Reference = "ISMONTIC",
+                   Description=new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
+                  , Name=new LocalizedString { Arab="ISMONTIC",English="ISMONTIC",French="ISMONTIC"},
+                   Address=new LocalizedString { Arab= "شارع القوات المسلحة الملكية، طنجة، المغرب", English= "Boulevard Royal Armed Forces, Tangier, Morocco", French= "Boulevard des Forces Armées Royales, Tanger, Maroc" }
+               }
 
-
+               );
+            context.SaveChanges();
         }
     }
 }

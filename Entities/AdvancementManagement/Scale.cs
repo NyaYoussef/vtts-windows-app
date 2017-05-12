@@ -2,6 +2,7 @@
 using App.Gwin.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,5 +27,20 @@ namespace Entities.AdvancementManagement
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public List<AdvancementScale> AdvancementScales { get; set; }
+
+        [NotMapped]
+        public string Name
+        {
+            get
+            {
+                if (Number != null )
+                    return Number+"";
+                else
+                {
+                    return "";
+                }
+
+            }
+        }
     }
 }

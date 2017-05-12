@@ -126,4 +126,10 @@
   <data name="SingularName" xml:space="preserve">
     <value>Region</value>
   </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
 </root>

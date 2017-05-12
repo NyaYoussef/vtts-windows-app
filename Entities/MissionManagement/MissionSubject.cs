@@ -17,6 +17,9 @@ namespace Entities.MissionManagement
         {
             this.SubjectName = new LocalizedString();
         }
+        [EntryForm(WidthControl=200)]
+        [DataGrid(WidthColonne =200)]
+        [Filter(WidthControl =200)]
         public LocalizedString SubjectName { set; get; }
     }
 }

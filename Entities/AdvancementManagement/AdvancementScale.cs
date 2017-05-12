@@ -5,6 +5,7 @@ using Entities.InstitutionManagement;
 using Entities.StaffManagement;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,5 +37,20 @@ namespace Entities.AdvancementManagement
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public List< Echelon> Echelons { get; set; }
+
+        [NotMapped]
+        public string Name
+        {
+            get
+            {
+                if (Scale != null && Date != null)
+                    return Scale + ":" + Date.ToShortDateString();
+                else
+                {
+                    return "";
+                }
+
+            }
+        }
     }
 }
