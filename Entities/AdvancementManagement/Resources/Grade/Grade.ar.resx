@@ -129,4 +129,7 @@
   <data name="SingularName" xml:space="preserve">
     <value>تدبير الدرجة</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
 </root>

@@ -100,13 +100,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="AdvancementManagement\Resources\Scale\Scale.ar.Designer.cs">
-      <DependentUpon>Scale.ar.resx</DependentUpon>
+    <Compile Include="AdvancementManagement\Resources\Scale\Scale.fr.Designer.cs">
+      <DependentUpon>Scale.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="AdvancementManagement\Resources\Scale\Scale.fr.Designer.cs">
-      <DependentUpon>Scale.fr.resx</DependentUpon>
+    <Compile Include="AdvancementManagement\Resources\Scale\Scale.ar.Designer.cs">
+      <DependentUpon>Scale.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -208,6 +208,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="SessionManagement\Absence.cs" />
     <Compile Include="StaffManagement\Affectation.cs" />
     <Compile Include="StaffManagement\Car.cs" />
     <Compile Include="StaffManagement\Former.cs" />
@@ -309,7 +310,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="MissionManagement\Training.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.ar.Designer.cs">
       <DependentUpon>Resource.ar.resx</DependentUpon>
@@ -435,13 +435,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Grade.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.ar.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Scale.ar.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Scale.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scale.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.resx">
       <Generator>ResXFileCodeGenerator</Generator>

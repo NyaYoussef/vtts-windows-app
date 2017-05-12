@@ -14,11 +14,11 @@ namespace Entities.StaffManagement
     [Menu(Group = "InstitutionManagement")]
     public  class Affectation:BaseEntity
     {
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,WidthControl =350)]
         [DataGrid(WidthColonne = 100)]
         public DateTime DateAffectation { get; set; }
 
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,WidthControl =350)]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Institution Institution { get; set; }

@@ -63,9 +63,9 @@ namespace Entities.StaffManagement.Resources.Affectation {
         /// <summary>
         ///   Looks up a localized string similar to Affectation Date.
         /// </summary>
-        internal static string DataAffectation {
+        internal static string DateAffectation {
             get {
-                return ResourceManager.GetString("DataAffectation", resourceCulture);
+                return ResourceManager.GetString("DateAffectation", resourceCulture);
             }
         }
         

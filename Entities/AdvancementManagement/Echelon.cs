@@ -3,6 +3,7 @@ using App.Gwin.Entities;
 using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,26 @@ namespace Entities.AdvancementManagement
         [EntryForm(Ordre = 3, GroupeBox = "Echlon",MultiLine =true,WidthControl =300)]
         [DataGrid(WidthColonne = 100)]
         public LocalizedString Description { get; set; }
+
+        [EntryForm(Ordre = 3, GroupeBox = "Echlon", WidthControl = 300)]
+        [DataGrid(WidthColonne = 100)]
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        public List<AdvancementEchelon> AdvancementEchelons { set; get; }
+
+        [NotMapped]
+        public string Name
+        {
+            get
+            {
+                if (Description != null)
+                    return Description.Current;
+                else
+                {
+                    return "";
+                }
+
+            }
+        }
 
     }
 }

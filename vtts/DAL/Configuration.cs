@@ -148,9 +148,9 @@
             RoleAdmin.Authorizations.Add(MissionConvocationAutorization);
 
             //add Training Autorization
-            Authorization TrainingAutorization = new Authorization();
+           /* Authorization TrainingAutorization = new Authorization();
             TrainingAutorization.BusinessEntity = typeof(Training).FullName;
-            RoleAdmin.Authorizations.Add(TrainingAutorization);
+            RoleAdmin.Authorizations.Add(TrainingAutorization);*/
 
             //add Module Autorization
             Authorization ModuleAutorization = new Authorization();
@@ -171,19 +171,18 @@
             Authorization InstitutionAutorization = new Authorization();
             InstitutionAutorization.BusinessEntity = typeof(Institution).FullName;
             RoleAdmin.Authorizations.Add(InstitutionAutorization);
-
+           
 
             //
             //Add Dirrector Autorization
             //
             RoleDirector.Authorizations = new List<Authorization>();
-            RoleDirector.Authorizations.Add(FindUserAutorization);
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(CountryAutorization);
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(MissionConvocationAutorization);
             RoleDirector.Authorizations.Add(AffectationAutorization);
-            RoleDirector.Authorizations.Add(TrainingAutorization);
+           // RoleDirector.Authorizations.Add(TrainingAutorization);
             RoleDirector.Authorizations.Add(ScaleAutorization);
             RoleDirector.Authorizations.Add(GradeAutorization);
             RoleDirector.Authorizations.Add(EchelonAutorization);
@@ -192,6 +191,7 @@
             RoleDirector.Authorizations.Add(FunctionAutorization);
             RoleDirector.Authorizations.Add(StaffAutorization);
             RoleDirector.Authorizations.Add(InstitutionAutorization);
+            
 
             Authorization MissionCategoryAutorization = new Authorization();
             MissionCategoryAutorization.BusinessEntity = typeof(MissionCategory).FullName;
@@ -213,6 +213,12 @@
             CarAutorization.BusinessEntity = typeof(Car).FullName;
             RoleDirector.Authorizations.Add(CarAutorization);
             context.SaveChanges();
+            RoleAdmin.Authorizations.Add(CarAutorization);
+            RoleAdmin.Authorizations.Add(MissionCategoryAutorization);
+            RoleAdmin.Authorizations.Add(MissionOrderAutorization);
+            RoleAdmin.Authorizations.Add(MissionSubjectAutorization);
+            RoleAdmin.Authorizations.Add(RegionAutorization);
+
 
 
             // Trainee Autorization
@@ -266,6 +272,7 @@
                 Reference = "TDI",
                 Title = new LocalizedString { Arab = "التنمية المعلوماتية", English = "development informatique", French = "Développement informatique" },
                 Code = "TDI",
+                Description=new LocalizedString { Arab="",English="",French=""}
             }
             ,
              new Specialty()
@@ -273,6 +280,7 @@
                  Reference = "TDM",
                  Title = new LocalizedString { Arab = "تطوير الوسائط المتعددة", English = "development multimedia", French = "Développement multimédia" },
                  Code = "TDM",
+                 Description = new LocalizedString { Arab = "", English = "", French = "" }
              }
             ,
                new Specialty()
@@ -280,6 +288,8 @@
                    Reference = "TRI",
                    Title = new LocalizedString { Arab = "شبكة الكمبيوتر", English = "Computer network", French = "Réseau informatique" },
                    Code = "TRI",
+                   Description = new LocalizedString { Arab = "", English = "", French = "" }
+
                }
                ,
                 new Specialty()
@@ -287,6 +297,7 @@
                     Reference = "INFO",
                     Title = new LocalizedString { Arab = "مخطط المعلومات الرسومي", English = "infographic", French = "Infographique" },
                     Code = "INFO",
+                    Description = new LocalizedString { Arab = "", English = "", French = "" }
                 }
                 ,
                  new Specialty()
@@ -294,6 +305,7 @@
                      Reference = "TMSIR",
                      Title = new LocalizedString { Arab = "صيانة ودعم تكنولوجيا المعلومات والشبكات", English = "Maintenance and Support for Computers and Networks", French = "Maintenance et Support Informatique et Réseaux" },
                      Code = "TMSIR",
+                     Description = new LocalizedString { Arab = "", English = "", French = "" }
                  }
             );
             //add Mission subject
@@ -369,8 +381,74 @@
 
 
                 );
+            //Add Default Function 
+            context.Functions.AddOrUpdate(
+                r=>r.Reference,
+                new Function()
+                {
+                    Reference="Director",
+                    Name=new LocalizedString { Arab = "مدير", French= "directeur", English= "Director" },
+                    Description=new LocalizedString { Arab="",French="",English=""}
+                },
+                 new Function()
+                 {
+                     Reference = "DirectorOfPedagogy",
+                     Name = new LocalizedString { Arab = "مدير بيداغوجي", French = "Directeur Pédagogie", English = "Director Of Pedagogy" },
+                     Description = new LocalizedString { Arab = "", French = "", English = "" }
+                 }
+                 ,
+                  new Function()
+                  {
+                      Reference = "Former",
+                      Name = new LocalizedString { Arab = "مكون", French = "Formateur", English = "Former" },
+                      Description = new LocalizedString { Arab = "", French = "", English = "" }
+                  },
+                   new Function()
+                   {
+                       Reference = "GeneralGuard",
+                       Name = new LocalizedString { Arab = "حارس عام", French = "garde en", English = "General Guard" },
+                       Description = new LocalizedString { Arab = "", French = "", English = "" }
+                   },
+                     new Function()
+                     {
+                         Reference = "Cleaner",
+                         Name = new LocalizedString { Arab = "عامل النظافة", French = "Femme De Ménage", English = "Cleaner" },
+                         Description = new LocalizedString { Arab = "", French = "", English = "" }
+                     }
+                     ,
+                      new Function()
+                      {
+                          Reference = "BodyGuard",
+                          Name = new LocalizedString { Arab = "حارس", French = "Homme De Guet", English = "Bodyguard" },
+                          Description = new LocalizedString { Arab = "", French = "", English = "" }
+                      }
+                );
+            //add Data For test
+            /*context.Staffs.AddOrUpdate(
+                r=>r.Reference,
+                new Staff()
+                {
+                    Reference="Madani",
+                    FirstName=new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                    LastName=new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                    DateOfBirth=Convert.ToDateTime("02/02/1982"),
+                    CIN="k45878",
+                    Email="madani@outloo.fr"
+                }    
+                
+                );*/
+            context.Institutions.AddOrUpdate(
+               r => r.Reference,
+               new Institution()
+               {
+                   Reference = "ISMONTIC",
+                   Description=new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
+                  , Name=new LocalizedString { Arab="ISMONTIC",English="ISMONTIC",French="ISMONTIC"},
+                   Address=new LocalizedString { Arab= "شارع القوات المسلحة الملكية، طنجة، المغرب", English= "Boulevard Royal Armed Forces, Tangier, Morocco", French= "Boulevard des Forces Armées Royales, Tanger, Maroc" }
+               }
 
-
+               );
+            context.SaveChanges();
         }
     }
 }

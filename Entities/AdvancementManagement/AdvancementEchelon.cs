@@ -4,6 +4,7 @@ using Entities.InstitutionManagement;
 using Entities.StaffManagement;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,14 +20,31 @@ namespace Entities.AdvancementManagement
         public DateTime Date { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
-        [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Former Former { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
-        [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        public Echelon Echelon { get; set; }
+        public  Echelon Echelon { get; set; }
+
+        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        public Scale Scale { get; set; }
+
+        [NotMapped]
+        public string Name
+        {
+            get
+            {
+                if (Echelon != null &&  Date != null)
+                    return Echelon + ":" + Date.ToShortDateString();
+                else
+                {
+                    return "";
+                }
+
+            }
+        }
 
     }
 }
