@@ -213,14 +213,12 @@
             CarAutorization.BusinessEntity = typeof(Car).FullName;
             RoleDirector.Authorizations.Add(CarAutorization);
             context.SaveChanges();
-
+            //admin role
             RoleAdmin.Authorizations.Add(CarAutorization);
             RoleAdmin.Authorizations.Add(MissionCategoryAutorization);
             RoleAdmin.Authorizations.Add(MissionOrderAutorization);
             RoleAdmin.Authorizations.Add(MissionSubjectAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
-
-
 
 
 
