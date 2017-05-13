@@ -30,7 +30,7 @@ namespace Entities.StaffManagement
         // Assignments
         //
         [DataGrid(WidthColonne = 100)]
-        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Creation)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<Affectation> Affectations { get; set; }
 
         [NotMapped]

@@ -23,26 +23,33 @@ namespace Entities.MissionManagement
         }
 
 
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 2)]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public LocalizedString Name { get; set; }
 
-        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300,NumberLine =12)]
+        [EntryForm(Ordre = 8, MultiLine = true, WidthControl = 300,NumberLine =12)]
         [DataGrid(WidthColonne = 200)]
         [Filter]
         public LocalizedString Description { get; set; }
 
-
+        [EntryForm(Ordre=1,WidthControl =200,MultiLine =true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<Staff> Staffs { get; set; }
 
-
+        //[EntryForm(Ordre = 3, WidthControl = 200, MultiLine = true)]
+        //[Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public Institution Institution { get; set; }
         //Sujet
+        [EntryForm(Ordre = 4, WidthControl = 200, MultiLine = true)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public MissionSubject MissionSubject { get; set; }
 
+        [EntryForm(Ordre=5,WidthControl =200)]
+        [DataGrid(Ordre=5,WidthColonne =200)]
         public DateTime StartDate { get; set; }
+        [EntryForm(Ordre = 5, WidthControl = 200)]
+        [DataGrid(Ordre = 5, WidthColonne = 200)]
         public DateTime EndDate { get; set; }
 
 

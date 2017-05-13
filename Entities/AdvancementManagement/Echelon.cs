@@ -12,7 +12,7 @@ namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "AdvanceManagement")]
-    public class Echelon:BaseEntity
+    public class Echelon : BaseEntity
     {
         public Echelon()
         {
@@ -24,7 +24,7 @@ namespace Entities.AdvancementManagement
 
         [EntryForm(Ordre = 3, GroupeBox = "Echlon", WidthControl = 300)]
         [DataGrid(WidthColonne = 100)]
-        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
         public List<AdvancementEchelon> AdvancementEchelons { set; get; }
 
         [NotMapped]

@@ -299,7 +299,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="StaffManagement\Staff.cs" />
     <Compile Include="MissionManagement\Resources\Training\Training.fr.Designer.cs">
       <DependentUpon>Training.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -342,6 +341,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="SessionManagement\TrainingYear.cs" />
+    <Compile Include="StaffManagement\Staff.cs" />
     <Compile Include="TraineeManagement\Group.cs" />
     <Compile Include="TraineeManagement\Resources\Group\Group.ar.Designer.cs">
       <DependentUpon>Group.ar.resx</DependentUpon>

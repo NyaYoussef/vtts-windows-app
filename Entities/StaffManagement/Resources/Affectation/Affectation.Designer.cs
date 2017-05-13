@@ -70,6 +70,15 @@ namespace Entities.StaffManagement.Resources.Affectation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Formers.
+        /// </summary>
+        internal static string Formers {
+            get {
+                return ResourceManager.GetString("Formers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Affectations Management.
         /// </summary>
         internal static string menu_title {
@@ -93,6 +102,15 @@ namespace Entities.StaffManagement.Resources.Affectation {
         internal static string SingularName {
             get {
                 return ResourceManager.GetString("SingularName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Staff.
+        /// </summary>
+        internal static string Staffs {
+            get {
+                return ResourceManager.GetString("Staffs", resourceCulture);
             }
         }
     }

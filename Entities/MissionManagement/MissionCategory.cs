@@ -12,5 +12,6 @@ namespace Entities.MissionManagement
     [Menu(Group ="MissionManagement")]
     public class MissionCategory: BaseEntity
     {
+        public List<MissionConvocation> MissionConvocations { get; set; }
     }
 }

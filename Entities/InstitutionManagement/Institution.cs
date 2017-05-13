@@ -21,24 +21,24 @@ namespace Entities.InstitutionManagement
             this.Description = new LocalizedString();
             this.Address = new LocalizedString();
         }
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(Ordre =1)]
         public LocalizedString Name { get; set; }
 
-        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300)]
+        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 200)]
-        [Filter]
+        [Filter(Ordre =4)]
         public LocalizedString Description { get; set; }
 
-        [EntryForm(Ordre = 3)]
+        [EntryForm(Ordre = 3,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(Ordre =3)]
         public LocalizedString Address { set; get; }
 
-        [EntryForm(Ordre = 3)]
+        [EntryForm(Ordre = 3,WidthControl =300,Enable =true,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(Ordre =2)]
         public Region Region { set; get; }
 
 
