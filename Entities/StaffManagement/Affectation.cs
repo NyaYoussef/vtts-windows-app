@@ -23,6 +23,10 @@ namespace Entities.StaffManagement
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Institution Institution { get; set; }
 
+        [EntryForm(Ordre = 1, WidthControl = 350)]
+        [DataGrid(WidthColonne = 100)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
+        public List<Staff> Staffs { get; set; }
         [NotMapped]
         public string Name
         {

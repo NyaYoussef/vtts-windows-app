@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "SubjectName")]
     [Menu(Group = "MissionManagement")]
     public class MissionSubject: BaseEntity
     {
@@ -21,5 +21,10 @@ namespace Entities.MissionManagement
         [DataGrid(WidthColonne =200)]
         [Filter(WidthControl =200)]
         public LocalizedString SubjectName { set; get; }
+
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public List<MissionConvocation> MissionConvocations { get; set; }
+
+
     }
 }

@@ -348,41 +348,76 @@
                     Reference = "Tangier",
                     Name = new LocalizedString { Arab = "طنجة", French = "Tanger", English = "Tangier" }
                      ,
-                    Description = new LocalizedString { Arab = "", French = "", English = "" }
+                    Description = new LocalizedString { Arab = "", French = "", English = "" },
+                    Country = context.Countrys.First(),
                 },
                  new City()
                  {
                      Reference = "Casablanca",
                      Name = new LocalizedString { Arab = "الدار البيضاء", French = "Casablanca", English = "Casablanca" }
                       ,
-                     Description = new LocalizedString { Arab = "", French = "", English = "" }
+                     Description = new LocalizedString { Arab = "", French = "", English = "" },
+                     Country = context.Countrys.First(),
                  },
                  new City()
                  {
                      Reference = "Rabat",
                      Name = new LocalizedString { Arab = "الرباط", French = "Rabat", English = "Rabat" }
                       ,
-                     Description = new LocalizedString { Arab = "", French = "", English = "" }
+                     Description = new LocalizedString { Arab = "", French = "", English = "" },
+                     Country = context.Countrys.First(),
                  },
                   new City()
                   {
                       Reference = "Tetouan",
                       Name = new LocalizedString { Arab = "تطوان", French = "Tétouan", English = "Tetouan" }
                        ,
-                      Description = new LocalizedString { Arab = "", French = "", English = "" }
+                      Description = new LocalizedString { Arab = "", French = "", English = "" },
+                      Country = context.Countrys.First(),
                   },
                   new City()
                   {
                       Reference = "Asilah",
                       Name = new LocalizedString { Arab = "أصيلة", French = "Asilah", English = "Asilah" }
-                      , Description = new LocalizedString { Arab="",French="",English=""}
+                      , Description = new LocalizedString { Arab="",French="",English=""},
+                      Country=context.Countrys.First(),
+
+                      
 
                   }
 
 
                 );
-            //Add Default Function 
-            context.Functions.AddOrUpdate(
+            //Add Default Region
+           context.Regions.AddOrUpdate(
+             r => r.Reference,
+             new Region()
+             {
+                 Reference= "Tangier-Tetouan",
+                 Name =new LocalizedString { Arab= "طنجة تطوان", French= "Tanger-Tétouan", English= "Tangier Tetouan" },
+                 Ordre=16,
+             },
+               new Region()
+               {
+                   Reference = "Taza-Al-Hoceima-Taounate",
+                   Name = new LocalizedString { Arab = "تازة الحسيمة تاونات", French = "Taza-Al Hoceïma-Taounate", English = "Taza-Al Hoceima-Taounate" },
+                   Ordre = 15,
+               },
+                new Region()
+                {
+                    Reference = "Grand-asablanca",
+                    Name = new LocalizedString { Arab = "الدار البيضاء", French = "Grand Casablanca", English = "Grand Casablanca" },
+                    Ordre = 5,
+                },
+                 new Region()
+                 {
+                     Reference = "Rabat-Salé-Zemmour-Zaer",
+                     Name = new LocalizedString { Arab = "الرباط سلا زمور زعير", French = "Rabat-Salé-Zemmour-Zaër ", English = "Rabat-Salé-Zemmour-Zaer" },
+                     Ordre = 12,
+                 }
+             );
+         //Add Default Function 
+         context.Functions.AddOrUpdate(
                 r=>r.Reference,
                 new Function()
                 {
@@ -424,19 +459,38 @@
                       }
                 );
             //add Data For test
-            /*context.Staffs.AddOrUpdate(
-                r=>r.Reference,
+            //staff
+           context.Staffs.AddOrUpdate(
+                r => r.Reference,
                 new Staff()
                 {
+                    Id = 1,
+                    FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                    LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                    DateOfBirth = Convert.ToDateTime("02/02/1982"),
+                    CIN = "k45878",
+                    Email = "madani@outloo.fr",
+                    Address = "tanger-tanger maroc",
+                    FaceBook = "Madani El",
+                    Cellphone = "063547459",
+                    PhoneNumber = "8987458",
+                    DateRecruitment = Convert.ToDateTime("02/02/2016"),
                     Reference="Madani",
-                    FirstName=new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                    LastName=new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                    DateOfBirth=Convert.ToDateTime("02/02/1982"),
-                    CIN="k45878",
-                    Email="madani@outloo.fr"
+                    Sex=false,
+                    RegistrationNumber="k45dl",
+                    Cars=null,
+                    Affectations=null,
+                    Function=context.Functions.First(),
+                    City=null,
+                    Ordre=2,
+                    ProfilePhoto=null,
+                    WebSite="google.com"
+
+
                 }    
                 
-                );*/
+                );
+            //Institution
             context.Institutions.AddOrUpdate(
                r => r.Reference,
                new Institution()
@@ -448,7 +502,8 @@
                }
 
                );
-            context.SaveChanges();
+               
+          context.SaveChanges();
         }
     }
 }
