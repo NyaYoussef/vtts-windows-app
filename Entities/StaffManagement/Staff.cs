@@ -10,8 +10,9 @@ using System.Threading.Tasks;
 
 namespace Entities.StaffManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "RegistrationNumber")]
     [Menu(Group = "HRManagement",Title ="menu_title")]
+    [ManagementForm(Width = 1000,Height = 600)]
     public class Staff: Person
     {
         public Staff()
@@ -19,6 +20,18 @@ namespace Entities.StaffManagement
             this.FirstName = new LocalizedString();
             this.LastName = new LocalizedString();
          }
+
+        [NotMapped]
+        public string Name
+        {
+            get
+            {
+                return this.FirstName + " " + this.LastName;
+            }
+        }
+
+
+
         [EntryForm(Ordre = 12, MultiLine = true, GroupeBox = "Contact Information", GroupeBoxOrder = 101,isRequired =true)]
         public string Address { get; set; }
 
@@ -26,18 +39,21 @@ namespace Entities.StaffManagement
         public string Cellphone { get; set; }
 
         [DataGrid(WidthColonne = 50)]
-        [DisplayProperty(Titre = "CIN")]
+        [DisplayProperty(Title  = "CIN")]
         [EntryForm(Ordre = 3, GroupeBox = "Civil status", GroupeBoxOrder = 100,isRequired =true)]
         [Filter("CIN")]
         public string CIN { get; set; }
+
         [DataGrid(WidthColonne = 100)]
         [EntryForm(Ordre = 2, GroupeBox = "Civil status", GroupeBoxOrder = 100,isRequired = true)]
         [Filter("FirstName")]
         public LocalizedString FirstName { get; set; }
+
         [DataGrid(WidthColonne = 100)]
         [EntryForm(Ordre = 1, GroupeBox = "Civil status", GroupeBoxOrder = 100, isRequired = true)]
         [Filter("LastName")]
         public LocalizedString LastName { get; set; }
+
         [EntryForm(Ordre = 11, GroupeBox = "Contact Information", GroupeBoxOrder = 101, isRequired = true)]
         public string PhoneNumber { get; set; }
         //

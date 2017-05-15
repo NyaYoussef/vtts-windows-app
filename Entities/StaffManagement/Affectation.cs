@@ -24,10 +24,12 @@ namespace Entities.StaffManagement
         public Institution Institution { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 350)]
+        [DisplayProperty(DisplayMember = "RegistrationNumber")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [Filter(isValeurFiltreVide =true)]
         public Staff Staff { get; set; }
+
         [NotMapped]
         public string Name
         {
