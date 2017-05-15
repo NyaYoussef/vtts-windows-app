@@ -126,4 +126,7 @@
   <data name="SingularName" xml:space="preserve">
     <value>صنف المهمة</value>
   </data>
+  <data name="MissionConvocations" xml:space="preserve">
+    <value>دعوة المهمة</value>
+  </data>
 </root>

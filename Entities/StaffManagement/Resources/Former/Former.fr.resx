@@ -132,4 +132,7 @@
   <data name="SingularName" xml:space="preserve">
     <value>Formateur</value>
   </data>
+  <data name="Specialty" xml:space="preserve">
+    <value>Spécialité</value>
+  </data>
 </root>

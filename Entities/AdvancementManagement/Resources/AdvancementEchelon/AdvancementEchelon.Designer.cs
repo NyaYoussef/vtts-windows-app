@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.MissionManagement.Resources.MissionSubject {
+namespace Entities.AdvancementManagement.Resources.AdvancementEchelon {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MissionSubject {
+    internal class AdvancementEchelon {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MissionSubject() {
+        internal AdvancementEchelon() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.MissionManagement.Resources.MissionSubject.MissionSubject", typeof(MissionSubject).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.AdvancementManagement.Resources.AdvancementEchelon.AdvancementEchelon", typeof(AdvancementEchelon).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,43 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Subjects Management.
+        ///   Looks up a localized string similar to Echelon Management.
+        /// </summary>
+        internal static string AdvancementEchlons {
+            get {
+                return ResourceManager.GetString("AdvancementEchlons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        internal static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Echelon.
+        /// </summary>
+        internal static string Echelon {
+            get {
+                return ResourceManager.GetString("Echelon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Former.
+        /// </summary>
+        internal static string Former {
+            get {
+                return ResourceManager.GetString("Former", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Advancements Echelon Management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -70,16 +106,7 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission Convocation.
-        /// </summary>
-        internal static string MissionConvocations {
-            get {
-                return ResourceManager.GetString("MissionConvocations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Missions Subjects.
+        ///   Looks up a localized string similar to Advancements Echelon.
         /// </summary>
         internal static string PluralName {
             get {
@@ -88,20 +115,20 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission Subject.
+        ///   Looks up a localized string similar to Scale.
         /// </summary>
-        internal static string SingularName {
+        internal static string Scale {
             get {
-                return ResourceManager.GetString("SingularName", resourceCulture);
+                return ResourceManager.GetString("Scale", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Subject Name.
+        ///   Looks up a localized string similar to Advancement Echelon.
         /// </summary>
-        internal static string SubjectName {
+        internal static string SingularName {
             get {
-                return ResourceManager.GetString("SubjectName", resourceCulture);
+                return ResourceManager.GetString("SingularName", resourceCulture);
             }
         }
     }

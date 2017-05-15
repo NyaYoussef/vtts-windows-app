@@ -25,8 +25,9 @@ namespace Entities.StaffManagement
 
         [EntryForm(Ordre = 1, WidthControl = 350)]
         [DataGrid(WidthColonne = 100)]
-        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
-        public List<Staff> Staffs { get; set; }
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(isValeurFiltreVide =true)]
+        public Staff Staff { get; set; }
         [NotMapped]
         public string Name
         {

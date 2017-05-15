@@ -129,4 +129,10 @@
   <data name="SingularName" xml:space="preserve">
     <value>المستوى</value>
   </data>
+  <data name="Echelons" xml:space="preserve">
+    <value>المستوى</value>
+  </data>
+  <data name="AdvancementEchelons" xml:space="preserve">
+    <value>تقدم المستوى</value>
+  </data>
 </root>

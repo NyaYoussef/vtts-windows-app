@@ -61,11 +61,29 @@ namespace Entities.AdvancementManagement.Resources.Echelon {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Advancement Echelons.
+        /// </summary>
+        internal static string AdvancementEchelons {
+            get {
+                return ResourceManager.GetString("AdvancementEchelons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         internal static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Echelon.
+        /// </summary>
+        internal static string Echelons {
+            get {
+                return ResourceManager.GetString("Echelons", resourceCulture);
             }
         }
         

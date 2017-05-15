@@ -138,4 +138,7 @@
   <data name="Description" xml:space="preserve">
     <value>الوصف</value>
   </data>
+  <data name="Region" xml:space="preserve">
+    <value>الجهة</value>
+  </data>
 </root>

@@ -11,6 +11,7 @@
     using Gwin.Entities.Logging;
     using Gwin.Entities.Secrurity.Authentication;
     using Gwin.Entities.Secrurity.Autorizations;
+    using Spire.License;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -31,52 +32,52 @@
 
         }
 
-        //public ModelContext(string connectionString):base(connectionString)
-        //{
+        // //public ModelContext(string connectionString):base(connectionString)
+        // //{
 
-        //}
+        // //}
 
-        //
-        // WinForm : Authentication
-        //
+        // //
+        // // WinForm : Authentication
+        // //
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Authorization> Authorizations { get; set; }
         public virtual DbSet<GwinActivity> GwinActivities { get; set; }
 
-        //
-        // WinFrom : Application
-        //
+        // //
+        // // WinFrom : Application
+        // //
         public virtual DbSet<ApplicationName> ApplicationNames { get; set; }
         public virtual DbSet<MenuItemApplication> MenuItemApplications { get; set; }
 
-        //
-        // WinForm : ContactInformationss
-        // 
+        // //
+        // // WinForm : ContactInformationss
+        // // 
         public virtual DbSet<Country> Countrys { get; set; }
         public virtual DbSet<City> Citys { get; set; }
-        
+
         public virtual DbSet<ContactInformation> ContactInformations { get; set; }
 
 
-        ////
-        //// Project management system
-        ////
-        //public virtual DbSet<Project> Projets { get; set; }
+        // ////
+        // //// Project management system
+        // ////
+        //public virtual DbSet<Product> Projets { get; set; }
         //public virtual DbSet<ProjectTask> Taches { get; set; }
         //public virtual DbSet<ProjectCategory> ProjectCategorys { get; set; }
         //public virtual DbSet<RessouceProject> RessouceProjects { get; set; }
 
-        //
-        // Vacationel Tranning Tracking System : TraineeManagement
-        //
+        // //
+        // // Vacationel Tranning Tracking System : TraineeManagement
+        // //
         public virtual DbSet<Group> Groups { get; set; }
         public virtual DbSet<Trainee> Trainees { get; set; }
         public virtual DbSet<Former> Formers { get; set; }
         public virtual DbSet<Institution> Institutions { get; set; }
-        //
-        // Vacationel Tranning Tracking System : TrainingManagement
-        //
+        // //
+        // // Vacationel Tranning Tracking System : TrainingManagement
+        // //
         public virtual DbSet<Specialty> Specialties { get; set; }
         public virtual DbSet<Module> Modules { get; set; }
         public virtual DbSet<AdvancementScale> AdvancementScaleS { get; set; }
@@ -85,7 +86,7 @@
         public virtual DbSet<Scale> Scales { get; set; }
         public virtual DbSet<Affectation> Affectations { get; set; }
         public virtual DbSet<MissionConvocation> MissionConvocations { get; set; }
-       // public virtual DbSet<Training>  Trainings{ get; set; }
+        // public virtual DbSet<Training>  Trainings{ get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
         public virtual DbSet<Region> Regions { get; set; }
         public virtual DbSet<MissionCategory> MissionCategorys { get; set; }
@@ -93,7 +94,7 @@
         public virtual DbSet<MissionSubject> MissionSubjects { get; set; }
         public virtual DbSet<Function> Functions { get; set; }
         public virtual DbSet<Car> Cars { get; set; }
-       
+        public virtual DbSet<AdvancementEchelon> AdvancementEchelons { get; set; }
 
 
 

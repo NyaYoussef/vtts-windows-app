@@ -18,11 +18,11 @@ namespace Entities.AdvancementManagement
             this.Name = new LocalizedString();
             this.Description = new LocalizedString();
         }
-        [EntryForm(Ordre = 3, GroupeBox = "Grade")]
+        [EntryForm(Ordre = 3, GroupeBox = "Grades")]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public LocalizedString Name { get; set; }
-        [EntryForm(Ordre = 3, GroupeBox = "Grade",MultiLine =true,WidthControl =300)]
+        [EntryForm(Ordre = 3, GroupeBox = "Grades",MultiLine =true,WidthControl =300)]
         [DataGrid(WidthColonne = 100)]
         public LocalizedString Description { get; set; }
 

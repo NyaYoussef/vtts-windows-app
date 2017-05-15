@@ -132,7 +132,10 @@
   <data name="Formers" xml:space="preserve">
     <value>Formateur</value>
   </data>
-  <data name="Staffs" xml:space="preserve">
+  <data name="Staff" xml:space="preserve">
     <value>Personnel</value>
+  </data>
+  <data name="Institution" xml:space="preserve">
+    <value>Établissement</value>
   </data>
 </root>

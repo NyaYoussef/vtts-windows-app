@@ -165,4 +165,10 @@
   <data name="WebSite" xml:space="preserve">
     <value>الموقع الإلكتروني</value>
   </data>
+  <data name="Cars" xml:space="preserve">
+    <value>السيارة</value>
+  </data>
+  <data name="Functions" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
 </root>

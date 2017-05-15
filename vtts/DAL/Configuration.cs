@@ -33,16 +33,16 @@
             // Giwn App V 0.08
             // -------------------------------------
             //-- Gwin Application Name
-            context.ApplicationNames.AddOrUpdate(
-                           r => r.Reference
-                        ,
-                        new App.Gwin.Entities.Application.ApplicationName
-                        {
-                            Reference = "Vocational Training Tracking-System",
-                            Name = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "نظام تتبع التدريب المهني", English = "Vocational Training Tracking System", French = "Système de suivi de la formation professionnelle" }
-                        }
+                context.ApplicationNames.AddOrUpdate(
+                                r => r.Reference
+                             ,
+                             new App.Gwin.Entities.Application.ApplicationName
+                             {
+                                 Reference = "Vocational Training Tracking-System",
+                                 Name = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "نظام تتبع التدريب المهني", English = "Vocational Training Tracking System", French = "Système de suivi de la formation professionnelle" }
+                             }
 
-                      );
+                       );
             //Gwin Roles
             Role RoleGuest = null;
             Role RoleRoot = null;
@@ -57,7 +57,7 @@
               new Role { Reference = nameof(Role.Roles.Admin), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Admin) } },
               new Role { Reference = nameof(Role.Roles.Root), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Root) }, Hidden = true },
               new Role { Reference = "Trainee", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Trainee" }, Hidden = true },
-              new Role { Reference = "Director", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Director" },Hidden=true }
+              new Role { Reference = "Director", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Director" }, Hidden = true }
             );
             // Save Change to Select RoleRoot and RoleGuest
             context.SaveChanges();
@@ -79,9 +79,9 @@
             RoleGuest.Authorizations = new List<Authorization>();
             RoleGuest.Authorizations.Add(FindUserAutorization);
 
-          
 
-            // Guest Autorization
+
+            //     // Guest Autorization
             Authorization TrianeeAuthorisation = new Authorization();
             TrianeeAuthorisation.BusinessEntity = typeof(Trainee).FullName;
             RoleGuest.Authorizations.Add(TrianeeAuthorisation);
@@ -122,6 +122,11 @@
             AdvancementScaleAutorization.BusinessEntity = typeof(AdvancementScale).FullName;
             RoleAdmin.Authorizations.Add(AdvancementScaleAutorization);
 
+            //add advancement Echelon Autorization
+            Authorization AdvancementEchelonAutorization = new Authorization();
+            AdvancementEchelonAutorization.BusinessEntity = typeof(AdvancementEchelon).FullName;
+            RoleAdmin.Authorizations.Add(AdvancementEchelonAutorization);
+
             //add Echelon Autorization
             Authorization EchelonAutorization = new Authorization();
             EchelonAutorization.BusinessEntity = typeof(Echelon).FullName;
@@ -148,9 +153,9 @@
             RoleAdmin.Authorizations.Add(MissionConvocationAutorization);
 
             //add Training Autorization
-           /* Authorization TrainingAutorization = new Authorization();
-            TrainingAutorization.BusinessEntity = typeof(Training).FullName;
-            RoleAdmin.Authorizations.Add(TrainingAutorization);*/
+            /* Authorization TrainingAutorization = new Authorization();
+             TrainingAutorization.BusinessEntity = typeof(Training).FullName;
+             RoleAdmin.Authorizations.Add(TrainingAutorization);*/
 
             //add Module Autorization
             Authorization ModuleAutorization = new Authorization();
@@ -167,11 +172,11 @@
             StaffAutorization.BusinessEntity = typeof(Staff).FullName;
             RoleAdmin.Authorizations.Add(StaffAutorization);
 
-            // Add Staff Autorization
+            //     // Add Staff Autorization
             Authorization InstitutionAutorization = new Authorization();
             InstitutionAutorization.BusinessEntity = typeof(Institution).FullName;
             RoleAdmin.Authorizations.Add(InstitutionAutorization);
-           
+
 
             //
             //Add Dirrector Autorization
@@ -182,7 +187,7 @@
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(MissionConvocationAutorization);
             RoleDirector.Authorizations.Add(AffectationAutorization);
-           // RoleDirector.Authorizations.Add(TrainingAutorization);
+            // RoleDirector.Authorizations.Add(TrainingAutorization);
             RoleDirector.Authorizations.Add(ScaleAutorization);
             RoleDirector.Authorizations.Add(GradeAutorization);
             RoleDirector.Authorizations.Add(EchelonAutorization);
@@ -191,7 +196,8 @@
             RoleDirector.Authorizations.Add(FunctionAutorization);
             RoleDirector.Authorizations.Add(StaffAutorization);
             RoleDirector.Authorizations.Add(InstitutionAutorization);
-            
+            RoleDirector.Authorizations.Add(AdvancementEchelonAutorization);
+
 
             Authorization MissionCategoryAutorization = new Authorization();
             MissionCategoryAutorization.BusinessEntity = typeof(MissionCategory).FullName;
@@ -221,17 +227,17 @@
 
 
 
-            // Trainee Autorization
-            RoleTrainee.Authorizations = new List<Authorization>();
-            RoleTrainee.Authorizations.Add(GroupAuthorisation);
-            RoleTrainee.Authorizations.Add(TrianeeAuthorisation);
-            context.SaveChanges();
+            //     // Trainee Autorization
+            //     RoleTrainee.Authorizations = new List<Authorization>();
+            //     RoleTrainee.Authorizations.Add(GroupAuthorisation);
+            //     RoleTrainee.Authorizations.Add(TrianeeAuthorisation);
+            //     context.SaveChanges();
 
 
 
 
-            //
-            //-- Giwn Users
+            //     //
+            //     //-- Giwn Users
             context.Users.AddOrUpdate(
                 u => u.Reference,
                 new User() { Reference = nameof(User.Users.Root), Login = nameof(User.Users.Root), Password = nameof(User.Users.Root), LastName = new LocalizedString() { Current = nameof(User.Users.Root) }, Roles = new List<Role>() { RoleRoot } },
@@ -240,9 +246,9 @@
                 new User() { Reference = "user-demo", Login = "madani", Password = "madani", LastName = new LocalizedString() { Current = "madani" }, Roles = new List<Role>() { RoleTrainee } },
                 new User() { Reference = "Director", Language = Gwin.GwinApp.Languages.fr, Login = "Director", Password = "Director", LastName = new LocalizedString() { Current = "Director" }, Roles = new List<Role>() { RoleDirector } }
                 );
-            //
-            // Menu
-            //
+            //     //
+            //     // Menu
+            //     //
             context.MenuItemApplications.AddOrUpdate(
                             r => r.Code
                          ,
@@ -251,19 +257,20 @@
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
                          new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee Management", French = "Gestion Des Stagiaire" } },
                          new MenuItemApplication { Id = 5, Code = "InstitutionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المؤسسة", English = "Institution Management", French = "Gestion de l'établissement" } },
-                         new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH Management", French = "Gestion RH" } }
+                         new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH Management", French = "Gestion RH" } },
+                         new MenuItemApplication { Id = 8, Code = "AdvanceManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الترقيات", English = "Advance Management", French = "Gestion D'Advance" } },
+                         new MenuItemApplication { Id = 7, Code = "MissionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المهام", English = "Mission Management", French = "Gestion De Mission" } }
+                              );
 
-                         );
 
+            //     //
+            //     // Default Data
+            //     //
+            //     // Add Counties
 
-            //
-            // Default Data
-            //
-            // Add Counties
+            //     // Add Cities
 
-            // Add Cities
-
-            //Add Specialy 
+            //     //Add Specialy 
             context.Specialties.AddOrUpdate(
                          r => r.Reference
                       ,
@@ -272,7 +279,7 @@
                 Reference = "TDI",
                 Title = new LocalizedString { Arab = "التنمية المعلوماتية", English = "development informatique", French = "Développement informatique" },
                 Code = "TDI",
-                Description=new LocalizedString { Arab="",English="",French=""}
+                Description = new LocalizedString { Arab = "", English = "", French = "" }
             }
             ,
              new Specialty()
@@ -308,19 +315,19 @@
                      Description = new LocalizedString { Arab = "", English = "", French = "" }
                  }
             );
-            //add Mission subject
+            //     //add Mission subject
             context.MissionSubjects.AddOrUpdate(
                        r => r.Reference
                     ,
                  new MissionSubject()
                  {
-                     Reference= "Meeting",
-                     SubjectName=new LocalizedString { Arab= "إجتماع", English= "Meeting",French= "Réunion" }
+                     Reference = "Meeting",
+                     SubjectName = new LocalizedString { Arab = "إجتماع", English = "Meeting", French = "Réunion" }
                  },
                  new MissionSubject()
                  {
-                     Reference= "Improvement",
-                     SubjectName =new LocalizedString { Arab = "تحسين", English = "Improvement", French = "Perfectionnement" }
+                     Reference = "Improvement",
+                     SubjectName = new LocalizedString { Arab = "تحسين", English = "Improvement", French = "Perfectionnement" }
                  },
                   new MissionSubject()
                   {
@@ -333,177 +340,177 @@
                 r => r.Reference,
                 new Country()
                 {
-                    Reference= "Morroco",
-                    Name=new LocalizedString { Arab= "المغرب", French= "Maroc",English="Morroco"}
+                    Reference = "Morroco",
+                    Name = new LocalizedString { Arab = "المغرب", French = "Maroc", English = "Morroco" }
                      ,
                     Description = new LocalizedString { Arab = "", French = "", English = "" }
                 }
-                );
-            //ADD CITYS
+                     );
+            //     //ADD CITYS
             context.Citys.AddOrUpdate(
-                r => r.Reference
-                ,
-                new City()
-                {
-                    Reference = "Tangier",
-                    Name = new LocalizedString { Arab = "طنجة", French = "Tanger", English = "Tangier" }
-                     ,
-                    Description = new LocalizedString { Arab = "", French = "", English = "" },
-                    Country = context.Countrys.First(),
-                },
+                 r => r.Reference
+                 ,
                  new City()
                  {
-                     Reference = "Casablanca",
-                     Name = new LocalizedString { Arab = "الدار البيضاء", French = "Casablanca", English = "Casablanca" }
-                      ,
-                     Description = new LocalizedString { Arab = "", French = "", English = "" },
-                     Country = context.Countrys.First(),
-                 },
-                 new City()
-                 {
-                     Reference = "Rabat",
-                     Name = new LocalizedString { Arab = "الرباط", French = "Rabat", English = "Rabat" }
+                     Reference = "Tangier",
+                     Name = new LocalizedString { Arab = "طنجة", French = "Tanger", English = "Tangier" }
                       ,
                      Description = new LocalizedString { Arab = "", French = "", English = "" },
                      Country = context.Countrys.First(),
                  },
                   new City()
                   {
-                      Reference = "Tetouan",
-                      Name = new LocalizedString { Arab = "تطوان", French = "Tétouan", English = "Tetouan" }
+                      Reference = "Casablanca",
+                      Name = new LocalizedString { Arab = "الدار البيضاء", French = "Casablanca", English = "Casablanca" }
                        ,
                       Description = new LocalizedString { Arab = "", French = "", English = "" },
                       Country = context.Countrys.First(),
                   },
                   new City()
                   {
-                      Reference = "Asilah",
-                      Name = new LocalizedString { Arab = "أصيلة", French = "Asilah", English = "Asilah" }
-                      , Description = new LocalizedString { Arab="",French="",English=""},
-                      Country=context.Countrys.First(),
+                      Reference = "Rabat",
+                      Name = new LocalizedString { Arab = "الرباط", French = "Rabat", English = "Rabat" }
+                       ,
+                      Description = new LocalizedString { Arab = "", French = "", English = "" },
+                      Country = context.Countrys.First(),
+                  },
+                   new City()
+                   {
+                       Reference = "Tetouan",
+                       Name = new LocalizedString { Arab = "تطوان", French = "Tétouan", English = "Tetouan" }
+                        ,
+                       Description = new LocalizedString { Arab = "", French = "", English = "" },
+                       Country = context.Countrys.First(),
+                   },
+                   new City()
+                   {
+                       Reference = "Asilah",
+                       Name = new LocalizedString { Arab = "أصيلة", French = "Asilah", English = "Asilah" }
+                       ,
+                       Description = new LocalizedString { Arab = "", French = "", English = "" },
+                       Country = context.Countrys.First(),
 
-                      
-
-                  }
 
 
-                );
-            //Add Default Region
-           context.Regions.AddOrUpdate(
-             r => r.Reference,
-             new Region()
-             {
-                 Reference= "Tangier-Tetouan",
-                 Name =new LocalizedString { Arab= "طنجة تطوان", French= "Tanger-Tétouan", English= "Tangier Tetouan" },
-                 Ordre=16,
-             },
-               new Region()
-               {
-                   Reference = "Taza-Al-Hoceima-Taounate",
-                   Name = new LocalizedString { Arab = "تازة الحسيمة تاونات", French = "Taza-Al Hoceïma-Taounate", English = "Taza-Al Hoceima-Taounate" },
-                   Ordre = 15,
-               },
+                   }
+                     );
+            //     //Add Default Region
+            context.Regions.AddOrUpdate(
+              r => r.Reference,
+              new Region()
+              {
+                  Reference = "Tangier-Tetouan",
+                  Name = new LocalizedString { Arab = "طنجة تطوان", French = "Tanger-Tétouan", English = "Tangier Tetouan" },
+                  Ordre = 16,
+              },
                 new Region()
                 {
-                    Reference = "Grand-asablanca",
-                    Name = new LocalizedString { Arab = "الدار البيضاء", French = "Grand Casablanca", English = "Grand Casablanca" },
-                    Ordre = 5,
+                    Reference = "Taza-Al-Hoceima-Taounate",
+                    Name = new LocalizedString { Arab = "تازة الحسيمة تاونات", French = "Taza-Al Hoceïma-Taounate", English = "Taza-Al Hoceima-Taounate" },
+                    Ordre = 15,
                 },
                  new Region()
                  {
-                     Reference = "Rabat-Salé-Zemmour-Zaer",
-                     Name = new LocalizedString { Arab = "الرباط سلا زمور زعير", French = "Rabat-Salé-Zemmour-Zaër ", English = "Rabat-Salé-Zemmour-Zaer" },
-                     Ordre = 12,
-                 }
-             );
-         //Add Default Function 
-         context.Functions.AddOrUpdate(
-                r=>r.Reference,
-                new Function()
-                {
-                    Reference="Director",
-                    Name=new LocalizedString { Arab = "مدير", French= "directeur", English= "Director" },
-                    Description=new LocalizedString { Arab="",French="",English=""}
-                },
-                 new Function()
-                 {
-                     Reference = "DirectorOfPedagogy",
-                     Name = new LocalizedString { Arab = "مدير بيداغوجي", French = "Directeur Pédagogie", English = "Director Of Pedagogy" },
-                     Description = new LocalizedString { Arab = "", French = "", English = "" }
-                 }
-                 ,
-                  new Function()
+                     Reference = "Grand-asablanca",
+                     Name = new LocalizedString { Arab = "الدار البيضاء", French = "Grand Casablanca", English = "Grand Casablanca" },
+                     Ordre = 5,
+                 },
+                  new Region()
                   {
-                      Reference = "Former",
-                      Name = new LocalizedString { Arab = "مكون", French = "Formateur", English = "Former" },
-                      Description = new LocalizedString { Arab = "", French = "", English = "" }
-                  },
+                      Reference = "Rabat-Salé-Zemmour-Zaer",
+                      Name = new LocalizedString { Arab = "الرباط سلا زمور زعير", French = "Rabat-Salé-Zemmour-Zaër ", English = "Rabat-Salé-Zemmour-Zaer" },
+                      Ordre = 12,
+                  }
+              );
+            //  //Add Default Function 
+            context.Functions.AddOrUpdate(
+                   r => r.Reference,
                    new Function()
                    {
-                       Reference = "GeneralGuard",
-                       Name = new LocalizedString { Arab = "حارس عام", French = "garde en", English = "General Guard" },
+                       Reference = "Director",
+                       Name = new LocalizedString { Arab = "مدير", French = "directeur", English = "Director" },
                        Description = new LocalizedString { Arab = "", French = "", English = "" }
                    },
+                    new Function()
+                    {
+                        Reference = "DirectorOfPedagogy",
+                        Name = new LocalizedString { Arab = "مدير بيداغوجي", French = "Directeur Pédagogie", English = "Director Of Pedagogy" },
+                        Description = new LocalizedString { Arab = "", French = "", English = "" }
+                    }
+                    ,
                      new Function()
                      {
-                         Reference = "Cleaner",
-                         Name = new LocalizedString { Arab = "عامل النظافة", French = "Femme De Ménage", English = "Cleaner" },
+                         Reference = "Former",
+                         Name = new LocalizedString { Arab = "مكون", French = "Formateur", English = "Former" },
                          Description = new LocalizedString { Arab = "", French = "", English = "" }
-                     }
-                     ,
+                     },
                       new Function()
                       {
-                          Reference = "BodyGuard",
-                          Name = new LocalizedString { Arab = "حارس", French = "Homme De Guet", English = "Bodyguard" },
+                          Reference = "GeneralGuard",
+                          Name = new LocalizedString { Arab = "حارس عام", French = "garde en", English = "General Guard" },
                           Description = new LocalizedString { Arab = "", French = "", English = "" }
-                      }
-                );
-            //add Data For test
-            //staff
-           context.Staffs.AddOrUpdate(
-                r => r.Reference,
-                new Staff()
-                {
-                    Id = 1,
-                    FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                    LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                    DateOfBirth = Convert.ToDateTime("02/02/1982"),
-                    CIN = "k45878",
-                    Email = "madani@outloo.fr",
-                    Address = "tanger-tanger maroc",
-                    FaceBook = "Madani El",
-                    Cellphone = "063547459",
-                    PhoneNumber = "8987458",
-                    DateRecruitment = Convert.ToDateTime("02/02/2016"),
-                    Reference="Madani",
-                    Sex=false,
-                    RegistrationNumber="k45dl",
-                    Cars=null,
-                    Affectations=null,
-                    Function=context.Functions.First(),
-                    City=null,
-                    Ordre=2,
-                    ProfilePhoto=null,
-                    WebSite="google.com"
+                      },
+                        new Function()
+                        {
+                            Reference = "Cleaner",
+                            Name = new LocalizedString { Arab = "عامل النظافة", French = "Femme De Ménage", English = "Cleaner" },
+                            Description = new LocalizedString { Arab = "", French = "", English = "" }
+                        }
+                        ,
+                         new Function()
+                         {
+                             Reference = "BodyGuard",
+                             Name = new LocalizedString { Arab = "حارس", French = "Homme De Guet", English = "Bodyguard" },
+                             Description = new LocalizedString { Arab = "", French = "", English = "" }
+                         }
+                   );
+            //     //add Data For test
+            //     //staff
+            context.Staffs.AddOrUpdate(
+                 r => r.Reference,
+                 new Staff()
+                 {
+                     Id = 1,
+                     FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                     LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                     DateOfBirth = Convert.ToDateTime("02/02/1982"),
+                     CIN = "k45878",
+                     Email = "madani@outloo.fr",
+                     Address = "tanger-tanger maroc",
+                     FaceBook = "Madani El",
+                     Cellphone = "063547459",
+                     PhoneNumber = "8987458",
+                     DateRecruitment = Convert.ToDateTime("02/02/2016"),
+                     Reference = "Madani",
+                     Sex = false,
+                     RegistrationNumber = "k45dl",
+                     Cars = null,
+                     Affectations = null,
+                     Function = context.Functions.First(),
+                     City = null,
+                     Ordre = 2,
+                     ProfilePhoto = null,
+                     WebSite = "google.com"
 
 
-                }    
-                
-                );
+                 }
+
+                 );
             //Institution
             context.Institutions.AddOrUpdate(
                r => r.Reference,
                new Institution()
                {
                    Reference = "ISMONTIC",
-                   Description=new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
-                  , Name=new LocalizedString { Arab="ISMONTIC",English="ISMONTIC",French="ISMONTIC"},
-                   Address=new LocalizedString { Arab= "شارع القوات المسلحة الملكية، طنجة، المغرب", English= "Boulevard Royal Armed Forces, Tangier, Morocco", French= "Boulevard des Forces Armées Royales, Tanger, Maroc" }
+                   Description = new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
+                  ,
+                   Name = new LocalizedString { Arab = "ISMONTIC", English = "ISMONTIC", French = "ISMONTIC" },
+                   Address = new LocalizedString { Arab = "شارع القوات المسلحة الملكية، طنجة، المغرب", English = "Boulevard Royal Armed Forces, Tangier, Morocco", French = "Boulevard des Forces Armées Royales, Tanger, Maroc" }
                }
 
                );
-               
-          context.SaveChanges();
+
+            context.SaveChanges(); 
         }
     }
 }

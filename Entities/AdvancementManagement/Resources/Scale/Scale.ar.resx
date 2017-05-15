@@ -129,4 +129,13 @@
   <data name="SingularName" xml:space="preserve">
     <value>السلم</value>
   </data>
+  <data name="Scales" xml:space="preserve">
+    <value>السلم</value>
+  </data>
+  <data name="AdvancementScales" xml:space="preserve">
+    <value>تقدم السلم</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
 </root>
