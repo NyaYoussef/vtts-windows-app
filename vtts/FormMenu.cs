@@ -26,7 +26,7 @@ namespace vtts
         {
             User user = null;
             //user.Language = Gwin.Languages.ar;
-              user = User.CreateAdminUser(new ModelContext());
+              //user = User.CreateAdminUser(new ModelContext());
             
             // user = User.CreateGuestUser(new ModelContext());
 
@@ -39,5 +39,12 @@ namespace vtts
             GwinApp.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
             //InitializeComponent();
         }
+        public override void Reload()
+        {
+            base.Reload();
+            InitializeComponent();
+        }
+
+
     }
 }

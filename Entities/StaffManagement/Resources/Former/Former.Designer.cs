@@ -104,5 +104,14 @@ namespace Entities.StaffManagement.Resources.Former {
                 return ResourceManager.GetString("SingularName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specialty.
+        /// </summary>
+        internal static string Specialty {
+            get {
+                return ResourceManager.GetString("Specialty", resourceCulture);
+            }
+        }
     }
 }

@@ -13,19 +13,19 @@ namespace Entities.AdvancementManagement
     [Menu(Group = "AdvanceManagement")]
     public  class Scale:BaseEntity
     {
-        [EntryForm(Ordre = 3, GroupeBox = "Assignments")]
+        [EntryForm(Ordre = 3, GroupeBox = "Scales")]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public int Number { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Scale")]
+        [EntryForm(Ordre = 3, GroupeBox = "Scales")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Grade Grade { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Scale")]
+        
         [DataGrid(WidthColonne = 100)]
-        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List<AdvancementScale> AdvancementScales { get; set; }
 
         [NotMapped]

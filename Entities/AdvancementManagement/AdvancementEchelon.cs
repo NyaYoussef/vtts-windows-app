@@ -13,21 +13,21 @@ namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "AdvanceManagement")]
-    public class AdvancementEchelon : BaseEntity
+    public class AdvancementEchelon:BaseEntity
     {
-        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
+        [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [DataGrid(WidthColonne = 100)]
         public DateTime Date { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
+        [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Former Former { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
+        [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public  Echelon Echelon { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Advancement Echlon")]
+        [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Scale Scale { get; set; }
 
@@ -37,7 +37,7 @@ namespace Entities.AdvancementManagement
             get
             {
                 if (Echelon != null &&  Date != null)
-                    return Echelon + ":" + Date.ToShortDateString();
+                    return Echelon+ ":" + Date.ToShortDateString();
                 else
                 {
                     return "";

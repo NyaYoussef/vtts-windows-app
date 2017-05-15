@@ -61,11 +61,38 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Advancemant Scales.
+        /// </summary>
+        internal static string AdvancemantScales {
+            get {
+                return ResourceManager.GetString("AdvancemantScales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
         internal static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Echelons.
+        /// </summary>
+        internal static string Echelons {
+            get {
+                return ResourceManager.GetString("Echelons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Former.
+        /// </summary>
+        internal static string Former {
+            get {
+                return ResourceManager.GetString("Former", resourceCulture);
             }
         }
         
@@ -84,6 +111,15 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         internal static string PluralName {
             get {
                 return ResourceManager.GetString("PluralName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scale.
+        /// </summary>
+        internal static string Scale {
+            get {
+                return ResourceManager.GetString("Scale", resourceCulture);
             }
         }
         

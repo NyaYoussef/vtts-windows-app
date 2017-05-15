@@ -61,6 +61,24 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Advancement Scales.
+        /// </summary>
+        internal static string AdvancementScales {
+            get {
+                return ResourceManager.GetString("AdvancementScales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grade.
+        /// </summary>
+        internal static string Grade {
+            get {
+                return ResourceManager.GetString("Grade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scales Management.
         /// </summary>
         internal static string menu_title {
@@ -84,6 +102,15 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         internal static string PluralName {
             get {
                 return ResourceManager.GetString("PluralName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scale.
+        /// </summary>
+        internal static string Scales {
+            get {
+                return ResourceManager.GetString("Scales", resourceCulture);
             }
         }
         

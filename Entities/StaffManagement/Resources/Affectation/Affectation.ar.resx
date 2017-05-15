@@ -129,7 +129,10 @@
   <data name="SingularName" xml:space="preserve">
     <value>المهمة</value>
   </data>
-  <data name="Staffs" xml:space="preserve">
+  <data name="Staff" xml:space="preserve">
     <value>العامل</value>
+  </data>
+  <data name="Institution" xml:space="preserve">
+    <value>المؤسسة</value>
   </data>
 </root>

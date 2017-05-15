@@ -70,6 +70,15 @@ namespace Entities.AdvancementManagement.Resources.Grade {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Grade.
+        /// </summary>
+        internal static string Grades {
+            get {
+                return ResourceManager.GetString("Grades", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Grades Management.
         /// </summary>
         internal static string menu_title {

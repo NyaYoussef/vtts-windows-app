@@ -132,4 +132,7 @@
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
   </data>
+  <data name="Grades" xml:space="preserve">
+    <value>Grade</value>
+  </data>
 </root>

@@ -129,4 +129,16 @@
   <data name="SingularName" xml:space="preserve">
     <value>Advancement Scale</value>
   </data>
+  <data name="AdvancemantScales" xml:space="preserve">
+    <value>Advancemant Scales</value>
+  </data>
+  <data name="Echelons" xml:space="preserve">
+    <value>Echelons</value>
+  </data>
+  <data name="Former" xml:space="preserve">
+    <value>Former</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Scale</value>
+  </data>
 </root>

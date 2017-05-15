@@ -38,7 +38,8 @@ namespace Entities.InstitutionManagement
 
         [EntryForm(Ordre = 3,WidthControl =300,Enable =true,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 100)]
-        [Filter(Ordre =2)]
+        [Filter(Ordre =2,isValeurFiltreVide =true)]
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Region Region { set; get; }
 
 

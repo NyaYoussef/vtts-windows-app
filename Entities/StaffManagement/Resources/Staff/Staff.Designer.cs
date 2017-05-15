@@ -88,6 +88,15 @@ namespace Entities.StaffManagement.Resources.Staff {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cars.
+        /// </summary>
+        internal static string Cars {
+            get {
+                return ResourceManager.GetString("Cars", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cell phone.
         /// </summary>
         internal static string Cellphone {
@@ -129,6 +138,15 @@ namespace Entities.StaffManagement.Resources.Staff {
         internal static string Function {
             get {
                 return ResourceManager.GetString("Function", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Function.
+        /// </summary>
+        internal static string Functions {
+            get {
+                return ResourceManager.GetString("Functions", resourceCulture);
             }
         }
         

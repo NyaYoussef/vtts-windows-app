@@ -132,4 +132,10 @@
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="Echelons" xml:space="preserve">
+    <value>Echelon</value>
+  </data>
+  <data name="AdvancementEchelons" xml:space="preserve">
+    <value>Advancement Echelons</value>
+  </data>
 </root>

@@ -165,4 +165,10 @@
   <data name="WebSite" xml:space="preserve">
     <value>Site Web</value>
   </data>
+  <data name="Cars" xml:space="preserve">
+    <value>Voiture</value>
+  </data>
+  <data name="Functions" xml:space="preserve">
+    <value>Fonction</value>
+  </data>
 </root>

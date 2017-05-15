@@ -70,6 +70,15 @@ namespace Entities.MissionManagement.Resources.MissionCategory {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mission Convocations.
+        /// </summary>
+        internal static string MissionConvocations {
+            get {
+                return ResourceManager.GetString("MissionConvocations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Missions Categorys.
         /// </summary>
         internal static string PluralName {

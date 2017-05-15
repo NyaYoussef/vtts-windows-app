@@ -129,4 +129,7 @@
   <data name="SubjectName" xml:space="preserve">
     <value>إسم الموضوع</value>
   </data>
+  <data name="MissionConvocations" xml:space="preserve">
+    <value>دعوة المهمة</value>
+  </data>
 </root>

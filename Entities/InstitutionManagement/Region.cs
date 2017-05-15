@@ -17,12 +17,12 @@ namespace Entities.InstitutionManagement
             this.Name = new LocalizedString();
             this.Description = new LocalizedString();
         }
-        [EntryForm(Ordre = 1)]
+        [EntryForm(Ordre = 1,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public LocalizedString Name { get; set; }
 
-        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300)]
+        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 200)]
         [Filter]
         public LocalizedString Description { get; set; }
