@@ -117,43 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Description" xml:space="preserve">
-    <value>الوصف</value>
-  </data>
-  <data name="EndDate" xml:space="preserve">
-    <value>تاريخ الإنتهاء</value>
-  </data>
-  <data name="Institution" xml:space="preserve">
-    <value>المؤسسة</value>
-  </data>
   <data name="menu_title" xml:space="preserve">
-    <value>تدبير دعوات المهام</value>
-  </data>
-  <data name="MissionCategory" xml:space="preserve">
-    <value>صنف المهمة</value>
-  </data>
-  <data name="MissionOrders" xml:space="preserve">
-    <value>أمر المهمة</value>
-  </data>
-  <data name="MissionSubject" xml:space="preserve">
-    <value>موضوع المهمة</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>اسم</value>
+    <value>Gestion De Mission</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>دعوات المهام</value>
+    <value>Missions</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>دعوة المهمة</value>
+    <value>Mission</value>
+  </data>
+  <data name="MissionConvocations" xml:space="preserve">
+    <value>Convocation De Mission</value>
+  </data>
+  <data name="MissionOrder" xml:space="preserve">
+    <value>Commande De Mission</value>
+  </data>
+  <data name="MissionSubject" xml:space="preserve">
+    <value>Sujet De Mission</value>
   </data>
   <data name="Staffs" xml:space="preserve">
-    <value>العاملين</value>
-  </data>
-  <data name="StartDate" xml:space="preserve">
-    <value>تاريخ البدء</value>
-  </data>
-  <data name="Details" xml:space="preserve">
-    <value>تفاصيل</value>
+    <value>Personnel</value>
   </data>
 </root>

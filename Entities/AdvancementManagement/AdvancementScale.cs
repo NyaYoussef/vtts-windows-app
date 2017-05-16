@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "AdvanceManagement")]
+    [Menu(Group = "HRManagement")]
     public class AdvancementScale:BaseEntity
     {
 

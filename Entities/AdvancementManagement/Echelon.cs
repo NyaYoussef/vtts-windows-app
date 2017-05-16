@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "AdvanceManagement",Title = "menu_title")]
+    [Menu(Group = "HRManagement", Title = "menu_title")]
     public class Echelon:BaseEntity
     {
         public Echelon()

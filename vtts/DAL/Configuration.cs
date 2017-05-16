@@ -193,11 +193,11 @@
             RoleDirector.Authorizations.Add(GradeAutorization);
             RoleDirector.Authorizations.Add(EchelonAutorization);
             RoleDirector.Authorizations.Add(AdvancementScaleAutorization);
-            RoleDirector.Authorizations.Add(SpecialtyAutorization);
             RoleDirector.Authorizations.Add(FunctionAutorization);
             RoleDirector.Authorizations.Add(StaffAutorization);
             RoleDirector.Authorizations.Add(InstitutionAutorization);
             RoleDirector.Authorizations.Add(AdvancementEchelonAutorization);
+            RoleDirector.Authorizations.Remove(SpecialtyAutorization);
 
 
             Authorization MissionCategoryAutorization = new Authorization();
@@ -216,6 +216,10 @@
             MissionSubjectAutorization.BusinessEntity = typeof(MissionSubject).FullName;
             RoleDirector.Authorizations.Add(MissionSubjectAutorization);
 
+            Authorization MissionAutorization = new Authorization();
+            MissionAutorization.BusinessEntity = typeof(Mission).FullName;
+            RoleDirector.Authorizations.Add(MissionAutorization);
+
             Authorization CarAutorization = new Authorization();
             CarAutorization.BusinessEntity = typeof(Car).FullName;
             RoleDirector.Authorizations.Add(CarAutorization);
@@ -225,6 +229,7 @@
             RoleAdmin.Authorizations.Add(MissionOrderAutorization);
             RoleAdmin.Authorizations.Add(MissionSubjectAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
+            RoleAdmin.Authorizations.Add(MissionAutorization);
 
 
 

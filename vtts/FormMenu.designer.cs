@@ -31,7 +31,7 @@
             this.Menu_StaffManagement = new MetroFramework.Controls.MetroTile();
             this.Menu_ConvocationManagement = new MetroFramework.Controls.MetroTile();
             this.Menu_PrintMissionOrderManagement = new MetroFramework.Controls.MetroTile();
-            this.Menu_AffectationManagement = new MetroFramework.Controls.MetroTile();
+            this.Menu_Mission_Order_Management = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // Menu_StaffManagement
@@ -43,6 +43,7 @@
             this.Menu_StaffManagement.TabIndex = 2;
             this.Menu_StaffManagement.Text = "Staff Management";
             this.Menu_StaffManagement.UseSelectable = true;
+            this.Menu_StaffManagement.Click += new System.EventHandler(this.Menu_StaffManagement_Click);
             // 
             // Menu_ConvocationManagement
             // 
@@ -53,6 +54,7 @@
             this.Menu_ConvocationManagement.TabIndex = 3;
             this.Menu_ConvocationManagement.Text = "Mission Convocation Management";
             this.Menu_ConvocationManagement.UseSelectable = true;
+            this.Menu_ConvocationManagement.Click += new System.EventHandler(this.Menu_ConvocationManagement_Click);
             // 
             // Menu_PrintMissionOrderManagement
             // 
@@ -63,23 +65,25 @@
             this.Menu_PrintMissionOrderManagement.TabIndex = 4;
             this.Menu_PrintMissionOrderManagement.Text = "Print Mission Order";
             this.Menu_PrintMissionOrderManagement.UseSelectable = true;
+            this.Menu_PrintMissionOrderManagement.Click += new System.EventHandler(this.Menu_PrintMissionOrderManagement_Click);
             // 
-            // Menu_AffectationManagement
+            // Menu_Mission_Order_Management
             // 
-            this.Menu_AffectationManagement.ActiveControl = null;
-            this.Menu_AffectationManagement.Location = new System.Drawing.Point(468, 129);
-            this.Menu_AffectationManagement.Name = "Menu_AffectationManagement";
-            this.Menu_AffectationManagement.Size = new System.Drawing.Size(227, 63);
-            this.Menu_AffectationManagement.TabIndex = 5;
-            this.Menu_AffectationManagement.Text = "Affectation Management";
-            this.Menu_AffectationManagement.UseSelectable = true;
+            this.Menu_Mission_Order_Management.ActiveControl = null;
+            this.Menu_Mission_Order_Management.Location = new System.Drawing.Point(468, 129);
+            this.Menu_Mission_Order_Management.Name = "Menu_Mission_Order_Management";
+            this.Menu_Mission_Order_Management.Size = new System.Drawing.Size(227, 63);
+            this.Menu_Mission_Order_Management.TabIndex = 5;
+            this.Menu_Mission_Order_Management.Text = "Mission Order Management";
+            this.Menu_Mission_Order_Management.UseSelectable = true;
+            this.Menu_Mission_Order_Management.Click += new System.EventHandler(this.Menu_Mission_Order_Management_Click);
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 325);
-            this.Controls.Add(this.Menu_AffectationManagement);
+            this.Controls.Add(this.Menu_Mission_Order_Management);
             this.Controls.Add(this.Menu_PrintMissionOrderManagement);
             this.Controls.Add(this.Menu_ConvocationManagement);
             this.Controls.Add(this.Menu_StaffManagement);
@@ -90,7 +94,7 @@
             this.Controls.SetChildIndex(this.Menu_StaffManagement, 0);
             this.Controls.SetChildIndex(this.Menu_ConvocationManagement, 0);
             this.Controls.SetChildIndex(this.Menu_PrintMissionOrderManagement, 0);
-            this.Controls.SetChildIndex(this.Menu_AffectationManagement, 0);
+            this.Controls.SetChildIndex(this.Menu_Mission_Order_Management, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +105,6 @@
         private MetroFramework.Controls.MetroTile Menu_StaffManagement;
         private MetroFramework.Controls.MetroTile Menu_ConvocationManagement;
         private MetroFramework.Controls.MetroTile Menu_PrintMissionOrderManagement;
-        private MetroFramework.Controls.MetroTile Menu_AffectationManagement;
+        private MetroFramework.Controls.MetroTile Menu_Mission_Order_Management;
     }
 }

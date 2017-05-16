@@ -23,39 +23,37 @@ namespace Entities.MissionManagement
         }
 
 
-        [EntryForm(Ordre = 2)]
+        [EntryForm(Ordre = 2,GroupeBox ="Details")]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public LocalizedString Name { get; set; }
 
-        [EntryForm(Ordre = 8, MultiLine = true, WidthControl = 300,NumberLine =12)]
+        [EntryForm(Ordre = 8, MultiLine = true, WidthControl = 300,NumberLine =12,GroupeBox = "Details")]
         [DataGrid(WidthColonne = 200)]
         [Filter]
         public LocalizedString Description { get; set; }
 
-        [EntryForm(Ordre=1,WidthControl =200,MultiLine =true)]
+        [EntryForm(Ordre=1,WidthControl =200,MultiLine =true,GroupeBox = "menu_title")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<Staff> Staffs { get; set; }
 
-        //[EntryForm(Ordre = 3, WidthControl = 200, MultiLine = true)]
-        //[Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
-        public Institution Institution { get; set; }
+        [EntryForm(Ordre = 3, WidthControl = 200, MultiLine = true,GroupeBox = "menu_title")]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        public  Institution Institution { get; set; }
         //Sujet
-        [EntryForm(Ordre = 4, WidthControl = 200, MultiLine = true)]
+        [EntryForm(Ordre = 4, WidthControl = 200, MultiLine = true,GroupeBox = "menu_title")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public MissionSubject MissionSubject { get; set; }
 
-        [EntryForm(Ordre=5,WidthControl =200)]
+        [EntryForm(Ordre=5,WidthControl =200,GroupeBox = "Details")]
         [DataGrid(Ordre=5,WidthColonne =200)]
         public DateTime StartDate { get; set; }
-        [EntryForm(Ordre = 5, WidthControl = 200)]
+        [EntryForm(Ordre = 5, WidthControl = 200,GroupeBox = "Details")]
         [DataGrid(Ordre = 5, WidthColonne = 200)]
         public DateTime EndDate { get; set; }
 
-
-        public MissionCategory MissionCategory { get; set; }
-
-
+        [EntryForm(Ordre = 1, WidthControl = 200, MultiLine = true,GroupeBox = "menu_title")]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<MissionOrder> MissionOrders { get; set; }
     } 
 }
