@@ -23,6 +23,7 @@ namespace Entities.MissionManagement
 
         [EntryForm(Ordre = 1, WidthControl = 150)]
         [DataGrid(Ordre = 1, WidthColonne = 100)]
+        [Filter(Ordre =1)]
         public string OrderNumber { set; get; }
 
         [EntryForm(Ordre = 3, WidthControl = 150)]
@@ -37,6 +38,7 @@ namespace Entities.MissionManagement
         // Means of transport
         [EntryForm(Ordre = 2, WidthControl = 200)]
         [DataGrid(Ordre = 2, WidthColonne = 100)]
+        [Filter(Ordre =2,isValeurFiltreVide =true)]
         public MeansTransportCategories MeansTransportCategory { set; get; }
 
         [EntryForm(Ordre = 2, WidthControl = 150)]
