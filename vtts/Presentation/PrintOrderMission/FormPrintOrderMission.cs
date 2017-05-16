@@ -1,4 +1,5 @@
-﻿using App.Gwin.Entities.Secrurity.Authentication;
+﻿using App.Gwin.Application.Presentation;
+using App.Gwin.Entities.Secrurity.Authentication;
 using Entities.MissionManagement;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -18,8 +19,10 @@ using System.Windows.Forms;
 namespace vtts.Presentation.PrintOrderMission
 {
     [App.Gwin.Attributes.Menu( EntityType = typeof(MissionConvocation),Order = 10, Title = "PrintMissionOrder")]
-    public partial class FormPrintOrderMission : Form
+    public partial class FormPrintOrderMission : BaseForm
     {
+
+        public string PathPDF = "";
         public FormPrintOrderMission()
         {
             InitializeComponent();
@@ -27,17 +30,39 @@ namespace vtts.Presentation.PrintOrderMission
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void FormPrintOrderMission_Load(object sender, EventArgs e)
+        {
             vtts.BAL.MissionManagement.PrintOrderMission printOrderMission = new vtts.BAL.MissionManagement.PrintOrderMission();
             //
             printOrderMission.Ordre = "OFP/DRNOII/ISMONTIC/OM/N° 13/17";
             printOrderMission.Date = DateTime.Now;
             //
-            string path = printOrderMission.CreatePDF();
-            
+            this.PathPDF = printOrderMission.CreatePDF();
+
 
             // Print Document with Spire Library
             Spire.Pdf.PdfDocument doc = new Spire.Pdf.PdfDocument();
-            doc.LoadFromFile(path);
+            doc.LoadFromFile(this.PathPDF);
+
+            printPreviewControl1.Document = doc.PrintDocument;
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            
+
+
+            // Print Document with Spire Library
+            Spire.Pdf.PdfDocument doc = new Spire.Pdf.PdfDocument();
+            doc.LoadFromFile(this.PathPDF);
 
 
             //var ppd = new PrintPreviewDialog();
@@ -74,16 +99,6 @@ namespace vtts.Presentation.PrintOrderMission
                 dialogPrint.Document = printDoc;
                 printDoc.Print();
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void FormPrintOrderMission_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
