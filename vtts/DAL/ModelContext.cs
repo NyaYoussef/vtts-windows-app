@@ -95,6 +95,8 @@
         public virtual DbSet<Function> Functions { get; set; }
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<AdvancementEchelon> AdvancementEchelons { get; set; }
+        public virtual DbSet<Mission> Missions { get; set; }
+
 
 
 

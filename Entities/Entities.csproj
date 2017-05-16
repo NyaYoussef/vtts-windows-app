@@ -166,6 +166,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="MissionManagement\Enumeration\Class1.cs" />
+    <Compile Include="MissionManagement\Mission.cs" />
     <Compile Include="MissionManagement\MissionConvocation.cs" />
     <Compile Include="MissionManagement\MissionOrder.cs" />
     <Compile Include="MissionManagement\MissionCategory.cs" />
@@ -227,6 +228,21 @@
     </Compile>
     <Compile Include="MissionManagement\Resources\MissionSubject\MissionSubject.Designer.cs">
       <DependentUpon>MissionSubject.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\Mission\Mission.ar.Designer.cs">
+      <DependentUpon>Mission.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\Mission\Mission.fr.Designer.cs">
+      <DependentUpon>Mission.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MissionManagement\Resources\Mission\Mission.Designer.cs">
+      <DependentUpon>Mission.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -551,6 +567,18 @@
     <EmbeddedResource Include="MissionManagement\Resources\MissionSubject\MissionSubject.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MissionSubject.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionManagement\Resources\Mission\Mission.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MissionManagement\Resources\Training\Training.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>

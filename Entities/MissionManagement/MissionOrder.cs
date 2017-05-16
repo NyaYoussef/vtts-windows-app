@@ -28,6 +28,7 @@ namespace Entities.MissionManagement
         public MeansTransportCategories MeansTransportCategory { set; get; }
 
         public Staff Staff { set; get; }
-
+        public Car Car { get; set; }
+        public bool Validation { get; set; }
     }
 }

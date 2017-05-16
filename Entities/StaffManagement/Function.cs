@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Entities.StaffManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "InstitutionManagement",Title ="menu_title")]
+    [Menu(Group = "HRManagement", Title ="menu_title")]
     public class Function : BaseEntity
     {
         public Function()

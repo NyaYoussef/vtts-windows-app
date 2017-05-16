@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Entities.StaffManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "InstitutionManagement")]
+    [Menu(Group = "HRManagement")]
     public  class Affectation:BaseEntity
     {
         [EntryForm(Ordre = 1,WidthControl =350)]
