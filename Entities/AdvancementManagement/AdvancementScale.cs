@@ -31,6 +31,7 @@ namespace Entities.AdvancementManagement
         [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(Ordre =1,isValeurFiltreVide =true)]
         public Scale Scale { get; set; }
 
       

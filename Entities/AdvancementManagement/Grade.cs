@@ -20,10 +20,11 @@ namespace Entities.AdvancementManagement
         }
         [EntryForm(Ordre = 3, GroupeBox = "Grades")]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(Ordre =1 ,WidthControl = 100)]
         public LocalizedString Name { get; set; }
         [EntryForm(Ordre = 3, GroupeBox = "Grades",MultiLine =true,WidthControl =300)]
         [DataGrid(WidthColonne = 100)]
+        [Filter(Ordre =2,WidthControl =100)]
         public LocalizedString Description { get; set; }
 
         

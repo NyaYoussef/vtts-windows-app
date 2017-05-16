@@ -20,6 +20,7 @@ namespace Entities.AdvancementManagement
         }
         [EntryForm(Ordre = 3, GroupeBox = "Echelons",MultiLine =true,WidthControl =300)]
         [DataGrid(WidthColonne = 100)]
+        [Filter(Ordre =1,isValeurFiltreVide =true)]
         public LocalizedString Description { get; set; }
 
        /* [EntryForm(Ordre = 3, GroupeBox = "Echlon", WidthControl = 300)]

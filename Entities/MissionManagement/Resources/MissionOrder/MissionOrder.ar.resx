@@ -144,4 +144,10 @@
   <data name="Staff" xml:space="preserve">
     <value>العاملين</value>
   </data>
+  <data name="ArrivalDate" xml:space="preserve">
+    <value>تاريخ الوصول</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>التصديق</value>
+  </data>
 </root>

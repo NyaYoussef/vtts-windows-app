@@ -138,4 +138,7 @@
   <data name="Staffs" xml:space="preserve">
     <value>العامل</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
 </root>

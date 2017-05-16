@@ -61,6 +61,15 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Arrival Date.
+        /// </summary>
+        internal static string ArrivalDate {
+            get {
+                return ResourceManager.GetString("ArrivalDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
         internal static string Date {
@@ -138,6 +147,15 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         internal static string Staff {
             get {
                 return ResourceManager.GetString("Staff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation.
+        /// </summary>
+        internal static string Validation {
+            get {
+                return ResourceManager.GetString("Validation", resourceCulture);
             }
         }
     }

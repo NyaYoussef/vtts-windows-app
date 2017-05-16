@@ -129,4 +129,13 @@
   <data name="MissionConvocations" xml:space="preserve">
     <value>دعوة المهمة</value>
   </data>
+  <data name="Code" xml:space="preserve">
+    <value>الرمز</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>الصنف</value>
+  </data>
 </root>
