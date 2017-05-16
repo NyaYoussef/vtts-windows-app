@@ -11,9 +11,10 @@ using System.Threading.Tasks;
 
 namespace Entities.StaffManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "RegistrationNumber")]
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "HRManagement",Title ="menu_title")]
     [ManagementForm(Width = 1000,Height = 600)]
+   
     public class Staff: Person
     {
         public Staff()
@@ -27,36 +28,22 @@ namespace Entities.StaffManagement
         {
             get
             {
-                return this.FirstName + " " + this.LastName;
+                return this.FirstName.Current + " " + this.LastName.Current;
             }
         }
 
+ 
+        //[DataGrid(WidthColonne = 100)]
+        //[EntryForm(Ordre = 2, GroupeBox = "Civil status", GroupeBoxOrder = 100,isRequired = true)]
+        //[Filter("FirstName")]
+        //public LocalizedString FirstName { get; set; }
 
+        //[DataGrid(WidthColonne = 100)]
+        //[EntryForm(Ordre = 1, GroupeBox = "Civil status", GroupeBoxOrder = 100, isRequired = true)]
+        //[Filter("LastName")]
+        //public LocalizedString LastName { get; set; }
 
-        [EntryForm(Ordre = 12, MultiLine = true, GroupeBox = "Contact Information", GroupeBoxOrder = 101,isRequired =true)]
-        public string Address { get; set; }
-
-        [EntryForm(Ordre = 14, GroupeBox = "Contact Information", GroupeBoxOrder = 101,isRequired =true)]
-        public string Cellphone { get; set; }
-
-        [DataGrid(WidthColonne = 50)]
-        [DisplayProperty(Title  = "CIN")]
-        [EntryForm(Ordre = 3, GroupeBox = "Civil status", GroupeBoxOrder = 100,isRequired =true)]
-        [Filter("CIN")]
-        public string CIN { get; set; }
-
-        [DataGrid(WidthColonne = 100)]
-        [EntryForm(Ordre = 2, GroupeBox = "Civil status", GroupeBoxOrder = 100,isRequired = true)]
-        [Filter("FirstName")]
-        public LocalizedString FirstName { get; set; }
-
-        [DataGrid(WidthColonne = 100)]
-        [EntryForm(Ordre = 1, GroupeBox = "Civil status", GroupeBoxOrder = 100, isRequired = true)]
-        [Filter("LastName")]
-        public LocalizedString LastName { get; set; }
-
-        [EntryForm(Ordre = 11, GroupeBox = "Contact Information", GroupeBoxOrder = 101, isRequired = true)]
-        public string PhoneNumber { get; set; }
+       
         //
         // Recruitment
         //
@@ -92,7 +79,7 @@ namespace Entities.StaffManagement
         [DataGrid(WidthColonne = 100)]
         [Filter(isValeurFiltreVide =true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        public Function Function { get; set; }
+        public virtual Function Function { get; set; }
 
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List<Car> Cars { get; set; }

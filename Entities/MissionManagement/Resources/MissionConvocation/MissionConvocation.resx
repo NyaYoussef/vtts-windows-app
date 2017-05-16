@@ -156,4 +156,13 @@
   <data name="Details" xml:space="preserve">
     <value>Details</value>
   </data>
+  <data name="location" xml:space="preserve">
+    <value>Location and Date</value>
+  </data>
+  <data name="Participants" xml:space="preserve">
+    <value>Participant</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
 </root>

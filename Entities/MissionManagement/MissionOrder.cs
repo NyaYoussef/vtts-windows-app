@@ -38,7 +38,6 @@ namespace Entities.MissionManagement
         // Means of transport
         [EntryForm(Ordre = 2, WidthControl = 200)]
         [DataGrid(Ordre = 2, WidthColonne = 100)]
-        [Filter(Ordre =2,isValeurFiltreVide =true)]
         public MeansTransportCategories MeansTransportCategory { set; get; }
 
         [EntryForm(Ordre = 2, WidthControl = 150)]
@@ -47,7 +46,7 @@ namespace Entities.MissionManagement
 
         [EntryForm(Ordre = 2, WidthControl = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        public Car Car { get; set; }
+        public virtual Car Car { get; set; }
 
         [EntryForm(Ordre = 7, WidthControl = 150)]
         [DataGrid(Ordre = 7, WidthColonne = 100)]
