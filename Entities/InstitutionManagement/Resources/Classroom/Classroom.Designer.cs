@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.MissionManagement.Resources.Mission {
+namespace Entities.InstitutionManagement.Resources.Classroom {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.MissionManagement.Resources.Mission {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Mission {
+    internal class Classroom {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Mission() {
+        internal Classroom() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.MissionManagement.Resources.Mission {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.MissionManagement.Resources.Mission.Mission", typeof(Mission).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.InstitutionManagement.Resources.Classroom.Classroom", typeof(Classroom).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,29 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Management.
+        ///   Looks up a localized string similar to Categogies Class Room.
+        /// </summary>
+        internal static string CategogiesClassroom {
+            get {
+                return ResourceManager.GetString("CategogiesClassroom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class Room Management.
         /// </summary>
         internal static string menu_title {
             get {
                 return ResourceManager.GetString("menu_title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mission Convocations.
-        /// </summary>
-        internal static string MissionConvocations {
-            get {
-                return ResourceManager.GetString("MissionConvocations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mission Order.
-        /// </summary>
-        internal static string MissionOrder {
-            get {
-                return ResourceManager.GetString("MissionOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mission Subject.
-        /// </summary>
-        internal static string MissionSubject {
-            get {
-                return ResourceManager.GetString("MissionSubject", resourceCulture);
             }
         }
         
@@ -106,7 +97,7 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions.
+        ///   Looks up a localized string similar to Class Room.
         /// </summary>
         internal static string PluralName {
             get {
@@ -115,20 +106,11 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission.
+        ///   Looks up a localized string similar to Class Room.
         /// </summary>
         internal static string SingularName {
             get {
                 return ResourceManager.GetString("SingularName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Staff.
-        /// </summary>
-        internal static string Staffs {
-            get {
-                return ResourceManager.GetString("Staffs", resourceCulture);
             }
         }
     }

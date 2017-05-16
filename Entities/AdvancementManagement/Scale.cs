@@ -15,12 +15,13 @@ namespace Entities.AdvancementManagement
     {
         [EntryForm(Ordre = 3, GroupeBox = "Scales")]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(Ordre =1)]
         public int Number { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "Scales")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(Ordre =2,isValeurFiltreVide =true)]
         public Grade Grade { get; set; }
 
         

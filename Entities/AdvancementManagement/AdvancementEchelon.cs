@@ -17,6 +17,8 @@ namespace Entities.AdvancementManagement
     {
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [DataGrid(WidthColonne = 100)]
+        
+
         public DateTime Date { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
@@ -25,6 +27,7 @@ namespace Entities.AdvancementManagement
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(Ordre =1,isValeurFiltreVide =true)]
         public  Echelon Echelon { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]

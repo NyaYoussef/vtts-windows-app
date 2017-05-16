@@ -144,4 +144,10 @@
   <data name="Staff" xml:space="preserve">
     <value>Personnel</value>
   </data>
+  <data name="ArrivalDate" xml:space="preserve">
+    <value>Date d'arrivée</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Validation</value>
+  </data>
 </root>

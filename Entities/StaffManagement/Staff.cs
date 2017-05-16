@@ -1,6 +1,7 @@
 ﻿using App.Gwin.Attributes;
 using App.Gwin.Entities.MultiLanguage;
 using App.Gwin.Entities.Persons;
+using Entities.MissionManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -96,7 +97,17 @@ namespace Entities.StaffManagement
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List<Car> Cars { get; set; }
 
-      
+
+        [Relationship(Relation=RelationshipAttribute.Relations.ManyToMany_Selection)]
+        public List<MissionConvocation> MissionConvocation { get; set; }
+
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
+        public List<MissionOrder> MissionOrders { get; set; }
+
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
+        public List <Mission> Missions { get; set; }
+
+
 
     }
 }

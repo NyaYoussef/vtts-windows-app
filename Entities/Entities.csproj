@@ -144,7 +144,38 @@
     </Compile>
     <Compile Include="AdvancementManagement\Scale.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="InstitutionManagement\CategogiesClassroom.cs" />
     <Compile Include="InstitutionManagement\Region.cs" />
+    <Compile Include="InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.ar.Designer.cs">
+      <DependentUpon>CategogiesClassroom.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.fr.Designer.cs">
+      <DependentUpon>CategogiesClassroom.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.Designer.cs">
+      <DependentUpon>CategogiesClassroom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Classroom\Classroom.ar.Designer.cs">
+      <DependentUpon>Classroom.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Classroom\Classroom.fr.Designer.cs">
+      <DependentUpon>Classroom.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="InstitutionManagement\Resources\Classroom\Classroom.Designer.cs">
+      <DependentUpon>Classroom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="InstitutionManagement\Resources\Institution\Institution.ar.Designer.cs">
       <DependentUpon>Institution.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -165,6 +196,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="InstitutionManagement\Classroom.cs" />
     <Compile Include="MissionManagement\Enumeration\Class1.cs" />
     <Compile Include="MissionManagement\Mission.cs" />
     <Compile Include="MissionManagement\MissionConvocation.cs" />
@@ -503,6 +535,30 @@
     <EmbeddedResource Include="AdvancementManagement\Resources\Scale\Scale.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Scale.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategogiesClassroom.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategogiesClassroom.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategogiesClassroom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Classroom\Classroom.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classroom.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Classroom\Classroom.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classroom.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstitutionManagement\Resources\Classroom\Classroom.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classroom.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="InstitutionManagement\Resources\Institution\Institution.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
