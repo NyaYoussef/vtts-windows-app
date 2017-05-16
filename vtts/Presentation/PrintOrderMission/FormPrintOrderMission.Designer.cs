@@ -57,7 +57,6 @@
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.printPreviewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.printPreviewControl1.Location = new System.Drawing.Point(0, 0);
             this.printPreviewControl1.Name = "printPreviewControl1";
@@ -65,7 +64,6 @@
             this.printPreviewControl1.Size = new System.Drawing.Size(700, 257);
             this.printPreviewControl1.TabIndex = 2;
             this.printPreviewControl1.TabStop = false;
-            this.printPreviewControl1.UseWaitCursor = true;
             this.printPreviewControl1.Zoom = 1D;
             // 
             // splitContainer1
