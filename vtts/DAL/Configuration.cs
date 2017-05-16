@@ -88,6 +88,7 @@
 
             context.SaveChanges();
             //Admin Autorization
+            RoleAdmin.Authorizations = new List<Authorization>();
             //add Trainee autorization to admin
             TrianeeAuthorisation.BusinessEntity = typeof(Trainee).FullName;
             RoleAdmin.Authorizations.Add(TrianeeAuthorisation);
@@ -346,6 +347,10 @@
                     Description = new LocalizedString { Arab = "", French = "", English = "" }
                 }
                      );
+
+            context.SaveChanges();
+            Country Morroco = context.Countrys.Where(r => r.Reference == "Morroco").SingleOrDefault();
+
             //     //ADD CITYS
             context.Citys.AddOrUpdate(
                  r => r.Reference
@@ -356,7 +361,7 @@
                      Name = new LocalizedString { Arab = "طنجة", French = "Tanger", English = "Tangier" }
                       ,
                      Description = new LocalizedString { Arab = "", French = "", English = "" },
-                     Country = context.Countrys.First(),
+                     Country = Morroco,
                  },
                   new City()
                   {
@@ -364,7 +369,7 @@
                       Name = new LocalizedString { Arab = "الدار البيضاء", French = "Casablanca", English = "Casablanca" }
                        ,
                       Description = new LocalizedString { Arab = "", French = "", English = "" },
-                      Country = context.Countrys.First(),
+                      Country = Morroco,
                   },
                   new City()
                   {
@@ -372,7 +377,7 @@
                       Name = new LocalizedString { Arab = "الرباط", French = "Rabat", English = "Rabat" }
                        ,
                       Description = new LocalizedString { Arab = "", French = "", English = "" },
-                      Country = context.Countrys.First(),
+                      Country = Morroco,
                   },
                    new City()
                    {
@@ -380,7 +385,7 @@
                        Name = new LocalizedString { Arab = "تطوان", French = "Tétouan", English = "Tetouan" }
                         ,
                        Description = new LocalizedString { Arab = "", French = "", English = "" },
-                       Country = context.Countrys.First(),
+                       Country = Morroco,
                    },
                    new City()
                    {
@@ -388,12 +393,14 @@
                        Name = new LocalizedString { Arab = "أصيلة", French = "Asilah", English = "Asilah" }
                        ,
                        Description = new LocalizedString { Arab = "", French = "", English = "" },
-                       Country = context.Countrys.First(),
+                       Country = Morroco,
 
 
 
                    }
                      );
+            context.SaveChanges();
+
             //     //Add Default Region
             context.Regions.AddOrUpdate(
               r => r.Reference,
@@ -422,6 +429,8 @@
                       Ordre = 12,
                   }
               );
+            context.SaveChanges();
+
             //  //Add Default Function 
             context.Functions.AddOrUpdate(
                    r => r.Reference,
@@ -464,12 +473,16 @@
                              Description = new LocalizedString { Arab = "", French = "", English = "" }
                          }
                    );
+            context.SaveChanges();
+
+            Function Former = context.Functions.Where(r => r.Reference == "Former").SingleOrDefault();
             //     //add Data For test
             //     //staff
             context.Staffs.AddOrUpdate(
                  r => r.Reference,
                  new Staff()
                  {
+                    
                      Id = 1,
                      FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
                      LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
@@ -486,7 +499,7 @@
                      RegistrationNumber = "k45dl",
                      Cars = null,
                      Affectations = null,
-                     Function = context.Functions.First(),
+                     Function = Former,
                      City = null,
                      Ordre = 2,
                      ProfilePhoto = null,
