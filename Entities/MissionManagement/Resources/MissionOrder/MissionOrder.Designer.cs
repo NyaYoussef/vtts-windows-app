@@ -61,11 +61,38 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add new order mission.
+        /// </summary>
+        internal static string Add_order_mission {
+            get {
+                return ResourceManager.GetString("Add_order_mission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Arrival Date.
         /// </summary>
         internal static string ArrivalDate {
             get {
                 return ResourceManager.GetString("ArrivalDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arriving time.
+        /// </summary>
+        internal static string ArrivingTime {
+            get {
+                return ResourceManager.GetString("ArrivingTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convocations.
+        /// </summary>
+        internal static string Convocations {
+            get {
+                return ResourceManager.GetString("Convocations", resourceCulture);
             }
         }
         
@@ -79,7 +106,16 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Departure Date.
+        ///   Looks up a localized string similar to Date order.
+        /// </summary>
+        internal static string DateOrder {
+            get {
+                return ResourceManager.GetString("DateOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Departure date.
         /// </summary>
         internal static string DepartureDate {
             get {
@@ -88,7 +124,25 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Means Transport Category.
+        ///   Looks up a localized string similar to Departure time.
+        /// </summary>
+        internal static string DepartureTime {
+            get {
+                return ResourceManager.GetString("DepartureTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Means of transport.
+        /// </summary>
+        internal static string Meansoftransport {
+            get {
+                return ResourceManager.GetString("Meansoftransport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Means transport category.
         /// </summary>
         internal static string MeansTransportCategory {
             get {
@@ -97,7 +151,7 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Orders Management.
+        ///   Looks up a localized string similar to Missions orders management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -115,7 +169,16 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Order Number.
+        ///   Looks up a localized string similar to Order mission management.
+        /// </summary>
+        internal static string Order_management {
+            get {
+                return ResourceManager.GetString("Order_management", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order number.
         /// </summary>
         internal static string OrderNumber {
             get {
@@ -124,7 +187,7 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Orders.
+        ///   Looks up a localized string similar to Missions orders.
         /// </summary>
         internal static string PluralName {
             get {
@@ -133,7 +196,7 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission Order.
+        ///   Looks up a localized string similar to Mission order.
         /// </summary>
         internal static string SingularName {
             get {
@@ -156,6 +219,24 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         internal static string Validation {
             get {
                 return ResourceManager.GetString("Validation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation date.
+        /// </summary>
+        internal static string ValidationDate {
+            get {
+                return ResourceManager.GetString("ValidationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validations.
+        /// </summary>
+        internal static string Validations {
+            get {
+                return ResourceManager.GetString("Validations", resourceCulture);
             }
         }
     }

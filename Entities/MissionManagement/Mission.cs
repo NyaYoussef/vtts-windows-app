@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "MissionManagement")]
+    [Menu(Group = "MissionManagement",Order =10)]
     public class Mission:BaseEntity
     {
         public Mission()
@@ -27,7 +27,7 @@ namespace Entities.MissionManagement
         [DataGrid(Ordre = 2, WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         [Filter(Ordre =2,isValeurFiltreVide =true)]
-        public MissionSubject MissionSubject { get; set; }
+        public ThemeCategory ThemeCategory { get; set; }
 
         [DataGrid(Ordre = 3, WidthColonne = 150)]
         [EntryForm(Ordre = 1, WidthControl = 200)]

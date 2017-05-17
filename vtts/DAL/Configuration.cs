@@ -212,9 +212,9 @@
             MissionOrderAutorization.BusinessEntity = typeof(MissionOrder).FullName;
             RoleDirector.Authorizations.Add(MissionOrderAutorization);
 
-            Authorization MissionSubjectAutorization = new Authorization();
-            MissionSubjectAutorization.BusinessEntity = typeof(MissionSubject).FullName;
-            RoleDirector.Authorizations.Add(MissionSubjectAutorization);
+            Authorization ThemeCategoryAutorization = new Authorization();
+            ThemeCategoryAutorization.BusinessEntity = typeof(ThemeCategory).FullName;
+            RoleDirector.Authorizations.Add(ThemeCategoryAutorization);
 
             Authorization MissionAutorization = new Authorization();
             MissionAutorization.BusinessEntity = typeof(Mission).FullName;
@@ -227,7 +227,7 @@
             RoleAdmin.Authorizations.Add(CarAutorization);
             RoleAdmin.Authorizations.Add(MissionCategoryAutorization);
             RoleAdmin.Authorizations.Add(MissionOrderAutorization);
-            RoleAdmin.Authorizations.Add(MissionSubjectAutorization);
+            RoleAdmin.Authorizations.Add(ThemeCategoryAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
             RoleAdmin.Authorizations.Add(MissionAutorization);
 
@@ -322,23 +322,23 @@
                  }
             );
             //     //add Mission subject
-            context.MissionSubjects.AddOrUpdate(
+            context.MissionCategorys.AddOrUpdate(
                        r => r.Reference
                     ,
-                 new MissionSubject()
+                 new MissionCategory()
                  {
                      Reference = "Meeting",
-                     SubjectName = new LocalizedString { Arab = "إجتماع", English = "Meeting", French = "Réunion" }
+                     Name = new LocalizedString { Arab = "إجتماع", English = "Meeting", French = "Réunion" }
                  },
-                 new MissionSubject()
+                 new MissionCategory()
                  {
                      Reference = "Improvement",
-                     SubjectName = new LocalizedString { Arab = "تحسين", English = "Improvement", French = "Perfectionnement" }
+                     Name = new LocalizedString { Arab = "تحسين", English = "Improvement", French = "Perfectionnement" }
                  },
-                  new MissionSubject()
+                  new MissionCategory()
                   {
                       Reference = "SkillsAssessment",
-                      SubjectName = new LocalizedString { Arab = "تقييم المهارات", English = "Skills Assessment", French = "Bilan De Compétences" }
+                      Name = new LocalizedString { Arab = "تقييم المهارات", English = "Skills Assessment", French = "Bilan De Compétences" }
                   }
                  );
             //Add Country
@@ -529,6 +529,8 @@
                );
 
             context.SaveChanges(); 
+
+            //Add 
         }
     }
 }

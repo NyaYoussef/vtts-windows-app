@@ -91,7 +91,7 @@
         public virtual DbSet<Region> Regions { get; set; }
         public virtual DbSet<MissionCategory> MissionCategorys { get; set; }
         public virtual DbSet<MissionOrder> MissionOrders { get; set; }
-        public virtual DbSet<MissionSubject> MissionSubjects { get; set; }
+        public virtual DbSet<ThemeCategory> ThemeCategorys { get; set; }
         public virtual DbSet<Function> Functions { get; set; }
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<AdvancementEchelon> AdvancementEchelons { get; set; }
