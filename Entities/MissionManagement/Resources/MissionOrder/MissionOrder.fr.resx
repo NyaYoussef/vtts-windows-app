@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Date" xml:space="preserve">
-    <value>Date</value>
+    <value>Ordre mission</value>
   </data>
   <data name="DepartureDate" xml:space="preserve">
     <value>Date de départ</value>
   </data>
   <data name="MeansTransportCategory" xml:space="preserve">
-    <value>Catégorie  des moyens de transport</value>
+    <value> Moyens de transport</value>
   </data>
   <data name="menu_title" xml:space="preserve">
     <value>Gestion des ordre des missions</value>
@@ -148,7 +148,7 @@
     <value>Date d'arrivée</value>
   </data>
   <data name="Validation" xml:space="preserve">
-    <value>Validation</value>
+    <value>Confirmation</value>
   </data>
   <data name="Add_order_mission" xml:space="preserve">
     <value>Ajouter un ordre du mission</value>

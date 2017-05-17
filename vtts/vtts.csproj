@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAL\BaseBLO.cs" />
+    <Compile Include="BAL\MissionOrderBLO.cs" />
     <Compile Include="BAL\MissionManagement\PrintOrderMission.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />

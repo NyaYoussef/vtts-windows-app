@@ -97,7 +97,7 @@ namespace Entities.MissionManagement.Resources.MissionOrder {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Date.
+        ///   Looks up a localized string similar to Mission order.
         /// </summary>
         internal static string Date {
             get {

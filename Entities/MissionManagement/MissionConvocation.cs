@@ -5,13 +5,14 @@ using Entities.InstitutionManagement;
 using Entities.StaffManagement;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Theme")]
+    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group = "MissionManagement",Order =1)]
     [ManagementForm(Width = 1100,Height =650,TitrePageGridView ="title_gridview")]
     public class MissionConvocation: BaseEntity
@@ -83,5 +84,19 @@ namespace Entities.MissionManagement
 
 
         public List<MissionOrder> MissionOrders { get; set; }
+        [NotMapped]
+        public string Name
+        {
+            get
+            {
+                if ( Theme!= null && StartDate != null)
+                    return Theme + " _:_ " + StartDate.ToShortDateString();
+                else
+                {
+                    return "";
+                }
+
+            }
+        }
     } 
 }
