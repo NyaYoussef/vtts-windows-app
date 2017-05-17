@@ -26,5 +26,7 @@ namespace Entities.InstitutionManagement
         [DataGrid(WidthColonne = 200)]
         [Filter]
         public LocalizedString Description { get; set; }
+
+        public virtual List<Institution> Institutions { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace Entities.InstitutionManagement
 
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "Configuration",Title ="menu_title")]
+    [SelectionCriteria(typeof(Region))]
     public  class Institution:BaseEntity
     {
         public Institution()
@@ -40,7 +41,7 @@ namespace Entities.InstitutionManagement
         [DataGrid(WidthColonne = 100)]
         [Filter(Ordre =2,isValeurFiltreVide =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        public Region Region { set; get; }
+        public virtual Region Region { set; get; }
 
 
 

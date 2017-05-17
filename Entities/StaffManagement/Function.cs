@@ -29,5 +29,7 @@ namespace Entities.StaffManagement
         [Filter]
         public LocalizedString Description { get; set; }
 
+
+        public virtual List<Staff> Staffs { get; set; }
     }
 }

@@ -117,4 +117,99 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;Menu_Mission_Order_Management.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="Menu_ConvocationManagement.Text" xml:space="preserve">
+    <value>Convocation Management</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>App.Gwin.Application.Presentation.MainForm.FormApplication, GwinApp, Version=0.0.1.3, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Menu_StaffManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 105</value>
+  </data>
+  <data name="&gt;&gt;Menu_Mission_Order_Management.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMenu</value>
+  </data>
+  <data name="&gt;&gt;Menu_StaffManagement.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Menu_ConvocationManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>771, 440</value>
+  </data>
+  <data name="&gt;&gt;Menu_StaffManagement.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="Menu_Mission_Order_Management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 105</value>
+  </data>
+  <data name="Menu_StaffManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Menu_StaffManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 132</value>
+  </data>
+  <data name="&gt;&gt;Menu_Mission_Order_Management.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;Menu_ConvocationManagement.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="Menu_Mission_Order_Management.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Menu_ConvocationManagement.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Menu_StaffManagement.Name" xml:space="preserve">
+    <value>Menu_StaffManagement</value>
+  </data>
+  <data name="Menu_ConvocationManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 102</value>
+  </data>
+  <data name="&gt;&gt;Menu_StaffManagement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Menu_ConvocationManagement.Name" xml:space="preserve">
+    <value>Menu_ConvocationManagement</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Menu_StaffManagement.Text" xml:space="preserve">
+    <value>Staff Management</value>
+  </data>
+  <data name="&gt;&gt;Menu_Mission_Order_Management.Name" xml:space="preserve">
+    <value>Menu_Mission_Order_Management</value>
+  </data>
+  <data name="Menu_ConvocationManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 132</value>
+  </data>
+  <data name="Menu_Mission_Order_Management.Text" xml:space="preserve">
+    <value>Mission Order Management</value>
+  </data>
+  <data name="Menu_Mission_Order_Management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 240</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>GwinApp</value>
+  </data>
+  <data name="&gt;&gt;Menu_ConvocationManagement.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

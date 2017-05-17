@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAL\BaseBLO.cs" />
+    <Compile Include="BAL\MissionManagement\PrintOrderMission.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
     <Compile Include="Entities\Class1.cs" />
@@ -97,16 +98,30 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705161542363_Update1.cs" />
+    <Compile Include="Migrations\201705161542363_Update1.Designer.cs">
+      <DependentUpon>201705161542363_Update1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\PrintOrderMission\FormPrintOrderMission.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\PrintOrderMission\FormPrintOrderMission.Designer.cs">
       <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
     </Compile>
+    <Compile Include="Libs\ITextSharp\PdfFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMenu.ar.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.fr.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705161542363_Update1.resx">
+      <DependentUpon>201705161542363_Update1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PrintOrderMission\FormPrintOrderMission.resx">
       <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
@@ -142,6 +157,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="NewFolder1\" />
     <Folder Include="PDFs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

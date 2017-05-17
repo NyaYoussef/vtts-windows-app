@@ -31,35 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrintOrderMission));
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printPreviewControl1 = new System.Windows.Forms.PrintPreviewControl();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(305, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Print Document";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(132, 74);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 31);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Create PDF Document";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // printPreviewDialog1
             // 
@@ -73,21 +57,58 @@
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Location = new System.Drawing.Point(46, 139);
+            this.printPreviewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.printPreviewControl1.Location = new System.Drawing.Point(0, 0);
             this.printPreviewControl1.Name = "printPreviewControl1";
-            this.printPreviewControl1.Size = new System.Drawing.Size(358, 166);
+            this.printPreviewControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.printPreviewControl1.Size = new System.Drawing.Size(700, 257);
             this.printPreviewControl1.TabIndex = 2;
+            this.printPreviewControl1.TabStop = false;
+            this.printPreviewControl1.Zoom = 1D;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(20, 60);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.metroTile1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.printPreviewControl1);
+            this.splitContainer1.Size = new System.Drawing.Size(700, 322);
+            this.splitContainer1.SplitterDistance = 61;
+            this.splitContainer1.TabIndex = 3;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(3, 3);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(90, 52);
+            this.metroTile1.TabIndex = 0;
+            this.metroTile1.Text = "Print";
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // FormPrintOrderMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 337);
-            this.Controls.Add(this.printPreviewControl1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(740, 402);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "FormPrintOrderMission";
-            this.Text = "FormPrintOrderMission";
+            this.Text = "Print Mission Order";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormPrintOrderMission_Load);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -96,9 +117,9 @@
 
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.PrintPreviewControl printPreviewControl1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }
