@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion Des Catégories Des Missions</value>
+    <value>Gestion des catégories des missions</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Catégories Des Missions</value>
+    <value>Catégories des missions</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Catégorie De Mission</value>
+    <value>Catégorie de mission</value>
   </data>
   <data name="MissionConvocations" xml:space="preserve">
-    <value>Convocation De Mission</value>
+    <value>Convocation de mission</value>
   </data>
   <data name="Code" xml:space="preserve">
     <value>Code</value>

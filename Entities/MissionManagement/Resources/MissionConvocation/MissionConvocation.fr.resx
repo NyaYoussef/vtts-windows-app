@@ -127,42 +127,48 @@
     <value>Établissement</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion Des Convocations Des Missions</value>
+    <value>Gestion des convocations des missions</value>
   </data>
-  <data name="MissionCategory" xml:space="preserve">
-    <value>Catégorie De Mission</value>
+  <data name="MissionCategorys" xml:space="preserve">
+    <value>Catégorie de mission</value>
   </data>
   <data name="MissionOrders" xml:space="preserve">
-    <value>Ordres De Dission</value>
-  </data>
-  <data name="MissionSubject" xml:space="preserve">
-    <value>Sujet Du mission</value>
+    <value>Ordres de dission</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Convocations Des Missions</value>
+    <value>Convocations des missions</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Convocation De Mission</value>
+    <value>Convocation de mission</value>
   </data>
   <data name="Staffs" xml:space="preserve">
     <value>Personnel</value>
   </data>
   <data name="StartDate" xml:space="preserve">
-    <value>Date Début</value>
+    <value>Date début</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Détailles</value>
   </data>
   <data name="location" xml:space="preserve">
-    <value>Date et Emplacement</value>
+    <value>Date et emplacement</value>
   </data>
   <data name="Participants" xml:space="preserve">
     <value>Participants</value>
   </data>
   <data name="Subject" xml:space="preserve">
     <value>Sujet</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Théme</value>
+  </data>
+  <data name="ThemeCategorys" xml:space="preserve">
+    <value>Catégorie de théme</value>
+  </data>
+  <data name="title_gridview" xml:space="preserve">
+    <value>Convocations des mission</value>
   </data>
 </root>

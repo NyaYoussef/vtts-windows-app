@@ -150,4 +150,13 @@
   <data name="Validation" xml:space="preserve">
     <value>التصديق</value>
   </data>
+  <data name="Add_order_mission" xml:space="preserve">
+    <value>إضافة أمر الإحالة</value>
+  </data>
+  <data name="DateOrder" xml:space="preserve">
+    <value>تاريخ الطلب</value>
+  </data>
+  <data name="Order_management" xml:space="preserve">
+    <value>طلبات المهام</value>
+  </data>
 </root>

@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion des sujets des missions</value>
+    <value>تدبير مواضيع المهام</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Sujets des missions</value>
+    <value>مواضيع المهام</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Sujet de Mission</value>
+    <value>موضوع المهمة</value>
   </data>
-  <data name="SubjectName" xml:space="preserve">
-    <value>Nom du Sujet</value>
+  <data name="Name" xml:space="preserve">
+    <value>إسم الموضوع</value>
   </data>
   <data name="MissionConvocations" xml:space="preserve">
-    <value>Convocation de Mission</value>
+    <value>دعوة المهمة</value>
   </data>
 </root>

@@ -9,14 +9,16 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Type")]
+    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group ="MissionManagement")]
     public class MissionCategory: BaseEntity
     {
         public MissionCategory()
         {
             this.Description = new LocalizedString();
+            Name = new LocalizedString();
         }
+        public LocalizedString Name { get; set; }
         [EntryForm(Ordre = 5, WidthControl = 150,GroupeBox = "menu_title")]
         [DataGrid(Ordre = 5, WidthColonne = 100)]
         [Filter(Ordre =3)]
@@ -27,12 +29,7 @@ namespace Entities.MissionManagement
         [Filter(Ordre = 2)]
         public string Code { get; set; }
 
-        [EntryForm(Ordre = 1, WidthControl = 150,GroupeBox = "menu_title")]
-        [DataGrid(Ordre = 1, WidthColonne = 100)]
-        [Filter(Ordre = 1)]
-        public string Type { get; set; }
-
-        
-        public List<MissionConvocation> MissionConvocations { get; set; }
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public List< MissionConvocation> MissionConvocations { get; set; }
     }
 }

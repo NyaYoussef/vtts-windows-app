@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities.MissionManagement.Resources.MissionSubject {
+namespace Entities.MissionManagement.Resources.ThemeCategory {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MissionSubject {
+    internal class ThemeCategory {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MissionSubject() {
+        internal ThemeCategory() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.MissionManagement.Resources.MissionSubject.MissionSubject", typeof(MissionSubject).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Entities.MissionManagement.Resources.ThemeCategory.ThemeCategory", typeof(ThemeCategory).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Subjects Management.
+        ///   Looks up a localized string similar to Themes categorys Management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -79,7 +79,16 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Subjects.
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Themes categorys.
         /// </summary>
         internal static string PluralName {
             get {
@@ -88,20 +97,11 @@ namespace Entities.MissionManagement.Resources.MissionSubject {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission Subject.
+        ///   Looks up a localized string similar to Theme category.
         /// </summary>
         internal static string SingularName {
             get {
                 return ResourceManager.GetString("SingularName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Subject Name.
-        /// </summary>
-        internal static string SubjectName {
-            get {
-                return ResourceManager.GetString("SubjectName", resourceCulture);
             }
         }
     }

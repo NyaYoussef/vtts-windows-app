@@ -13,7 +13,7 @@ namespace Entities.InstitutionManagement
 
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "Configuration",Title ="menu_title")]
-    [SelectionCriteria(typeof(Region))]
+ //   [SelectionCriteria(typeof(Region))]
     public  class Institution:BaseEntity
     {
         public Institution()

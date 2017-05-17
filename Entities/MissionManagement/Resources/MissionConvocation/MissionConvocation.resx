@@ -120,49 +120,55 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
   <data name="EndDate" xml:space="preserve">
-    <value>End Date</value>
+    <value>End date</value>
   </data>
   <data name="Institution" xml:space="preserve">
     <value>Institution</value>
   </data>
+  <data name="location" xml:space="preserve">
+    <value>Location and date</value>
+  </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Missions Convocations Management</value>
+    <value>Missions convocations management</value>
   </data>
   <data name="MissionCategory" xml:space="preserve">
-    <value>Mission Category</value>
+    <value>Mission category</value>
   </data>
   <data name="MissionOrders" xml:space="preserve">
-    <value>Mission Orders</value>
-  </data>
-  <data name="MissionSubject" xml:space="preserve">
-    <value>Mission Subject</value>
+    <value>Mission orders</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="Participants" xml:space="preserve">
+    <value>Participant</value>
+  </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Missions Convocations</value>
+    <value>Missions convocations</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Mission Convocation</value>
+    <value>Mission convocation</value>
   </data>
   <data name="Staffs" xml:space="preserve">
     <value>Staffs</value>
   </data>
   <data name="StartDate" xml:space="preserve">
-    <value>Start Date</value>
-  </data>
-  <data name="Details" xml:space="preserve">
-    <value>Details</value>
-  </data>
-  <data name="location" xml:space="preserve">
-    <value>Location and Date</value>
-  </data>
-  <data name="Participants" xml:space="preserve">
-    <value>Participant</value>
+    <value>Start date</value>
   </data>
   <data name="Subject" xml:space="preserve">
     <value>Subject</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ThemeCategorys" xml:space="preserve">
+    <value>Theme category</value>
+  </data>
+  <data name="title_gridview" xml:space="preserve">
+    <value>Mission convocations</value>
   </data>
 </root>
