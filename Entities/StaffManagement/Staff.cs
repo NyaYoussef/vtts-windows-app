@@ -13,14 +13,13 @@ namespace Entities.StaffManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "HRManagement",Title ="menu_title")]
-    [ManagementForm(Width = 1000,Height = 600)]
+    [ManagementForm(Width = 1250,Height = 700,TitrePageGridView ="grid_title",TitreButtonAjouter ="Add_title")]
    
     public class Staff: Person
     {
         public Staff()
         {
-            this.FirstName = new LocalizedString();
-            this.LastName = new LocalizedString();
+           
          }
 
         [NotMapped]
@@ -49,7 +48,7 @@ namespace Entities.StaffManagement
         //
         [EntryForm(Ordre = 50, GroupeBox = "Recruitment",isRequired =true)]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(Ordre =4)]
         public string RegistrationNumber { get; set; }
 
         [EntryForm(Ordre =50, GroupeBox = "Recruitment",isRequired =true)]
@@ -77,7 +76,7 @@ namespace Entities.StaffManagement
 
         [EntryForm(Ordre = 2, GroupeBox = "Functions",isRequired =true)]
         [DataGrid(WidthColonne = 100)]
-        [Filter(isValeurFiltreVide =true)]
+        [Filter(isValeurFiltreVide =true,WidthControl =150,Ordre =5)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public virtual Function Function { get; set; }
 

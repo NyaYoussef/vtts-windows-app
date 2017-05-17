@@ -61,6 +61,15 @@ namespace Entities.StaffManagement.Resources.Car {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cars.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mark.
         /// </summary>
         internal static string Mark {

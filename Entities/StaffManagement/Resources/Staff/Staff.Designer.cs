@@ -61,6 +61,15 @@ namespace Entities.StaffManagement.Resources.Staff {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add persone.
+        /// </summary>
+        internal static string Add_title {
+            get {
+                return ResourceManager.GetString("Add_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         internal static string Address {
@@ -147,6 +156,15 @@ namespace Entities.StaffManagement.Resources.Staff {
         internal static string Functions {
             get {
                 return ResourceManager.GetString("Functions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personnels.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
             }
         }
         

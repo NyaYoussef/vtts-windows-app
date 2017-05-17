@@ -10,24 +10,26 @@ using System.Threading.Tasks;
 
 namespace Entities.StaffManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group = "HRManagement")]
+    [ManagementForm(Width =670,Height =500,TitrePageGridView ="grid_title")]
     public  class Affectation:BaseEntity
     {
         [EntryForm(Ordre = 1,WidthControl =350)]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 100,Ordre =4)]
         public DateTime DateAffectation { get; set; }
 
         [EntryForm(Ordre = 1,WidthControl =350)]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 100,Ordre =2)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(Ordre =2,isValeurFiltreVide =true)]
         public Institution Institution { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 350)]
         [DisplayProperty(DisplayMember = "RegistrationNumber")]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 100,Ordre =0)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isValeurFiltreVide =true)]
+        [Filter(isValeurFiltreVide =true,Ordre =1)]
         public Staff Staff { get; set; }
 
         [NotMapped]

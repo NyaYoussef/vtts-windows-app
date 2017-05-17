@@ -79,6 +79,15 @@ namespace Entities.StaffManagement.Resources.Affectation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Affectations.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Institution.
         /// </summary>
         internal static string Institution {

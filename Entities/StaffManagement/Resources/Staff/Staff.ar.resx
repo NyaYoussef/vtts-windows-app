@@ -171,4 +171,10 @@
   <data name="Functions" xml:space="preserve">
     <value>الوظيفة</value>
   </data>
+  <data name="Add_title" xml:space="preserve">
+    <value>إضافة عامل</value>
+  </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>العاملين</value>
+  </data>
 </root>

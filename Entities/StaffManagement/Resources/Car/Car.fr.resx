@@ -141,4 +141,7 @@
   <data name="TaxPower" xml:space="preserve">
     <value>Puissance Fiscale</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Voitures</value>
+  </data>
 </root>

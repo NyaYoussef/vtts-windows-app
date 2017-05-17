@@ -11,15 +11,16 @@ namespace Entities.StaffManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "HRManagement")]
+    [ManagementForm(TitrePageGridView ="grid_title")]
     public class Car: BaseEntity
     {
         [EntryForm(Ordre=1,WidthControl =350)]
-        [DataGrid(WidthColonne =300)]
+        [DataGrid(WidthColonne =130)]
         [Filter]
         public string Mark { set; get; }
 
         [EntryForm(Ordre = 1,WidthControl =350)]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 150)]
         [Filter]
         public string PlateNumber { set; get; }
 
@@ -32,7 +33,7 @@ namespace Entities.StaffManagement
         /// Determine if Car is Private or Personel
         /// </summary>
         [EntryForm(Ordre = 1)]
-        [DataGrid(WidthColonne = 50)]
+        [DataGrid(WidthColonne = 150)]
         public bool PersonelCar { get; set; }
 
         [EntryForm(Ordre = 1,WidthControl =100)]

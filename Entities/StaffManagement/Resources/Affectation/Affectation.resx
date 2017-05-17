@@ -138,4 +138,7 @@
   <data name="Institution" xml:space="preserve">
     <value>Institution</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Affectations</value>
+  </data>
 </root>

@@ -141,4 +141,7 @@
   <data name="TaxPower" xml:space="preserve">
     <value>Tax Power</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Cars</value>
+  </data>
 </root>
