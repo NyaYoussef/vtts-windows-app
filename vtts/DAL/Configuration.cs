@@ -29,10 +29,9 @@
 
         protected override void Seed(App.ModelContext context)
         {
-            // -------------------------------------
-            // Giwn App V 0.08
-            // -------------------------------------
-            //-- Gwin Application Name
+            // 
+            // Gwin Application Name
+            //
                 context.ApplicationNames.AddOrUpdate(
                                 r => r.Reference
                              ,
@@ -43,7 +42,9 @@
                              }
 
                        );
-            //Gwin Roles
+            //
+            // Gwin Roles
+            //
             Role RoleGuest = null;
             Role RoleRoot = null;
             Role RoleAdmin = null;
@@ -59,8 +60,8 @@
               new Role { Reference = "Trainee", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Trainee" }, Hidden = true },
               new Role { Reference = "Director", Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = "Director" }, Hidden = true }
             );
-            // Save Change to Select RoleRoot and RoleGuest
-            context.SaveChanges();
+           
+            context.SaveChanges();  // Save Change to Select RoleRoot and RoleGuest
             RoleRoot = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Root)).SingleOrDefault();
             RoleGuest = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Guest)).SingleOrDefault();
             RoleAdmin = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Admin)).SingleOrDefault();
@@ -76,21 +77,17 @@
             FindUserAutorization.ActionsNames = new List<string>();
             FindUserAutorization.ActionsNames.Add(nameof(IGwinBaseBLO.Recherche));
 
-            RoleGuest.Authorizations = new List<Authorization>();
-            RoleGuest.Authorizations.Add(FindUserAutorization);
-
-
-
-            //     // Guest Autorization
             Authorization TrianeeAuthorisation = new Authorization();
             TrianeeAuthorisation.BusinessEntity = typeof(Trainee).FullName;
+
+            RoleGuest.Authorizations = new List<Authorization>();
+            RoleGuest.Authorizations.Add(FindUserAutorization);
             RoleGuest.Authorizations.Add(TrianeeAuthorisation);
 
             context.SaveChanges();
+
             //Admin Autorization
             RoleAdmin.Authorizations = new List<Authorization>();
-            //add Trainee autorization to admin
-            TrianeeAuthorisation.BusinessEntity = typeof(Trainee).FullName;
             RoleAdmin.Authorizations.Add(TrianeeAuthorisation);
 
             //add group autorization to admin
@@ -239,9 +236,6 @@
             //     RoleTrainee.Authorizations.Add(TrianeeAuthorisation);
             //     context.SaveChanges();
 
-
-
-
             //     //
             //     //-- Giwn Users
             context.Users.AddOrUpdate(
@@ -252,9 +246,9 @@
                 new User() { Reference = "user-demo", Login = "madani", Password = "madani", LastName = new LocalizedString() { Current = "madani" }, Roles = new List<Role>() { RoleTrainee } },
                 new User() { Reference = "Director", Language = Gwin.GwinApp.Languages.fr, Login = "Director", Password = "Director", LastName = new LocalizedString() { Current = "Director" }, Roles = new List<Role>() { RoleDirector } }
                 );
-            //     //
-            //     // Menu
-            //     //
+            //
+            // Menu
+            //
             context.MenuItemApplications.AddOrUpdate(
                             r => r.Code
                          ,
@@ -269,14 +263,9 @@
                               );
 
 
-            //     //
-            //     // Default Data
-            //     //
-            //     // Add Counties
+   
 
-            //     // Add Cities
-
-            //     //Add Specialy 
+            //Add Specialy 
             context.Specialties.AddOrUpdate(
                          r => r.Reference
                       ,
@@ -321,7 +310,7 @@
                      Description = new LocalizedString { Arab = "", English = "", French = "" }
                  }
             );
-            //     //add Mission subject
+            //add Mission subject
             context.MissionCategorys.AddOrUpdate(
                        r => r.Reference
                     ,
@@ -356,7 +345,7 @@
             context.SaveChanges();
             Country Morroco = context.Countrys.Where(r => r.Reference == "Morroco").SingleOrDefault();
 
-            //     //ADD CITYS
+            //ADD CITYS
             context.Citys.AddOrUpdate(
                  r => r.Reference
                  ,
@@ -406,7 +395,7 @@
                      );
             context.SaveChanges();
 
-            //     //Add Default Region
+            //Add Default Region
             context.Regions.AddOrUpdate(
               r => r.Reference,
               new Region()
@@ -436,7 +425,7 @@
               );
             context.SaveChanges();
 
-            //  //Add Default Function 
+            //Add Default Function 
             context.Functions.AddOrUpdate(
                    r => r.Reference,
                    new Function()
@@ -481,39 +470,43 @@
             context.SaveChanges();
 
             Function Former = context.Functions.Where(r => r.Reference == "Former").SingleOrDefault();
-            //     //add Data For test
-            //     //staff
-            context.Staffs.AddOrUpdate(
-                 r => r.Reference,
-                 new Staff()
-                 {
-                    
-                     Id = 1,
-                     FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                     LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                     DateOfBirth = Convert.ToDateTime("02/02/1982"),
-                     CIN = "k45878",
-                     Email = "madani@outloo.fr",
-                     Address = "tanger-tanger maroc",
-                     FaceBook = "Madani El",
-                     Cellphone = "063547459",
-                     PhoneNumber = "8987458",
-                     DateRecruitment = Convert.ToDateTime("02/02/2016"),
-                     Reference = "Madani",
-                     Sex = false,
-                     RegistrationNumber = "k45dl",
-                     Cars = null,
-                     Affectations = null,
-                     Function = Former,
-                     City = null,
-                     Ordre = 2,
-                     ProfilePhoto = null,
-                     WebSite = "google.com"
+
+            //staff Add 30 Staff for Test
+            for (int i = 0; i < 30; i++)
+            {
+                context.Staffs.AddOrUpdate(
+                                 r => r.Reference,
+                                 new Staff()
+                                 {
+
+                                     Id = i,
+                                     FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                                     LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                                     DateOfBirth = Convert.ToDateTime("02/02/1982"),
+                                     CIN = "k45878",
+                                     Email = "madani@outloo.fr",
+                                     Address = "tanger-tanger maroc",
+                                     FaceBook = "Madani El",
+                                     Cellphone = "063547459",
+                                     PhoneNumber = "8987458",
+                                     DateRecruitment = Convert.ToDateTime("02/02/2016"),
+                                     Reference = "Madani",
+                                     Sex = false,
+                                     RegistrationNumber = "k45dl",
+                                     Cars = null,
+                                     Affectations = null,
+                                     Function = Former,
+                                     City = null,
+                                     Ordre = 2,
+                                     ProfilePhoto = null,
+                                     WebSite = "google.com"
 
 
-                 }
+                                 }
 
-                 );
+                                 );
+            }
+            
             //Institution
             context.Institutions.AddOrUpdate(
                r => r.Reference,
