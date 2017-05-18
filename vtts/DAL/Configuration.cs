@@ -176,9 +176,7 @@
             RoleAdmin.Authorizations.Add(InstitutionAutorization);
 
 
-            //
             //Add Dirrector Autorization
-            //
             RoleDirector.Authorizations = new List<Authorization>();
             RoleDirector.Authorizations.Add(CityAutorization);
             RoleDirector.Authorizations.Add(CountryAutorization);
@@ -227,14 +225,6 @@
             RoleAdmin.Authorizations.Add(ThemeCategoryAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
             RoleAdmin.Authorizations.Add(MissionAutorization);
-
-
-
-            //     // Trainee Autorization
-            //     RoleTrainee.Authorizations = new List<Authorization>();
-            //     RoleTrainee.Authorizations.Add(GroupAuthorisation);
-            //     RoleTrainee.Authorizations.Add(TrianeeAuthorisation);
-            //     context.SaveChanges();
 
             //     //
             //     //-- Giwn Users
@@ -400,29 +390,76 @@
               r => r.Reference,
               new Region()
               {
-                  Reference = "Tangier-Tetouan",
-                  Name = new LocalizedString { Arab = "طنجة تطوان", French = "Tanger-Tétouan", English = "Tangier Tetouan" },
-                  Ordre = 16,
+                  Reference = "Grand-Casablanca-Nord",
+                  Name = new LocalizedString { Arab = "", French = "Grand Casablanca Nord", English = "Grand Casablanca Nord" }
               },
                 new Region()
                 {
-                    Reference = "Taza-Al-Hoceima-Taounate",
-                    Name = new LocalizedString { Arab = "تازة الحسيمة تاونات", French = "Taza-Al Hoceïma-Taounate", English = "Taza-Al Hoceima-Taounate" },
-                    Ordre = 15,
+                    Reference = "Grand-Casablanca-Sud",
+                    Name = new LocalizedString { Arab = "", French = "Grand Casablanca Sud", English = "Grand Casablanca Sud" }
                 },
                  new Region()
                  {
-                     Reference = "Grand-asablanca",
-                     Name = new LocalizedString { Arab = "الدار البيضاء", French = "Grand Casablanca", English = "Grand Casablanca" },
-                     Ordre = 5,
+                     Reference = "Tensift Atlantique",
+                     Name = new LocalizedString { Arab = "", French = "Tensift Atlantique", English = "Tensift Atlantique" }
                  },
                   new Region()
                   {
-                      Reference = "Rabat-Salé-Zemmour-Zaer",
-                      Name = new LocalizedString { Arab = "الرباط سلا زمور زعير", French = "Rabat-Salé-Zemmour-Zaër ", English = "Rabat-Salé-Zemmour-Zaer" },
-                      Ordre = 12,
-                  }
+                      Reference = "Provinces Du Sud",
+                      Name = new LocalizedString { Arab = "", French = "Provinces Du Sud", English = "Provinces Du Sud" }
+                  },
+                    new Region()
+                    {
+                        Reference = "Souss Massa Darâa",
+                        Name = new LocalizedString { Arab = "", French = "Souss Massa Darâa", English = "Souss Massa Darâa" }
+                    }
+                    ,
+                    new Region()
+                    {
+                        Reference = "Centre Sud",
+                        Name = new LocalizedString { Arab = "", French = "Centre Sud", English = "Centre Sud" }
+                    }
+                    ,
+                    new Region()
+                    {
+                        Reference = "Chaouia Tadla",
+                        Name = new LocalizedString { Arab = "", French = "Chaouia Tadla", English = "Chaouia Tadla" }
+                    }
+                    ,
+                    new Region()
+                    {
+                        Reference = "Oriental",
+                        Name = new LocalizedString { Arab = "", French = "Oriental", English = "Oriental" }
+                    }
+                    ,
+                    new Region()
+                    {
+                        Reference = "Centre Nord",
+                        Name = new LocalizedString { Arab = "", French = "Centre Nord", English = "Centre Nord" }
+                    }
+                    ,
+                    new Region()
+                    {
+                        Reference = "Nord Ouest II",
+                        Name = new LocalizedString { Arab = "", French = "Nord Ouest II", English = "Nord Ouest II" }
+                    }
               );
+            context.SaveChanges();
+
+            //Institution
+            context.Institutions.AddOrUpdate(
+               r => r.Reference,
+               new Institution()
+               {
+                   Reference = "ISMONTIC",
+                   Description = new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
+                  ,
+                   Name = new LocalizedString { Arab = "ISMONTIC", English = "ISMONTIC", French = "ISMONTIC" },
+                   Address = new LocalizedString { Arab = "شارع القوات المسلحة الملكية، طنجة، المغرب", English = "Boulevard Royal Armed Forces, Tangier, Morocco", French = "Boulevard des Forces Armées Royales, Tanger, Maroc" }
+               }
+
+               );
+
             context.SaveChanges();
 
             //Add Default Function 
@@ -469,6 +506,14 @@
                    );
             context.SaveChanges();
 
+           
+            
+          
+
+            //
+            // Test Data
+            //
+
             Function Former = context.Functions.Where(r => r.Reference == "Former").SingleOrDefault();
 
             //staff Add 30 Staff for Test
@@ -480,8 +525,8 @@
                                  {
 
                                      Id = i,
-                                     FirstName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
-                                     LastName = new LocalizedString { Arab = "مدني", French = "Madani", English = "Madani" },
+                                     FirstName = new LocalizedString { Arab = "مدني", French = "Madani" + i, English = "Madani" },
+                                     LastName = new LocalizedString { Arab = "مدني", French = "Ali" + i, English = "Madani" },
                                      DateOfBirth = Convert.ToDateTime("02/02/1982"),
                                      CIN = "k45878",
                                      Email = "madani@outloo.fr",
@@ -490,9 +535,9 @@
                                      Cellphone = "063547459",
                                      PhoneNumber = "8987458",
                                      DateRecruitment = Convert.ToDateTime("02/02/2016"),
-                                     Reference = "Madani",
+                                     Reference = "Madani" + i,
                                      Sex = false,
-                                     RegistrationNumber = "k45dl",
+                                     RegistrationNumber = "k45dl" + i,
                                      Cars = null,
                                      Affectations = null,
                                      Function = Former,
@@ -506,24 +551,6 @@
 
                                  );
             }
-            
-            //Institution
-            context.Institutions.AddOrUpdate(
-               r => r.Reference,
-               new Institution()
-               {
-                   Reference = "ISMONTIC",
-                   Description = new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
-                  ,
-                   Name = new LocalizedString { Arab = "ISMONTIC", English = "ISMONTIC", French = "ISMONTIC" },
-                   Address = new LocalizedString { Arab = "شارع القوات المسلحة الملكية، طنجة، المغرب", English = "Boulevard Royal Armed Forces, Tangier, Morocco", French = "Boulevard des Forces Armées Royales, Tanger, Maroc" }
-               }
-
-               );
-
-            context.SaveChanges(); 
-
-            //Add 
         }
     }
 }

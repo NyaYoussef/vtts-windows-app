@@ -12,7 +12,7 @@ namespace vtts.Entities.InstitutionManagement
 {
 
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
-    [Menu(Group = "Configuration",Title ="menu_title")]
+    [Menu(Group = "Configuration",Title ="menu_title",Order = 1)]
  //   [SelectionCriteria(typeof(Region))]
     [ManagementForm(Width =820,TitrePageGridView ="grid_title")]
     public  class Institution:BaseEntity

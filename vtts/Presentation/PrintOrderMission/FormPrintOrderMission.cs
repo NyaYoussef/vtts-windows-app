@@ -20,7 +20,6 @@ using App.Gwin.Entities;
 
 namespace vtts.Presentation.PrintOrderMission
 {
-    [App.Gwin.Attributes.Menu( EntityType = typeof(MissionConvocation),Order = 10, Title = "PrintMissionOrder")]
     public partial class FormPrintOrderMission : BaseForm, IFormSelectedEntityAction
     {
         MissionOrder MissionOrder = null;
