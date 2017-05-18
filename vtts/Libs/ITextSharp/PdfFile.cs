@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using vtts.Resources;
 
 namespace vtts.Presentation.PrintOrderMission
 {
@@ -69,7 +70,7 @@ namespace vtts.Presentation.PrintOrderMission
             //var ms = new MemoryStream();
             //ms.Position = 0;
             //ResourceImage.Header.Save(ms, ImageFormat.Bmp);
-            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(ToStream(ResourceImage.Header, ImageFormat.Bmp));
+            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(HeaderImage.Header, ImageFormat.Bmp);
 
             
             image.ScaleToFit(fitwidth, fitheight);
