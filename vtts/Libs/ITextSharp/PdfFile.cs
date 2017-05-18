@@ -6,6 +6,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.draw;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -62,16 +63,33 @@ namespace vtts.Presentation.PrintOrderMission
         /// <param name="Percent">the scaling percentage</param>
         /// <param name="absoluteX">the absolute position to the image : X</param>
         /// <param name="absoluteY">the absolute position to the image : Y</param>
-        public void AddImage(Document doc,string ImageInstance,float fitwidth , float fitheight,float Percent,float absoluteX , float absoluteY)
+        public void AddImage(Document doc,float fitwidth , float fitheight,float Percent,float absoluteX , float absoluteY)
         {
-            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(ImageInstance);
+            //  iTextSharp.text.Image image =  iTextSharp.text.Image.GetInstance(ImageInstance);
+            //var ms = new MemoryStream();
+            //ms.Position = 0;
+            //ResourceImage.Header.Save(ms, ImageFormat.Bmp);
+            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(ToStream(ResourceImage.Header, ImageFormat.Bmp));
+
+            
             image.ScaleToFit(fitwidth, fitheight);
             image.ScalePercent(Percent);
             image.SetAbsolutePosition(absoluteX, absoluteY);
             doc.Add(image);
         }
 
-       
+
+        public static Stream ToStream(System.Drawing.Image image, ImageFormat format)
+        {
+            var stream = new System.IO.MemoryStream();
+            image.Save(stream, format);
+            stream.Position = 0;
+            return stream;
+        }
+
+
+
+
         /// <summary>
         /// Get Directory Pdf File
         /// </summary>
@@ -230,21 +248,29 @@ namespace vtts.Presentation.PrintOrderMission
         /// <param name="TextCells">Text to  write into table cells</param>
         /// <param name="XPos">X : Position</param>
         /// <param name="YPos">Y : Position</param>
-        public void AddTableCells(PdfWriter writer,List<Object> TextCells,float XPos , float YPos )
+        public PdfPTable AddTableCells(PdfWriter writer,List<Object> TextCells,float XPos , float YPos)
         {
             PdfPTable table = new PdfPTable(TextCells.Count);
             PdfContentByte cb = writer.DirectContent;
             table.TotalWidth = 500f;
+            
             //if (table.NumberOfColumns == TextCells.Count)
             //{
             for (int i = 0; i < TextCells.Count; i++)
             {
+
                 table.AddCell(TextCells[i].ToString());
+                
             }
-           // }
-            table.WriteSelectedRows(0, -1, XPos, YPos, cb);
             
+            // }
+
+            table.WriteSelectedRows(0, -1, XPos, YPos, cb);
+
+            return table;
         }
+
+        
       
     }
 }
