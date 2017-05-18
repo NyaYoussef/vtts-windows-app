@@ -79,10 +79,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj">
-      <Project>{ABCFB1E3-41AF-459E-A49F-56A4A1F889B6}</Project>
-      <Name>Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\vtts\vtts.csproj">
       <Project>{43117F05-4E9C-49A2-99B6-761BB38D4193}</Project>
       <Name>vtts</Name>
