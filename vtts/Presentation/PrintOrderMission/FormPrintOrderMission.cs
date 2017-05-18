@@ -15,17 +15,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using App.Gwin.Components.Manager.DataGrid;
+using App.Gwin.Entities;
 
 namespace vtts.Presentation.PrintOrderMission
 {
     [App.Gwin.Attributes.Menu( EntityType = typeof(MissionConvocation),Order = 10, Title = "PrintMissionOrder")]
-    public partial class FormPrintOrderMission : BaseForm
+    public partial class FormPrintOrderMission : BaseForm, IFormSelectedEntityAction
     {
-
+        MissionOrder MissionOrder = null;
         public string PathPDF = "";
         public FormPrintOrderMission()
         {
             InitializeComponent();
+        }
+
+        public void SetEntity(BaseEntity obj)
+        {
+            MissionOrder = obj as MissionOrder;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,8 +49,8 @@ namespace vtts.Presentation.PrintOrderMission
         {
             vtts.BAL.MissionManagement.PrintOrderMission printOrderMission = new vtts.BAL.MissionManagement.PrintOrderMission();
             //
-            printOrderMission.Ordre = "OFP/DRNOII/ISMONTIC/OM/N° 13/17";
-            printOrderMission.Date = DateTime.Now;
+            printOrderMission.Ordre = MissionOrder.OrderNumber;
+            printOrderMission.Date = MissionOrder.DateOrder;
             //
             this.PathPDF = printOrderMission.CreatePDF();
 

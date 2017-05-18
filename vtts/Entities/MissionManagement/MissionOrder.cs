@@ -7,13 +7,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vtts.Presentation.PrintOrderMission;
 
 namespace vtts.Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "OrderNumber")]
     [Menu(Group = "MissionManagement")]
     [ManagementForm(Width =1250,Height =650,TitrePageGridView ="Order_management",TitreButtonAjouter ="Add_order_mission")]
-  //  [DataGridSelectedAction(Title = "Print", Description = "Print_Order_Mission", TypeOfForm = typeof())]
+    [DataGridSelectedAction(Title = "Print", Description = "Print_Order_Mission", TypeOfForm = typeof(FormPrintOrderMission))]
     public class MissionOrder: BaseEntity
     {
       
