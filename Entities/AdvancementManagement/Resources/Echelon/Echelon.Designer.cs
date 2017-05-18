@@ -61,7 +61,7 @@ namespace Entities.AdvancementManagement.Resources.Echelon {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancement Echelons.
+        ///   Looks up a localized string similar to Advancement echelons.
         /// </summary>
         internal static string AdvancementEchelons {
             get {
@@ -88,7 +88,16 @@ namespace Entities.AdvancementManagement.Resources.Echelon {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Echelons Management.
+        ///   Looks up a localized string similar to Echelons.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Echelons management.
         /// </summary>
         internal static string menu_title {
             get {

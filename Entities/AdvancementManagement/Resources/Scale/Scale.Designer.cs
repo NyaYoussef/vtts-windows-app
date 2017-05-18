@@ -79,6 +79,15 @@ namespace Entities.AdvancementManagement.Resources.Scale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Scales.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scales Management.
         /// </summary>
         internal static string menu_title {

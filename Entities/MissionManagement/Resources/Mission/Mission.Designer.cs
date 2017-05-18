@@ -61,6 +61,15 @@ namespace Entities.MissionManagement.Resources.Mission {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Missions.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Missions Management.
         /// </summary>
         internal static string menu_title {

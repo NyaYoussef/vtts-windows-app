@@ -11,21 +11,20 @@ namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "HRManagement")]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =740)]
     public  class Scale:BaseEntity
     {
         [EntryForm(Ordre = 3, GroupeBox = "Scales")]
-        [DataGrid(WidthColonne = 100)]
-        [Filter(Ordre =1)]
+        [DataGrid(WidthColonne = 200)]
+        [Filter(Ordre =1,WidthControl =200)]
         public int Number { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Scales")]
-        [DataGrid(WidthColonne = 100)]
+        [EntryForm(Ordre = 3, GroupeBox = "Scales",WidthControl =200)]
+        [DataGrid(WidthColonne = 200)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =2,isValeurFiltreVide =true)]
+        [Filter(Ordre =2,isValeurFiltreVide =true,WidthControl =200)]
         public Grade Grade { get; set; }
-
         
-        [DataGrid(WidthColonne = 100)]
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List<AdvancementScale> AdvancementScales { get; set; }
 

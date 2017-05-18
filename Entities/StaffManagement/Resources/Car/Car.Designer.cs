@@ -79,7 +79,7 @@ namespace Entities.StaffManagement.Resources.Car {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cars Management.
+        ///   Looks up a localized string similar to Cars management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -88,7 +88,7 @@ namespace Entities.StaffManagement.Resources.Car {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Personel Car.
+        ///   Looks up a localized string similar to Personel car.
         /// </summary>
         internal static string PersonelCar {
             get {
@@ -97,7 +97,7 @@ namespace Entities.StaffManagement.Resources.Car {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plate Number.
+        ///   Looks up a localized string similar to Plate number.
         /// </summary>
         internal static string PlateNumber {
             get {

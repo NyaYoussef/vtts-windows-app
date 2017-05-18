@@ -141,4 +141,7 @@
   <data name="Scale" xml:space="preserve">
     <value>سلم</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>تقدم السلم</value>
+  </data>
 </root>

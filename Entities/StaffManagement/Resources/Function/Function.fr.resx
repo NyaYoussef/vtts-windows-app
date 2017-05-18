@@ -132,4 +132,7 @@
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
   </data>
+  <data name="grid_titel" xml:space="preserve">
+    <value>Fonctions</value>
+  </data>
 </root>

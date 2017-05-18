@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group ="MissionManagement")]
+    [ManagementForm(Width =720,TitrePageGridView ="grid_title")]
     public class MissionCategory: BaseEntity
     {
         public MissionCategory()
@@ -19,14 +20,14 @@ namespace Entities.MissionManagement
             Name = new LocalizedString();
         }
         public LocalizedString Name { get; set; }
-        [EntryForm(Ordre = 5, WidthControl = 150,GroupeBox = "menu_title")]
-        [DataGrid(Ordre = 5, WidthColonne = 100)]
-        [Filter(Ordre =3)]
+        [EntryForm(Ordre = 5, WidthControl = 200,GroupeBox = "menu_title")]
+        [DataGrid(Ordre = 5, WidthColonne = 200)]
+        [Filter(Ordre =3,WidthControl =200)]
         public LocalizedString Description { get; set; }
 
-        [EntryForm(Ordre = 2, WidthControl = 150, GroupeBox = "menu_title")]
-        [DataGrid(Ordre = 2, WidthColonne = 100)]
-        [Filter(Ordre = 2)]
+        [EntryForm(Ordre = 2, WidthControl = 200, GroupeBox = "menu_title")]
+        [DataGrid(Ordre = 2, WidthColonne = 200)]
+        [Filter(Ordre = 2,WidthControl =200)]
         public string Code { get; set; }
 
         [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]

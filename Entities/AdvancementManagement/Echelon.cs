@@ -12,15 +12,16 @@ namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "HRManagement", Title = "menu_title")]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =600,Height =450)]
     public class Echelon:BaseEntity
     {
         public Echelon()
         {
             this.Description = new LocalizedString();
         }
-        [EntryForm(Ordre = 3, GroupeBox = "Echelons",MultiLine =true,WidthControl =300)]
-        [DataGrid(WidthColonne = 100)]
-        [Filter(Ordre =1,isValeurFiltreVide =true)]
+        [EntryForm(Ordre = 3, GroupeBox = "Echelons",MultiLine =true,WidthControl =200)]
+        [DataGrid(WidthColonne = 200)]
+        [Filter(Ordre =1,isValeurFiltreVide =true,WidthControl =200)]
         public LocalizedString Description { get; set; }
 
        /* [EntryForm(Ordre = 3, GroupeBox = "Echlon", WidthControl = 300)]

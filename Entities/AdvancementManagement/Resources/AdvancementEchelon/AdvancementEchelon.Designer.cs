@@ -61,7 +61,7 @@ namespace Entities.AdvancementManagement.Resources.AdvancementEchelon {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Echelon Management.
+        ///   Looks up a localized string similar to Advancement echelon.
         /// </summary>
         internal static string AdvancementEchlons {
             get {
@@ -97,7 +97,16 @@ namespace Entities.AdvancementManagement.Resources.AdvancementEchelon {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancements Echelon Management.
+        ///   Looks up a localized string similar to Advancements echelons.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Advancements echelon management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -106,7 +115,7 @@ namespace Entities.AdvancementManagement.Resources.AdvancementEchelon {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancements Echelon.
+        ///   Looks up a localized string similar to Advancements echelon.
         /// </summary>
         internal static string PluralName {
             get {
@@ -124,7 +133,7 @@ namespace Entities.AdvancementManagement.Resources.AdvancementEchelon {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancement Echelon.
+        ///   Looks up a localized string similar to Advancement echelon.
         /// </summary>
         internal static string SingularName {
             get {

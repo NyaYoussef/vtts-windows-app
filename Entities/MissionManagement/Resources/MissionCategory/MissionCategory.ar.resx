@@ -138,4 +138,7 @@
   <data name="Type" xml:space="preserve">
     <value>الصنف</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>أصناف المهام</value>
+  </data>
 </root>

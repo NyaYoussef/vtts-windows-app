@@ -141,4 +141,7 @@
   <data name="Region" xml:space="preserve">
     <value>Region</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Institutions</value>
+  </data>
 </root>

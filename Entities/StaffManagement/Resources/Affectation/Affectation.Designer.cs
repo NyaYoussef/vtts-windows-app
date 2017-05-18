@@ -61,7 +61,7 @@ namespace Entities.StaffManagement.Resources.Affectation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Affectation Date.
+        ///   Looks up a localized string similar to Affectation date.
         /// </summary>
         internal static string DateAffectation {
             get {
@@ -97,7 +97,7 @@ namespace Entities.StaffManagement.Resources.Affectation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Affectations Management.
+        ///   Looks up a localized string similar to Affectations management.
         /// </summary>
         internal static string menu_title {
             get {

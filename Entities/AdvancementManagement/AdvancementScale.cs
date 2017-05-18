@@ -14,24 +14,26 @@ namespace Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
     [Menu(Group = "HRManagement")]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =780)]
     public class AdvancementScale:BaseEntity
     {
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
        
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 150)]
         public DateTime Date { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(isValeurFiltreVide =false,WidthControl =150)]
         public Former Former { get; set; }
 
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 150)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =1,isValeurFiltreVide =true)]
+        [Filter(Ordre =1,isValeurFiltreVide =true,WidthControl =150)]
         public Scale Scale { get; set; }
 
       

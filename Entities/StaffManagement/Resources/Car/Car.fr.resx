@@ -121,13 +121,13 @@
     <value>Marque</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion Des Voitures</value>
+    <value>Gestion des voitures</value>
   </data>
   <data name="PersonelCar" xml:space="preserve">
-    <value>Voiture Personnelle</value>
+    <value>Voiture personnelle</value>
   </data>
   <data name="PlateNumber" xml:space="preserve">
-    <value>Numéro Du Plaque</value>
+    <value>Numéro du plaque</value>
   </data>
   <data name="PluralName" xml:space="preserve">
     <value>Voitures</value>
@@ -139,7 +139,7 @@
     <value>Personnel</value>
   </data>
   <data name="TaxPower" xml:space="preserve">
-    <value>Puissance Fiscale</value>
+    <value>Puissance fiscale</value>
   </data>
   <data name="grid_title" xml:space="preserve">
     <value>Voitures</value>

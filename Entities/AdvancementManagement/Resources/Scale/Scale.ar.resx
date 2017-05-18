@@ -138,4 +138,7 @@
   <data name="Grade" xml:space="preserve">
     <value>الدرجة</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>السلالم</value>
+  </data>
 </root>

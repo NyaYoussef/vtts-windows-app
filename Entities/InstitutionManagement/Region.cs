@@ -8,8 +8,9 @@ using System.Text;
 
 namespace Entities.InstitutionManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group = "Configuration", Title = "menu_title")]
+    [ManagementForm(Width =700,TitrePageGridView ="grid_titre")]
     public class Region:BaseEntity
     {
         public Region()
@@ -19,12 +20,12 @@ namespace Entities.InstitutionManagement
         }
         [EntryForm(Ordre = 1,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 100)]
-        [Filter]
+        [Filter(WidthControl =150)]
         public LocalizedString Name { get; set; }
 
-        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 300,GroupeBox = "menu_title")]
+        [EntryForm(Ordre = 2, MultiLine = true, WidthControl = 250,GroupeBox = "menu_title")]
         [DataGrid(WidthColonne = 200)]
-        [Filter]
+        [Filter(WidthControl =150)]
         public LocalizedString Description { get; set; }
 
         public virtual List<Institution> Institutions { get; set; }

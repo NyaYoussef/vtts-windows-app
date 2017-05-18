@@ -79,7 +79,16 @@ namespace Entities.MissionManagement.Resources.MissionCategory {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Categorys Management.
+        ///   Looks up a localized string similar to Mission categorys.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Missions categorys.
         /// </summary>
         internal static string menu_title {
             get {
@@ -88,7 +97,7 @@ namespace Entities.MissionManagement.Resources.MissionCategory {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission Convocations.
+        ///   Looks up a localized string similar to Mission convocations.
         /// </summary>
         internal static string MissionConvocations {
             get {
@@ -97,7 +106,7 @@ namespace Entities.MissionManagement.Resources.MissionCategory {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missions Categorys.
+        ///   Looks up a localized string similar to Missions categorys.
         /// </summary>
         internal static string PluralName {
             get {
@@ -106,7 +115,7 @@ namespace Entities.MissionManagement.Resources.MissionCategory {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mission Category.
+        ///   Looks up a localized string similar to Mission category.
         /// </summary>
         internal static string SingularName {
             get {

@@ -141,4 +141,7 @@
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Missions</value>
+  </data>
 </root>

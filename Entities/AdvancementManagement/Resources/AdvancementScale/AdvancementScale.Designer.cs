@@ -61,7 +61,7 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancemant Scales.
+        ///   Looks up a localized string similar to Advancemant scales.
         /// </summary>
         internal static string AdvancemantScales {
             get {
@@ -97,7 +97,16 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancements Scales Management.
+        ///   Looks up a localized string similar to Advancements scales.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Advancements scales management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -106,7 +115,7 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancements Scales.
+        ///   Looks up a localized string similar to Advancements scales.
         /// </summary>
         internal static string PluralName {
             get {
@@ -124,7 +133,7 @@ namespace Entities.AdvancementManagement.Resources.AdvancementScale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advancement Scale.
+        ///   Looks up a localized string similar to Advancement scale.
         /// </summary>
         internal static string SingularName {
             get {

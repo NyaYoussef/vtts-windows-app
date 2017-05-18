@@ -70,6 +70,15 @@ namespace Entities.InstitutionManagement.Resources.Region {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Region.
+        /// </summary>
+        internal static string grid_titre {
+            get {
+                return ResourceManager.GetString("grid_titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Region Management.
         /// </summary>
         internal static string menu_title {

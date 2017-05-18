@@ -132,4 +132,7 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="grid_titre" xml:space="preserve">
+    <value>Régions</value>
+  </data>
 </root>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Entities.StaffManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group = "HRManagement")]
     [ManagementForm(TitrePageGridView ="grid_title")]
     public class Car: BaseEntity

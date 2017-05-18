@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace Entities.MissionManagement
 {
-    [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
+    [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group = "MissionManagement")]
+    [ManagementForm(Width =600,TitrePageGridView ="grid_title")]
     public class ThemeCategory: BaseEntity
     {
         public ThemeCategory()

@@ -135,4 +135,7 @@
   <data name="Grades" xml:space="preserve">
     <value>Grade</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Grades</value>
+  </data>
 </root>

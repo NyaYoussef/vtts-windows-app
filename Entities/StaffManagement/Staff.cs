@@ -48,7 +48,7 @@ namespace Entities.StaffManagement
         //
         [EntryForm(Ordre = 50, GroupeBox = "Recruitment",isRequired =true)]
         [DataGrid(WidthColonne = 100)]
-        [Filter(Ordre =4)]
+        [Filter]
         public string RegistrationNumber { get; set; }
 
         [EntryForm(Ordre =50, GroupeBox = "Recruitment",isRequired =true)]
@@ -76,7 +76,7 @@ namespace Entities.StaffManagement
 
         [EntryForm(Ordre = 2, GroupeBox = "Functions",isRequired =true)]
         [DataGrid(WidthColonne = 100)]
-        [Filter(isValeurFiltreVide =true,WidthControl =150,Ordre =5)]
+        [Filter(isValeurFiltreVide =true,WidthControl =150)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public virtual Function Function { get; set; }
 

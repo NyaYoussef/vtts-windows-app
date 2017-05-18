@@ -132,4 +132,7 @@
   <data name="MissionConvocations" xml:space="preserve">
     <value>دعوة المهمة</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>مواضيع المهام</value>
+  </data>
 </root>

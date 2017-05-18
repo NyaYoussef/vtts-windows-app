@@ -121,7 +121,7 @@
     <value>Description</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion Des  Échelons</value>
+    <value>Gestion des  échelons</value>
   </data>
   <data name="PluralName" xml:space="preserve">
     <value>Échelons</value>
@@ -133,6 +133,9 @@
     <value>Échelon</value>
   </data>
   <data name="AdvancementEchelons" xml:space="preserve">
-    <value>Avancements Echelon</value>
+    <value>Avancements échelon</value>
+  </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Échelons</value>
   </data>
 </root>

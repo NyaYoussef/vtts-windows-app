@@ -121,16 +121,16 @@
     <value>Date</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Advancements Echelon Management</value>
+    <value>Advancements echelon management</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Advancements Echelon</value>
+    <value>Advancements echelon</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Advancement Echelon</value>
+    <value>Advancement echelon</value>
   </data>
   <data name="AdvancementEchlons" xml:space="preserve">
-    <value>Echelon Management</value>
+    <value>Advancement echelon</value>
   </data>
   <data name="Echelon" xml:space="preserve">
     <value>Echelon</value>
@@ -140,5 +140,8 @@
   </data>
   <data name="Scale" xml:space="preserve">
     <value>Scale</value>
+  </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Advancements echelons</value>
   </data>
 </root>

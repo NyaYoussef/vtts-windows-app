@@ -130,7 +130,7 @@
     <value>تدبير تقدم المستوى</value>
   </data>
   <data name="AdvancementEchlons" xml:space="preserve">
-    <value>تقدم المستويات</value>
+    <value>تقدم المستوى</value>
   </data>
   <data name="Echelon" xml:space="preserve">
     <value>المستوى</value>
@@ -140,5 +140,8 @@
   </data>
   <data name="Scale" xml:space="preserve">
     <value>سلم</value>
+  </data>
+  <data name="grid_titlr" xml:space="preserve">
+    <value>تقدم المستويات</value>
   </data>
 </root>

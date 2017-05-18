@@ -70,6 +70,15 @@ namespace Entities.StaffManagement.Resources.Function {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Functions.
+        /// </summary>
+        internal static string grid_titel {
+            get {
+                return ResourceManager.GetString("grid_titel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Functions Management.
         /// </summary>
         internal static string menu_title {
