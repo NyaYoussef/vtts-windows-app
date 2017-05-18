@@ -16,7 +16,7 @@ namespace Entities.StaffManagement
     public  class Affectation:BaseEntity
     {
         [EntryForm(Ordre = 1,WidthControl =350)]
-        [DataGrid(WidthColonne = 100,Ordre =4)]
+        [DataGrid(WidthColonne = 130,Ordre =4)]
         public DateTime DateAffectation { get; set; }
 
         [EntryForm(Ordre = 1,WidthControl =350)]

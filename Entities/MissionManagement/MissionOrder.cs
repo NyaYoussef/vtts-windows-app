@@ -23,16 +23,16 @@ namespace Entities.MissionManagement
         public MissionConvocation Mission { set; get; }
 
         [EntryForm(Ordre = 1, WidthControl = 200,GroupeBox = "Date",GroupeBoxOrder =2)]
-        [DataGrid(Ordre = 1, WidthColonne = 80)]
+        [DataGrid(Ordre = 1, WidthColonne = 120)]
         [Filter(Ordre =0, WidthControl = 100)]
         public string OrderNumber { set; get; }
 
         [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox ="Date",GroupeBoxOrder =2)]
-        [DataGrid(Ordre = 3, WidthColonne = 150)]
+        [DataGrid(Ordre = 3, WidthColonne = 135)]
         public DateTime DepartureDate { set; get; }
 
         [EntryForm(Ordre = 4, WidthControl = 200,GroupeBox ="Date",GroupeBoxOrder =2)]
-        [DataGrid(Ordre = 4, WidthColonne = 150)]
+        [DataGrid(Ordre = 4, WidthColonne = 135)]
         public DateTime ArrivalDate { set; get; }
 
 
@@ -64,7 +64,7 @@ namespace Entities.MissionManagement
         public int  ArrivingTime { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 100, GroupeBox = "Validations", GroupeBoxOrder = 3)]
-        [DataGrid(Ordre = 7, WidthColonne = 100)]
+        [DataGrid(Ordre = 7, WidthColonne = 150)]
         public DateTime ValidationDate { get; set; }
 
         [EntryForm(Ordre = 0, WidthControl = 200, GroupeBox = "Date", GroupeBoxOrder = 2)]

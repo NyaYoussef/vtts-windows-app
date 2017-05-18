@@ -52,7 +52,7 @@ namespace Entities.StaffManagement
         public string RegistrationNumber { get; set; }
 
         [EntryForm(Ordre =50, GroupeBox = "Recruitment",isRequired =true)]
-        [DataGrid(WidthColonne = 100)]
+        [DataGrid(WidthColonne = 160)]
         public DateTime DateRecruitment { get; set; }
 
         //
