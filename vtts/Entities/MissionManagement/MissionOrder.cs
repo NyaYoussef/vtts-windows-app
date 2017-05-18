@@ -12,17 +12,24 @@ using vtts.Presentation.PrintOrderMission;
 namespace vtts.Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "OrderNumber")]
-    [Menu(Group = "MissionManagement")]
+    [Menu(Group = "MissionManagement",Order =2,Title = "menu_title")]
     [ManagementForm(Width =1250,Height =650,TitrePageGridView ="Order_management",TitreButtonAjouter ="Add_order_mission")]
     [DataGridSelectedAction(Title = "Print", Description = "Print_Order_Mission", TypeOfForm = typeof(FormPrintOrderMission))]
     public class MissionOrder: BaseEntity
     {
-      
+
+        //
+        // Convocations
+        //
         [EntryForm(WidthControl =200,Ordre =0,GroupeBox = "Convocations",GroupeBoxOrder =0)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =1, WidthControl = 150)]
+        [Filter(Ordre =1, WidthControl = 150,isValeurFiltreVide = true)]
         public MissionConvocation Mission { set; get; }
 
+
+        //
+        // Date
+        //
         [EntryForm(Ordre = 1, WidthControl = 200,GroupeBox = "Date",GroupeBoxOrder =2)]
         [DataGrid(Ordre = 1, WidthColonne = 120)]
         [Filter(Ordre =0, WidthControl = 100)]
@@ -37,7 +44,17 @@ namespace vtts.Entities.MissionManagement
         public DateTime ArrivalDate { set; get; }
 
 
+        [EntryForm(Ordre = 3, WidthControl = 50, GroupeBox = "Date", GroupeBoxOrder = 2)]
+        public int DepartureTime { get; set; }
+
+        [EntryForm(Ordre = 5, WidthControl = 50, GroupeBox = "Date", GroupeBoxOrder = 2)]
+        public int ArrivingTime { get; set; }
+
+        [EntryForm(Ordre = 0, WidthControl = 200, GroupeBox = "Date", GroupeBoxOrder = 2)]
+        public DateTime DateOrder { get; set; }
+        // 
         // Means of transport
+        //
         [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox = "Meansoftransport", GroupeBoxOrder = 1)]
         [DataGrid(Ordre = 2, WidthColonne = 150)]
         [BusinesRole]
@@ -46,30 +63,31 @@ namespace vtts.Entities.MissionManagement
 
         [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox = "Convocations", GroupeBoxOrder = 0)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =4, WidthControl = 150)]
+        [Filter(Ordre =4, WidthControl = 150,isValeurFiltreVide = true)]
         public Staff Staff { set; get; }
 
         [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox = "Meansoftransport", GroupeBoxOrder = 1)]
+        [Filter (isValeurFiltreVide = true)]
+        
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public virtual Car Car { get; set; }
+
+
+        //
+        // Validations
+        //
 
         [EntryForm(Ordre = 7, WidthControl = 200,GroupeBox = "Validations", GroupeBoxOrder = 3)]
         [DataGrid(Ordre = 7, WidthColonne = 80)]
         [Filter(Ordre =1,WidthControl =100)]
         public bool Validation { get; set; }
 
-        [EntryForm(Ordre = 3, WidthControl = 200, GroupeBox = "Date", GroupeBoxOrder = 2)]
-        public int DepartureTime { get; set; }
-
-        [EntryForm(Ordre = 5, WidthControl = 200, GroupeBox = "Date", GroupeBoxOrder = 2)]
-        public int  ArrivingTime { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 100, GroupeBox = "Validations", GroupeBoxOrder = 3)]
         [DataGrid(Ordre = 7, WidthColonne = 150)]
         public DateTime ValidationDate { get; set; }
 
-        [EntryForm(Ordre = 0, WidthControl = 200, GroupeBox = "Date", GroupeBoxOrder = 2)]
-        public DateTime DateOrder { get; set; }
+        
 
       
     }

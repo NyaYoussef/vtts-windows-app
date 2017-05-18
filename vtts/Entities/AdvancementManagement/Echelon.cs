@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace vtts.Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "HRManagement", Title = "menu_title")]
+    [Menu(Group = "AdvanceManagement", Title = "menu_title")]
     [ManagementForm(TitrePageGridView ="grid_title",Width =600,Height =450)]
     public class Echelon:BaseEntity
     {

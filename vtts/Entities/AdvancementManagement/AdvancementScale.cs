@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace vtts.Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "HRManagement")]
+    [Menu(Group = "AdvanceManagement")]
     [ManagementForm(TitrePageGridView ="grid_title",Width =780)]
     public class AdvancementScale:BaseEntity
     {

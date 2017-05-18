@@ -245,12 +245,13 @@
                          new MenuItemApplication { Id = 1, Code = "Configuration", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "إعدادات", English = "Configuration", French = "Configuration" } },
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
-                         new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee Management", French = "Gestion Des Stagiaire" } },
+                         new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee Management", French = "Stagiaires" } },
                          new MenuItemApplication { Id = 5, Code = "InstitutionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المؤسسة", English = "Institution Management", French = "Gestion de l'établissement" } },
                          new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH Management", French = "Gestion RH" } },
-                         new MenuItemApplication { Id = 8, Code = "AdvanceManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الترقيات", English = "Advance Management", French = "Gestion D'Advance" } },
-                         new MenuItemApplication { Id = 7, Code = "MissionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المهام", English = "Mission Management", French = "Gestion De Mission" } }
-                              );
+                         new MenuItemApplication { Id = 8, Code = "AdvanceManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الترقيات", English = "Advance Management", French = "Aavancements" } },
+                         new MenuItemApplication { Id = 8, Code = "Staffs", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المستخدمين", English = "Staffs management", French = "Personnels" } },
+                         new MenuItemApplication { Id = 7, Code = "MissionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المهام", English = "Mission Management", French = "Missions" } }
+                      );
 
 
    
@@ -447,6 +448,7 @@
             context.SaveChanges();
 
             //Institution
+            Region Region_Nord_Ouest_II = context.Regions.Where(r => r.Reference == "Nord Ouest II").SingleOrDefault();
             context.Institutions.AddOrUpdate(
                r => r.Reference,
                new Institution()
@@ -455,7 +457,8 @@
                    Description = new LocalizedString { Arab = "المعهد المتخصص في الوظيفة الخارجة والتكنولوجيات الجديدة والمعلومات والتواصل", French = "Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'information et de la  Communication", English = "Institute Specialized in Offshoring and New Information and Communication Technologies" }
                   ,
                    Name = new LocalizedString { Arab = "ISMONTIC", English = "ISMONTIC", French = "ISMONTIC" },
-                   Address = new LocalizedString { Arab = "شارع القوات المسلحة الملكية، طنجة، المغرب", English = "Boulevard Royal Armed Forces, Tangier, Morocco", French = "Boulevard des Forces Armées Royales, Tanger, Maroc" }
+                   Address = new LocalizedString { Arab = "شارع القوات المسلحة الملكية، طنجة، المغرب", English = "Boulevard Royal Armed Forces, Tangier, Morocco", French = "Boulevard des Forces Armées Royales, Tanger, Maroc" },
+                   Region = Region_Nord_Ouest_II
                }
 
                );

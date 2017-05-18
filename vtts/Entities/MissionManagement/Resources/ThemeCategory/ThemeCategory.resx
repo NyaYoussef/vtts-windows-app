@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="menu_title" xml:space="preserve">
-    <value>Themes categorys Management</value>
+    <value>Themes categories</value>
   </data>
   <data name="PluralName" xml:space="preserve">
     <value>Themes categorys</value>
@@ -134,5 +134,8 @@
   </data>
   <data name="grid_title" xml:space="preserve">
     <value>Themes categorys</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
   </data>
 </root>
