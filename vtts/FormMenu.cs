@@ -13,8 +13,8 @@ using App.Gwin.Entities.Secrurity.Authentication;
 using App.Gwin.Application.Presentation.EntityManagement;
 using App.Gwin;
 using vtts.BAL;
-using Entities.StaffManagement;
-using Entities.MissionManagement;
+using vtts.Entities.StaffManagement;
+using vtts.Entities.MissionManagement;
 using vtts.Presentation.PrintOrderMission;
 
 namespace vtts
