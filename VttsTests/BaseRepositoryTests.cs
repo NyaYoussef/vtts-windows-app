@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Entities.TraineeManagement;
+using vtts.Entities.TraineeManagement;
 using App;
 using vtts.BAL;
 using App.Gwin.Entities.Secrurity.Authentication;

@@ -92,7 +92,395 @@
     <Compile Include="BAL\MissionManagement\PrintOrderMission.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
+    <Compile Include="Entities\AdvancementManagement\AdvancementEchelon.cs" />
+    <Compile Include="Entities\AdvancementManagement\AdvancementScale.cs" />
+    <Compile Include="Entities\AdvancementManagement\Echelon.cs" />
+    <Compile Include="Entities\AdvancementManagement\Grade.cs" />
+    <Compile Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.ar.Designer.cs">
+      <DependentUpon>AdvancementEchelon.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.Designer.cs">
+      <DependentUpon>AdvancementEchelon.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.fr.Designer.cs">
+      <DependentUpon>AdvancementEchelon.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\AdvancementScale\AdvancementScale.ar.Designer.cs">
+      <DependentUpon>AdvancementScale.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\AdvancementScale\AdvancementScale.Designer.cs">
+      <DependentUpon>AdvancementScale.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\AdvancementScale\AdvancementScale.fr.Designer.cs">
+      <DependentUpon>AdvancementScale.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Echelon\Echelon.ar.Designer.cs">
+      <DependentUpon>Echelon.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Echelon\Echelon.Designer.cs">
+      <DependentUpon>Echelon.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Echelon\Echelon.fr.Designer.cs">
+      <DependentUpon>Echelon.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Grade\Grade.ar.Designer.cs">
+      <DependentUpon>Grade.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Grade\Grade.Designer.cs">
+      <DependentUpon>Grade.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Grade\Grade.fr.Designer.cs">
+      <DependentUpon>Grade.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Scale\Scale.ar.Designer.cs">
+      <DependentUpon>Scale.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Scale\Scale.Designer.cs">
+      <DependentUpon>Scale.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Resources\Scale\Scale.fr.Designer.cs">
+      <DependentUpon>Scale.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\AdvancementManagement\Scale.cs" />
     <Compile Include="Entities\Class1.cs" />
+    <Compile Include="Entities\InstitutionManagement\CategogiesClassroom.cs" />
+    <Compile Include="Entities\InstitutionManagement\classroom.cs" />
+    <Compile Include="Entities\InstitutionManagement\Institution.cs" />
+    <Compile Include="Entities\InstitutionManagement\Region.cs" />
+    <Compile Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.ar.Designer.cs">
+      <DependentUpon>CategogiesClassroom.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.Designer.cs">
+      <DependentUpon>CategogiesClassroom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.fr.Designer.cs">
+      <DependentUpon>CategogiesClassroom.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Classroom\Classroom.ar.Designer.cs">
+      <DependentUpon>Classroom.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Classroom\Classroom.Designer.cs">
+      <DependentUpon>Classroom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Classroom\Classroom.fr.Designer.cs">
+      <DependentUpon>Classroom.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Institution\Institution.ar.Designer.cs">
+      <DependentUpon>Institution.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Institution\Institution.Designer.cs">
+      <DependentUpon>Institution.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Institution\Institution.fr.Designer.cs">
+      <DependentUpon>Institution.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Region\Region.ar.Designer.cs">
+      <DependentUpon>Region.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Region\Region.Designer.cs">
+      <DependentUpon>Region.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\InstitutionManagement\Resources\Region\Region.fr.Designer.cs">
+      <DependentUpon>Region.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Enumeration\Class1.cs" />
+    <Compile Include="Entities\MissionManagement\Mission.cs" />
+    <Compile Include="Entities\MissionManagement\MissionCategory.cs" />
+    <Compile Include="Entities\MissionManagement\MissionConvocation.cs" />
+    <Compile Include="Entities\MissionManagement\MissionOrder.cs" />
+    <Compile Include="Entities\MissionManagement\Resources\MissionCategory\MissionCategory.ar.Designer.cs">
+      <DependentUpon>MissionCategory.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionCategory\MissionCategory.Designer.cs">
+      <DependentUpon>MissionCategory.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionCategory\MissionCategory.fr.Designer.cs">
+      <DependentUpon>MissionCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionConvocation\MissionConvocation.ar.Designer.cs">
+      <DependentUpon>MissionConvocation.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionConvocation\MissionConvocation.Designer.cs">
+      <DependentUpon>MissionConvocation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionConvocation\MissionConvocation.fr.Designer.cs">
+      <DependentUpon>MissionConvocation.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionOrder\MissionOrder.ar.Designer.cs">
+      <DependentUpon>MissionOrder.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionOrder\MissionOrder.Designer.cs">
+      <DependentUpon>MissionOrder.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\MissionOrder\MissionOrder.fr.Designer.cs">
+      <DependentUpon>MissionOrder.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\Mission\Mission.ar.Designer.cs">
+      <DependentUpon>Mission.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\Mission\Mission.Designer.cs">
+      <DependentUpon>Mission.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\Mission\Mission.fr.Designer.cs">
+      <DependentUpon>Mission.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\ThemeCategory\ThemeCategory.ar.Designer.cs">
+      <DependentUpon>ThemeCategory.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\ThemeCategory\ThemeCategory.Designer.cs">
+      <DependentUpon>ThemeCategory.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\ThemeCategory\ThemeCategory.fr.Designer.cs">
+      <DependentUpon>ThemeCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\Training\Training.ar.Designer.cs">
+      <DependentUpon>Training.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\Training\Training.Designer.cs">
+      <DependentUpon>Training.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\Resources\Training\Training.fr.Designer.cs">
+      <DependentUpon>Training.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\MissionManagement\ThemeCategory.cs" />
+    <Compile Include="Entities\ModuleManagement\Precision.cs" />
+    <Compile Include="Entities\ModuleManagement\PrecisionContent.cs" />
+    <Compile Include="Entities\SessionManagement\Absence.cs" />
+    <Compile Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.Designer.cs">
+      <DependentUpon>TrainingYear.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.Designer.cs">
+      <DependentUpon>TrainingYear.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.fr.Designer.cs">
+      <DependentUpon>TrainingYear.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\TrainingYear.cs" />
+    <Compile Include="Entities\StaffManagement\Affectation.cs" />
+    <Compile Include="Entities\StaffManagement\Car.cs" />
+    <Compile Include="Entities\StaffManagement\Former.cs" />
+    <Compile Include="Entities\StaffManagement\Function.cs" />
+    <Compile Include="Entities\StaffManagement\Resources\Affectation\Affectation.ar.Designer.cs">
+      <DependentUpon>Affectation.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Affectation\Affectation.Designer.cs">
+      <DependentUpon>Affectation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Affectation\Affectation.fr.Designer.cs">
+      <DependentUpon>Affectation.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Car\Car.ar.Designer.cs">
+      <DependentUpon>Car.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Car\Car.Designer.cs">
+      <DependentUpon>Car.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Car\Car.fr.Designer.cs">
+      <DependentUpon>Car.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Former\Former.ar.Designer.cs">
+      <DependentUpon>Former.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Former\Former.Designer.cs">
+      <DependentUpon>Former.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Former\Former.fr.Designer.cs">
+      <DependentUpon>Former.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Function\Function.ar.Designer.cs">
+      <DependentUpon>Function.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Function\Function.Designer.cs">
+      <DependentUpon>Function.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Function\Function.fr.Designer.cs">
+      <DependentUpon>Function.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Staff\Staff.ar.Designer.cs">
+      <DependentUpon>Staff.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Staff\Staff.Designer.cs">
+      <DependentUpon>Staff.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Resources\Staff\Staff.fr.Designer.cs">
+      <DependentUpon>Staff.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\StaffManagement\Staff.cs" />
+    <Compile Include="Entities\TraineeManagement\Group.cs" />
+    <Compile Include="Entities\TraineeManagement\Resources\Group\Group.ar.Designer.cs">
+      <DependentUpon>Group.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\Group\Group.Designer.cs">
+      <DependentUpon>Group.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\Group\Group.fr.Designer.cs">
+      <DependentUpon>Group.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\Trainee\Trainee.ar.Designer.cs">
+      <DependentUpon>Trainee.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\Trainee\Trainee.Designer.cs">
+      <DependentUpon>Trainee.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\Trainee\Trainee.fr.Designer.cs">
+      <DependentUpon>Trainee.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Trainee.cs" />
+    <Compile Include="Entities\TrainingManagement\Module.cs" />
+    <Compile Include="Entities\TrainingManagement\Resources\Specialty\Specialty.ar.Designer.cs">
+      <DependentUpon>Specialty.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TrainingManagement\Resources\Specialty\Specialty.Designer.cs">
+      <DependentUpon>Specialty.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TrainingManagement\Resources\Specialty\Specialty.fr.Designer.cs">
+      <DependentUpon>Specialty.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TrainingManagement\Specialty.cs" />
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +500,294 @@
     <Compile Include="Libs\ITextSharp\PdfFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementEchelon.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementEchelon.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementEchelon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementScale\AdvancementScale.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementScale.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementScale\AdvancementScale.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementScale.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementScale\AdvancementScale.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdvancementScale.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Echelon\Echelon.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Echelon.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Echelon\Echelon.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Echelon.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Echelon\Echelon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Echelon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Grade\Grade.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Grade.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Grade\Grade.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Grade.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Grade\Grade.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Grade.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Scale\Scale.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scale.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Scale\Scale.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scale.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\AdvancementManagement\Resources\Scale\Scale.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scale.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategogiesClassroom.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategogiesClassroom.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategogiesClassroom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Classroom\Classroom.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classroom.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Classroom\Classroom.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classroom.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Classroom\Classroom.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classroom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Institution\Institution.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Institution.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Institution\Institution.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Institution.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Institution\Institution.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Institution.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Region\Region.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Region.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Region\Region.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Region.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\InstitutionManagement\Resources\Region\Region.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Region.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionCategory\MissionCategory.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionCategory.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionCategory\MissionCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionCategory\MissionCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionConvocation\MissionConvocation.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionConvocation.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionConvocation\MissionConvocation.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionConvocation.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionConvocation\MissionConvocation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionConvocation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionOrder\MissionOrder.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionOrder.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionOrder\MissionOrder.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionOrder.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\MissionOrder\MissionOrder.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MissionOrder.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\Mission\Mission.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\Mission\Mission.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\Mission\Mission.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mission.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\ThemeCategory\ThemeCategory.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThemeCategory.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\ThemeCategory\ThemeCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThemeCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\ThemeCategory\ThemeCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThemeCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\Training\Training.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\Training\Training.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\MissionManagement\Resources\Training\Training.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TrainingYear.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TrainingYear.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TrainingYear.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Affectation\Affectation.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Affectation.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Affectation\Affectation.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Affectation.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Affectation\Affectation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Affectation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Car\Car.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Car.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Car\Car.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Car.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Car\Car.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Car.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Former\Former.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Former.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Former\Former.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Former.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Former\Former.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Former.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Function\Function.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Function.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Function\Function.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Function.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Function\Function.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Function.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Staff\Staff.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Staff.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Staff\Staff.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Staff.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Staff\Staff.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Staff.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\Group\Group.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Group.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\Group\Group.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Group.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\Group\Group.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Group.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\Trainee\Trainee.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trainee.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\Trainee\Trainee.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trainee.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\Trainee\Trainee.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trainee.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TrainingManagement\Resources\Specialty\Specialty.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Specialty.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TrainingManagement\Resources\Specialty\Specialty.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Specialty.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TrainingManagement\Resources\Specialty\Specialty.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Specialty.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.ar.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +813,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Entities\AdvancementManagement\AdvancementClassDiagrame.cd" />
+    <None Include="Entities\InstitutionManagement\ClassDiagramInstitutions.cd" />
+    <None Include="Entities\MissionManagement\MissionClassDiagram.cd" />
+    <None Include="Entities\StaffManagement\InstitutionClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -150,12 +830,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj">
-      <Project>{abcfb1e3-41af-459e-a49f-56a4a1f889b6}</Project>
-      <Name>Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NewFolder1\" />

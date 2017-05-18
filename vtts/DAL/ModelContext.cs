@@ -1,11 +1,11 @@
 ﻿namespace App
 {
-    using Entities.AdvancementManagement;
-    using Entities.InstitutionManagement;
-    using Entities.MissionManagement;
-    using Entities.StaffManagement;
-    using Entities.TraineeManagement;
-    using Entities.TrainingManagement;
+    using vtts.Entities.AdvancementManagement;
+    using vtts.Entities.InstitutionManagement;
+    using vtts.Entities.MissionManagement;
+    using vtts.Entities.StaffManagement;
+    using vtts.Entities.TraineeManagement;
+    using vtts.Entities.TrainingManagement;
     using Gwin.Entities.Application;
     using Gwin.Entities.ContactInformations;
     using Gwin.Entities.Logging;
