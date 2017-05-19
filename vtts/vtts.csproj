@@ -430,6 +430,38 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Entities\PlaningManagement\TimeTable.cs" />
+    <Compile Include="Entities\PojectManagement\Project.cs" />
+    <Compile Include="Entities\PojectManagement\Resources\Project\Project.fr.Designer.cs">
+      <DependentUpon>Project.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PojectManagement\Resources\Project\Project.ar.Designer.cs">
+      <DependentUpon>Project.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PojectManagement\Resources\Project\Project.Designer.cs">
+      <DependentUpon>Project.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PojectManagement\Resources\Task\Task.fr.Designer.cs">
+      <DependentUpon>Task.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PojectManagement\Resources\Task\Task.ar.Designer.cs">
+      <DependentUpon>Task.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PojectManagement\Resources\Task\Task.Designer.cs">
+      <DependentUpon>Task.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PojectManagement\Task.cs" />
     <Compile Include="Entities\SessionManagement\Absence.cs" />
     <Compile Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.Designer.cs">
       <DependentUpon>TrainingYear.ar.resx</DependentUpon>
@@ -843,6 +875,30 @@
     <EmbeddedResource Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TimeTable.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\Project\Project.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Project.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\Project\Project.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Project.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\Project\Project.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Project.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\Task\Task.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Task.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\Task\Task.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Task.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\Task\Task.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Task.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>

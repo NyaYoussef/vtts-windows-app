@@ -19,6 +19,7 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
     using vtts.Entities.ModuleManagement;
+    using vtts.Entities.PlaningManagement;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ModelContext>
     {
@@ -237,6 +238,18 @@
             Authorization PrecisionContentAutorization = new Authorization();
             PrecisionAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
             RoleAdmin.Authorizations.Add(PrecisionContentAutorization);
+
+            Authorization HolidayAutorization = new Authorization();
+            HolidayAutorization.BusinessEntity = typeof(Holiday).FullName;
+            RoleAdmin.Authorizations.Add(HolidayAutorization);
+
+            Authorization PlanningSessionAutorization = new Authorization();
+            PlanningSessionAutorization.BusinessEntity = typeof(PlanningSession).FullName;
+            RoleAdmin.Authorizations.Add(PlanningSessionAutorization);
+
+            Authorization TimeTableAutorization = new Authorization();
+            TimeTableAutorization.BusinessEntity = typeof(TimeTable).FullName;
+            RoleAdmin.Authorizations.Add(TimeTableAutorization);
 
 
             //     //
