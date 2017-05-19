@@ -18,6 +18,7 @@
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using vtts.Entities.ModuleManagement;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ModelContext>
     {
@@ -225,6 +226,18 @@
             RoleAdmin.Authorizations.Add(ThemeCategoryAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
             RoleAdmin.Authorizations.Add(MissionAutorization);
+            Authorization PrecisionAutorization = new Authorization();
+            PrecisionAutorization.BusinessEntity = typeof(Precision).FullName;
+            RoleAdmin.Authorizations.Add(PrecisionAutorization);
+
+            Authorization PriorAutorization = new Authorization();
+            PriorAutorization.BusinessEntity = typeof(Prior).FullName;
+            RoleAdmin.Authorizations.Add(PriorAutorization);
+
+            Authorization PrecisionContentAutorization = new Authorization();
+            PrecisionAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
+            RoleAdmin.Authorizations.Add(PrecisionContentAutorization);
+
 
             //     //
             //     //-- Giwn Users
@@ -553,7 +566,63 @@
                                  }
 
                                  );
+
             }
+            //add default grades
+            context.Grades.AddOrUpdate(
+                r => r.Reference,
+                new Grade()
+                {
+                    Reference = "A",
+                    Description = new LocalizedString { Arab = "A", English = "A", French = "A" }
+                    ,
+                    Name = new LocalizedString { Arab = "كبار المسؤولين التنفيذيين", English = "Senior executives", French = "Cadres supérieur" }
+                }
+                ,
+                 new Grade()
+                 {
+                     Reference = "B",
+                     Description = new LocalizedString { Arab = "B", English = "B", French = "B" }
+                    ,
+                     Name = new LocalizedString { Arab = "الأطر الرئيسية", English = "Main frame", French = "Cadres principaux" }
+                 },
+                  new Grade()
+                  {
+                      Reference = "C",
+                      Description = new LocalizedString { Arab = "C", English = "C", French = "C" }
+                    ,
+                      Name = new LocalizedString { Arab = "الأطر", English = "Frame", French = "Cadres" }
+                  },
+                   new Grade()
+                   {
+                       Reference = "D",
+                       Description = new LocalizedString { Arab = "D", English = "D", French = "D" }
+                    ,
+                        Name= new LocalizedString { Arab = "التحكم الرئيسي", English = "Master's degree", French = "Maitrise principale" }
+                   }
+                   , new Grade()
+                   {
+                       Reference = "E",
+                       Description = new LocalizedString { Arab = "E", English = "E", French = "E" }
+                    ,
+                        Name= new LocalizedString { Arab = "التحكم", English = "Mastery", French = "Maitrise" }
+                   },
+                    new Grade()
+                    {
+                        Reference = "F",
+                        Description = new LocalizedString { Arab = "F", English = "F", French = "F" }
+                    ,
+                        Name = new LocalizedString { Arab = "الأداء الرئيسي ", English = "Main execution", French = "Exécution principale" }
+                    },
+                    new Grade()
+                    {
+                        Reference = "G",
+                        Description = new LocalizedString { Arab = "G", English = "G", French = "G" }
+                    ,
+                        Name = new LocalizedString { Arab = "الأداء", English = "Execution", French = "Exécution" }
+                    }
+                );
+            context.SaveChanges();
         }
     }
 }

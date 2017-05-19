@@ -19,6 +19,7 @@
     using System.Data.Entity.Validation;
     using System.Linq;
     using System.Text;
+    using vtts.Entities.ModuleManagement;
 
     public class ModelContext : DbContext
     {
@@ -96,6 +97,9 @@
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<AdvancementEchelon> AdvancementEchelons { get; set; }
         public virtual DbSet<Mission> Missions { get; set; }
+        public virtual DbSet<Precision> Precision { get; set; }
+        public virtual DbSet<Prior> Priors { get; set; }
+        public virtual DbSet<PrecisionContent> PrecisionContent { get; set; }
 
 
 
