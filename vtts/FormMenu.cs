@@ -38,7 +38,7 @@ namespace vtts
             ModelContext db = new ModelContext();
            user = db.Users.Where(u => u.Reference == "Director").SingleOrDefault();
             
-            user = User.CreateRootUser(new ModelContext());
+           // user = User.CreateRootUser(new ModelContext());
 
             GwinApp.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
             //InitializeComponent();
