@@ -1,0 +1,16 @@
+- Add ThemeCategorie in Filter , need Update Gwin to support ManytoMany in Filter
+
+//
+// Mission Order
+//
+
+// Entry Form
+Staffs in ComboBox be in Selected convocation 
+
+Date de départ ne peut pas être supérieur à la date de début de la mission
+Date d'arrivé ne patu pas être inférieur à la date de fin de mission
+
+Le comboBox voiture doit charger les voiture de la personne selectioné
+
+Add IsValueFilterVide configuration in EntryForm Configuration, il existe seulement dans la configuration du filtre
+mais si il est configurer dans le filtre, il s'affiche bien dans EntryForm

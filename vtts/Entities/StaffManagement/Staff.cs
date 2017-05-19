@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace vtts.Entities.StaffManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "HRManagement",Title ="menu_title")]
+    [Menu(Group = "Staffs", Title ="menu_title")]
     [ManagementForm(Width = 1250,Height = 700,TitrePageGridView ="grid_title",TitreButtonAjouter ="Add_title")]
    
     public class Staff: Person
@@ -84,8 +84,8 @@ namespace vtts.Entities.StaffManagement
         public List<Car> Cars { get; set; }
 
 
-        [Relationship(Relation=RelationshipAttribute.Relations.ManyToMany_Selection)]
-        public List<MissionConvocation> MissionConvocation { get; set; }
+
+        public virtual List<MissionConvocation> MissionConvocations { get; set; }
 
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<MissionOrder> MissionOrders { get; set; }

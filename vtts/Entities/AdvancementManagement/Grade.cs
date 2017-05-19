@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace vtts.Entities.AdvancementManagement
 {
     [GwinEntity(Localizable = true, isMaleName = true, DisplayMember = "Name")]
-    [Menu(Group = "HRManagement")]
+    [Menu(Group = "AdvanceManagement")]
     [ManagementForm(Width =740,TitrePageGridView ="grid_title")]
     public class Grade:BaseEntity
     {

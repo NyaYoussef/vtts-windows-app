@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace vtts.Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
-    [Menu(Group = "MissionManagement",Order =1)]
+    [Menu(Group = "MissionManagement",Order =1,Title = "menu_title")]
     [ManagementForm(Width = 1100,Height =650,TitrePageGridView ="title_gridview")]
     public class MissionConvocation: BaseEntity
     {
@@ -29,25 +29,23 @@ namespace vtts.Entities.MissionManagement
             
         [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Subject" , GroupeBoxOrder = 1, isRequired = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
-
-       
-        public List<ThemeCategory> ThemeCategorys { get; set; }
+        
+        public virtual List<ThemeCategory> ThemeCategorys { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Subject", GroupeBoxOrder = 1, isRequired = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [DataGrid(WidthColonne =150,Ordre =3)]
       [Filter(Ordre =6,isValeurFiltreVide =true,WidthControl =130)]
-        public  MissionCategory MissionCategory { get; set; }
+        public virtual  MissionCategory MissionCategory { get; set; }
 
-        [DataGrid(Ordre =4,WidthColonne =100)]
         [EntryForm(Ordre = 2, WidthControl = 200, MultiLine = true, GroupeBox = "Subject", GroupeBoxOrder = 1)]
         public LocalizedString Description { get; set; }
 
 
         [EntryForm(Ordre = 0, WidthControl = 200, GroupeBox = "Subject", GroupeBoxOrder = 1, isRequired = true)]
-        [DataGrid(Ordre =0,WidthColonne =80)]
-        [Filter]
-        public string Theme { get; set; }
+        [DataGrid(Ordre =0,WidthColonne =200)]
+        [Filter(WidthControl = 300)]
+        public LocalizedString Theme { get; set; }
 
 
 
@@ -58,7 +56,7 @@ namespace vtts.Entities.MissionManagement
         [EntryForm(Ordre=3,WidthControl =200,GroupeBox = "Participants", GroupeBoxOrder = 2, isRequired = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         [SelectionCriteria(typeof(Function))]
-        public List<Staff> Staffs { get; set; }
+        public virtual List<Staff> Staffs { get; set; }
 
 
 
@@ -69,7 +67,7 @@ namespace vtts.Entities.MissionManagement
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [SelectionCriteria(typeof(Region))]
         [DataGrid(Ordre =14)]
-        [Filter(Ordre =3,isValeurFiltreVide =true)]
+        [Filter(Ordre =3,isValeurFiltreVide =true,WidthControl = 200)]
         public Institution Institution { get; set; }
 
 
@@ -90,7 +88,7 @@ namespace vtts.Entities.MissionManagement
             get
             {
                 if ( Theme!= null && StartDate != null)
-                    return Theme + " _:_ " + StartDate.ToShortDateString();
+                    return Theme + " - " + StartDate.ToShortDateString();
                 else
                 {
                     return "";

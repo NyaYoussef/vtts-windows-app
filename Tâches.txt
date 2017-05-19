@@ -1,3 +1,4 @@
-Add GroupBox Order in EntryForm
-Update Field Boolean 
+
+Many_To_Many Selection not saved, after close of Application
 ManyToMany_Creation n'affiche pas le titre dans DataGrid
+Update Filed ManyToOne Selection : Add Height Configuration

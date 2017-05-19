@@ -127,7 +127,7 @@
     <value>Établissement</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion des convocations des missions</value>
+    <value>Convocations</value>
   </data>
   <data name="MissionCategorys" xml:space="preserve">
     <value>Catégorie de mission</value>

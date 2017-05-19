@@ -141,4 +141,7 @@
   <data name="grid_title" xml:space="preserve">
     <value>Catégories des missions</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Désignation</value>
+  </data>
 </root>

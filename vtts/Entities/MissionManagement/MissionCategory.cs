@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 namespace vtts.Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
-    [Menu(Group ="MissionManagement")]
-    [ManagementForm(Width =720,TitrePageGridView ="grid_title")]
+    [Menu(Group ="MissionManagement",Order =5,Title = "menu_title")]
+    [ManagementForm(Width =730,TitrePageGridView ="grid_title")]
     public class MissionCategory: BaseEntity
     {
         public MissionCategory()
@@ -19,18 +19,21 @@ namespace vtts.Entities.MissionManagement
             this.Description = new LocalizedString();
             Name = new LocalizedString();
         }
+
+        [EntryForm(Ordre = 1, WidthControl = 300)]
+        [DataGrid(Ordre = 1, WidthColonne = 200)]
+        [Filter(Ordre = 1, WidthControl = 200)]
         public LocalizedString Name { get; set; }
-        [EntryForm(Ordre = 5, WidthControl = 200,GroupeBox = "menu_title")]
-        [DataGrid(Ordre = 5, WidthColonne = 200)]
-        [Filter(Ordre =3,WidthControl =200)]
+
+
+        [EntryForm(Ordre = 2, WidthControl = 400,MultiLine = true)]
+        [DataGrid(Ordre = 2, WidthColonne = 200)]
+        [Filter(Ordre =2,WidthControl =200)]
         public LocalizedString Description { get; set; }
 
-        [EntryForm(Ordre = 2, WidthControl = 200, GroupeBox = "menu_title")]
-        [DataGrid(Ordre = 2, WidthColonne = 200)]
-        [Filter(Ordre = 2,WidthControl =200)]
+
         public string Code { get; set; }
 
-        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
         public List< MissionConvocation> MissionConvocations { get; set; }
     }
 }

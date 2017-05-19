@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace vtts.Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
-    [Menu(Group = "MissionManagement",Order =10)]
+    [Menu(Group = "MissionManagement",Order =3,Title = "menu_title")]
     [ManagementForm(Width =790,TitrePageGridView ="grid_title")]
     public class Mission:BaseEntity
     {

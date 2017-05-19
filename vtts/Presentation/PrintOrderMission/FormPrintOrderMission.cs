@@ -20,7 +20,6 @@ using App.Gwin.Entities;
 
 namespace vtts.Presentation.PrintOrderMission
 {
-    [App.Gwin.Attributes.Menu( EntityType = typeof(MissionConvocation),Order = 10, Title = "PrintMissionOrder")]
     public partial class FormPrintOrderMission : BaseForm, IFormSelectedEntityAction
     {
         MissionOrder MissionOrder = null;
@@ -48,10 +47,39 @@ namespace vtts.Presentation.PrintOrderMission
         private void FormPrintOrderMission_Load(object sender, EventArgs e)
         {
             vtts.BAL.MissionManagement.PrintOrderMission printOrderMission = new vtts.BAL.MissionManagement.PrintOrderMission();
-            //
+            printOrderMission.HeaderImgDirectory = @"C:\USers\DELL\Desktop\vtts-windows-app\Images\Header.png";
             printOrderMission.Ordre = MissionOrder.OrderNumber;
             printOrderMission.Date = MissionOrder.DateOrder;
+            printOrderMission.Region = "Le Directeur Regional de la DRNOII";
+            printOrderMission.City = "Tanger";
+            printOrderMission.Mensieur = "Monsieur   :   Bouybanin Anass";
+            printOrderMission.Matricule = " 13716";
+            printOrderMission.Category = "Cadre Principale";
+            printOrderMission.Affectation = "I.S.M.O.N.T.I.C Tanger";
+            printOrderMission.Place = "CDC TIC Casa Blanca";
+            printOrderMission.Theme = "Pour assister aux atelier NETACAD CISCO";
+            printOrderMission.DepartureDate = "24/04/2017";
+            printOrderMission.ReturnDate = "29/04/2017";
+            printOrderMission.DepartureHour = "13h00";
+            printOrderMission.ReturnHour = "13h00";
+            //PublicTransport , MissionCar, PersonalCar
+            printOrderMission.TransportType = "PublicTransport";
+            // In Other Cases
+            //if(printOrderMission.TransportType == "MissionCar")
+            //{
+            //    printOrderMission.MissionCarmark = "Mark";
+            //    printOrderMission.MissionCarPlatNumber = "Numero de plaque";
+            //}
+            //if(printOrderMission.TransportType == "PersonalCar")
+            //{
+            //    printOrderMission.PersonalCarmark = "Mark";
+            //    printOrderMission.PersonalCarPlatNumber = "Numero de plaque";
+            //    printOrderMission.PersonalCarFiscalPower = "Puissance Fiscale";
+            //}
             //
+
+            printOrderMission.FirstPersonne = "Abdelhamid ELMECHRAFI";
+            printOrderMission.SecondePersonne = "Abdelmoula SADIK";
             this.PathPDF = printOrderMission.CreatePDF();
 
 

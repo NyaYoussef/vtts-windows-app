@@ -6,6 +6,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.draw;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -62,16 +63,33 @@ namespace vtts.Presentation.PrintOrderMission
         /// <param name="Percent">the scaling percentage</param>
         /// <param name="absoluteX">the absolute position to the image : X</param>
         /// <param name="absoluteY">the absolute position to the image : Y</param>
-        public void AddImage(Document doc,string ImageInstance,float fitwidth , float fitheight,float Percent,float absoluteX , float absoluteY)
+        public void AddImage(Document doc,float fitwidth , float fitheight,float Percent,float absoluteX , float absoluteY)
         {
-            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(ImageInstance);
+            //  iTextSharp.text.Image image =  iTextSharp.text.Image.GetInstance(ImageInstance);
+            //var ms = new MemoryStream();
+            //ms.Position = 0;
+            //ResourceImage.Header.Save(ms, ImageFormat.Bmp);
+            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(ToStream(ResourceImage.Header, ImageFormat.Bmp));
+
+            
             image.ScaleToFit(fitwidth, fitheight);
             image.ScalePercent(Percent);
             image.SetAbsolutePosition(absoluteX, absoluteY);
             doc.Add(image);
         }
 
-       
+
+        public static Stream ToStream(System.Drawing.Image image, ImageFormat format)
+        {
+            var stream = new System.IO.MemoryStream();
+            image.Save(stream, format);
+            stream.Position = 0;
+            return stream;
+        }
+
+
+
+
         /// <summary>
         /// Get Directory Pdf File
         /// </summary>
@@ -85,10 +103,13 @@ namespace vtts.Presentation.PrintOrderMission
         }
 
         /// <summary>
-        /// Create Paragraph
+        /// Create paragraph
         /// </summary>
-        /// <param name="doc">Document Name</param>
-        /// <param name="ParagraphMessag">Paragraph s Text</param>
+        /// <param name="doc">Pdf Document</param>
+        /// <param name="ParagraphMessag">Paragraph or text To write</param>
+        /// <param name="Underlining"></param>
+        /// <param name="TextCenter"></param>
+        /// <param name="TextRight"></param>
         public void CreateParagraph(Document doc, string ParagraphMessag, bool Underlining, bool TextCenter , bool TextRight)
         {
             var boldFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12);
@@ -112,26 +133,43 @@ namespace vtts.Presentation.PrintOrderMission
             doc.Add(Paragraph);
         }
 
+        
         /// <summary>
-        /// Create Text with setting position X, Y
+        /// Create Text with position
         /// </summary>
-        /// <param name="doc">Document PDF Name</param>
-        /// <param name="writer">PDFWriter from OpenPDFfile function</param>
-        /// <param name="Text">Text To set in the PDf</param>
-        /// <param name="XSetTextMatrix">Position X (width)</param>
-        /// <param name="YSetTextMatrix">Position Y (Height)</param>
-        public void CreateText(Document doc, PdfWriter writer, string Text ,float XSetTextMatrix, float YSetTextMatrix)
+        /// <param name="doc">Pdf Document</param>
+        /// <param name="writer">PDfWriter</param>
+        /// <param name="Text">Text To write</param>
+        /// <param name="XSetTextMatrix">X : Position</param>
+        /// <param name="YSetTextMatrix">Y : Position</param>
+        /// <param name="TextBold">Font : Bold</param>
+        /// <param name="TextItalique">Font : Italique</param>
+        public void CreateText(Document doc, PdfWriter writer, string Text ,float XSetTextMatrix, float YSetTextMatrix , bool TextBold , bool TextItalique )
         {
             PdfContentByte cb = writer.DirectContent;
             ColumnText ct = new ColumnText(cb);
             cb.BeginText();
             cb.SetFontAndSize(BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1252, BaseFont.NOT_EMBEDDED), 12.0f);
+            if (TextBold == true)
+            {
+                cb.SetFontAndSize(BaseFont.CreateFont(BaseFont.HELVETICA_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED), 12.0f);
+            }
+
+            if (TextItalique == true)
+            {
+                cb.SetFontAndSize(BaseFont.CreateFont(BaseFont.TIMES_ITALIC, BaseFont.CP1252, BaseFont.NOT_EMBEDDED), 12.0f);
+            }
+
+
             cb.SetTextMatrix(XSetTextMatrix, YSetTextMatrix);
+
+            //cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, Text, XSetTextMatrix, YSetTextMatrix,0);
+
             cb.ShowText(Text);
             cb.EndText();
         }
 
-
+        
 
         /// <summary>
         /// Export data from datagridview to the table of pdf file
@@ -189,22 +227,7 @@ namespace vtts.Presentation.PrintOrderMission
             return table;
         }
 
-        /// <summary>
-        /// Add cell in existing table
-        /// </summary>
-        /// <param name="doc">Document s name</param>
-        /// <param name="Table">Pdf Table</param>
-        /// <param name="TextCells">Text to add to the table</param>
-        public void AddCellTable(Document doc , PdfPTable Table ,List<Object> TextCells)
-        {
-            if(Table.NumberOfColumns == TextCells.Count)
-            {
-                for (int i = 0; i < TextCells.Count; i++)
-                {
-                    Table.AddCell(TextCells[i].ToString());
-                }
-            }
-        }
+
 
         /// <summary>
         /// After Creating Header and defining the Table s Cell 
@@ -217,7 +240,37 @@ namespace vtts.Presentation.PrintOrderMission
             doc.Add(table);
         }
 
+      
+        /// <summary>
+        /// Add Cells into Tabele with specified Positions
+        /// </summary>
+        /// <param name="writer">PdfWriter</param>
+        /// <param name="TextCells">Text to  write into table cells</param>
+        /// <param name="XPos">X : Position</param>
+        /// <param name="YPos">Y : Position</param>
+        public PdfPTable AddTableCells(PdfWriter writer,List<Object> TextCells,float XPos , float YPos)
+        {
+            PdfPTable table = new PdfPTable(TextCells.Count);
+            PdfContentByte cb = writer.DirectContent;
+            table.TotalWidth = 500f;
+            
+            //if (table.NumberOfColumns == TextCells.Count)
+            //{
+            for (int i = 0; i < TextCells.Count; i++)
+            {
 
+                table.AddCell(TextCells[i].ToString());
+                
+            }
+            
+            // }
+
+            table.WriteSelectedRows(0, -1, XPos, YPos, cb);
+
+            return table;
+        }
+
+        
       
     }
 }

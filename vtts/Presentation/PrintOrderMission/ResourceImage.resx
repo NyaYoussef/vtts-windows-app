@@ -117,67 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Date" xml:space="preserve">
-    <value>Ordre mission</value>
-  </data>
-  <data name="DepartureDate" xml:space="preserve">
-    <value>Date de départ</value>
-  </data>
-  <data name="MeansTransportCategory" xml:space="preserve">
-    <value> Moyens de transport</value>
-  </data>
-  <data name="menu_title" xml:space="preserve">
-    <value>Ordre des missions</value>
-  </data>
-  <data name="Mission" xml:space="preserve">
-    <value>Mission</value>
-  </data>
-  <data name="OrderNumber" xml:space="preserve">
-    <value>Numéro de ordre</value>
-  </data>
-  <data name="PluralName" xml:space="preserve">
-    <value>Ordres des missions</value>
-  </data>
-  <data name="SingularName" xml:space="preserve">
-    <value>Ordre de mission</value>
-  </data>
-  <data name="Staff" xml:space="preserve">
-    <value>Personnel</value>
-  </data>
-  <data name="ArrivalDate" xml:space="preserve">
-    <value>Date d'arrivée</value>
-  </data>
-  <data name="Validation" xml:space="preserve">
-    <value>Confirmation</value>
-  </data>
-  <data name="Add_order_mission" xml:space="preserve">
-    <value>Ajouter un ordre du mission</value>
-  </data>
-  <data name="ArrivingTime" xml:space="preserve">
-    <value>Heure d'arrive</value>
-  </data>
-  <data name="Convocations" xml:space="preserve">
-    <value>Convocations</value>
-  </data>
-  <data name="DateOrder" xml:space="preserve">
-    <value>Date d'ordre</value>
-  </data>
-  <data name="DepartureTime" xml:space="preserve">
-    <value>Heure de départ</value>
-  </data>
-  <data name="Meansoftransport" xml:space="preserve">
-    <value>Moyene de transport</value>
-  </data>
-  <data name="Order_management" xml:space="preserve">
-    <value>Les ordres du mission</value>
-  </data>
-  <data name="ValidationDate" xml:space="preserve">
-    <value>Date de confirmation</value>
-  </data>
-  <data name="Validations" xml:space="preserve">
-    <value>Confirmation</value>
-  </data>
-  <data name="Print" xml:space="preserve">
-    <value>Imprimer </value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Resources\Header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

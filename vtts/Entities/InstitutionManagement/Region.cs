@@ -9,7 +9,7 @@ using System.Text;
 namespace vtts.Entities.InstitutionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
-    [Menu(Group = "Configuration", Title = "menu_title")]
+    [Menu(Group = "Configuration", Title = "menu_title",Order = 2)]
     [ManagementForm(Width =700,TitrePageGridView ="grid_titre")]
     public class Region:BaseEntity
     {
