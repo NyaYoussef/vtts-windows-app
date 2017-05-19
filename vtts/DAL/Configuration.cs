@@ -18,6 +18,7 @@
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using vtts.Entities.ModuleManagement;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ModelContext>
     {
@@ -225,6 +226,18 @@
             RoleAdmin.Authorizations.Add(ThemeCategoryAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
             RoleAdmin.Authorizations.Add(MissionAutorization);
+            Authorization PrecisionAutorization = new Authorization();
+            PrecisionAutorization.BusinessEntity = typeof(Precision).FullName;
+            RoleAdmin.Authorizations.Add(PrecisionAutorization);
+
+            Authorization PriorAutorization = new Authorization();
+            PriorAutorization.BusinessEntity = typeof(Prior).FullName;
+            RoleAdmin.Authorizations.Add(PriorAutorization);
+
+            Authorization PrecisionContentAutorization = new Authorization();
+            PrecisionAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
+            RoleAdmin.Authorizations.Add(PrecisionContentAutorization);
+
 
             //     //
             //     //-- Giwn Users

@@ -8,8 +8,8 @@ namespace App.Modules
         siAffichageAvecOrdre = true,
         TitreButtonAjouter = "Ajouter un préalable")]
     [AffichageClasse(Minuscule = "Préalable", Majuscule = "Préalables")]
-    public class Prealable : BaseEntity
-   {
+    public class Prealable : BaseEntity//Prior
+    {
 
         public override string ToString() => this.Nom;
 
