@@ -333,6 +333,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Entities\MissionManagement\ThemeCategory.cs" />
+    <Compile Include="Entities\ModuleManagement\Absence.cs" />
     <Compile Include="Entities\ModuleManagement\Precision.cs" />
     <Compile Include="Entities\ModuleManagement\PrecisionContent.cs" />
     <Compile Include="Entities\ModuleManagement\Prior.cs" />
@@ -381,6 +382,54 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Entities\PlaningManagement\Holiday.cs" />
+    <Compile Include="Entities\PlaningManagement\PlanningSession.cs" />
+    <Compile Include="Entities\PlaningManagement\Resources\Holiday\Holiday.ar.Designer.cs">
+      <DependentUpon>Holiday.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\Holiday\Holiday.fr.Designer.cs">
+      <DependentUpon>Holiday.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\Holiday\Holiday.Designer.cs">
+      <DependentUpon>Holiday.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\PlannigSession\PlannigSession.ar.Designer.cs">
+      <DependentUpon>PlannigSession.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\PlannigSession\PlannigSession.fr.Designer.cs">
+      <DependentUpon>PlannigSession.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\PlannigSession\PlannigSession.Designer.cs">
+      <DependentUpon>PlannigSession.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.ar.Designer.cs">
+      <DependentUpon>TimeTable.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.fr.Designer.cs">
+      <DependentUpon>TimeTable.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.Designer.cs">
+      <DependentUpon>TimeTable.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\PlaningManagement\TimeTable.cs" />
     <Compile Include="Entities\SessionManagement\Absence.cs" />
     <Compile Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.Designer.cs">
       <DependentUpon>TrainingYear.ar.resx</DependentUpon>
@@ -758,6 +807,42 @@
     <EmbeddedResource Include="Entities\ModuleManagement\Resources\Prior\Prior.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Prior.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\Holiday\Holiday.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holiday.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\Holiday\Holiday.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holiday.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\Holiday\Holiday.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holiday.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\PlannigSession\PlannigSession.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlannigSession.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\PlannigSession\PlannigSession.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlannigSession.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\PlannigSession\PlannigSession.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlannigSession.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimeTable.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimeTable.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\PlaningManagement\Resources\TimeTable\TimeTable.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimeTable.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
