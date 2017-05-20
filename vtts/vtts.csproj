@@ -624,6 +624,7 @@
     <Compile Include="Presentation\PrintOrderMission\ResourceImage.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\HeaderImage.Designer.cs" />
     <EmbeddedResource Include="Entities\AdvancementManagement\Resources\AdvancementEchelon\AdvancementEchelon.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AdvancementEchelon.ar.Designer.cs</LastGenOutput>
@@ -1031,6 +1032,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\HeaderImage.resx" />
     <None Include="Entities\AdvancementManagement\AdvancementClassDiagrame.cd" />
     <None Include="Entities\InstitutionManagement\ClassDiagramInstitutions.cd" />
     <None Include="Entities\MissionManagement\MissionClassDiagram.cd" />
