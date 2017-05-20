@@ -1,6 +1,4 @@
 ﻿using App.Formations;
-using App.GestionStagiaires;
-using App.WinForm.Annotation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +9,7 @@ using System.Threading.Tasks;
 namespace App
 {
 
-    [AffichageDansFormGestion(Titre = "Gestion des modules", TitrePageGridView = "Modules",
+   /* [AffichageDansFormGestion(Titre = "Gestion des modules", TitrePageGridView = "Modules",
         TitreButtonAjouter = "Ajouter un module")]
     [AffichageClasse(Minuscule = "Absence", Majuscule = "Absences", DisplayMember = "NomStagiaire")]
     public class Absence : BaseEntity
@@ -53,5 +51,5 @@ namespace App
        
 
         
-    }
+    }*/
 }

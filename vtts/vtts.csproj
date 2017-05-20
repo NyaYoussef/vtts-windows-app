@@ -174,7 +174,7 @@
     <Compile Include="Entities\AdvancementManagement\Scale.cs" />
     <Compile Include="Entities\Class1.cs" />
     <Compile Include="Entities\InstitutionManagement\CategogiesClassroom.cs" />
-    <Compile Include="Entities\InstitutionManagement\classroom.cs" />
+    <Compile Include="Entities\InstitutionManagement\Classroom.cs" />
     <Compile Include="Entities\InstitutionManagement\Institution.cs" />
     <Compile Include="Entities\InstitutionManagement\Region.cs" />
     <Compile Include="Entities\InstitutionManagement\Resources\CategogiesClassroom\CategogiesClassroom.ar.Designer.cs">
@@ -333,7 +333,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Entities\MissionManagement\ThemeCategory.cs" />
-    <Compile Include="Entities\ModuleManagement\Absence.cs" />
     <Compile Include="Entities\ModuleManagement\Precision.cs" />
     <Compile Include="Entities\ModuleManagement\PrecisionContent.cs" />
     <Compile Include="Entities\ModuleManagement\Prior.cs" />
@@ -463,6 +462,130 @@
     </Compile>
     <Compile Include="Entities\PojectManagement\Task.cs" />
     <Compile Include="Entities\SessionManagement\Absence.cs" />
+    <Compile Include="Entities\SessionManagement\Activity.cs" />
+    <Compile Include="Entities\SessionManagement\ActivityCategory.cs" />
+    <Compile Include="Entities\SessionManagement\Forecast.cs" />
+    <Compile Include="Entities\SessionManagement\Resources\Absence\Absence.ar.Designer.cs">
+      <DependentUpon>Absence.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Absence\Absence.fr.Designer.cs">
+      <DependentUpon>Absence.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Absence\Absence.Designer.cs">
+      <DependentUpon>Absence.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\ActivityCategory\ActivityCategory.ar.Designer.cs">
+      <DependentUpon>ActivityCategory.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\ActivityCategory\ActivityCategory.fr.Designer.cs">
+      <DependentUpon>ActivityCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\ActivityCategory\ActivityCategory.Designer.cs">
+      <DependentUpon>ActivityCategory.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Activity\Activity.ar.Designer.cs">
+      <DependentUpon>Activity.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Activity\Activity.fr.Designer.cs">
+      <DependentUpon>Activity.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Activity\Activity.Designer.cs">
+      <DependentUpon>Activity.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Forecast\Forecast.ar.Designer.cs">
+      <DependentUpon>Forecast.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Forecast\Forecast.fr.Designer.cs">
+      <DependentUpon>Forecast.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Forecast\Forecast.Designer.cs">
+      <DependentUpon>Forecast.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\PedagogyStrategy\PedagogyStrategy.ar.Designer.cs">
+      <DependentUpon>PedagogyStrategy.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\PedagogyStrategy\PedagogyStrategy.fr.Designer.cs">
+      <DependentUpon>PedagogyStrategy.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\PedagogyStrategy\PedagogyStrategy.Designer.cs">
+      <DependentUpon>PedagogyStrategy.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Sequence\Sequence.ar.Designer.cs">
+      <DependentUpon>Sequence.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Sequence\Sequence.fr.Designer.cs">
+      <DependentUpon>Sequence.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Sequence\Sequence.Designer.cs">
+      <DependentUpon>Sequence.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Session\Session.ar.Designer.cs">
+      <DependentUpon>Session.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Session\Session.fr.Designer.cs">
+      <DependentUpon>Session.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Session\Session.Designer.cs">
+      <DependentUpon>Session.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Training\Training.ar.Designer.cs">
+      <DependentUpon>Training.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Training\Training.fr.Designer.cs">
+      <DependentUpon>Training.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Resources\Training\Training.Designer.cs">
+      <DependentUpon>Training.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\SessionManagement\Training.cs" />
     <Compile Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.Designer.cs">
       <DependentUpon>TrainingYear.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -478,6 +601,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Entities\SessionManagement\Sequence.cs" />
+    <Compile Include="Entities\SessionManagement\Session.cs" />
+    <Compile Include="Entities\SessionManagement\PedagogyStrategy.cs" />
     <Compile Include="Entities\SessionManagement\TrainingYear.cs" />
     <Compile Include="Entities\StaffManagement\Affectation.cs" />
     <Compile Include="Entities\StaffManagement\Car.cs" />
@@ -901,6 +1027,90 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Task.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Absence\Absence.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Absence.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Absence\Absence.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Absence.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Absence\Absence.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Absence.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\ActivityCategory\ActivityCategory.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivityCategory.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\ActivityCategory\ActivityCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivityCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\ActivityCategory\ActivityCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivityCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Activity\Activity.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Activity.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Activity\Activity.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Activity.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Activity\Activity.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Activity.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Forecast\Forecast.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Forecast.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Forecast\Forecast.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Forecast.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Forecast\Forecast.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Forecast.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\PedagogyStrategy\PedagogyStrategy.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PedagogyStrategy.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\PedagogyStrategy\PedagogyStrategy.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PedagogyStrategy.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\PedagogyStrategy\PedagogyStrategy.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PedagogyStrategy.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Sequence\Sequence.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sequence.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Sequence\Sequence.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sequence.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Sequence\Sequence.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sequence.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Session\Session.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Session.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Session\Session.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Session.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Session\Session.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Session.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TrainingYear.ar.Designer.cs</LastGenOutput>
@@ -912,6 +1122,18 @@
     <EmbeddedResource Include="Entities\SessionManagement\Resources\TrainingYear\TrainingYear.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TrainingYear.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Training\Training.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Training\Training.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\SessionManagement\Resources\Training\Training.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Training.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Entities\StaffManagement\Resources\Affectation\Affectation.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
