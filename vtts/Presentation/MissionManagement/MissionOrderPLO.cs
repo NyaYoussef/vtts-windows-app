@@ -34,21 +34,21 @@ namespace vtts.Presentation.MissionManagement
 
             switch (field.Name)
             {
-                case nameof(MissionOrder.Mission):
-                    {
-                        ManyToOneField missionField = field as ManyToOneField;
-                        MissionConvocation mission = missionField.SelectedItem as MissionConvocation;
+                //case nameof(MissionOrder.Mission):
+                //    {
+                //        ManyToOneField missionField = field as ManyToOneField;
+                //        MissionConvocation mission = missionField.SelectedItem as MissionConvocation;
 
-                        if(mission != null)
-                        {
-                            EntryForm.Fields[nameof(MissionOrder.Staff)].Show();
-                            ManyToOneField StaffField = EntryForm.Fields[nameof(MissionOrder.Staff)] as ManyToOneField;
-                          //  StaffField.DataSource = mission.Staffs;
-                        }
+                //        if(mission != null)
+                //        {
+                //            EntryForm.Fields[nameof(MissionOrder.Staff)].Show();
+                //            ManyToOneField StaffField = EntryForm.Fields[nameof(MissionOrder.Staff)] as ManyToOneField;
+                //          //  StaffField.DataSource = mission.Staffs;
+                //        }
                        
 
-                    }
-                    break;
+                //    }
+                //    break;
 
             }
 

@@ -27,7 +27,7 @@ namespace vtts.Entities.MissionManagement
         [EntryForm(Ordre =1,WidthControl =300)]
         [DataGrid(Ordre = 2, WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =2,isValeurFiltreVide =true,WidthControl =150)]
+        [Filter(Ordre =2,isDefaultIsEmpty =true,WidthControl =150)]
         public ThemeCategory ThemeCategory { get; set; }
 
         [DataGrid(Ordre = 3, WidthColonne = 150)]
@@ -37,12 +37,12 @@ namespace vtts.Entities.MissionManagement
 
         [EntryForm(Ordre = 1, WidthControl = 300)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =4,isValeurFiltreVide =true,WidthControl =150)]
+        [Filter(Ordre =4,isDefaultIsEmpty =true,WidthControl =150)]
         public MissionOrder MissionOrder { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 300)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =5,isValeurFiltreVide =true,WidthControl =150)]
+        [Filter(Ordre =5,isDefaultIsEmpty =true,WidthControl =150)]
         public MissionCategory MissionCategory { get; set; }
 
     }

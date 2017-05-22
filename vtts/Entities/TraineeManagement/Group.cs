@@ -33,7 +33,7 @@ namespace vtts.Entities.TraineeManagement
         [DisplayProperty(DisplayMember ="Code")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [EntryForm(Ordre = 3)]
-        [Filter(isValeurFiltreVide =true)]
+        [Filter(isDefaultIsEmpty =true)]
         [DataGrid(WidthColonne = 100)]
         public virtual Specialty Specialty { set; get; }
 

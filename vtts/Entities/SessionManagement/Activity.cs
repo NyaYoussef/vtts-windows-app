@@ -37,13 +37,13 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 150, Ordre = 2,GroupeBox = "SingularName", GroupeBoxOrder = 1)]
         [DataGrid(WidthColonne = 150, Ordre = 2)]
-        [Filter(Ordre = 2, WidthControl = 150,isValeurFiltreVide =true )]
+        [Filter(Ordre = 2, WidthControl = 150,isDefaultIsEmpty =true )]
         [Relationship(Relation= RelationshipAttribute.Relations.ManyToOne)]
         public  ActivityCategory ActivityCategory { set; get; }
 
         [EntryForm(WidthControl = 150, Ordre = 3,GroupeBox = "SingularName",GroupeBoxOrder =1)]
         [DataGrid(WidthColonne = 150, Ordre = 3)]
-        [Filter(Ordre = 3, WidthControl = 150, isValeurFiltreVide = true)]
+        [Filter(Ordre = 3, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public  PedagogyStrategy PedagogyStrategy { set; get; }
 

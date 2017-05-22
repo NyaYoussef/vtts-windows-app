@@ -24,18 +24,18 @@ namespace vtts.Entities.AdvancementManagement
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isValeurFiltreVide =true,WidthControl =130)]
+        [Filter(isDefaultIsEmpty =true,WidthControl =130)]
         public Former Former { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [DataGrid(WidthColonne =90)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =1,isValeurFiltreVide =true, WidthControl = 130)]
+        [Filter(Ordre =1,isDefaultIsEmpty =true, WidthControl = 130)]
         public  Echelon Echelon { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isValeurFiltreVide =true, WidthControl = 130)]
+        [Filter(isDefaultIsEmpty =true, WidthControl = 130)]
         public Scale Scale { get; set; }
 
         [NotMapped]

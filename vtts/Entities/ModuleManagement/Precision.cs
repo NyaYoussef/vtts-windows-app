@@ -46,7 +46,7 @@ namespace vtts.Entities.ModuleManagement
         //
         [EntryForm(WidthControl = 200, Ordre = 2)]
         [DataGrid(WidthColonne = 150, Ordre = 2)]
-        [Filter(WidthControl = 150, Ordre = 2,isValeurFiltreVide =true)]
+        [Filter(WidthControl = 150, Ordre = 2,isDefaultIsEmpty =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public  Module Module { set; get; }
 
@@ -55,7 +55,7 @@ namespace vtts.Entities.ModuleManagement
         //public virtual List<Prealable> Prealables { set; get; }
         [EntryForm(WidthControl = 200, Ordre = 3)]
         [DataGrid(WidthColonne = 150, Ordre = 3)]
-        [Filter(WidthControl = 150, Ordre = 3, isValeurFiltreVide = true)]
+        [Filter(WidthControl = 150, Ordre = 3, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public  List<PrecisionContent> PrecisionContents { set; get; }
 

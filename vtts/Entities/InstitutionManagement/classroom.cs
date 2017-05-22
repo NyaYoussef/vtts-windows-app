@@ -34,7 +34,7 @@ namespace vtts.Entities.InstitutionManagement
 
 
         [EntryForm(Ordre = 2, WidthControl = 250)]
-        [Filter(Ordre = 2, WidthControl = 150,isValeurFiltreVide =true)]
+        [Filter(Ordre = 2, WidthControl = 150,isDefaultIsEmpty =true)]
         [DataGrid(Ordre = 2, WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public  CategogiesClassroom CategogiesClassroom { set; get; }

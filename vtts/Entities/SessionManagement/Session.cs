@@ -19,7 +19,7 @@ namespace vtts.Entities.SessionManagement
    {
         [EntryForm (WidthControl =150,Ordre =3,GroupeBox = "SingularName",GroupeBoxOrder =0)]
         [DataGrid(WidthColonne =150,Ordre =3)]
-        [Filter(WidthControl =150,Ordre =3,isValeurFiltreVide =true)]
+        [Filter(WidthControl =150,Ordre =3,isDefaultIsEmpty =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
        public  Forecast Forecast { set; get; }
 
@@ -30,7 +30,7 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 150, Ordre = 4,GroupeBox ="Date",GroupeBoxOrder =1)]
         [DataGrid(WidthColonne = 100, Ordre = 4)]
-        [Filter(WidthControl = 150, Ordre = 4,isValeurFiltreVide =true)]
+        [Filter(WidthControl = 150, Ordre = 4,isDefaultIsEmpty =true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Classroom Classroom { set; get; }
 
@@ -67,7 +67,7 @@ namespace vtts.Entities.SessionManagement
         public  List<Absence> Absences { set; get; }
 
 
-        [Filter(WidthControl = 150, Ordre = 3, isValeurFiltreVide = true)]
+        [Filter(WidthControl = 150, Ordre = 3, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List <Activity> Activities { set; get; }
 

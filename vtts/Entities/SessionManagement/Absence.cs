@@ -31,7 +31,7 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 250,Ordre = 0)]
         [DataGrid(Ordre = 0, WidthColonne = 150)]
-        [Filter(WidthControl = 150, Ordre = 0,isValeurFiltreVide =true )]
+        [Filter(WidthControl = 150, Ordre = 0,isDefaultIsEmpty =true )]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Trainee Trainee { get; set; }
 
@@ -41,7 +41,7 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 250, Ordre = 1)]
         [DataGrid(Ordre = 1, WidthColonne = 150)]
-        [Filter(WidthControl = 150, Ordre = 1, isValeurFiltreVide = true)]
+        [Filter(WidthControl = 150, Ordre = 1, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public  Session Session { get; set; }
 

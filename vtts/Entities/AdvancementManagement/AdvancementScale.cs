@@ -26,14 +26,14 @@ namespace vtts.Entities.AdvancementManagement
         [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
         [DataGrid(WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isValeurFiltreVide =false,WidthControl =150)]
+        [Filter(isDefaultIsEmpty =false,WidthControl =150)]
         public Former Former { get; set; }
 
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
         [DataGrid(WidthColonne = 150)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =1,isValeurFiltreVide =true,WidthControl =150)]
+        [Filter(Ordre =1,isDefaultIsEmpty =true,WidthControl =150)]
         public Scale Scale { get; set; }
 
       

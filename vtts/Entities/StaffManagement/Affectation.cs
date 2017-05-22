@@ -22,14 +22,14 @@ namespace vtts.Entities.StaffManagement
         [EntryForm(Ordre = 1,WidthControl =350)]
         [DataGrid(WidthColonne = 100,Ordre =2)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =2,isValeurFiltreVide =true)]
+        [Filter(Ordre =2,isDefaultIsEmpty =true)]
         public Institution Institution { get; set; }
 
         [EntryForm(Ordre = 1, WidthControl = 350)]
         [DisplayProperty(DisplayMember = "RegistrationNumber")]
         [DataGrid(WidthColonne = 100,Ordre =0)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isValeurFiltreVide =true,Ordre =1)]
+        [Filter(isDefaultIsEmpty =true,Ordre =1)]
         public Staff Staff { get; set; }
 
         [NotMapped]

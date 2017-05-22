@@ -31,15 +31,15 @@ namespace vtts
             User user = null;
             //user.Language = Gwin.Languages.ar;
               user = User.CreateAdminUser(new ModelContext());
-            
+
             // user = User.CreateGuestUser(new ModelContext());
 
             // Load Director User
-           // ModelContext db = new ModelContext();
-           //user = db.Users.Where(u => u.Reference == "Director").SingleOrDefault();
-            
-           // user = User.CreateRootUser(new ModelContext());
+            // ModelContext db = new ModelContext();
+            //user = db.Users.Where(u => u.Reference == "Director").SingleOrDefault();
 
+            // user = User.CreateRootUser(new ModelContext());
+            user.Language = GwinApp.Languages.fr;
             GwinApp.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
             //InitializeComponent();
         }

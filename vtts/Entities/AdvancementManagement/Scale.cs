@@ -22,7 +22,7 @@ namespace vtts.Entities.AdvancementManagement
         [EntryForm(Ordre = 3, GroupeBox = "Scales",WidthControl =200)]
         [DataGrid(WidthColonne = 200)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =2,isValeurFiltreVide =true,WidthControl =200)]
+        [Filter(Ordre =2,isDefaultIsEmpty =true,WidthControl =200)]
         public Grade Grade { get; set; }
         
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]

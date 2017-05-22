@@ -42,18 +42,18 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 150, Ordre = 3,GroupeBox = "SingularName", GroupeBoxOrder =0)]
         [DataGrid(Ordre = 3, WidthColonne = 150)]
-        [Filter(Ordre = 3, WidthControl = 150,isValeurFiltreVide =true)]
+        [Filter(Ordre = 3, WidthControl = 150,isDefaultIsEmpty =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public  CategogiesClassroom CategogiesClassroom { set; get; }
 
         [EntryForm(WidthControl = 150, Ordre = 4, GroupeBox = "Forecastfor", GroupeBoxOrder = 1)]
-        [Filter(Ordre = 4, WidthControl = 150, isValeurFiltreVide = true)]
+        [Filter(Ordre = 4, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public  Module Module { set; get; }
 
         [EntryForm(WidthControl = 150, Ordre = 5, GroupeBox = "Forecastfor", GroupeBoxOrder = 1)]
         [DataGrid(Ordre = 5, WidthColonne = 150)]
-        [Filter(Ordre = 5, WidthControl = 150, isValeurFiltreVide = true)]
+        [Filter(Ordre = 5, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public  PrecisionContent PrecisionContent { set; get; }
 
