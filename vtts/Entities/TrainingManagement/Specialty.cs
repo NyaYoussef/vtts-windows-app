@@ -9,7 +9,7 @@ namespace vtts.Entities.TrainingManagement
 {
 
    [GwinEntity(Localizable =true,DisplayMember ="Code")]
-  [Menu(Group = "InstitutionManagement")]
+   [Menu(Group = "InstitutionManagement")]
     public class Specialty : BaseEntity 
    {
 
