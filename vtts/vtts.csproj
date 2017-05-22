@@ -741,6 +741,8 @@
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Libs\ITextSharp\PdfFile.cs" />
+    <Compile Include="Presentation\MissionManagement\MissionConvocationPLO.cs" />
+    <Compile Include="Presentation\MissionManagement\MissionOrderPLO.cs" />
     <Compile Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.cs">
       <SubType>Form</SubType>
     </Compile>
