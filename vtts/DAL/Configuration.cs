@@ -19,6 +19,8 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
     using vtts.Entities.ModuleManagement;
+    using vtts.Entities.PlaningManagement;
+    using vtts.Entities.ProjectManagement;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ModelContext>
     {
@@ -238,6 +240,66 @@
             PrecisionAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
             RoleAdmin.Authorizations.Add(PrecisionContentAutorization);
 
+            Authorization HolidayAutorization = new Authorization();
+            HolidayAutorization.BusinessEntity = typeof(Holiday).FullName;
+            RoleAdmin.Authorizations.Add(HolidayAutorization);
+
+            Authorization PlanningSessionAutorization = new Authorization();
+            PlanningSessionAutorization.BusinessEntity = typeof(PlanningSession).FullName;
+            RoleAdmin.Authorizations.Add(PlanningSessionAutorization);
+
+            Authorization TimeTableAutorization = new Authorization();
+            TimeTableAutorization.BusinessEntity = typeof(TimeTable).FullName;
+            RoleAdmin.Authorizations.Add(TimeTableAutorization);
+
+
+            Authorization AbsenceAutorization = new Authorization();
+            AbsenceAutorization.BusinessEntity = typeof(Absence).FullName;
+            RoleAdmin.Authorizations.Add(AbsenceAutorization);
+
+
+            Authorization ActivityAutorization = new Authorization();
+            ActivityAutorization.BusinessEntity = typeof(Activity).FullName;
+            RoleAdmin.Authorizations.Add(ActivityAutorization);
+
+
+            Authorization ActivityCategoryAutorization = new Authorization();
+            ActivityCategoryAutorization.BusinessEntity = typeof(ActivityCategory).FullName;
+            RoleAdmin.Authorizations.Add(ActivityCategoryAutorization);
+
+            Authorization ForecastAutorization = new Authorization();
+            ForecastAutorization.BusinessEntity = typeof(Forecast).FullName;
+            RoleAdmin.Authorizations.Add(ForecastAutorization);
+
+            Authorization PedagogyStrategyAutorization = new Authorization();
+            PedagogyStrategyAutorization.BusinessEntity = typeof(PedagogyStrategy).FullName;
+            RoleAdmin.Authorizations.Add(PedagogyStrategyAutorization);
+
+            Authorization SequenceAutorization = new Authorization();
+            SequenceAutorization.BusinessEntity = typeof(Sequence).FullName;
+            RoleAdmin.Authorizations.Add(SequenceAutorization);
+
+            Authorization SessionAutorization = new Authorization();
+            SessionAutorization.BusinessEntity = typeof(Session).FullName;
+            RoleAdmin.Authorizations.Add(SessionAutorization);
+
+            Authorization TrainingAutorization = new Authorization();
+            TrainingAutorization.BusinessEntity = typeof(Training).FullName;
+            RoleAdmin.Authorizations.Add(TrainingAutorization);
+
+            Authorization TrainingYearAutorization = new Authorization();
+            TrainingYearAutorization.BusinessEntity = typeof(TrainingYear).FullName;
+            RoleAdmin.Authorizations.Add(TrainingYearAutorization);
+
+            Authorization ProjectAutorization = new Authorization();
+            ProjectAutorization.BusinessEntity = typeof(Project).FullName;
+            RoleAdmin.Authorizations.Add(ProjectAutorization);
+
+            Authorization TaskAutorization = new Authorization();
+            TaskAutorization.BusinessEntity = typeof(Task).FullName;
+            RoleAdmin.Authorizations.Add(TaskAutorization);
+
+
 
             //     //
             //     //-- Giwn Users
@@ -259,12 +321,13 @@
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
                          new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee Management", French = "Stagiaires" } },
-                         new MenuItemApplication { Id = 5, Code = "InstitutionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المؤسسة", English = "Institution Management", French = "Gestion de l'établissement" } },
-                         new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH Management", French = "Gestion RH" } },
-                         new MenuItemApplication { Id = 8, Code = "AdvanceManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الترقيات", English = "Advance Management", French = "Aavancements" } },
+                         new MenuItemApplication { Id = 5, Code = "InstitutionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المؤسسة", English = "Institution management", French = "Gestion de l'établissement" } },
+                         new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH management", French = "Gestion RH" } },
+                         new MenuItemApplication { Id = 8, Code = "AdvanceManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الترقيات", English = "Advance management", French = "Aavancements" } },
                          new MenuItemApplication { Id = 8, Code = "Staffs", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المستخدمين", English = "Staffs management", French = "Personnels" } },
-                         new MenuItemApplication { Id = 7, Code = "MissionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المهام", English = "Mission Management", French = "Missions" } }
-                      );
+                         new MenuItemApplication { Id = 7, Code = "MissionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المهام", English = "Mission management", French = "Missions" } },
+                         new MenuItemApplication { Id = 9, Code = "SessionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الحصص الدراسية", English = "Session management", French = "Gestion des sessions" } }
+                         );
 
 
    

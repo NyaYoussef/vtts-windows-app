@@ -130,6 +130,12 @@
     <value>Date de début</value>
   </data>
   <data name="menu_title" xml:space="preserve">
-    <value>Gestion Des Années De Formation</value>
+    <value>Gestion des années de formation</value>
+  </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Années de formation</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titre</value>
   </data>
 </root>

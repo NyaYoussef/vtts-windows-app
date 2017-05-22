@@ -20,6 +20,9 @@
     using System.Linq;
     using System.Text;
     using vtts.Entities.ModuleManagement;
+    using vtts.Entities.PlaningManagement;
+    using vtts.Entities.SessionManagement;
+    using vtts.Entities.ProjectManagement;
 
     public class ModelContext : DbContext
     {
@@ -100,6 +103,20 @@
         public virtual DbSet<Precision> Precision { get; set; }
         public virtual DbSet<Prior> Priors { get; set; }
         public virtual DbSet<PrecisionContent> PrecisionContent { get; set; }
+        public virtual  DbSet<Holiday> Holidays { get; set; }
+        public virtual DbSet<PlanningSession> PlanningSessions { get; set; }
+        public virtual DbSet<TimeTable> TimeTable { get; set; }
+        public virtual DbSet<Absence> Absences { get; set; }
+        public virtual DbSet<Activity> Activitys { get; set; }
+        public virtual DbSet<ActivityCategory> ActivityCategorys { get; set; }
+        public virtual DbSet<Forecast> Forecasts { get; set; }
+        public virtual DbSet<PedagogyStrategy> PedagogyStrategys { get; set; }
+        public virtual DbSet<Sequence> Sequences { get; set; }
+        public virtual DbSet<Session> Sessions { get; set; }
+        public virtual DbSet<Training> Trainings { get; set; }
+        public virtual DbSet<TrainingYear> TrainingYears { get; set; }
+        public virtual DbSet<Project> Projects { get; set; }
+        public virtual DbSet<Task> Tasks { get; set; }
 
 
 

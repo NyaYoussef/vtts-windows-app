@@ -132,4 +132,10 @@
   <data name="menu_title" xml:space="preserve">
     <value>تدبير سنوات التدريب</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>سنوات التدريب</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
 </root>

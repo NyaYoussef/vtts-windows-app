@@ -61,7 +61,7 @@ namespace vtts.Entities.SessionManagement.Resources.TrainingYear {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to End date.
+        ///   Looks up a localized string similar to Ending date.
         /// </summary>
         internal static string EndDate {
             get {
@@ -70,7 +70,16 @@ namespace vtts.Entities.SessionManagement.Resources.TrainingYear {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Years Of Training Management.
+        ///   Looks up a localized string similar to Years of training.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Years of training management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -97,11 +106,20 @@ namespace vtts.Entities.SessionManagement.Resources.TrainingYear {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start date.
+        ///   Looks up a localized string similar to Starting date.
         /// </summary>
         internal static string StartDate {
             get {
                 return ResourceManager.GetString("StartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }
