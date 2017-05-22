@@ -746,13 +746,19 @@
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Libs\ITextSharp\PdfFile.cs" />
-    <Compile Include="Presentation\PrintOrderMission\FormPrintOrderMission.cs">
+    <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.Designer.cs">
+      <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\PrintOrderMission\FormPrintOrderMission.Designer.cs">
+    <Compile Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.Designer.cs">
       <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\PrintOrderMission\ResourceImage.Designer.cs" />
+    <Compile Include="Presentation\MissionManagement\PrintOrderMission\ResourceImage.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\HeaderImage.Designer.cs" />
@@ -1250,10 +1256,15 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\PrintOrderMission\FormPrintOrderMission.resx">
+    <EmbeddedResource Include="Presentation\MissionManagement\MissionConvocationFrom.resx">
+      <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.resx">
       <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\PrintOrderMission\ResourceImage.resx" />
+    <EmbeddedResource Include="Presentation\MissionManagement\PrintOrderMission\ResourceImage.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
