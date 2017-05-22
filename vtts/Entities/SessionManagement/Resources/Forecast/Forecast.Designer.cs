@@ -61,7 +61,16 @@ namespace vtts.Entities.SessionManagement.Resources.Forecast {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categogies classroom.
+        ///   Looks up a localized string similar to Activity.
+        /// </summary>
+        internal static string Activities {
+            get {
+                return ResourceManager.GetString("Activities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categories classroom.
         /// </summary>
         internal static string CategogiesClassroom {
             get {
@@ -75,6 +84,15 @@ namespace vtts.Entities.SessionManagement.Resources.Forecast {
         internal static string Duration {
             get {
                 return ResourceManager.GetString("Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forecast for .
+        /// </summary>
+        internal static string Forecastfor {
+            get {
+                return ResourceManager.GetString("Forecastfor", resourceCulture);
             }
         }
         

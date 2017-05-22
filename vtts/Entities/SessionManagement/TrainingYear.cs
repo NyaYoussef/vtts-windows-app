@@ -8,7 +8,7 @@ namespace vtts.Entities.SessionManagement
 
     [GwinEntity(Localizable =true,isMaleName =false,DisplayMember ="Title")]
     [Menu(Group ="SessionManagement")]
-    [ManagementForm(TitrePageGridView ="grif_title")]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =780)]
     public class TrainingYear : BaseEntity
    {
 
@@ -17,20 +17,20 @@ namespace vtts.Entities.SessionManagement
             Title = new LocalizedString();
         }
      
-        [EntryForm(Ordre = 1,WidthControl =200,isRequired =true)]
-        [Filter(Ordre =1,WidthControl =150)]
+        [EntryForm(Ordre = 1,WidthControl =250,isRequired =true)]
+        [Filter(Ordre =1,WidthControl =100)]
         [DataGrid(WidthColonne = 150,Ordre =1)]
         public LocalizedString Title { set; get; }
 
 
        
-        [EntryForm(Ordre = 2,WidthControl =200)]
+        [EntryForm(Ordre = 2,WidthControl =250)]
         [DataGrid(WidthColonne = 150,Ordre =2)]
         public DateTime StartDate { set; get; }
 
        
       
-        [EntryForm(Ordre = 3,WidthControl =200)]
+        [EntryForm(Ordre = 3,WidthControl =250)]
         [DataGrid(WidthColonne = 150,Ordre =3)]
         public DateTime EndDate { set; get; }
 

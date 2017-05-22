@@ -118,24 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="menu_title" xml:space="preserve">
-    <value>تدبير أصناف أقسام التدريب</value>
+    <value>Module management</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>أصناف أقسام التدريب</value>
+    <value>Modules</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>صنف أقسام التدريب</value>
-  </data>
-  <data name="Description" xml:space="preserve">
-    <value>الوصف</value>
+    <value>Modules</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>الإسم</value>
+    <value>Name</value>
   </data>
-  <data name="Code" xml:space="preserve">
-    <value>الرمز</value>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Competence" xml:space="preserve">
+    <value>Competence</value>
+  </data>
+  <data name="Evaluation" xml:space="preserve">
+    <value>Evaluation</value>
   </data>
   <data name="grid_title" xml:space="preserve">
-    <value>أصناف أقسام التدريب</value>
+    <value>Modules</value>
+  </data>
+  <data name="Learning" xml:space="preserve">
+    <value>Learning</value>
+  </data>
+  <data name="Presentation" xml:space="preserve">
+    <value>Presentation</value>
+  </data>
+  <data name="TeachingStrategy" xml:space="preserve">
+    <value>Teaching strategy</value>
   </data>
 </root>

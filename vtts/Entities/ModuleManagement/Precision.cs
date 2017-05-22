@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using App.Gwin.Attributes;
+using vtts.Entities.SessionManagement;
 
 namespace vtts.Entities.ModuleManagement
 {
@@ -57,5 +58,8 @@ namespace vtts.Entities.ModuleManagement
         [Filter(WidthControl = 150, Ordre = 3, isValeurFiltreVide = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public  List<PrecisionContent> PrecisionContents { set; get; }
+
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public List<Sequence> Sequences { get; set; }
     }
 }

@@ -117,6 +117,8 @@
         public virtual DbSet<TrainingYear> TrainingYears { get; set; }
         public virtual DbSet<Project> Projects { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }
+        public virtual DbSet<Classroom> Classrooms { get; set; }
+        public virtual DbSet<CategogiesClassroom> CategogiesClassrooms { get; set; }
 
 
 
