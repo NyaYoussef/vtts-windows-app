@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace vtts.Entities.SessionManagement.Resources.Session {
+namespace vtts.Entities.TrainingManagement.Resources.Module {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Session {
+    internal class Module {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Session() {
+        internal Module() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.SessionManagement.Resources.Session.Session", typeof(Session).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.TrainingManagement.Resources.Module.Module", typeof(Module).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,79 +61,34 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Absences.
+        ///   Looks up a localized string similar to Competence.
         /// </summary>
-        internal static string Absences {
+        internal static string Competence {
             get {
-                return ResourceManager.GetString("Absences", resourceCulture);
+                return ResourceManager.GetString("Competence", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Activities.
+        ///   Looks up a localized string similar to Description.
         /// </summary>
-        internal static string Activities {
+        internal static string Description {
             get {
-                return ResourceManager.GetString("Activities", resourceCulture);
+                return ResourceManager.GetString("Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class room.
+        ///   Looks up a localized string similar to Evaluation.
         /// </summary>
-        internal static string Classroom {
+        internal static string Evaluation {
             get {
-                return ResourceManager.GetString("Classroom", resourceCulture);
+                return ResourceManager.GetString("Evaluation", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Date and location.
-        /// </summary>
-        internal static string Date {
-            get {
-                return ResourceManager.GetString("Date", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Duration.
-        /// </summary>
-        internal static string Duration {
-            get {
-                return ResourceManager.GetString("Duration", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to EndingHour.
-        /// </summary>
-        internal static string EndingHour {
-            get {
-                return ResourceManager.GetString("EndingHour", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Forecast.
-        /// </summary>
-        internal static string Forecast {
-            get {
-                return ResourceManager.GetString("Forecast", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Goal.
-        /// </summary>
-        internal static string Goal {
-            get {
-                return ResourceManager.GetString("Goal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sessions.
+        ///   Looks up a localized string similar to Modules.
         /// </summary>
         internal static string grid_title {
             get {
@@ -142,7 +97,16 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sessions management.
+        ///   Looks up a localized string similar to Learning.
+        /// </summary>
+        internal static string Learning {
+            get {
+                return ResourceManager.GetString("Learning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Module management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -151,7 +115,16 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sessions.
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modules.
         /// </summary>
         internal static string PluralName {
             get {
@@ -160,16 +133,16 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Realisation date.
+        ///   Looks up a localized string similar to Presentation.
         /// </summary>
-        internal static string RealisationDate {
+        internal static string Presentation {
             get {
-                return ResourceManager.GetString("RealisationDate", resourceCulture);
+                return ResourceManager.GetString("Presentation", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Session.
+        ///   Looks up a localized string similar to Modules.
         /// </summary>
         internal static string SingularName {
             get {
@@ -178,29 +151,11 @@ namespace vtts.Entities.SessionManagement.Resources.Session {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starting hour.
+        ///   Looks up a localized string similar to Teaching strategy.
         /// </summary>
-        internal static string StartingHour {
+        internal static string TeachingStrategy {
             get {
-                return ResourceManager.GetString("StartingHour", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Title.
-        /// </summary>
-        internal static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Training.
-        /// </summary>
-        internal static string Training {
-            get {
-                return ResourceManager.GetString("Training", resourceCulture);
+                return ResourceManager.GetString("TeachingStrategy", resourceCulture);
             }
         }
     }

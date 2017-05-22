@@ -5,12 +5,17 @@ using vtts.Entities.MissionManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using vtts.Entities.SessionManagement;
+using vtts.Entities.ModuleManagement;
 
 namespace vtts.Entities.TrainingManagement
 {
+    [GwinEntity(Localizable =true,isMaleName =true,DisplayMember ="Name")]
+    [Menu(Group = "InstitutionManagement")]
+    [ManagementForm(TitrePageGridView ="grid_title")]
     public class Module : BaseEntity
     {
-        
+       
         public Module()
         {
           
@@ -73,24 +78,23 @@ namespace vtts.Entities.TrainingManagement
         // Affectation
         //
 
-        //   public virtual Filiere Filiere { set; get; }
+         public  Specialty Specialty { set; get; }
 
         // 
         // Description Technique
         //  
 
-        //public virtual List<Precision> Precisions { set; get; }
+        public  List<Precision> Precisions { set; get; }
 
-        //public virtual List<PrevisionSeance> PrevisionSeances { set; get; }
-        //public virtual List<Formation> Formations { set; get; }
+        public virtual List<Forecast> Forecasts { set; get; }
 
         [EntryForm(Ordre = 3, GroupeBox = "Module")]
         [DataGrid(WidthColonne = 100)]
         public LocalizedString Description { set; get; }
 
-       /* [EntryForm(Ordre = 3, GroupeBox = "Module")]
+       [EntryForm(Ordre = 3, GroupeBox = "Module")]
         [DataGrid(WidthColonne = 100)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToMany_Selection)]
-        //public List<Training> Trainings { get; set; }*/
+        public List<Training> Trainings { get; set; }
     }
 }

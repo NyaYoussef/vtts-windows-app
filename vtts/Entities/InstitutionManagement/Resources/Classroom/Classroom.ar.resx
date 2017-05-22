@@ -135,4 +135,10 @@
   <data name="CategogiesClassroom" xml:space="preserve">
     <value>تدبير صنف أقسام التدريب</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>أقسام التدريب</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>الرمز</value>
+  </data>
 </root>

@@ -299,6 +299,15 @@
             TaskAutorization.BusinessEntity = typeof(Task).FullName;
             RoleAdmin.Authorizations.Add(TaskAutorization);
 
+            Authorization ClassroomAutorization = new Authorization();
+            ClassroomAutorization.BusinessEntity = typeof(Classroom).FullName;
+            RoleAdmin.Authorizations.Add(ClassroomAutorization);
+
+            Authorization CategogiesClassroomAutorization = new Authorization();
+            CategogiesClassroomAutorization.BusinessEntity = typeof(CategogiesClassroom).FullName;
+            RoleAdmin.Authorizations.Add(CategogiesClassroomAutorization);
+
+
 
 
             //     //

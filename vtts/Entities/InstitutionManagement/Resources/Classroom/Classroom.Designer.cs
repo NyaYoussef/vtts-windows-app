@@ -61,11 +61,20 @@ namespace vtts.Entities.InstitutionManagement.Resources.Classroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categogies Class Room.
+        ///   Looks up a localized string similar to Categogies class room.
         /// </summary>
         internal static string CategogiesClassroom {
             get {
                 return ResourceManager.GetString("CategogiesClassroom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code.
+        /// </summary>
+        internal static string Code {
+            get {
+                return ResourceManager.GetString("Code", resourceCulture);
             }
         }
         
@@ -79,7 +88,16 @@ namespace vtts.Entities.InstitutionManagement.Resources.Classroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class Room Management.
+        ///   Looks up a localized string similar to Class rooms.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class room management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -97,7 +115,7 @@ namespace vtts.Entities.InstitutionManagement.Resources.Classroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class Room.
+        ///   Looks up a localized string similar to Class rooms.
         /// </summary>
         internal static string PluralName {
             get {
@@ -106,7 +124,7 @@ namespace vtts.Entities.InstitutionManagement.Resources.Classroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class Room.
+        ///   Looks up a localized string similar to Class room.
         /// </summary>
         internal static string SingularName {
             get {

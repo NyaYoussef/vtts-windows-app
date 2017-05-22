@@ -162,4 +162,7 @@
   <data name="Training" xml:space="preserve">
     <value>المتدرب</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>التاريخ والمكان</value>
+  </data>
 </root>

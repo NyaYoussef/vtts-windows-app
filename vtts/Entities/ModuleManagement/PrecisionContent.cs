@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vtts.Entities.SessionManagement;
 
 namespace vtts.Entities.ModuleManagement
 {
@@ -40,6 +41,9 @@ namespace vtts.Entities.ModuleManagement
         [DataGrid(WidthColonne = 150, Ordre = 3)]
         [Filter(WidthControl = 150, Ordre = 3)]
         public LocalizedString Description { set; get; }
+
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public List <Forecast> Forecasts { get; set; }
 
         [NotMapped]
         public string Name

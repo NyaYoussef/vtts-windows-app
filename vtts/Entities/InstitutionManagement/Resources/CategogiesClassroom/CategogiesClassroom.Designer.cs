@@ -80,7 +80,16 @@ namespace vtts.Entities.InstitutionManagement.Resources.CategogiesClassroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Classroom Categogie  Management.
+        ///   Looks up a localized string similar to Classrooms categories.
+        /// </summary>
+        internal static string grid_title {
+            get {
+                return ResourceManager.GetString("grid_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classroom categogie  management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -98,7 +107,7 @@ namespace vtts.Entities.InstitutionManagement.Resources.CategogiesClassroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Classrooms Categogies.
+        ///   Looks up a localized string similar to Classrooms categories.
         /// </summary>
         internal static string PluralName {
             get {
@@ -107,7 +116,7 @@ namespace vtts.Entities.InstitutionManagement.Resources.CategogiesClassroom {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Classroom Categogie .
+        ///   Looks up a localized string similar to Classroom categorie .
         /// </summary>
         internal static string SingularName {
             get {

@@ -12,7 +12,7 @@ namespace vtts.Entities.SessionManagement
 {
     [GwinEntity(Localizable =true ,isMaleName =false,DisplayMember ="Name")]
     [Menu (Group ="SessionManagement")]
-    [ManagementForm(TitrePageGridView ="grid_title")]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =650)]
      public class ActivityCategory : BaseEntity
     {
         public ActivityCategory()
