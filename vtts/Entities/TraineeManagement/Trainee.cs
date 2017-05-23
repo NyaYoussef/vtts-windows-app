@@ -20,13 +20,13 @@ namespace vtts.Entities.TraineeManagement
         [DisplayProperty(DisplayMember = "Nom")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [EntryForm(Ordre = 3,GroupeBox = "Assignments",WidthControl =200,GroupeBoxOrder =101)]
-        [Filter(isValeurFiltreVide =true,Ordre =5,WidthControl =150)]
+        [Filter(isDefaultIsEmpty  =true,Ordre =5,WidthControl =150)]
         [DataGrid(WidthColonne = 200,Ordre =20)]
         public  Group Group { set; get; }
         
         [EntryForm(Ordre =4,WidthControl =200,GroupeBox = "Assignments",GroupeBoxOrder =101)]
         [DataGrid(Ordre =20,WidthColonne =200)]
-        [Filter(Ordre =4,WidthControl =150,isValeurFiltreVide =true)]
+        [Filter(Ordre =4,WidthControl =150,isDefaultIsEmpty  =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public  MiniGroup MiniGroup { set; get; }
 

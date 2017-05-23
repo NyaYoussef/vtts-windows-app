@@ -49,7 +49,7 @@ namespace vtts.Entities.ProjectManagement
 
         [EntryForm(WidthControl = 200, Ordre = 3)]
         [DataGrid(WidthColonne = 150, Ordre = 3)]
-        [Filter(Ordre = 3, isValeurFiltreVide = true, WidthControl = 150)]
+        [Filter(Ordre = 3, isDefaultIsEmpty  = true, WidthControl = 150)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public MiniGroup MiniGroup { get; set; }
 
