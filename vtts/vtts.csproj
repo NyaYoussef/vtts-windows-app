@@ -730,6 +730,11 @@
     </Compile>
     <Compile Include="Entities\TraineeManagement\Trainee.cs" />
     <Compile Include="Entities\TrainingManagement\Module.cs" />
+    <Compile Include="Entities\TrainingManagement\Resources\Module\Module.ar.Designer.cs">
+      <DependentUpon>Module.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Entities\TrainingManagement\Resources\Module\Module.fr.Designer.cs">
       <DependentUpon>Module.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1255,6 +1260,10 @@
     <EmbeddedResource Include="Entities\TraineeManagement\Resources\Trainee\Trainee.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Trainee.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TrainingManagement\Resources\Module\Module.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Module.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Entities\TrainingManagement\Resources\Module\Module.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
