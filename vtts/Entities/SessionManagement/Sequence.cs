@@ -46,7 +46,7 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 250, Ordre = 4)]
         [DataGrid(WidthColonne = 150, Ordre = 4)]
-        [Filter(Ordre = 4, WidthControl = 150,isValeurFiltreVide =true)]
+        [Filter(Ordre = 4, WidthControl = 150,isDefaultIsEmpty =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Precision Precision { get; set; }
       

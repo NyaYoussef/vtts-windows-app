@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using App.Gwin;
 using vtts.Entities.MissionManagement;
 using App.Gwin.Fields;
+using App.Gwin.Entities;
+using vtts.Entities.StaffManagement;
 
 namespace vtts.Presentation.MissionManagement
 {
@@ -15,7 +17,7 @@ namespace vtts.Presentation.MissionManagement
         public void FormAfterInit(BaseEntryForm EntryForm)
         {
 
-          //  EntryForm.Fields[nameof(MissionOrder.Staff)].Hide();
+          EntryForm.Fields[nameof(MissionOrder.Staff)].Hide();
         }
 
         public void FormBeforInit(BaseEntryForm EntryForm)
@@ -34,18 +36,22 @@ namespace vtts.Presentation.MissionManagement
 
             switch (field.Name)
             {
-                case nameof(MissionOrder.Mission):
+                case nameof(MissionOrder.MissionConvocation):
                     {
                         ManyToOneField missionField = field as ManyToOneField;
-                        MissionConvocation mission = missionField.SelectedItem as MissionConvocation;
+                        MissionConvocation MissionConvocation = missionField.SelectedItem as MissionConvocation;
 
-                        if(mission != null)
+                        if (MissionConvocation != null)
                         {
+                            
                             EntryForm.Fields[nameof(MissionOrder.Staff)].Show();
                             ManyToOneField StaffField = EntryForm.Fields[nameof(MissionOrder.Staff)] as ManyToOneField;
-                          //  StaffField.DataSource = mission.Staffs;
+
+                            List<Staff> ls = MissionConvocation.Staffs;
+                           //  ls.Insert(0, new Staff()); throw Datetime2 exception
+                            StaffField.DataSource = ls;
                         }
-                       
+
 
                     }
                     break;

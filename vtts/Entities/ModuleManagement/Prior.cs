@@ -21,7 +21,7 @@ namespace vtts.Entities.ModuleManagement
         }
         [EntryForm(WidthControl= 300,Ordre =1)]
         [DataGrid(WidthColonne =150,Ordre =1)]
-        [Filter(Ordre =1,isValeurFiltreVide =true ,WidthControl =200)]
+        [Filter(Ordre =1,isDefaultIsEmpty =true ,WidthControl =200)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public  Precision Precision { set; get; }
 

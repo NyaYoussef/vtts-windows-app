@@ -40,7 +40,7 @@ namespace vtts.Entities.InstitutionManagement
 
         [EntryForm(Ordre = 3,WidthControl =300,Enable =true)]
         [DataGrid(WidthColonne = 100)]
-        [Filter(Ordre =2,isValeurFiltreVide =true, WidthControl = 150)]
+        [Filter(Ordre =2,isDefaultIsEmpty =true, WidthControl = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public virtual Region Region { set; get; }
 

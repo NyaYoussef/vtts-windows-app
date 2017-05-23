@@ -19,7 +19,8 @@ namespace vtts.Entities.StaffManagement
     {
         public Staff()
         {
-           
+            this.DateOfBirth = new DateTime();
+            this.DateRecruitment = new DateTime();
          }
 
         [NotMapped]
@@ -76,7 +77,7 @@ namespace vtts.Entities.StaffManagement
 
         [EntryForm(Ordre = 2, GroupeBox = "Functions",isRequired =true)]
         [DataGrid(WidthColonne = 100)]
-        [Filter(isValeurFiltreVide =true,WidthControl =150)]
+        [Filter(isDefaultIsEmpty =true,WidthControl =150)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public virtual Function Function { get; set; }
 

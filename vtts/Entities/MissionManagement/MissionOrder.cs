@@ -21,18 +21,27 @@ namespace vtts.Entities.MissionManagement
     public class MissionOrder: BaseEntity
     {
 
-        //
-        // Convocations
-        //
-        //[EntryForm(WidthControl = 200, Ordre = 0, GroupeBox = "Convocations", GroupeBoxOrder = 0)]
-        //[Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        //[Filter(Ordre = 1, WidthControl = 150, isValeurFiltreVide = true)]
-        public MissionConvocation Mission { set; get; }
+        public MissionOrder()
+        {
+            this.DateOrder = DateTime.Now;
+            this.ValidationDate = DateTime.Now;
+            this.DepartureDate = DateTime.Now;
+        }
 
-        [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Convocations", GroupeBoxOrder = 1)]
+
+        /// <summary>
+        /// is used to save selected MissionConvocation 
+        /// bevause Staff and MissionConvocation is en ManyToMany
+        /// </summary>
+        [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Convocations", GroupeBoxOrder = 1, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre = 1, WidthControl = 150, isValeurFiltreVide = true)]
-        public Staff Staff { set; get; }
+        public virtual MissionConvocation MissionConvocation { set; get; }
+         
+
+        [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Convocations", GroupeBoxOrder = 1,isDefaultIsEmpty = true)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(Ordre = 1, WidthControl = 150, isDefaultIsEmpty = true)]
+        public virtual Staff Staff { set; get; }
 
         //
         // Date
@@ -71,7 +80,7 @@ namespace vtts.Entities.MissionManagement
        
 
         [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox = "Meansoftransport", GroupeBoxOrder = 1)]
-        [Filter (isValeurFiltreVide = true)]
+        [Filter (isDefaultIsEmpty = true)]
         
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public virtual Car Car { get; set; }

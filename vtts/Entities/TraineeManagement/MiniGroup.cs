@@ -41,7 +41,7 @@ namespace vtts.Entities.TraineeManagement
 
         [EntryForm(WidthControl = 300, Ordre = 1)]
         [DataGrid(WidthColonne = 150, Ordre = 1)]
-        [Filter(Ordre = 1, WidthControl = 150,isValeurFiltreVide =true)]
+        [Filter(Ordre = 1, WidthControl = 150,isDefaultIsEmpty  =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public virtual Group Group { get; set; }
     }

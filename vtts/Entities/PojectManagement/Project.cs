@@ -37,7 +37,7 @@ namespace vtts.Entities.ProjectManagement
 
         [EntryForm(WidthControl = 200, Ordre = 1)]
         [DataGrid(WidthColonne = 150, Ordre =1)]
-        [Filter(Ordre = 1,isValeurFiltreVide =true, WidthControl = 150)]
+        [Filter(Ordre = 1,isDefaultIsEmpty =true, WidthControl = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
         public virtual List<ProjectTask> ProjectTasks { set; get; }
 

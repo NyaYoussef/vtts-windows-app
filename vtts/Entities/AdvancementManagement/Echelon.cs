@@ -21,7 +21,7 @@ namespace vtts.Entities.AdvancementManagement
         }
         [EntryForm(Ordre = 3, GroupeBox = "Echelons",MultiLine =true,WidthControl =200)]
         [DataGrid(WidthColonne = 200)]
-        [Filter(Ordre =1,isValeurFiltreVide =true,WidthControl =200)]
+        [Filter(Ordre =1,isDefaultIsEmpty =true,WidthControl =200)]
         public LocalizedString Description { get; set; }
 
        /* [EntryForm(Ordre = 3, GroupeBox = "Echlon", WidthControl = 300)]

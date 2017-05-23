@@ -14,19 +14,19 @@ namespace vtts.Entities.SessionManagement
    {
         [EntryForm(WidthControl =300,Ordre =1)]
         [DataGrid(WidthColonne =150,Ordre =1)]
-        [Filter(Ordre =1,WidthControl =150,isValeurFiltreVide =true)]
+        [Filter(Ordre =1,WidthControl =150,isDefaultIsEmpty =true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public TrainingYear TrainingYear { set; get; }
 
     //    [EntryForm(WidthControl = 150, Ordre = 2)]
         [DataGrid(WidthColonne = 100, Ordre = 2)]
-    //    [Filter(Ordre = 2, WidthControl = 150, isValeurFiltreVide = true)]
+    //    [Filter(Ordre = 2, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Specialty Specialty { set; get; }
 
         [EntryForm(WidthControl = 300, Ordre = 3)]
         [DataGrid(WidthColonne = 100, Ordre = 3)]
-        [Filter(Ordre = 3, WidthControl = 150, isValeurFiltreVide = true)]
+        [Filter(Ordre = 3, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Module Module { set; get; }
 
@@ -37,13 +37,13 @@ namespace vtts.Entities.SessionManagement
 
         [EntryForm(WidthControl = 300, Ordre = 4)]
         [DataGrid(WidthColonne = 100, Ordre = 4)]
-        [Filter(Ordre = 4, WidthControl = 150, isValeurFiltreVide = true)]
+        [Filter(Ordre = 4, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Group Group { set; get; }
 
         [EntryForm(WidthControl = 300, Ordre = 5)]
         [DataGrid(WidthColonne = 150, Ordre = 5)]
-        [Filter(Ordre = 5, WidthControl = 150, isValeurFiltreVide = true)]
+        [Filter(Ordre = 5, WidthControl = 150, isDefaultIsEmpty = true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Former Former { set; get; }
  
