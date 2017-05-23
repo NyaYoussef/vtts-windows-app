@@ -57,6 +57,7 @@
             // 
             // printPreviewControl1
             // 
+            this.printPreviewControl1.AutoZoom = false;
             this.printPreviewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.printPreviewControl1.Location = new System.Drawing.Point(0, 0);
             this.printPreviewControl1.Name = "printPreviewControl1";
@@ -76,6 +77,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.metroTile1);
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 

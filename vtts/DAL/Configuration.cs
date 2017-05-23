@@ -336,11 +336,11 @@
                          new MenuItemApplication { Id = 1, Code = "Configuration", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "إعدادات", English = "Configuration", French = "Configuration" } },
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
-                         new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "المتدرب", English = "Trainee Management", French = "Stagiaires" } },
+                         new MenuItemApplication { Id = 4, Code = "Trainee", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = " تدبيرالمتدرب", English = "Trainee Management", French = "Gestion des stagiaires" } },
                          new MenuItemApplication { Id = 5, Code = "InstitutionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المؤسسة", English = "Institution management", French = "Gestion de l'établissement" } },
                          new MenuItemApplication { Id = 6, Code = "HRManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموارد البشرية", English = "RH management", French = "Gestion RH" } },
                          new MenuItemApplication { Id = 8, Code = "AdvanceManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الترقيات", English = "Advance management", French = "Aavancements" } },
-                         new MenuItemApplication { Id = 8, Code = "Staffs", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المستخدمين", English = "Staffs management", French = "Personnels" } },
+                         new MenuItemApplication { Id = 8, Code = "Staffs", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المستخدمين", English = "Staffs management", French = "Gestion des personnels" } },
                          new MenuItemApplication { Id = 7, Code = "MissionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير المهام", English = "Mission management", French = "Missions" } },
                          new MenuItemApplication { Id = 9, Code = "SessionManagement", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الحصص الدراسية", English = "Session management", French = "Gestion des sessions" } }
                          );

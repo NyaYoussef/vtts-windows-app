@@ -78,7 +78,6 @@
             // 
             this.MissionCategory.AutoSizeConfig = true;
             this.MissionCategory.ConfigEntity = null;
-            this.MissionCategory.configProperty = null;
             this.MissionCategory.DataSource = null;
             this.MissionCategory.DisplayMember = "";
             this.MissionCategory.Location = new System.Drawing.Point(93, 151);

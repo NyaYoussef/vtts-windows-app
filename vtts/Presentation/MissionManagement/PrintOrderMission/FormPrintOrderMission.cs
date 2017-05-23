@@ -135,5 +135,10 @@ namespace vtts.Presentation.PrintOrderMission
                 printDoc.Print();
             }
         }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

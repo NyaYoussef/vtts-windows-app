@@ -774,6 +774,8 @@
     <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.Designer.cs">
       <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\MissionManagement\MissionConvocationPLO.cs" />
+    <Compile Include="Presentation\MissionManagement\MissionOrderPLO.cs" />
     <Compile Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.cs">
       <SubType>Form</SubType>
     </Compile>
