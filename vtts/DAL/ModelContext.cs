@@ -100,7 +100,6 @@
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<AdvancementEchelon> AdvancementEchelons { get; set; }
         public virtual DbSet<Mission> Missions { get; set; }
-        public virtual DbSet<Precision> Precisions { get; set; }
         public virtual DbSet<Prior> Priors { get; set; }
         public virtual DbSet<PrecisionContent> PrecisionContent { get; set; }
         public virtual  DbSet<Holiday> Holidays { get; set; }
@@ -119,7 +118,7 @@
         public virtual DbSet<ProjectTask> ProjectTasks { get; set; }
         public virtual DbSet<Classroom> Classrooms { get; set; }
         public virtual DbSet<CategogiesClassroom> CategogiesClassrooms { get; set; }
-
+        public virtual DbSet<Precision> Precisions { get; set; }
         public virtual DbSet<MiniGroup> MiniGroups { get; set; }
 
 

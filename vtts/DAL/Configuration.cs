@@ -238,7 +238,7 @@
             RoleAdmin.Authorizations.Add(PriorAutorization);
 
             Authorization PrecisionContentAutorization = new Authorization();
-            PrecisionAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
+            PrecisionContentAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
             RoleAdmin.Authorizations.Add(PrecisionContentAutorization);
 
             Authorization HolidayAutorization = new Authorization();
