@@ -19,7 +19,8 @@ namespace vtts.Entities.StaffManagement
     {
         public Staff()
         {
-           
+            this.DateOfBirth = new DateTime();
+            this.DateRecruitment = new DateTime();
          }
 
         [NotMapped]

@@ -19,6 +19,15 @@ namespace vtts.Entities.MissionManagement
     [PresentationLogic(TypePLO = typeof(MissionOrderPLO))]
     public class MissionOrder: BaseEntity
     {
+
+        public MissionOrder()
+        {
+            this.DateOrder = DateTime.Now;
+            this.ValidationDate = DateTime.Now;
+            this.DepartureDate = DateTime.Now;
+        }
+
+
         /// <summary>
         /// is used to save selected MissionConvocation 
         /// bevause Staff and MissionConvocation is en ManyToMany
@@ -31,7 +40,6 @@ namespace vtts.Entities.MissionManagement
         [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Convocations", GroupeBoxOrder = 1,isDefaultIsEmpty = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [Filter(Ordre = 1, WidthControl = 150, isDefaultIsEmpty = true)]
-        
         public virtual Staff Staff { set; get; }
 
         //
