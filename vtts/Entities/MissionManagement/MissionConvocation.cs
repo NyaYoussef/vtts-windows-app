@@ -24,10 +24,6 @@ namespace vtts.Entities.MissionManagement
            this.Description = new LocalizedString();
         }
 
-        //
-        // Subject
-        //
-
             
         [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Subject" , GroupeBoxOrder = 1, isRequired = true)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]

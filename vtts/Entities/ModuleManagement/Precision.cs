@@ -12,7 +12,7 @@ using vtts.Entities.SessionManagement;
 namespace vtts.Entities.ModuleManagement
 {
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
-    [Menu(Group = "InstitutionManagement")]
+    [Menu(Group ="InstitutionManagement")]
     [ManagementForm(Width = 670, Height = 500, TitrePageGridView = "grid_title")]
     public class Precision:BaseEntity
     {
@@ -51,8 +51,8 @@ namespace vtts.Entities.ModuleManagement
         public  Module Module { set; get; }
 
 
-
-        //public virtual List<Prealable> Prealables { set; get; }
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public  List<Prior> Priors { set; get; }
         [EntryForm(WidthControl = 200, Ordre = 3)]
         [DataGrid(WidthColonne = 150, Ordre = 3)]
         [Filter(WidthControl = 150, Ordre = 3, isValeurFiltreVide = true)]

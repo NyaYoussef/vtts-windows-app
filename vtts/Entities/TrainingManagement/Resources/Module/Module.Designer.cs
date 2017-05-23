@@ -61,6 +61,15 @@ namespace vtts.Entities.TrainingManagement.Resources.Module {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Code.
+        /// </summary>
+        internal static string Code {
+            get {
+                return ResourceManager.GetString("Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Competence.
         /// </summary>
         internal static string Competence {
@@ -75,6 +84,24 @@ namespace vtts.Entities.TrainingManagement.Resources.Module {
         internal static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Details.
+        /// </summary>
+        internal static string Details {
+            get {
+                return ResourceManager.GetString("Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duration.
+        /// </summary>
+        internal static string Duration {
+            get {
+                return ResourceManager.GetString("Duration", resourceCulture);
             }
         }
         
@@ -151,11 +178,29 @@ namespace vtts.Entities.TrainingManagement.Resources.Module {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Specialty.
+        /// </summary>
+        internal static string Specialtys {
+            get {
+                return ResourceManager.GetString("Specialtys", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Teaching strategy.
         /// </summary>
         internal static string TeachingStrategy {
             get {
                 return ResourceManager.GetString("TeachingStrategy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training.
+        /// </summary>
+        internal static string Trainings {
+            get {
+                return ResourceManager.GetString("Trainings", resourceCulture);
             }
         }
     }
