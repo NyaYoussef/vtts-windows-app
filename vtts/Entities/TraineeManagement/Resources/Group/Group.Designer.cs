@@ -88,6 +88,15 @@ namespace vtts.Entities.TraineeManagement.Resources.Group {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Groups.
         /// </summary>
         internal static string PluralName {

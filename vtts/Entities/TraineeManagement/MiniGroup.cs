@@ -43,6 +43,6 @@ namespace vtts.Entities.TraineeManagement
         [DataGrid(WidthColonne = 150, Ordre = 1)]
         [Filter(Ordre = 1, WidthControl = 150,isValeurFiltreVide =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        public Group Group { get; set; }
+        public virtual Group Group { get; set; }
     }
 }

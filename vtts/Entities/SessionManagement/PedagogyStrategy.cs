@@ -26,7 +26,7 @@ namespace vtts.Entities.SessionManagement
         [Filter(Ordre =0,WidthControl =150)]
         public LocalizedString Title { set; get; }
 
-        [EntryForm(WidthControl = 250, Ordre = 1,MultiLine =true,NumberLine =5, isRequired = true)]
+        [EntryForm(WidthControl = 250, Ordre = 1,MultiLine =true,NumberLine =5)]
         [DataGrid(WidthColonne = 200, Ordre = 1)]
         [Filter(Ordre = 1, WidthControl = 200)]
         public LocalizedString Description { set; get; }

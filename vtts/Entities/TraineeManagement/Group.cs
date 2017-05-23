@@ -16,7 +16,6 @@ namespace vtts.Entities.TraineeManagement
     public class Group : BaseEntity
     {
         
-        [DisplayProperty(isInGlossary =true)]
         [EntryForm(Ordre = 0,WidthControl =250,isRequired =true)]
         [Filter(WidthControl =150,Ordre =0)]
         [DataGrid(WidthColonne = 150,Ordre =0)]
@@ -37,6 +36,6 @@ namespace vtts.Entities.TraineeManagement
         public  Specialty Specialty { set; get; }
 
         [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
-        public List<MiniGroup> MiniGroups { get; set; }
+        public virtual List<MiniGroup> MiniGroups { get; set; }
     }
 }

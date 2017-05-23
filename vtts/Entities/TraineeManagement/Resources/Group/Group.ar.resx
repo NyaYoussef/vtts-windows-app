@@ -135,4 +135,7 @@
   <data name="MiniGroup" xml:space="preserve">
     <value>المجموعة الصغرى</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>الإسم</value>
+  </data>
 </root>
