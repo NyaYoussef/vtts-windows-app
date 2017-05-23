@@ -129,4 +129,13 @@
   <data name="Specialty" xml:space="preserve">
     <value>Specialty</value>
   </data>
+  <data name="grid_title" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="MiniGroup" xml:space="preserve">
+    <value>Mini group</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
 </root>

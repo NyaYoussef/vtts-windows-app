@@ -21,28 +21,30 @@ namespace vtts.Entities.SessionManagement
         {
             Title = new LocalizedString();
             Goal = new LocalizedString();
+            TargetedSkills = new LocalizedString();
+            TransversalSkills = new LocalizedString();
         }
         [EntryForm (WidthControl =250,Ordre =0,isRequired =true )]
         [DataGrid(WidthColonne =150,Ordre =0)]
         [Filter(Ordre =0,WidthControl=150)]
       public  LocalizedString Title { get; set; }
 
-        [EntryForm(WidthControl = 250, Ordre = 1,MultiLine =true,NumberLine =2, isRequired = true)]
+        [EntryForm(WidthControl = 250, Ordre = 1,MultiLine =true,NumberLine =2)]
         [DataGrid(WidthColonne = 150, Ordre = 1)]
         [Filter(Ordre = 1, WidthControl = 150)]
         public  LocalizedString Goal { get; set; }
 
-        [EntryForm(WidthControl = 250, Ordre = 2, MultiLine = true, NumberLine = 2, isRequired = true)]
+        [EntryForm(WidthControl = 250, Ordre = 2, MultiLine = true, NumberLine = 2)]
         [DataGrid(WidthColonne = 150, Ordre = 2)]
         [Filter(Ordre = 2, WidthControl = 150)]
         public  LocalizedString TargetedSkills { get; set; }
 
-        [EntryForm(WidthControl = 250, Ordre = 3, MultiLine = true, NumberLine = 2, isRequired = true)]
+        [EntryForm(WidthControl = 250, Ordre = 3, MultiLine = true, NumberLine = 2)]
         [DataGrid(WidthColonne = 150, Ordre = 3)]
         [Filter(Ordre = 3, WidthControl = 150)]
         private LocalizedString TransversalSkills { get; set; }
 
-        [EntryForm(WidthControl = 250, Ordre = 4, isRequired = true)]
+        [EntryForm(WidthControl = 250, Ordre = 4)]
         [DataGrid(WidthColonne = 150, Ordre = 4)]
         [Filter(Ordre = 4, WidthControl = 150,isDefaultIsEmpty =true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]

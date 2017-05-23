@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using vtts.Presentation.PrintOrderMission;
 using vtts.Presentation.MissionManagement;
+using vtts.BAL;
 
 namespace vtts.Entities.MissionManagement
 {
@@ -16,7 +17,7 @@ namespace vtts.Entities.MissionManagement
     [Menu(Group = "MissionManagement",Order =2,Title = "menu_title")]
     [ManagementForm(Width =1250,Height =650,TitrePageGridView ="Order_management",TitreButtonAjouter ="Add_order_mission")]
     [DataGridSelectedAction(Title = "Print", Description = "Print_Order_Mission", TypeOfForm = typeof(FormPrintOrderMission))]
-    [PresentationLogic(TypePLO = typeof(MissionOrderPLO))]
+    [PresentationLogic(TypePLO = typeof(MissionOrderBLO))]
     public class MissionOrder: BaseEntity
     {
 

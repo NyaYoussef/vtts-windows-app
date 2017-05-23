@@ -67,6 +67,7 @@
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\packages\Gwin-Library\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Spire.License">
       <HintPath>..\packages\Spire-Pdf\Spire.License.dll</HintPath>
     </Reference>
@@ -440,22 +441,22 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\PojectManagement\Resources\Task\Task.fr.Designer.cs">
-      <DependentUpon>Task.fr.resx</DependentUpon>
+    <Compile Include="Entities\PojectManagement\Resources\ProjectTask\ProjectTask.fr.Designer.cs">
+      <DependentUpon>ProjectTask.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\PojectManagement\Resources\Task\Task.ar.Designer.cs">
-      <DependentUpon>Task.ar.resx</DependentUpon>
+    <Compile Include="Entities\PojectManagement\Resources\ProjectTask\ProjectTask.ar.Designer.cs">
+      <DependentUpon>ProjectTask.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\PojectManagement\Resources\Task\Task.Designer.cs">
-      <DependentUpon>Task.resx</DependentUpon>
+    <Compile Include="Entities\PojectManagement\Resources\ProjectTask\ProjectTask.Designer.cs">
+      <DependentUpon>ProjectTask.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\PojectManagement\Task.cs" />
+    <Compile Include="Entities\PojectManagement\ProjectTask.cs" />
     <Compile Include="Entities\SessionManagement\Absence.cs" />
     <Compile Include="Entities\SessionManagement\Activity.cs" />
     <Compile Include="Entities\SessionManagement\ActivityCategory.cs" />
@@ -681,6 +682,7 @@
     </Compile>
     <Compile Include="Entities\StaffManagement\Staff.cs" />
     <Compile Include="Entities\TraineeManagement\Group.cs" />
+    <Compile Include="Entities\TraineeManagement\MiniGroup.cs" />
     <Compile Include="Entities\TraineeManagement\Resources\Group\Group.ar.Designer.cs">
       <DependentUpon>Group.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -693,6 +695,21 @@
     </Compile>
     <Compile Include="Entities\TraineeManagement\Resources\Group\Group.fr.Designer.cs">
       <DependentUpon>Group.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\MiniGroup\MiniGroup.ar.Designer.cs">
+      <DependentUpon>MiniGroup.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\MiniGroup\MiniGroup.fr.Designer.cs">
+      <DependentUpon>MiniGroup.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\TraineeManagement\Resources\MiniGroup\MiniGroup.Designer.cs">
+      <DependentUpon>MiniGroup.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -713,6 +730,11 @@
     </Compile>
     <Compile Include="Entities\TraineeManagement\Trainee.cs" />
     <Compile Include="Entities\TrainingManagement\Module.cs" />
+    <Compile Include="Entities\TrainingManagement\Resources\Module\Module.ar.Designer.cs">
+      <DependentUpon>Module.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Entities\TrainingManagement\Resources\Module\Module.fr.Designer.cs">
       <DependentUpon>Module.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -746,8 +768,12 @@
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Libs\ITextSharp\PdfFile.cs" />
-    <Compile Include="Presentation\MissionManagement\MissionConvocationPLO.cs" />
-    <Compile Include="Presentation\MissionManagement\MissionOrderPLO.cs" />
+    <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.Designer.cs">
+      <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1019,17 +1045,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Project.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\PojectManagement\Resources\Task\Task.fr.resx">
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\ProjectTask\ProjectTask.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Task.fr.Designer.cs</LastGenOutput>
+      <LastGenOutput>ProjectTask.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\PojectManagement\Resources\Task\Task.ar.resx">
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\ProjectTask\ProjectTask.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Task.ar.Designer.cs</LastGenOutput>
+      <LastGenOutput>ProjectTask.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\PojectManagement\Resources\Task\Task.resx">
+    <EmbeddedResource Include="Entities\PojectManagement\Resources\ProjectTask\ProjectTask.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Task.Designer.cs</LastGenOutput>
+      <LastGenOutput>ProjectTask.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Entities\SessionManagement\Resources\Absence\Absence.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -1211,6 +1237,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Group.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\MiniGroup\MiniGroup.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MiniGroup.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\MiniGroup\MiniGroup.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MiniGroup.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TraineeManagement\Resources\MiniGroup\MiniGroup.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MiniGroup.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Entities\TraineeManagement\Resources\Trainee\Trainee.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Trainee.ar.Designer.cs</LastGenOutput>
@@ -1222,6 +1260,10 @@
     <EmbeddedResource Include="Entities\TraineeManagement\Resources\Trainee\Trainee.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Trainee.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\TrainingManagement\Resources\Module\Module.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Module.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Entities\TrainingManagement\Resources\Module\Module.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -1251,6 +1293,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\MissionManagement\MissionConvocationFrom.resx">
+      <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.resx">
       <DependentUpon>FormPrintOrderMission.cs</DependentUpon>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace vtts.Entities.PojectManagement.Resources.Task {
+namespace vtts.Entities.TraineeManagement.Resources.MiniGroup {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace vtts.Entities.PojectManagement.Resources.Task {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Task {
+    internal class MiniGroup {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Task() {
+        internal MiniGroup() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace vtts.Entities.PojectManagement.Resources.Task {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.PojectManagement.Resources.Task.Task", typeof(Task).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.TraineeManagement.Resources.MiniGroup.MiniGroup", typeof(MiniGroup).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,16 +70,7 @@ namespace vtts.Entities.PojectManagement.Resources.Task {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to End date.
-        /// </summary>
-        internal static string EndDate {
-            get {
-                return ResourceManager.GetString("EndDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Projects.
+        ///   Looks up a localized string similar to Mini groups.
         /// </summary>
         internal static string grid_title {
             get {
@@ -88,7 +79,16 @@ namespace vtts.Entities.PojectManagement.Resources.Task {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Project.
+        ///   Looks up a localized string similar to Group.
+        /// </summary>
+        internal static string Group {
+            get {
+                return ResourceManager.GetString("Group", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mini groups management.
         /// </summary>
         internal static string menu_title {
             get {
@@ -97,7 +97,16 @@ namespace vtts.Entities.PojectManagement.Resources.Task {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Projects.
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mini groups.
         /// </summary>
         internal static string PluralName {
             get {
@@ -106,38 +115,11 @@ namespace vtts.Entities.PojectManagement.Resources.Task {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Project.
-        /// </summary>
-        internal static string Project {
-            get {
-                return ResourceManager.GetString("Project", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Project.
+        ///   Looks up a localized string similar to Mini group.
         /// </summary>
         internal static string SingularName {
             get {
                 return ResourceManager.GetString("SingularName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Start date.
-        /// </summary>
-        internal static string StartDate {
-            get {
-                return ResourceManager.GetString("StartDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Title.
-        /// </summary>
-        internal static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }
