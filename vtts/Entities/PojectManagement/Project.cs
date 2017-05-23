@@ -39,7 +39,7 @@ namespace vtts.Entities.ProjectManagement
         [DataGrid(WidthColonne = 150, Ordre =1)]
         [Filter(Ordre = 1,isValeurFiltreVide =true, WidthControl = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
-        public virtual List<Task> Tasks { set; get; }
+        public virtual List<ProjectTask> ProjectTasks { set; get; }
 
        
 

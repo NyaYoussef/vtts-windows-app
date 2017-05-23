@@ -21,25 +21,25 @@ namespace vtts.Entities.InstitutionManagement
             Description = new LocalizedString();
         }
        
-        [EntryForm (Ordre=1,WidthControl =250,isRequired =true)]
+        [EntryForm (Ordre=1,WidthControl =300,isRequired =true)]
         [Filter(Ordre =1,WidthControl =150)]
         [DataGrid(Ordre =1,WidthColonne =150)]
         public LocalizedString Name { set; get; }
 
 
-        [EntryForm(Ordre = 0, WidthControl = 200)]
+        [EntryForm(Ordre = 0, WidthControl = 250)]
         [Filter(Ordre = 0, WidthControl = 100)]
         [DataGrid(Ordre = 0, WidthColonne = 100)]
         public String Code { set; get; }
 
 
-        [EntryForm(Ordre = 2, WidthControl = 250)]
+        [EntryForm(Ordre = 2, WidthControl = 300)]
         [Filter(Ordre = 2, WidthControl = 150,isValeurFiltreVide =true)]
         [DataGrid(Ordre = 2, WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public  CategogiesClassroom CategogiesClassroom { set; get; }
 
-        [EntryForm(Ordre = 3, WidthControl = 250,MultiLine =true,NumberLine =3)]
+        [EntryForm(Ordre = 3, WidthControl = 300,MultiLine =true,NumberLine =3)]
         [Filter(Ordre = 3, WidthControl = 150)]
         [DataGrid(Ordre = 3, WidthColonne = 150)]
         public LocalizedString Description { set; get; }

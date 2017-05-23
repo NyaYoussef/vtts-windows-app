@@ -12,7 +12,7 @@ namespace vtts.Entities.TrainingManagement
 {
     [GwinEntity(Localizable =true,isMaleName =true,DisplayMember ="Name")]
     [Menu(Group = "InstitutionManagement")]
-    [ManagementForm(TitrePageGridView ="grid_title")]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =1050,Height =600)]
     public class Module : BaseEntity
     {
        
@@ -32,36 +32,41 @@ namespace vtts.Entities.TrainingManagement
         // 
         // Informations générale
         //
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
+        [EntryForm(Ordre = 1, GroupeBox = "SingularName",WidthControl =150)]
         [DataGrid(WidthColonne = 100)]
+        [Filter(Ordre =1,WidthControl =150)]
         public LocalizedString Name { set; get; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
+        [EntryForm(Ordre = 3, GroupeBox = "SingularName",WidthControl =150)]
+     //   [DataGrid(WidthColonne = 100)]
         public LocalizedString Competence { set; get; }
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
 
 
+        [EntryForm(Ordre = 0, GroupeBox = "SingularName",WidthControl =150)]
+        [DataGrid(WidthColonne = 80,Ordre =0)]
+        [Filter(Ordre =0,WidthControl =150)]
         public String Code { set; get; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
-
-      
+        [EntryForm(Ordre = 5, GroupeBox = "SingularName",WidthControl =150)]
+        [DataGrid(WidthColonne = 100,Ordre =2)]
+        [Filter(Ordre =5,WidthControl =150)]
         public LocalizedString Presentation { set; get; }
 
         // 
         // Description pédagogique
         //
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
+        [EntryForm(Ordre = 3, GroupeBox = "Details")]
+        [DataGrid(WidthColonne = 150,Ordre =3)]
+        [Filter(Ordre =3,WidthControl =150)]
         public LocalizedString TeachingStrategy { set; get; }
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
+
+        [EntryForm(Ordre = 3, GroupeBox = "Details")]
+        [DataGrid(WidthColonne = 100,Ordre =4)]
         public LocalizedString Learning { set; get; }
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
+
+        [EntryForm(Ordre = 4, GroupeBox = "SingularName",WidthControl =150)]
+        [DataGrid(WidthColonne = 100,Ordre =5)]
+        [Filter(Ordre =4,WidthControl =150)]
         public LocalizedString Evaluation { set; get; }
 
         // 
@@ -71,29 +76,30 @@ namespace vtts.Entities.TrainingManagement
         /// La duré en Nombre d'heure
         /// </summary>
         ///  
-        [DataGrid(WidthColonne = 100)]
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
+        [DataGrid(WidthColonne = 80,Ordre =2)]
+        [EntryForm(Ordre = 2, GroupeBox = "SingularName",WidthControl =150)]
+        [Filter(Ordre =2,WidthControl =100)]
         public int Duration { set; get; }
         // 
         // Affectation
         //
-
-         public  Specialty Specialty { set; get; }
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
+        [EntryForm(Ordre = 8, GroupeBox = "Details")]
+        public List<Specialty> Specialtys { set; get; }
 
         // 
         // Description Technique
         //  
-
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
         public  List<Precision> Precisions { set; get; }
 
-        public virtual List<Forecast> Forecasts { set; get; }
+        public  List<Forecast> Forecasts { set; get; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
+        [EntryForm(Ordre = 6, GroupeBox = "SingularName",WidthControl =150)]
+        //[DataGrid(WidthColonne = 100)]
         public LocalizedString Description { set; get; }
 
-       [EntryForm(Ordre = 3, GroupeBox = "Module")]
-        [DataGrid(WidthColonne = 100)]
+       [EntryForm(Ordre = 3, GroupeBox = "Details")]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToMany_Selection)]
         public List<Training> Trainings { get; set; }
     }

@@ -79,6 +79,15 @@ namespace vtts.Entities.TrainingManagement.Resources.Specialty {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Specialties.
+        /// </summary>
+        internal static string gri_title {
+            get {
+                return ResourceManager.GetString("gri_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Specialties Management.
         /// </summary>
         internal static string menu_title {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace vtts.Entities.TraineeManagement.Resources.Trainee {
+namespace vtts.Entities.PojectManagement.Resources.ProjectTask {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Trainee {
+    internal class ProjectTask {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Trainee() {
+        internal ProjectTask() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.TraineeManagement.Resources.Trainee.Trainee", typeof(Trainee).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.PojectManagement.Resources.ProjectTask.ProjectTask", typeof(ProjectTask).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,52 +61,25 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Address.
+        ///   Looks up a localized string similar to Description.
         /// </summary>
-        internal static string Address {
+        internal static string Description {
             get {
-                return ResourceManager.GetString("Address", resourceCulture);
+                return ResourceManager.GetString("Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assignments.
+        ///   Looks up a localized string similar to End date.
         /// </summary>
-        internal static string Assignments {
+        internal static string EndDate {
             get {
-                return ResourceManager.GetString("Assignments", resourceCulture);
+                return ResourceManager.GetString("EndDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cell phone.
-        /// </summary>
-        internal static string Cellphone {
-            get {
-                return ResourceManager.GetString("Cellphone", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail.
-        /// </summary>
-        internal static string Email {
-            get {
-                return ResourceManager.GetString("Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to FaceBook.
-        /// </summary>
-        internal static string FaceBook {
-            get {
-                return ResourceManager.GetString("FaceBook", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Trainees.
+        ///   Looks up a localized string similar to Projects.
         /// </summary>
         internal static string grid_title {
             get {
@@ -115,7 +88,7 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trainees Management.
+        ///   Looks up a localized string similar to Project.
         /// </summary>
         internal static string menu_title {
             get {
@@ -124,16 +97,7 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PhoneNumbre.
-        /// </summary>
-        internal static string PhoneNumber {
-            get {
-                return ResourceManager.GetString("PhoneNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Trainees.
+        ///   Looks up a localized string similar to Projects.
         /// </summary>
         internal static string PluralName {
             get {
@@ -142,25 +106,16 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registration number.
+        ///   Looks up a localized string similar to Project.
         /// </summary>
-        internal static string RegistrationNumber {
+        internal static string Project {
             get {
-                return ResourceManager.GetString("RegistrationNumber", resourceCulture);
+                return ResourceManager.GetString("Project", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sex.
-        /// </summary>
-        internal static string Sex {
-            get {
-                return ResourceManager.GetString("Sex", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Trainee.
+        ///   Looks up a localized string similar to Project.
         /// </summary>
         internal static string SingularName {
             get {
@@ -169,11 +124,20 @@ namespace vtts.Entities.TraineeManagement.Resources.Trainee {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Web Site.
+        ///   Looks up a localized string similar to Start date.
         /// </summary>
-        internal static string WebSite {
+        internal static string StartDate {
             get {
-                return ResourceManager.GetString("WebSite", resourceCulture);
+                return ResourceManager.GetString("StartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

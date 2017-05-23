@@ -38,7 +38,7 @@ namespace vtts.Entities.SessionManagement
         [DataGrid(WidthColonne = 150, Ordre = 5)]
         public DateTime RealisationDate { set; get; }
 
-        [EntryForm(WidthControl = 150, Ordre = 6, GroupeBox = "Date", GroupeBoxOrder = 1)]
+        [EntryForm(WidthControl = 100, Ordre = 6, GroupeBox = "Date", GroupeBoxOrder = 1)]
         public int StartingHour { set; get; }
 
         [EntryForm(WidthControl = 100, Ordre = 7, GroupeBox = "Date", GroupeBoxOrder = 1)]

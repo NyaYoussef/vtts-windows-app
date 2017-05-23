@@ -228,6 +228,7 @@
             RoleAdmin.Authorizations.Add(ThemeCategoryAutorization);
             RoleAdmin.Authorizations.Add(RegionAutorization);
             RoleAdmin.Authorizations.Add(MissionAutorization);
+
             Authorization PrecisionAutorization = new Authorization();
             PrecisionAutorization.BusinessEntity = typeof(Precision).FullName;
             RoleAdmin.Authorizations.Add(PrecisionAutorization);
@@ -237,7 +238,7 @@
             RoleAdmin.Authorizations.Add(PriorAutorization);
 
             Authorization PrecisionContentAutorization = new Authorization();
-            PrecisionAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
+            PrecisionContentAutorization.BusinessEntity = typeof(PrecisionContent).FullName;
             RoleAdmin.Authorizations.Add(PrecisionContentAutorization);
 
             Authorization HolidayAutorization = new Authorization();
@@ -295,9 +296,9 @@
             ProjectAutorization.BusinessEntity = typeof(Project).FullName;
             RoleAdmin.Authorizations.Add(ProjectAutorization);
 
-            Authorization TaskAutorization = new Authorization();
-            TaskAutorization.BusinessEntity = typeof(Task).FullName;
-            RoleAdmin.Authorizations.Add(TaskAutorization);
+            Authorization ProjectTaskAutorization = new Authorization();
+            ProjectTaskAutorization.BusinessEntity = typeof(ProjectTask).FullName;
+            RoleAdmin.Authorizations.Add(ProjectTaskAutorization);
 
             Authorization ClassroomAutorization = new Authorization();
             ClassroomAutorization.BusinessEntity = typeof(Classroom).FullName;
@@ -306,6 +307,12 @@
             Authorization CategogiesClassroomAutorization = new Authorization();
             CategogiesClassroomAutorization.BusinessEntity = typeof(CategogiesClassroom).FullName;
             RoleAdmin.Authorizations.Add(CategogiesClassroomAutorization);
+
+            Authorization MiniGroupAutorization = new Authorization();
+            MiniGroupAutorization.BusinessEntity = typeof(MiniGroup).FullName;
+            RoleAdmin.Authorizations.Add(MiniGroupAutorization);
+
+
 
 
 
