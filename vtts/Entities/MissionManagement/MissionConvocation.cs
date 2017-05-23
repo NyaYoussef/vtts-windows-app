@@ -9,14 +9,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using vtts.Presentation.MissionManagement;
 
 namespace vtts.Entities.MissionManagement
 {
     [GwinEntity(Localizable = true, isMaleName = false, DisplayMember = "Name")]
     [Menu(Group = "MissionManagement",Order =1,Title = "menu_title")]
     [ManagementForm(Width = 1100,Height =650,TitrePageGridView ="title_gridview")]
-    [GwinForm(FormType = typeof(MissionConvocationFrom))]
+   // [GwinForm(FormType = typeof(MissionConvocationFrom))]
     public class MissionConvocation: BaseEntity
     {
         public MissionConvocation()

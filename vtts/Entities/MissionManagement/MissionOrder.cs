@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using vtts.Presentation.PrintOrderMission;
+using vtts.Presentation.MissionManagement;
 
 namespace vtts.Entities.MissionManagement
 {
@@ -15,17 +16,22 @@ namespace vtts.Entities.MissionManagement
     [Menu(Group = "MissionManagement",Order =2,Title = "menu_title")]
     [ManagementForm(Width =1250,Height =650,TitrePageGridView ="Order_management",TitreButtonAjouter ="Add_order_mission")]
     [DataGridSelectedAction(Title = "Print", Description = "Print_Order_Mission", TypeOfForm = typeof(FormPrintOrderMission))]
+    [PresentationLogic(TypePLO = typeof(MissionOrderPLO))]
     public class MissionOrder: BaseEntity
     {
 
         //
         // Convocations
         //
-        [EntryForm(WidthControl =200,Ordre =0,GroupeBox = "Convocations",GroupeBoxOrder =0)]
-        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =1, WidthControl = 150,isValeurFiltreVide = true)]
+        //[EntryForm(WidthControl = 200, Ordre = 0, GroupeBox = "Convocations", GroupeBoxOrder = 0)]
+        //[Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        //[Filter(Ordre = 1, WidthControl = 150, isValeurFiltreVide = true)]
         public MissionConvocation Mission { set; get; }
 
+        [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Convocations", GroupeBoxOrder = 1)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(Ordre = 1, WidthControl = 150, isValeurFiltreVide = true)]
+        public Staff Staff { set; get; }
 
         //
         // Date
@@ -61,10 +67,7 @@ namespace vtts.Entities.MissionManagement
         // [Filter(Ordre =3)]:enumertion filter not yet impliment
         public MeansTransportCategories MeansTransportCategory { set; get; }
 
-        [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox = "Convocations", GroupeBoxOrder = 0)]
-        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(Ordre =4, WidthControl = 150,isValeurFiltreVide = true)]
-        public Staff Staff { set; get; }
+       
 
         [EntryForm(Ordre = 2, WidthControl = 200,GroupeBox = "Meansoftransport", GroupeBoxOrder = 1)]
         [Filter (isValeurFiltreVide = true)]

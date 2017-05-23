@@ -613,8 +613,8 @@
                                  {
 
                                      Id = i,
-                                     FirstName = new LocalizedString { Arab = "مدني", French = "Madani" + i, English = "Madani" },
-                                     LastName = new LocalizedString { Arab = "مدني", French = "Ali" + i, English = "Madani" },
+                                     FirstName = new LocalizedString { Arab = "مدني" + i, French = "Madani" + i, English = "Madani" + i },
+                                     LastName = new LocalizedString { Arab = "مدني" + i, French = "Ali" + i, English = "Ali" + i },
                                      DateOfBirth = Convert.ToDateTime("02/02/1982"),
                                      CIN = "k45878",
                                      Email = "madani@outloo.fr",

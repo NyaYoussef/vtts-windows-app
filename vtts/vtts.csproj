@@ -746,12 +746,8 @@
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Libs\ITextSharp\PdfFile.cs" />
-    <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentation\MissionManagement\MissionConvocationFrom.Designer.cs">
-      <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Presentation\MissionManagement\MissionConvocationPLO.cs" />
+    <Compile Include="Presentation\MissionManagement\MissionOrderPLO.cs" />
     <Compile Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1255,9 +1251,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\MissionManagement\MissionConvocationFrom.resx">
-      <DependentUpon>MissionConvocationFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\MissionManagement\PrintOrderMission\FormPrintOrderMission.resx">
       <DependentUpon>FormPrintOrderMission.cs</DependentUpon>
