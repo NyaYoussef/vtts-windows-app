@@ -90,7 +90,8 @@ namespace vtts.Entities.TrainingManagement
         // 
         // Description Technique
         //  
-        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        [DataGrid]
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToMany_Creation)]
         public  List<Precision> Precisions { set; get; }
 
         public  List<Forecast> Forecasts { set; get; }

@@ -52,9 +52,9 @@ namespace vtts.Entities.MissionManagement
         //
         // Participant
         //
-        [EntryForm(Ordre = 3, WidthControl = 200, GroupeBox = "Participants", GroupeBoxOrder = 2, isRequired = true)]
+        [EntryForm(Ordre = 3, WidthControl = 200, GroupeBox = "Participants", GroupeBoxOrder = 2, isRequired = true,HeightControl =260)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
-        [SelectionCriteria(typeof(Function))]
+       // [SelectionCriteria(typeof(Function))]
         public virtual List<Staff> Staffs { get; set; }
 
 
