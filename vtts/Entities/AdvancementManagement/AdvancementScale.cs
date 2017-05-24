@@ -23,10 +23,7 @@ namespace vtts.Entities.AdvancementManagement
         [DataGrid(WidthColonne = 150)]
         public DateTime Date { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "AdvancemantScales")]
-        [DataGrid(WidthColonne = 150)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isDefaultIsEmpty =false,WidthControl =150)]
         public Former Former { get; set; }
 
 
@@ -36,7 +33,10 @@ namespace vtts.Entities.AdvancementManagement
         [Filter(Ordre =1,isDefaultIsEmpty =true,WidthControl =150)]
         public Scale Scale { get; set; }
 
-      
+        [EntryForm(Ordre = 4, GroupeBox = "AdvancemantScales")]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Filter(isDefaultIsEmpty = true, WidthControl = 130)]
+        public virtual Staff Staff { get; set; }
 
         [NotMapped]
         public string Name

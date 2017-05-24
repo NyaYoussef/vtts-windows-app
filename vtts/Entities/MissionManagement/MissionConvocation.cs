@@ -67,7 +67,7 @@ namespace vtts.Entities.MissionManagement
         [SelectionCriteria(typeof(Region))]
         [DataGrid(Ordre = 14)]
         [Filter(Ordre = 3, isDefaultIsEmpty = true, WidthControl = 200)]
-        public Institution Institution { get; set; }
+        public virtual Institution Institution { get; set; }
 
 
         [EntryForm(Ordre = 5, WidthControl = 200, GroupeBox = "location", GroupeBoxOrder = 3, isRequired = true)]
@@ -80,7 +80,7 @@ namespace vtts.Entities.MissionManagement
 
 
 
-        public List<MissionOrder> MissionOrders { get; set; }
+        public virtual List<MissionOrder> MissionOrders { get; set; }
         [NotMapped]
         public string Name
         {

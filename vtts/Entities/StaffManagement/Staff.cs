@@ -8,6 +8,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vtts.Entities.AdvancementManagement;
+using App;
 
 namespace vtts.Entities.StaffManagement
 {
@@ -47,12 +49,12 @@ namespace vtts.Entities.StaffManagement
         //
         // Recruitment
         //
-        [EntryForm(Ordre = 50, GroupeBox = "Recruitment",isRequired =true)]
+        [EntryForm(Ordre = 50, GroupeBox = "Recruitment",isRequired =true,GroupeBoxOrder =12)]
         [DataGrid(WidthColonne = 100)]
         [Filter]
         public string RegistrationNumber { get; set; }
 
-        [EntryForm(Ordre =50, GroupeBox = "Recruitment",isRequired =true)]
+        [EntryForm(Ordre =50, GroupeBox = "Recruitment",isRequired =true,GroupeBoxOrder =12)]
         [DataGrid(WidthColonne = 160)]
         public DateTime DateRecruitment { get; set; }
 
@@ -75,7 +77,7 @@ namespace vtts.Entities.StaffManagement
             }
         }
 
-        [EntryForm(Ordre = 2, GroupeBox = "Functions",isRequired =true)]
+        [EntryForm(Ordre = 2, GroupeBox = "Functions",isRequired =true,GroupeBoxOrder =15)]
         [DataGrid(WidthColonne = 100)]
         [Filter(isDefaultIsEmpty =true,WidthControl =150)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
@@ -89,12 +91,72 @@ namespace vtts.Entities.StaffManagement
         public virtual List<MissionConvocation> MissionConvocations { get; set; }
 
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
-        public List<MissionOrder> MissionOrders { get; set; }
+        public virtual List<MissionOrder> MissionOrders { get; set; }
 
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
-        public List <Mission> Missions { get; set; }
+        public virtual List <Mission> Missions { get; set; }
+
+        [NotMapped]
+        [EntryForm(Ordre = 3, GroupeBox = "Functions",GroupeBoxOrder =15)]
+        //[Filter(isDefaultIsEmpty = true, WidthControl = 150)]
+        //[Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        public  Grade Grade {
+            get
+                {
+                List<AdvancementScale> advscale = new ModelContext().AdvancementScaleS.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();
+                if (advscale.Count > 0)
+                    return advscale[0].Scale.Grade;
+                else
+                    return null;
+            }
+           set
+                { }
+        }
+
+        [NotMapped]
+        [EntryForm(Ordre = 4, GroupeBox = "Functions", GroupeBoxOrder = 15)]
+        public Scale Scales
+        {
+            get
+            {
+                List<AdvancementScale> advscale = new ModelContext().AdvancementScaleS.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();
+                if (advscale.Count > 0)
+                    return advscale[0].Scale;
+                else
+                return null;
+
+            }
+            set { }
+        }
+
+        [NotMapped]
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public  Echelon Echelon { 
+            get {
+                List<AdvancementEchelon> advEchelon = new ModelContext().AdvancementEchelons.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();
+                if (advEchelon.Count > 0)
+                    return advEchelon[0].Echelon;
+                else
+                    return null;
+                }
+            set { }
+            }
 
 
+        [NotMapped]
+        public virtual AdvancementScale AdvancementScale
+        {
+            get {
+                if (Scales != null)
+                    return AdvancementScale;
+
+                else
+                return new AdvancementScale();
+
+
+            }
+           
+        }
 
 
 
