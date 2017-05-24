@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vtts.Entities.StaffManagement;
 
 namespace vtts.Entities.AdvancementManagement
 {
@@ -27,6 +28,9 @@ namespace vtts.Entities.AdvancementManagement
         [DataGrid(WidthColonne = 200)]
         [Filter(Ordre =2,WidthControl =200)]
         public LocalizedString Description { get; set; }
+
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
+        public List<Staff> Staffs { get; set; }
 
         
     }

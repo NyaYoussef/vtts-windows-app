@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vtts.Entities.StaffManagement;
 
 namespace vtts.Entities.AdvancementManagement
 {
@@ -28,12 +29,15 @@ namespace vtts.Entities.AdvancementManagement
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List<AdvancementScale> AdvancementScales { get; set; }
 
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToMany_Selection)]
+        public List<Staff> Staffs { get; set; }
+
         [NotMapped]
         public string Name
         {
             get
             {
-                if (Number != null )
+                if (Number >0 )
                     return Number+"";
                 else
                 {

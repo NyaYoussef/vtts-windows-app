@@ -124,6 +124,15 @@ namespace vtts.Entities.StaffManagement.Resources.Staff {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Echelons.
+        /// </summary>
+        internal static string Echelons {
+            get {
+                return ResourceManager.GetString("Echelons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E-mail.
         /// </summary>
         internal static string Email {
@@ -156,6 +165,15 @@ namespace vtts.Entities.StaffManagement.Resources.Staff {
         internal static string Functions {
             get {
                 return ResourceManager.GetString("Functions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grade.
+        /// </summary>
+        internal static string Grade {
+            get {
+                return ResourceManager.GetString("Grade", resourceCulture);
             }
         }
         
@@ -210,6 +228,15 @@ namespace vtts.Entities.StaffManagement.Resources.Staff {
         internal static string RegistrationNumber {
             get {
                 return ResourceManager.GetString("RegistrationNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scales.
+        /// </summary>
+        internal static string Scales {
+            get {
+                return ResourceManager.GetString("Scales", resourceCulture);
             }
         }
         

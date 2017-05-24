@@ -635,17 +635,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\StaffManagement\Resources\Former\Former.ar.Designer.cs">
+    <Compile Include="Entities\StaffManagement\Resources\Car\Former\Former.ar.Designer.cs">
       <DependentUpon>Former.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\StaffManagement\Resources\Former\Former.Designer.cs">
+    <Compile Include="Entities\StaffManagement\Resources\Car\Former\Former.Designer.cs">
       <DependentUpon>Former.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\StaffManagement\Resources\Former\Former.fr.Designer.cs">
+    <Compile Include="Entities\StaffManagement\Resources\Car\Former\Former.fr.Designer.cs">
       <DependentUpon>Former.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1191,15 +1191,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Car.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\StaffManagement\Resources\Former\Former.ar.resx">
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Car\Former\Former.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Former.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\StaffManagement\Resources\Former\Former.fr.resx">
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Car\Former\Former.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Former.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\StaffManagement\Resources\Former\Former.resx">
+    <EmbeddedResource Include="Entities\StaffManagement\Resources\Car\Former\Former.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Former.Designer.cs</LastGenOutput>
     </EmbeddedResource>
