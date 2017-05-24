@@ -96,16 +96,51 @@ namespace vtts.Entities.StaffManagement
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public virtual List <Mission> Missions { get; set; }
 
+        [NotMapped]
         [EntryForm(Ordre = 3, GroupeBox = "Functions",GroupeBoxOrder =15)]
-        [Filter(isDefaultIsEmpty = true, WidthControl = 150)]
-        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
-        public virtual Grade Grade { get; set; }
+        //[Filter(isDefaultIsEmpty = true, WidthControl = 150)]
+        //[Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        public  Grade Grade {
+            get
+                {
+                List<AdvancementScale> advscale = new ModelContext().AdvancementScaleS.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();
+                if (advscale.Count > 0)
+                    return advscale[0].Scale.Grade;
+                else
+                    return null;
+            }
+           set
+                { }
+        }
 
-        [Relationship(Relation =RelationshipAttribute.Relations.ManyToMany_Selection)]
-        public virtual List<Scale> Scales { get; set; }
+        [NotMapped]
+        [EntryForm(Ordre = 4, GroupeBox = "Functions", GroupeBoxOrder = 15)]
+        public Scale Scales
+        {
+            get
+            {
+                List<AdvancementScale> advscale = new ModelContext().AdvancementScaleS.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();
+                if (advscale.Count > 0)
+                    return advscale[0].Scale;
+                else
+                return null;
 
+            }
+            set { }
+        }
+
+        [NotMapped]
         [Relationship(Relation =RelationshipAttribute.Relations.OneToMany)]
-        public virtual List<Echelon>Echelons { get; set; }
+        public  Echelon Echelon { 
+            get {
+                List<AdvancementEchelon> advEchelon = new ModelContext().AdvancementEchelons.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();
+                if (advEchelon.Count > 0)
+                    return advEchelon[0].Echelon;
+                else
+                    return null;
+                }
+            set { }
+            }
 
 
         [NotMapped]

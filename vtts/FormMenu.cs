@@ -73,5 +73,10 @@ namespace vtts
             FormPrintOrderMission PrintForm = new FormPrintOrderMission();
             PrintForm.ShowDialog();
         }
+
+        private void ExitmetroTile_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

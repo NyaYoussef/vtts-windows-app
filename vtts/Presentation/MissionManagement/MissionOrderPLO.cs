@@ -84,8 +84,7 @@ namespace vtts.Presentation.MissionManagement
 
                             List<Car> ls = new ModelContext().Cars.Where(r => r.Staff.Id == staff.Id).ToList<Car>();
                             CarField.DataSource = ls;
-                            if (ls.Count < 1)
-                                CarField.TextCombobox = "";
+                           
                         }
                           else
                             if(meansTransportCategories==MeansTransportCategories.Voiture_de_Service)
@@ -94,6 +93,8 @@ namespace vtts.Presentation.MissionManagement
                                     ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
                                     List<Car> ls = new ModelContext().Cars.Where(r => r.PersonelCar == false).ToList<Car>();
                                     CarField.DataSource = ls;
+                            if (ls.Count < 1)
+                                CarField.TextCombobox = "";
                         }
 
 
