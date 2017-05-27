@@ -393,6 +393,66 @@
                      Description = new LocalizedString { Arab = "", English = "", French = "" }
                  }
             );
+            //add modules
+            Specialty TDI = context.Specialties.Where(r => r.Reference == "TDI").SingleOrDefault();
+            Specialty TRI = context.Specialties.Where(r => r.Reference == "TRI").SingleOrDefault();
+            Specialty TMSIR = context.Specialties.Where(r => r.Reference == "TMSIR").SingleOrDefault();
+            Specialty INFO = context.Specialties.Where(r => r.Reference == "INFO").SingleOrDefault();
+
+            context.Modules.AddOrUpdate(
+                r => r.Reference,
+                new Module()
+                {
+                    Reference = "Module1",
+                    Name = new LocalizedString { Arab = "Module 01", French = "Module 01", English = "Module 01" },
+                    Description = new LocalizedString { Arab = "المهنة والتدريب", French = "Métier et formation", English = "Profession and training" },
+                    Specialtys=new List<Specialty> { TDI,TRI,TMSIR,INFO}
+                                       
+                },
+                 new Module()
+                 {
+                     Reference = "Module2",
+                     Name = new LocalizedString { Arab = "Module 02", French = "Module 02", English = "Module 02" },
+                     Description = new LocalizedString { Arab = "مفاهيم الرياضيات التطبيقية إلى أجهزة الكمبيوتر", French = "Notions de mathématiques appliquées à l'informatique ", English = "Notions of mathematics applied to computing" },
+                     Specialtys = new List<Specialty> { TDI,INFO }
+
+                 },
+                  new Module()
+                  {
+                      Reference = "Module9",
+                      Name = new LocalizedString { Arab = "Module 09", French = "Module 09", English = "Module 09" },
+                      Description = new LocalizedString { Arab = "تقنيات البرمجة المهيكلة", French = "Techniques de programmation structurée", English = "Structured programming techniques" },
+                      Specialtys = new List<Specialty> { TDI }
+
+                  },
+                   new Module()
+                   {
+                       Reference = "Module10",
+                       Name = new LocalizedString { Arab = "Module 10", French = "Module 10", English = "Module 10" },
+                       Description = new LocalizedString { Arab = "البرمجة الشيئية", French = "Programmation orientée objet", English = "Object Oriented Programming" },
+                       Specialtys = new List<Specialty> { TDI }
+
+                   },
+                    new Module()
+                    {
+                        Reference = "Module12",
+                        Name = new LocalizedString { Arab = "Module 12", French = "Module 12", English = "Module 12" },
+                        Description = new LocalizedString { Arab = "ممارسة فرض الرقمي", French = "Pratique de l’imposition numérique", English = "Practice of digital imposition" },
+                        Specialtys = new List<Specialty> { INFO }
+
+                    },
+                     new Module()
+                     {
+                         Reference = "Module14",
+                         Name = new LocalizedString { Arab = "Module 14", French = "Module 14", English = "Module 14" },
+                         Description = new LocalizedString { Arab = "فترة تدريب", French = "Stage en entreprise", English = "Internship in company" },
+                         Specialtys = new List<Specialty> { INFO }
+
+                     }
+
+                );
+
+
             //add Mission subject
             context.MissionCategorys.AddOrUpdate(
                        r => r.Reference

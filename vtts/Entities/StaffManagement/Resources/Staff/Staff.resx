@@ -177,4 +177,13 @@
   <data name="grid_title" xml:space="preserve">
     <value>Personnels</value>
   </data>
+  <data name="Echelons" xml:space="preserve">
+    <value>Echelons</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="Scales" xml:space="preserve">
+    <value>Scales</value>
+  </data>
 </root>

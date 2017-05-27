@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace vtts.Entities.StaffManagement.Resources.Former {
+namespace vtts.Entities.StaffManagement.Resources.Car.Former {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace vtts.Entities.StaffManagement.Resources.Former {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.StaffManagement.Resources.Former.Former", typeof(Former).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vtts.Entities.StaffManagement.Resources.Car.Former.Former", typeof(Former).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -22,9 +22,7 @@ namespace vtts.Entities.AdvancementManagement
 
         public DateTime Date { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isDefaultIsEmpty =true,WidthControl =130)]
         public Former Former { get; set; }
 
         [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
@@ -33,10 +31,12 @@ namespace vtts.Entities.AdvancementManagement
         [Filter(Ordre =1,isDefaultIsEmpty =true, WidthControl = 130)]
         public  Echelon Echelon { get; set; }
 
-        [EntryForm(Ordre = 3, GroupeBox = "AdvancementEchlons")]
+       
+
+        [EntryForm(Ordre = 4, GroupeBox = "AdvancementEchlons")]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        [Filter(isDefaultIsEmpty =true, WidthControl = 130)]
-        public Scale Scale { get; set; }
+        [Filter(isDefaultIsEmpty = true, WidthControl = 130)]
+        public virtual Staff Staff { get; set; }
 
         [NotMapped]
         public string Name

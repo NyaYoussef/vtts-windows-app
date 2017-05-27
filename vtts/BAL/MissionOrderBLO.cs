@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace vtts.BAL
 {
-   public  class MissionOrderPLO : BaseBLO<MissionOrder>
+   public  class MissionOrderBLO : BaseBLO<MissionOrder>
     {
         public override void ApplyBusinessRolesAfterValuesChanged(object sender, BaseEntity entity)
         {
