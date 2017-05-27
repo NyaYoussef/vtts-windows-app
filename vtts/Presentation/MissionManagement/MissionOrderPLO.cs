@@ -16,6 +16,8 @@ namespace vtts.Presentation.MissionManagement
 {
     public class MissionOrderPLO : IGwinPLO
     {
+        Staff staffG = null;
+        MeansTransportCategories meanscatG = MeansTransportCategories.Public;
         public void FormAfterInit(BaseEntryForm EntryForm)
         {
 
@@ -37,7 +39,7 @@ namespace vtts.Presentation.MissionManagement
         public void ValueChanged(BaseEntryForm EntryForm, object sender)
         {
             BaseField field = sender as BaseField;
-
+          
             switch (field.Name)
             {
                 case  nameof(MissionOrder.MissionConvocation):
@@ -61,45 +63,15 @@ namespace vtts.Presentation.MissionManagement
                 
                     break;
                   case  nameof(MissionOrder.MeansTransportCategory):
-                      {
-                          ComboBoxField missioncarfield = field as ComboBoxField;
-                          MeansTransportCategories meansTransportCategories =(MeansTransportCategories)missioncarfield.Value;
-                          
-
-                          if(meansTransportCategories == MeansTransportCategories.Public)
-                          {
-                              EntryForm.Fields[nameof(MissionOrder.Car)].Hide();
-                            //ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
-
-                            //List<Car> ls =new ModelContext().Cars.Where(r=>r.PersonelCar==false).ToList<Car>();
-                            
-                        }
-                          else
-                            if(meansTransportCategories==MeansTransportCategories.Voiture_Personnel)
-                        {
-                            EntryForm.Fields[nameof(MissionOrder.Car)].Show();
-                            ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
-                            ManyToOneField staffField = EntryForm.Fields[nameof(MissionOrder.Staff)] as ManyToOneField;
-                            Staff staff = staffField.SelectedItem as Staff;
-
-                            List<Car> ls = new ModelContext().Cars.Where(r => r.Staff.Id == staff.Id).ToList<Car>();
-                            CarField.DataSource = ls;
-                           
-                        }
-                          else
-                            if(meansTransportCategories==MeansTransportCategories.Voiture_de_Service)
-                            {
-                                    EntryForm.Fields[nameof(MissionOrder.Car)].Show();
-                                    ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
-                                    List<Car> ls = new ModelContext().Cars.Where(r => r.PersonelCar == false).ToList<Car>();
-                                    CarField.DataSource = ls;
-                            if (ls.Count < 1)
-                                CarField.TextCombobox = "";
-                        }
-
-
-                      }
-                      break;
+                    {
+                       
+                        ComboBoxField missioncarfieled = field as ComboBoxField;
+                       
+                         meanscatG =(MeansTransportCategories) missioncarfieled.Value;
+                      
+                        this.ShowCars(meanscatG,staffG, EntryForm);
+                    }
+                        break;
                 case nameof(MissionOrder.Validation):
                     {
                         BooleanField missionValiditionfield = field as BooleanField;
@@ -122,34 +94,68 @@ namespace vtts.Presentation.MissionManagement
                 case nameof(MissionOrder.Staff):
                     {
                         ManyToOneField missionStaffield = field as ManyToOneField;
-                        Staff Staf = missionStaffield.SelectedItem as Staff;
                        
-
-                        if (Staf!=null)
-                        {
-                           
-                                ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
-
-                                List<Car> ls = new ModelContext().Cars.Where(r => r.Staff.Id == Staf.Id).ToList<Car>();
-                                CarField.DataSource = ls;
-                            EntryForm.Fields[nameof(MissionOrder.Car)].Show();
-                            if (ls.Count < 1)
-                                    CarField.TextCombobox = "";
-                        }
-                          
-                            else
-                                EntryForm.Fields[nameof(MissionOrder.Car)].Hide();
-                           
-                        
+                        staffG = missionStaffield.SelectedItem as Staff;
+                       
+                        this.ShowCars(meanscatG,staffG, EntryForm);
 
                     }
                     break;
 
             }
+        }
+        public void ShowCars(MeansTransportCategories meansTransportCategories,Staff staff,BaseEntryForm EntryForm)
+        {
+           
+            if (staff == null || meansTransportCategories == MeansTransportCategories.Public)
+            {
+                EntryForm.Fields[nameof(MissionOrder.Car)].Hide();
 
+            }
+            else
+            if (staff != null && meansTransportCategories == MeansTransportCategories.Public)
+            {
+                EntryForm.Fields[nameof(MissionOrder.Car)].Hide();
 
-          
+            }
+            else
+            if (staff == null && meansTransportCategories == MeansTransportCategories.Voiture_de_Service)
+            {
 
+                EntryForm.Fields[nameof(MissionOrder.Car)].Show();
+                ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
+                List<Car> ls = new ModelContext().Cars.Where(r => r.PersonelCar == false).ToList<Car>();
+                CarField.DataSource = ls;
+                if (ls.Count < 1)
+                    CarField.TextCombobox = "";
+            }
+            else
+                if (staff != null && meansTransportCategories == MeansTransportCategories.Voiture_de_Service)
+            {
+                EntryForm.Fields[nameof(MissionOrder.Car)].Show();
+                ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
+                List<Car> ls = new ModelContext().Cars.Where(r => r.PersonelCar == false).ToList<Car>();
+                CarField.DataSource = ls;
+                if (ls.Count < 1)
+                    CarField.TextCombobox = "";
+            }
+            else
+                if (staff == null && meansTransportCategories == MeansTransportCategories.Voiture_Personnel)
+            {
+                EntryForm.Fields[nameof(MissionOrder.Car)].Show();
+
+            }
+            else
+                if (staff!=null &&  meansTransportCategories==MeansTransportCategories.Voiture_Personnel)
+            {
+                ManyToOneField CarField = EntryForm.Fields[nameof(MissionOrder.Car)] as ManyToOneField;
+
+                List<Car> ls = new ModelContext().Cars.Where(r => r.Staff.Id == staff.Id).ToList<Car>();
+                CarField.DataSource = ls;
+                EntryForm.Fields[nameof(MissionOrder.Car)].Show();
+                if (ls.Count < 1)
+                    CarField.TextCombobox = "";
+            }
         }
     }
 }

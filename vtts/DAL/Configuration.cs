@@ -451,7 +451,56 @@
                      }
 
                 );
+            //add groups
+            context.Groups.AddOrUpdate(r => r.Reference,
+                new Group()
+                {
+                    Reference="TDI201",
+                    Name="TDI 201",
+                    Specialty = TDI
+                },
+                  new Group()
+                  {
+                      Reference = "TDI101",
+                      Name = "TDI 101",
+                      Specialty = TDI
+                  },
+                    new Group()
+                    {
+                        Reference = "TDR201",
+                        Name = "TDR 201",
+                        Specialty = TRI
+                    },
+                     new Group()
+                     {
+                         Reference = "TDR101",
+                         Name = "TDR 101",
+                         Specialty = TRI
+                     }, new Group()
+                     {
+                         Reference = "TMSIR201",
+                         Name = "TMSIR 201",
+                         Specialty = TMSIR
+                     },
+                      new Group()
+                      {
+                          Reference = "TMSIR101",
+                          Name = "TMSIR 101",
+                          Specialty = TMSIR
+                      }
+                      , new Group()
+                      {
+                          Reference = "INFO101",
+                          Name = "INFO 101",
+                          Specialty = INFO
+                      }, new Group()
+                      {
+                          Reference = "INFO201",
+                          Name = "INFO 201",
+                          Specialty = INFO
+                      }
 
+                );
 
             //add Mission subject
             context.MissionCategorys.AddOrUpdate(

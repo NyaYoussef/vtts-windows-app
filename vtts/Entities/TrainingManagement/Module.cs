@@ -57,7 +57,6 @@ namespace vtts.Entities.TrainingManagement
         // Description pédagogique
         //
         [EntryForm(Ordre = 3, GroupeBox = "Details")]
-        [DataGrid(WidthColonne = 150,Ordre =3)]
         [Filter(Ordre =3,WidthControl =150)]
         public LocalizedString TeachingStrategy { set; get; }
 
@@ -66,7 +65,6 @@ namespace vtts.Entities.TrainingManagement
         public LocalizedString Learning { set; get; }
 
         [EntryForm(Ordre = 4, GroupeBox = "SingularName",WidthControl =150)]
-        [DataGrid(WidthColonne = 100,Ordre =5)]
         [Filter(Ordre =4,WidthControl =150)]
         public LocalizedString Evaluation { set; get; }
 

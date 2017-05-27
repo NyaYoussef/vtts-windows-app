@@ -12,7 +12,7 @@ namespace vtts.Entities.TraineeManagement
     [GwinEntity(Localizable =true,isMaleName =true,DisplayMember = "Name")]
     [SelectionCriteria(typeof(Specialty))]
     [Menu(Group= "Trainee")]
-    [ManagementForm(TitrePageGridView ="grid_title",Width =740)]
+    [ManagementForm(TitrePageGridView ="grid_title",Width =770,Height =650)]
     public class Group : BaseEntity
     {
         
