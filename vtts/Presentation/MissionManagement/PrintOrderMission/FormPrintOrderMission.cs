@@ -18,10 +18,9 @@ using System.Windows.Forms;
 using App.Gwin.Components.Manager.DataGrid;
 using App.Gwin.Entities;
 using App.Gwin.Entities.MultiLanguage;
-<<<<<<< HEAD
 using vtts.Entities.MissionManagement.Enumeration;
-=======
->>>>>>> origin/master
+
+
 
 namespace vtts.Presentation.PrintOrderMission
 {
