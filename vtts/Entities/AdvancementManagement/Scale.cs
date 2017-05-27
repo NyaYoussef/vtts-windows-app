@@ -24,7 +24,7 @@ namespace vtts.Entities.AdvancementManagement
         [DataGrid(WidthColonne = 200)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [Filter(Ordre =2,isDefaultIsEmpty =true,WidthControl =200)]
-        public Grade Grade { get; set; }
+        public virtual Grade Grade { get; set; }
         
         [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public List<AdvancementScale> AdvancementScales { get; set; }
