@@ -126,4 +126,10 @@
   <data name="Menu_Mission_Order_Management.Text" xml:space="preserve">
     <value>إذن بمهمة</value>
   </data>
+  <data name="ExitmetroTile" xml:space="preserve">
+    <value>الخروج</value>
+  </data>
+  <data name="ExitmetroTile.Text" xml:space="preserve">
+    <value>الخروج</value>
+  </data>
 </root>

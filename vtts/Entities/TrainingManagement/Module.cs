@@ -26,6 +26,7 @@ namespace vtts.Entities.TrainingManagement
             this.Learning = new LocalizedString();
             this.Evaluation = new LocalizedString();
             this.Description = new LocalizedString();
+            this.Specialtys = new List<Specialty>();
         }
 
 

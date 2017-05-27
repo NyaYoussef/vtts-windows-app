@@ -17,6 +17,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using App.Gwin.Components.Manager.DataGrid;
 using App.Gwin.Entities;
+using App.Gwin.Entities.MultiLanguage;
+using vtts.Entities.MissionManagement.Enumeration;
 
 namespace vtts.Presentation.PrintOrderMission
 {
@@ -50,33 +52,44 @@ namespace vtts.Presentation.PrintOrderMission
             printOrderMission.HeaderImgDirectory = @"C:\USers\DELL\Desktop\vtts-windows-app\Images\Header.png";
             printOrderMission.Ordre = MissionOrder.OrderNumber;
             printOrderMission.Date = MissionOrder.DateOrder;
-            printOrderMission.Region = "Le Directeur Regional de la DRNOII";
+            printOrderMission.Region = "Le Directeur Regional de la ";//+MissionOrder.MissionConvocation.Institution.Region;
             printOrderMission.City = "Tanger";
-            printOrderMission.Mensieur = "Monsieur   :   Bouybanin Anass";
-            printOrderMission.Matricule = " 13716";
-            printOrderMission.Category = "Cadre Principale";
-            printOrderMission.Affectation = "I.S.M.O.N.T.I.C Tanger";
-            printOrderMission.Place = "CDC TIC Casa Blanca";
-            printOrderMission.Theme = "Pour assister aux atelier NETACAD CISCO";
-            printOrderMission.DepartureDate = "24/04/2017";
-            printOrderMission.ReturnDate = "29/04/2017";
-            printOrderMission.DepartureHour = "13h00";
-            printOrderMission.ReturnHour = "13h00";
+
+            if(MissionOrder.Staff.Sex)
+            printOrderMission.Mensieur = "Monsieur   :  "+MissionOrder.Staff.LastName+"  "+MissionOrder.Staff.FirstName;
+            if(!MissionOrder.Staff.Sex)
+            printOrderMission.Mensieur = "Madame   :  " + MissionOrder.Staff.LastName + "  " + MissionOrder.Staff.FirstName;
+            printOrderMission.Matricule = MissionOrder.Staff.RegistrationNumber;
+
+            if (MissionOrder.Staff.Grade != null)
+                printOrderMission.Category = MissionOrder.Staff.Grade.Name + "";
+            else
+              MessageBox.Show(new Exception("grade is null").ToString());
+
+
+            printOrderMission.Affectation =  "I.S.M.N.T.I.C Tanger  "; //MissionOrder.MissionConvocation.Institution.Region.Name.Current;
+            printOrderMission.Place = MissionOrder.MissionConvocation.Institution.Name.Current+"  ";//MissionOrder.MissionConvocation.Institution.Region.Name.Current
+            printOrderMission.Theme = MissionOrder.MissionConvocation.Theme.Current;
+            printOrderMission.DepartureDate = MissionOrder.DepartureDate.ToShortDateString();
+            printOrderMission.ReturnDate = MissionOrder.ArrivalDate.ToShortDateString();
+            printOrderMission.DepartureHour =MissionOrder.DepartureTime+ "h00";
+            printOrderMission.ReturnHour = MissionOrder.ArrivingTime+"h00";
+            printOrderMission.Category = MissionOrder.MissionConvocation.MissionCategory.Name.Current;
             //PublicTransport , MissionCar, PersonalCar
-            printOrderMission.TransportType = "PublicTransport";
+            printOrderMission.TransportType = MissionOrder.MeansTransportCategory.ToString();
             // In Other Cases
-            //if(printOrderMission.TransportType == "MissionCar")
-            //{
-            //    printOrderMission.MissionCarmark = "Mark";
-            //    printOrderMission.MissionCarPlatNumber = "Numero de plaque";
-            //}
-            //if(printOrderMission.TransportType == "PersonalCar")
-            //{
-            //    printOrderMission.PersonalCarmark = "Mark";
-            //    printOrderMission.PersonalCarPlatNumber = "Numero de plaque";
-            //    printOrderMission.PersonalCarFiscalPower = "Puissance Fiscale";
-            //}
-            //
+            if(printOrderMission.TransportType ==MeansTransportCategories.Public.ToString())
+            {
+                printOrderMission.MissionCarmark = MissionOrder.Car.Mark;
+                printOrderMission.MissionCarPlatNumber = MissionOrder.Car.PlateNumber;
+            }
+            if(printOrderMission.TransportType == MeansTransportCategories.Voiture_Personnel.ToString()|| printOrderMission.TransportType == MeansTransportCategories.Voiture_de_Service.ToString())
+            {
+                printOrderMission.PersonalCarmark = MissionOrder.Car.Mark;
+                printOrderMission.PersonalCarPlatNumber = MissionOrder.Car.PlateNumber;
+                printOrderMission.PersonalCarFiscalPower = MissionOrder.Car.TaxPower+"";
+            }
+
 
             printOrderMission.FirstPersonne = "Abdelhamid ELMECHRAFI";
             printOrderMission.SecondePersonne = "Abdelmoula SADIK";

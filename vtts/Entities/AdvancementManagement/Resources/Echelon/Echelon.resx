@@ -141,4 +141,7 @@
   <data name="grid_title" xml:space="preserve">
     <value>Echelons</value>
   </data>
+  <data name="Numbre" xml:space="preserve">
+    <value>Number</value>
+  </data>
 </root>

@@ -138,4 +138,7 @@
   <data name="grid_title" xml:space="preserve">
     <value>المستويات</value>
   </data>
+  <data name="Numbre" xml:space="preserve">
+    <value>الرقم</value>
+  </data>
 </root>

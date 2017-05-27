@@ -27,12 +27,12 @@ namespace vtts.Entities.MissionManagement
         [EntryForm(WidthControl = 200, Ordre = 0, GroupeBox = "Convocations", GroupeBoxOrder = 0)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [Filter(Ordre = 1, WidthControl = 150, isDefaultIsEmpty = true)]
-        public MissionConvocation MissionConvocation { set; get; }
+        public virtual MissionConvocation MissionConvocation { set; get; }
 
         [EntryForm(Ordre = 1, WidthControl = 200, GroupeBox = "Convocations", GroupeBoxOrder = 1)]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         [Filter(Ordre = 1, WidthControl = 150, isDefaultIsEmpty  = true)]
-        public Staff Staff { set; get; }
+        public virtual Staff Staff { set; get; }
 
         //
         // Date
@@ -81,7 +81,7 @@ namespace vtts.Entities.MissionManagement
         // Validations
         //
 
-        [EntryForm(Ordre = 7, WidthControl = 200,GroupeBox = "Validations", GroupeBoxOrder = 3)]
+        [EntryForm(Ordre = 0, WidthControl = 200,GroupeBox = "Validations", GroupeBoxOrder = 3)]
         [DataGrid(Ordre = 7, WidthColonne = 80)]
         [Filter(Ordre =1,WidthControl =100)]
         public bool Validation { get; set; }

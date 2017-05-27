@@ -177,4 +177,13 @@
   <data name="grid_title" xml:space="preserve">
     <value>العاملين</value>
   </data>
+  <data name="Echelons" xml:space="preserve">
+    <value>المستوى</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>الرتبة</value>
+  </data>
+  <data name="Scales" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
 </root>

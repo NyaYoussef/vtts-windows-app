@@ -115,6 +115,15 @@ namespace vtts.Entities.AdvancementManagement.Resources.Echelon {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number.
+        /// </summary>
+        internal static string Numbre {
+            get {
+                return ResourceManager.GetString("Numbre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Echelons.
         /// </summary>
         internal static string PluralName {

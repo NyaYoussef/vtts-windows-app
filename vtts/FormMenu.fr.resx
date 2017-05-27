@@ -142,4 +142,7 @@
   <data name="Menu_Mission_Order_Management.Text" xml:space="preserve">
     <value>Ordres de mission</value>
   </data>
+  <data name="ExitmetroTile.Text" xml:space="preserve">
+    <value>Sortie</value>
+  </data>
 </root>
