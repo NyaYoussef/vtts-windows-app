@@ -96,11 +96,12 @@ namespace vtts.Entities.StaffManagement
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Selection)]
         public virtual List <Mission> Missions { get; set; }
 
-        [NotMapped]
+       [NotMapped]
        [EntryForm(Ordre = 3, GroupeBox = "Functions",GroupeBoxOrder =15)]
         //[Filter(isDefaultIsEmpty = true, WidthControl = 150)]
         //[Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
        public  Grade Grade {
+
             get
                 {
                 List<AdvancementScale> advscale = new ModelContext().AdvancementScaleS.Where(r => r.Staff.Id == this.Id).OrderByDescending(r => r.Date).ToList();

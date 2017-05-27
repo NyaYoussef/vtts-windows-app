@@ -37,32 +37,33 @@
             // 
             // Menu_StaffManagement
             // 
-            resources.ApplyResources(this.Menu_StaffManagement, "Menu_StaffManagement");
             this.Menu_StaffManagement.ActiveControl = null;
+            resources.ApplyResources(this.Menu_StaffManagement, "Menu_StaffManagement");
             this.Menu_StaffManagement.Name = "Menu_StaffManagement";
             this.Menu_StaffManagement.UseSelectable = true;
             this.Menu_StaffManagement.Click += new System.EventHandler(this.Menu_StaffManagement_Click);
             // 
             // Menu_ConvocationManagement
             // 
-            resources.ApplyResources(this.Menu_ConvocationManagement, "Menu_ConvocationManagement");
             this.Menu_ConvocationManagement.ActiveControl = null;
+            resources.ApplyResources(this.Menu_ConvocationManagement, "Menu_ConvocationManagement");
             this.Menu_ConvocationManagement.Name = "Menu_ConvocationManagement";
             this.Menu_ConvocationManagement.UseSelectable = true;
             this.Menu_ConvocationManagement.Click += new System.EventHandler(this.Menu_ConvocationManagement_Click);
             // 
             // Menu_Mission_Order_Management
             // 
-            resources.ApplyResources(this.Menu_Mission_Order_Management, "Menu_Mission_Order_Management");
             this.Menu_Mission_Order_Management.ActiveControl = null;
+            resources.ApplyResources(this.Menu_Mission_Order_Management, "Menu_Mission_Order_Management");
             this.Menu_Mission_Order_Management.Name = "Menu_Mission_Order_Management";
             this.Menu_Mission_Order_Management.UseSelectable = true;
             this.Menu_Mission_Order_Management.Click += new System.EventHandler(this.Menu_Mission_Order_Management_Click);
             // 
             // ExitmetroTile
             // 
-            resources.ApplyResources(this.ExitmetroTile, "ExitmetroTile");
+
             this.ExitmetroTile.ActiveControl = null;
+            resources.ApplyResources(this.ExitmetroTile, "ExitmetroTile");
             this.ExitmetroTile.BackColor = System.Drawing.Color.Red;
             this.ExitmetroTile.Name = "ExitmetroTile";
             this.ExitmetroTile.Style = MetroFramework.MetroColorStyle.Red;

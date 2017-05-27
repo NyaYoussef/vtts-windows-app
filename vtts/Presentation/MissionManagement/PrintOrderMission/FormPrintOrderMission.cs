@@ -18,7 +18,10 @@ using System.Windows.Forms;
 using App.Gwin.Components.Manager.DataGrid;
 using App.Gwin.Entities;
 using App.Gwin.Entities.MultiLanguage;
+<<<<<<< HEAD
 using vtts.Entities.MissionManagement.Enumeration;
+=======
+>>>>>>> origin/master
 
 namespace vtts.Presentation.PrintOrderMission
 {
@@ -78,12 +81,16 @@ namespace vtts.Presentation.PrintOrderMission
             //PublicTransport , MissionCar, PersonalCar
             printOrderMission.TransportType = MissionOrder.MeansTransportCategory.ToString();
             // In Other Cases
+
             if(printOrderMission.TransportType ==MeansTransportCategories.Public.ToString())
+
             {
                 printOrderMission.MissionCarmark = MissionOrder.Car.Mark;
                 printOrderMission.MissionCarPlatNumber = MissionOrder.Car.PlateNumber;
             }
+
             if(printOrderMission.TransportType == MeansTransportCategories.Voiture_Personnel.ToString()|| printOrderMission.TransportType == MeansTransportCategories.Voiture_de_Service.ToString())
+
             {
                 printOrderMission.PersonalCarmark = MissionOrder.Car.Mark;
                 printOrderMission.PersonalCarPlatNumber = MissionOrder.Car.PlateNumber;

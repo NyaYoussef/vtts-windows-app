@@ -141,6 +141,7 @@ namespace vtts.Presentation.MissionManagement
                                 EntryForm.Fields[nameof(MissionOrder.Car)].Hide();
                            
                         
+
                     }
                     break;
 
